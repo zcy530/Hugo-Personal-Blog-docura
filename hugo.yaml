@@ -10,9 +10,9 @@ languages:
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: Your Site Name
+    title: CaiyiZhang's Blog
     params:
-      description: Your Site Description
+      description: I'm a software engineer borned in 2000. Love my work and life.
 
 services:
   googleAnalytics:
@@ -28,7 +28,7 @@ markup:
 params:
 
   author:
-    name: Your Name
+    name: Caiyi Zhang
     url: https://your.site
 
   themeColors:
@@ -84,7 +84,7 @@ menu:
       weight: 1
 
     - url: /docs
-      name: Documentation
+      name: Blogs
       identifier: docs
       pre: "<i class='icon icon-book'></i>"
       weight: 2
