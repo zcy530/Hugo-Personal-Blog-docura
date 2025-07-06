@@ -20,7 +20,7 @@
 
   --blur: 10px;
 
-  --home-cover-background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, rgb(239, 223, 220) 50%, rgb(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
+  --home-cover-background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, rgb(234, 205, 199) 50%, rgb(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
 
   --icon-filter: invert(41%) sepia(19%) saturate(840%) hue-rotate(161deg) brightness(92%) contrast(92%);
 

@@ -2,6 +2,7 @@
 ---
 title: Computer Network
 slug: Computer-Network
+lastmod: 2025-07-01T00:00:00+00:00
 ---
 
 # 计算机网络引言

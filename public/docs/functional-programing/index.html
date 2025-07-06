@@ -1,0 +1,3314 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Functional Programing · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/functional-programing/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Functional Programing</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="一basic"><strong>一、BASIC</strong></h1>
+<h2 id="11-数据与函数"><strong>1.1 数据与函数</strong></h2>
+<h3 id="枚举类型"><strong>枚举类型</strong></h3>
+<p>Inductive 定义一个数据集合</p>
+<pre tabindex="0"><code>Inductive day : Type :=
+  | monday
+  | tuesday
+  | wednesday
+  | thursday
+  | friday
+  | saturday
+  | sunday.
+</code></pre><p>Definition 可以写一些操作函数</p>
+<pre tabindex="0"><code>Definition next_weekday (d:day) : day :=
+  match d with
+  | monday ⇒ tuesday
+  | tuesday ⇒ wednesday
+  | wednesday ⇒ thursday
+  | thursday ⇒ friday
+  | friday ⇒ monday
+  | saturday ⇒ monday
+  | sunday ⇒ monday
+  end.
+</code></pre><p>在 Coq 中检验的方式一共有三种：</p>
+<p>第一，用 Compute 指令来计算包含 next_weekday 的复合表达式</p>
+<pre tabindex="0"><code>Compute (next_weekday friday).
+Compute (next_weekday (next_weekday saturday)).
+</code></pre><p>第二，将期望的结果写成 Coq 的示例</p>
+<pre tabindex="0"><code>Example test_next_weekday:
+  (next_weekday (next_weekday saturday)) = tuesday.
+
+Proof. simpl. reflexivity.  Qed.
+</code></pre><p>这段代码基本上可以读作“若等式两边的求值结果相同，该断言即可得证”</p>
+<p>第三，我们可以让 Coq 从 Definition 中提取出用其它更加常规的编程语言编写的程序</p>
+<h3 id="布尔值"><strong>布尔值</strong></h3>
+<pre tabindex="0"><code>Inductive bool : Type :=
+  | true
+  | false.
+</code></pre><p>布尔值的函数可按照同样的方式来定义</p>
+<pre tabindex="0"><code>Definition negb (b:bool) : bool :=
+  match b with
+  | true ⇒ false
+  | false ⇒ true
+  end.
+</code></pre><pre tabindex="0"><code>Definition andb (b1:bool) (b2:bool) : bool :=
+  match b1 with
+  | true ⇒ b2
+  | false ⇒ false
+  end.
+</code></pre><pre tabindex="0"><code>Definition orb (b1:bool) (b2:bool) : bool :=
+  match b1 with
+  | true ⇒ true
+  | false ⇒ b2
+  end.
+</code></pre><p>以下四个单元测试演示了多参数应用的语法</p>
+<pre tabindex="0"><code>Example test_orb1: (orb true false) = true.
+Proof. simpl. reflexivity. Qed.
+Example test_orb2: (orb false false) = false.
+Proof. simpl. reflexivity. Qed.
+Example test_orb3: (orb false true) = true.
+Proof. simpl. reflexivity. Qed.
+Example test_orb4: (orb true true) = true.
+Proof. simpl. reflexivity. Qed
+</code></pre><p>Notation 能为既有的定义赋予新的中缀记法</p>
+<pre tabindex="0"><code>Notation &#34;x &amp;&amp; y&#34; := (andb x y).
+Notation &#34;x || y&#34; := (orb x y).
+Example test_orb5: false || false || true = true.
+Proof. simpl. reflexivity. Qed.
+</code></pre><h3 id="类型"><strong>类型</strong></h3>
+<p>Check 指令会让 Coq 显示一个表达式的类型</p>
+<pre tabindex="0"><code>Check true.
+(* ===&gt; true : bool *)
+</code></pre><p>像 negb 这样的函数本身也有类型，被称为函数类型，用带箭头的类型表示</p>
+<pre tabindex="0"><code>Check negb
+    : bool → bool.
+Check andb
+    : bool → bool → bool.
+</code></pre><h3 id="由旧类型构造新类型"><strong>由旧类型构造新类型</strong></h3>
+<p>我们之前定义的枚举类型，每个元素都只是无参数构造子</p>
+<p>下面的类型定义，会让其中一个构造子接受一个参数</p>
+<pre tabindex="0"><code>Inductive rgb : Type :=
+  | red
+  | green
+  | blue.
+Inductive color : Type :=
+  | black
+  | white
+  | primary (p : rgb).
+</code></pre><p>最后一行表示若 p 是属于 rgb 的构造子表达式，则 primary p（构造子 primary 应用于参数 p）是属于集合 color 的构造子表达式</p>
+<p>定义一个关于color的函数</p>
+<pre tabindex="0"><code>Definition monochrome (c : color) : bool :=
+  match c with
+  | black ⇒ true
+  | white ⇒ true
+  | primary p ⇒ false
+  end.
+</code></pre><pre tabindex="0"><code>Definition isred (c : color) : bool :=
+  match c with
+  | black ⇒ false
+  | white ⇒ false
+  | primary red ⇒ true
+  | primary _ ⇒ false
+  end.
+</code></pre><p>primary _ 是构造子 primary 应用到除 red 之外的任何 rgb 构造子上</p>
+<h3 id="元组"><strong>元组</strong></h3>
+<p>定义一个由四位字节组成的元组</p>
+<pre tabindex="0"><code>Inductive bit : Type :=
+  | B0
+  | B1.
+
+Inductive nybble : Type :=
+  | bits (b0 b1 b2 b3 : bit).
+
+Check (bits B1 B0 B1 B0)
+    : nybble.
+</code></pre><pre tabindex="0"><code>Definition all_zero (nb : nybble) : bool :=
+  match nb with
+    | (bits B0 B0 B0 B0) ⇒ true
+    | (bits _ _ _ _) ⇒ false
+  end.
+</code></pre><h3 id="数值"><strong>数值</strong></h3>
+<p>我们把这个部分放在一个模块中，这样我们自己对自然数的定义就不会干扰标准库中的自然数</p>
+<pre tabindex="0"><code>Module NatPlayground.
+</code></pre><p>大写字母O表示零，当S构造函数应用于自然数n的表示时，结果是n+1，其中S代表后继（successor），可被放在一个自然数之前产生另一个自然数</p>
+<pre tabindex="0"><code>Inductive nat : Type :=
+  | O
+  | S (n : nat).
+</code></pre><p>0 → O，1 → S O，2 → S(S O)，3 → S(S(S O))，以此类推</p>
+<p>定义自然数的前趋函数</p>
+<pre tabindex="0"><code>Definition pred (n : nat) : nat :=
+  match n with
+    | O ⇒ O
+    | S n&#39; ⇒ n&#39;
+  end.
+</code></pre><p>定义自然数减法函数</p>
+<pre tabindex="0"><code>Definition minustwo (n : nat) : nat :=
+  match n with
+    | O ⇒ O
+    | S O ⇒ O
+    | S (S n&#39;) ⇒ n&#39;
+  end.
+Compute (minustwo 4).
+(* ===&gt; 2 : nat *)
+</code></pre><pre tabindex="0"><code>End NatPlayground.
+</code></pre><p>Coq 会默认将自然数打印为十进制形式</p>
+<pre tabindex="0"><code>Check (S (S (S (S O)))).
+(* ===&gt; 4 : nat *)
+</code></pre><h3 id="递归"><strong>递归</strong></h3>
+<p>关键字 Fixpoint 可用于定义递归函数</p>
+<p>比如判断自然数是否为偶数</p>
+<pre tabindex="0"><code>Fixpoint evenb (n:nat) : bool :=
+  match n with
+  | O ⇒ true
+  | S O ⇒ false
+  | S (S n&#39;) ⇒ evenb n&#39;
+  end.
+</code></pre><p>判断自然数是否为奇数</p>
+<pre tabindex="0"><code>Definition oddb (n:nat) : bool :=
+  negb (evenb n).
+</code></pre><pre tabindex="0"><code>Example test_oddb1: oddb 1 = true.
+Proof. simpl. reflexivity. Qed.
+Example test_oddb2: oddb 4 = false.
+Proof. simpl. reflexivity. Qed.
+</code></pre><p>递归多参数函数</p>
+<pre tabindex="0"><code>Module NatPlayground2.
+
+Fixpoint plus (n : nat) (m : nat) : nat :=
+  match n with
+    | O ⇒ m
+    | S n&#39; ⇒ S (plus n&#39; m)
+  end
+</code></pre><p>两个自然数的乘法</p>
+<pre tabindex="0"><code>Fixpoint mult (n m : nat) : nat :=
+  match n with
+    | O ⇒ O
+    | S n&#39; ⇒ plus m (mult n&#39; m)
+  end.
+Example test_mult1: (mult 3 3) = 9.
+Proof. simpl. reflexivity. Qed.
+</code></pre><p>两个自然数相减</p>
+<pre tabindex="0"><code>Fixpoint minus (n m:nat) : nat :=
+  match n, m with
+  | O , _ ⇒ O
+  | S _ , O ⇒ n
+  | S n&#39;, S m&#39; ⇒ minus n&#39; m&#39;
+  end.
+
+End NatPlayground2.
+</code></pre><p>自然数的幂</p>
+<pre tabindex="0"><code>Fixpoint exp (base power : nat) : nat :=
+  match power with
+    | O ⇒ S O
+    | S p ⇒ mult base (exp base p)
+  end.
+</code></pre><p>比较两个自然数是否相等</p>
+<pre tabindex="0"><code>Fixpoint eqb (n m : nat) : bool :=
+  match n with
+  | O ⇒ match m with
+         | O ⇒ true
+         | S m&#39; ⇒ false
+         end
+  | S n&#39; ⇒ match m with
+            | O ⇒ false
+            | S m&#39; ⇒ eqb n&#39; m&#39;
+            end
+  end.
+</code></pre><p>第一个参数是否小于等于第二个参数</p>
+<pre tabindex="0"><code>Fixpoint leb (n m : nat) : bool :=
+  match n with
+  | O ⇒ true
+  | S n&#39; ⇒
+      match m with
+      | O ⇒ false
+      | S m&#39; ⇒ leb n&#39; m&#39;
+      end
+  end.
+</code></pre><p>第一个参数是否严格小于第二个参数</p>
+<pre tabindex="0"><code>Definition ltb (n m:nat) : bool :=
+  (negb(eqb n m)) &amp;&amp; (leb n m)
+</code></pre><p>为了方便我们引入notation来记这几个常用的函数</p>
+<pre tabindex="0"><code>Notation &#34;x + y&#34; := (plus x y)
+                       (at level 50, left associativity)
+                       : nat_scope.
+Notation &#34;x - y&#34; := (minus x y)
+                       (at level 50, left associativity)
+                       : nat_scope.
+Notation &#34;x * y&#34; := (mult x y)
+                       (at level 40, left associativity)
+                       : nat_scope.
+Notation &#34;x =? y&#34; := (eqb x y) (at level 70) : nat_scope.
+Notation &#34;x &lt;=? y&#34; := (leb x y) (at level 70) : nat_scope.
+</code></pre><h2 id="12-基于化简的证明"><strong>1.2 基于化简的证明</strong></h2>
+<p><strong>simpl</strong> 化简等式两边</p>
+<p><strong>reflexivity</strong> 检查两边是否具有相同的值，会自动做一些化简</p>
+<p><strong>intros</strong> n 假设存在一个任意自然数 n，将量词从证明目标转移到当前假设的上下文中</p>
+<p><strong>Example</strong> 和 <strong>Theorem</strong> 表示完全一样的东西</p>
+<p><strong>策略</strong>是一条可以用在 Proof 和 Qed（证毕）之间的指令，告诉 Coq 如何来检验我们所下的断言的正确性</p>
+<p>例如：</p>
+<pre tabindex="0"><code>Theorem plus_O_n : forall n : nat, 0 + n = n.
+Proof.
+  intros n. reflexivity.  Qed.
+</code></pre><pre tabindex="0"><code>Theorem plus_1_l : forall n:nat, 1 + n = S n.
+Proof.
+  intros n. reflexivity. Qed.
+</code></pre><pre tabindex="0"><code>Theorem mult_0_l : forall n:nat, 0 * n = 0.
+Proof.
+  intros n. reflexivity. Qed.
+</code></pre><p>后缀 _l 读作“在左边”</p>
+<p>simpl的作用总结：</p>
+<pre tabindex="0"><code>1.  Sn&#39; + 0 化为 S (n&#39; + 0)
+    Sn&#39; + m 化为 S (n&#39; + m)
+    Sn&#39; + Sm 化为 S (n&#39; + S m)
+2.  对条件进行化简，simpl可以把S n变成n
+3.  去零去括号 0 + (m + p) = 0 + m + p 化为 m + p = m + p
+4.  把自己定义的函数转化为自然语言
+    double (S n&#39;) 化为 S (S (double n&#39;))
+</code></pre><h2 id="13-基于改写的证明"><strong>1.3 基于改写的证明</strong></h2>
+<p><strong>intros</strong> 将前提从证明目标移到当前上下文的假设中</p>
+<p><strong>rewrite</strong> 用来告诉 Coq 执行这种替换的策略</p>
+<p><strong>Admitted</strong> 指令告诉 Coq 我们想要跳过此定理的证明</p>
+<p><strong>例子一：</strong></p>
+<pre tabindex="0"><code>Theorem plus_id_example : ∀ n m:nat,
+  n = m →
+  n + n = m + m.
+</code></pre><p>该定理并未对自然数 n 和 m 所有可能的值做全称断言，而是讨论了仅当 n = m 时这一更加特定情况</p>
+<pre tabindex="0"><code>Proof.
+  (* 将两个量词移到上下文中： *)
+  intros n m.
+  (* 将前提移到上下文中,并将其命名为 H *)
+  intros H.
+  (* 告诉 Coq 改写当前目标,把前提等式 H 的左边替换成右边 *)
+  rewrite → H.
+  reflexivity. Qed.
+</code></pre><p>→表示把左边替换成右边，←表示把右边替换成左边</p>
+<p>便于理解，放个例子</p>
+<p>引入前提 H : n = m</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220155255.png" alt=""></p>
+<p>如果是 -&gt; ，代表把式子里面的n都换成m</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220155355.png" alt=""></p>
+<p>如果是 &lt;-，表示把式子里的m都换成n，逆向替换</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220160448.png" alt=""></p>
+<p><strong>例子二：</strong></p>
+<pre tabindex="0"><code>Theorem plus_id_exercise : forall n m o : nat,
+  n = m -&gt; m = o -&gt; n + m = m + o.
+Proof.
+  intros n m o H H1.
+  rewrite -&gt; H.
+  rewrite -&gt; H1.
+  reflexivity.
+Qed.
+</code></pre><p>为了便于理解，具体过程如下</p>
+<p>引入前提</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220160551.png" alt=""></p>
+<p>根据前提 H1：n = m</p>
+<p>把式子中的n换成m</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220160642.png" alt=""></p>
+<p>根据前提 H1：n = m</p>
+<p>把式子中的m都换成o</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220160734.png" alt=""></p>
+<p><strong>Check</strong> 命令</p>
+<p>可用来检查以前声明的引理和定理</p>
+<pre tabindex="0"><code>Check mult_n_O.
+(* ===&gt; forall n : nat, 0 = n * 0  *)
+Check mult_n_Sm.
+(* ===&gt; forall n m : nat, n * m + n = n * S m  *)
+</code></pre><p>除了上下文中现有的假设外，还可以通过 rewrite 策略来运用前期证明过的定理</p>
+<p><strong>例子三</strong></p>
+<pre tabindex="0"><code>Theorem mult_n_0_m_0 : ∀ n m : nat,
+  (n × 0) + (m × 0) = 0.
+Proof.
+  intros n m.
+  rewrite &lt;- mult_n_O.
+  rewrite &lt;- mult_n_O.
+  reflexivity. Qed.
+</code></pre><p><strong>例子四</strong></p>
+<pre tabindex="0"><code>Theorem mult_n_1 : ∀ n : nat,
+  n × 1 = n.
+Proof.
+  intros.
+  rewrite &lt;- mult_n_Sm.
+  rewrite &lt;- mult_n_O.
+  reflexivity. Qed.
+</code></pre><p><strong>例子五</strong></p>
+<pre tabindex="0"><code>Theorem mult_0_plus : forall n m : nat,
+  (0 + n) * m = n * m.
+Proof.
+  intros n m.
+  rewrite -&gt; plus_O_n.
+  reflexivity.  Qed.
+</code></pre><p><strong>例子六</strong></p>
+<pre tabindex="0"><code>Theorem mult_S_1 : forall n m : nat,
+  m = S n -&gt;
+  m * (1 + n) = m * m.
+Proof.
+  intros n m H.
+  simpl.
+  rewrite &lt;- H.
+  reflexivity.
+Qed.
+</code></pre><h2 id="14-基于情况分析的证明"><strong>1.4 基于情况分析的证明</strong></h2>
+<p><strong>destruct</strong> 分别对 n = 0 和 n = S n&rsquo; 这两种情况进行分析的策略</p>
+<p><strong>例一</strong></p>
+<pre tabindex="0"><code>Theorem plus_1_neq_0 : forall n : nat,
+  beq_nat (n + 1) 0 = false.
+Proof.
+  intros n. destruct n as [| n&#39;].
+  - reflexivity.
+  - reflexivity.
+Qed.
+</code></pre><p><strong>destruct</strong> 生成两个子目标，然后我们分别证明</p>
+<p><strong>as [| n&rsquo;]</strong> 是介绍模式，指出变量，变量之间用|分开。第一个组件是空的，因为O的构造函数是空的，第二个组件n&rsquo;，因为S是一元构造函数</p>
+<p><strong>eqn:E</strong> 注释告诉析构函数给这个方程命名E</p>
+<p><strong>— 符号</strong> 标明这两个生成的子目标所对应的证明部分</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220164856.png" alt=""></p>
+<p><strong>例二</strong></p>
+<p>证明布尔值的取反是对合（Involutive）的</p>
+<pre tabindex="0"><code>Theorem negb_involutive : forall b : bool,
+  negb (negb b) = b.
+Proof.
+  intros b. destruct b.
+  - reflexivity.
+  - reflexivity.  Qed.
+</code></pre><p>destruct 没有 as 子句，因为此处 destruct 生成的子分类均无需绑定任何变量</p>
+<p>b分成了true和false两种情况讨论</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220165232.png" alt=""></p>
+<p><strong>例三</strong></p>
+<p>在一个子目标内调用 destruct，产生出更多的证明义务，使用不同的标号来标记目标的不同层级</p>
+<pre tabindex="0"><code>Theorem andb_commutative : ∀ b c, andb b c = andb c b.
+Proof.
+  intros b c. destruct b
+  - destruct c eqn:Ec.
+    + reflexivity.
+    + reflexivity.
+  - destruct c eqn:Ec.
+    + reflexivity.
+    + reflexivity.
+Qed.
+</code></pre><p>具体过程如下：</p>
+<p>引入变量b c</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220165450.png" alt=""></p>
+<p>分别讨论b为true和b为false两种情况</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220165535.png" alt=""></p>
+<p>在b为true的情况下，分别讨论c为true和c为false两种情况</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220165619.png" alt=""></p>
+<p>除了 - 和 + 之外，还可以使用 ×  &ndash; ***，也可以用花括号将每个子证明目标括起来</p>
+<pre tabindex="0"><code>Theorem andb_commutative&#39; : ∀ b c, andb b c = andb c b.
+Proof.
+  intros b c. destruct b
+  { destruct c
+    { reflexivity. }
+    { reflexivity. } }
+  { destruct c
+    { reflexivity. }
+    { reflexivity. } }
+Qed.
+</code></pre><p>花括号还允许我们在一个证明中的多个层级下使用同一个标号</p>
+<pre tabindex="0"><code>Theorem andb3_exchange :
+  ∀ b c d, andb (andb b c) d = andb (andb b d) c.
+Proof.
+  intros b c d. destruct b eqn:Eb.
+  - destruct c eqn:Ec.
+    { destruct d eqn:Ed.
+      - reflexivity.
+      - reflexivity. }
+    { destruct d eqn:Ed.
+      - reflexivity.
+      - reflexivity. }
+  - destruct c eqn:Ec.
+    { destruct d eqn:Ed.
+      - reflexivity.
+      - reflexivity. }
+    { destruct d eqn:Ed.
+      - reflexivity.
+      - reflexivity. }
+Qed.
+</code></pre><p>最后说一种简便写法，很多证明在引入变量之后会立即对它进行情况分析：</p>
+<pre tabindex="0"><code>intros x y. destruct y as [|y] eqn:E.
+</code></pre><p>但可以通过使用介绍模式而不是变量名来对变量进行案例分析</p>
+<pre tabindex="0"><code>Theorem plus_1_neq_0&#39; : ∀ n : nat,
+  (n + 1) =? 0 = false.
+Proof.
+  intros [|n].
+  - reflexivity.
+  - reflexivity. Qed.
+</code></pre><p>如果没有需要命名的构造子参数，只需写上 [] 即可进行情况分析</p>
+<pre tabindex="0"><code>Theorem andb_commutative&#39;&#39; :
+  forall b c, andb b c = andb c b.
+Proof.
+  intros [] [].
+  - reflexivity.
+  - reflexivity.
+  - reflexivity.
+  - reflexivity.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220171813.png" alt=""></p>
+<p><strong>练习一</strong></p>
+<pre tabindex="0"><code>Theorem zero_nbeq_plus_1 : forall n : nat,
+  0 =? (n + 1) = false.
+Proof.
+  intros [| n&#39;].
+  -simpl. reflexivity.
+  -simpl. reflexivity.
+Qed.
+</code></pre><p>熟练使用简化的引入写法</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220172406.png" alt=""></p>
+<p><strong>练习二</strong></p>
+<pre tabindex="0"><code>Theorem andb_true_elim2 : forall b c : bool,
+  andb b c = true -&gt; c = true.
+Proof.
+  intros [] [].
+  - reflexivity.
+  - intro H.
+    rewrite &lt;- H.
+    reflexivity.
+  - reflexivity.
+  - intro H.
+    rewrite &lt;- H.
+    reflexivity.
+Qed.
+</code></pre><p>说明一下第二种情况和第四种情况的过程，之前一直无法理解</p>
+<p>引入 false &amp;&amp; false  = true 的条件，想要证明的结论是 false = true</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220172152.png" alt=""></p>
+<p>把 条件中的true rewrite 为 false &amp;&amp; false</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211220172213.png" alt=""></p>
+<h2 id="15-递归函数fixpoint"><strong>1.5 递归函数Fixpoint</strong></h2>
+<h2 id="16-更多练习"><strong>1.6 更多练习</strong></h2>
+<p><strong>练习一</strong></p>
+<p>证明以下关于布尔函数的定理</p>
+<pre tabindex="0"><code>Theorem identity_fn_applied_twice :
+  forall (f : bool -&gt; bool),
+  (forall (x : bool), f x = x) -&gt;
+  forall (b : bool), f (f b) = b.
+Proof.
+  intros f H b.
+  rewrite -&gt; H.
+  rewrite -&gt; H.
+  reflexivity.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221005427.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221005441.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221005455.png" alt=""></p>
+<p><strong>练习二</strong></p>
+<pre tabindex="0"><code>Theorem negation_fn_applied_twice :
+  forall (f : bool -&gt; bool),
+  (forall (x : bool), f x = negb x) -&gt;
+  forall (b : bool), f (f b) = b.
+Proof.
+  intros f H b.
+  rewrite -&gt; H.
+  rewrite -&gt; H.
+  rewrite -&gt; negb_involutive.
+  reflexivity.
+Qed.
+
+其中
+negb_involutive
+     : forall b : bool, negb (negb b) = b
+</code></pre><p><strong>练习三</strong></p>
+<pre tabindex="0"><code>Theorem andb_eq_orb :
+  forall (b c : bool),
+  (andb b c = orb b c) -&gt;
+  b = c.
+Proof.
+  intros b c H.
+  destruct b.
+  - destruct c.
+    + reflexivity.
+    + simpl in H.
+      rewrite -&gt; H. reflexivity.
+  - destruct c.
+    + simpl in H.
+      rewrite -&gt; H. reflexivity.
+    + reflexivity.
+Qed.
+</code></pre><h1 id="二induction"><strong>二、INDUCTION</strong></h1>
+<h2 id="21-归纳证明"><strong>2.1 归纳证明</strong></h2>
+<p>在开始之前把上一章所有的定义都导入进来</p>
+<p>在 CoqIDE 中：Open Basics.v，complie → compile buffer → make makefile</p>
+<p>然后 Open Induction.v</p>
+<pre tabindex="0"><code>From LF Require Export Basics.
+</code></pre><p>证明这种关于数字、列表等归纳定义的集合， 我们通常需要一个更强大的推理原理：归纳</p>
+<p>方法：通过应用 induction，把它分为两个子目标：</p>
+<ul>
+<li>一个是我们必须证明 P(O) 成立</li>
+<li>另一个是我们必须证明 P(n&rsquo;) → P(S n')</li>
+</ul>
+<h3 id="例题"><strong>例题</strong></h3>
+<p><strong>例子一：</strong></p>
+<pre tabindex="0"><code>Theorem plus_n_O : forall n:nat, n = n + 0.
+Proof.
+  intros n. induction n as [| n&#39; IHn&#39;].
+  - (* n = 0 *)    reflexivity.
+  - (* n = S n&#39; *) simpl. rewrite &lt;- IHn&#39;. reflexivity.  Qed.
+</code></pre><p>具体过程如下：</p>
+<p>通过induction as分成两种情况，用|隔开</p>
+<p>在第一个子目标中n被0取代</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221192156.png" alt=""></p>
+<p>在第二个目标中，n 被 S n&rsquo; 取代，IHn&rsquo; ：n’ = n&rsquo; + 0 是已知前提</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221192215.png" alt=""></p>
+<p>待证目标变成了 (S n&rsquo;) + 0 = S n&rsquo;，它可被simpl化简为 S (n&rsquo; + 0) = S n&rsquo;，而此结论可通过 IHn&rsquo; 得出</p>
+<p>这里没太懂</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221192230.png" alt=""></p>
+<p>改写</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221192246.png" alt=""></p>
+<p><strong>例子二</strong></p>
+<pre tabindex="0"><code>Theorem minus_diag : forall n,
+  minus n n = 0.
+Proof.
+  intros n. induction n as [| n&#39; IHn&#39;].      // IHn&#39; : n&#39; - n&#39; = 0
+  - (* n = 0 *)
+    simpl. reflexivity.
+  - (* n = S n&#39; *)            // S n&#39; - S n&#39; = 0
+    simpl.                    // n&#39; - n&#39; = 0
+    rewrite -&gt; IHn&#39;.          // 0 = 0
+    reflexivity.  Qed.
+</code></pre><p>这里没懂</p>
+<p>好像知道了simpl的作用，可以把 S n&rsquo; 化成 n&rsquo;，不知道为啥</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221193013.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221193024.png" alt=""></p>
+<h3 id="练习"><strong>练习</strong></h3>
+<p><strong>练习一</strong></p>
+<pre tabindex="0"><code>Theorem mult_0_r : forall n:nat,
+  n * 0 = 0.
+Proof.
+  intros n.
+  induction n as [|n&#39; IHn].
+  - reflexivity.
+  - simpl. rewrite -&gt; IHn. reflexivity. Qed.
+</code></pre><p>好像知道了simpl的作用，可以把 S n&rsquo; 化成 n&rsquo;，不知道为啥</p>
+<pre tabindex="0"><code>Theorem plus_n_Sm : forall n m : nat,
+  S (n + m) = n + (S m).
+Proof.
+  intros n m.
+  induction n as [|n&#39; IHn].
+  - reflexivity.
+  - simpl. rewrite -&gt; IHn. reflexivity.
+Qed.
+</code></pre><p>好像知道了simpl的另一个作用，可以把 S n&rsquo; + m 化成 S (n&rsquo; + m)</p>
+<pre tabindex="0"><code>Theorem plus_comm : forall n m : nat,
+  n + m = m + n.
+Proof.
+  intros n m.
+  induction n as [|n&#39; IHn].   //  IHn : n&#39; + m = m + n&#39;
+  - (* n = 0 *)
+    simpl.
+    rewrite &lt;- plus_n_O.
+    reflexivity.
+  - (* n = S n&#39; *)             //  S n&#39; + m = m + S n&#39;
+    simpl.                     //  S (n&#39; + m) = m + S n&#39;
+    rewrite -&gt; IHn.            //  S (m + n&#39;) = m + S n&#39;
+    rewrite -&gt; plus_n_Sm.      //  m + S n&#39; = m + S n&#39;
+    reflexivity.
+Qed.
+
+其中
+plus_n_O
+     : forall n : nat, n = n + 0
+
+plus_n_Sm
+     : forall n m : nat, S (n + m) = n + S m
+</code></pre><pre tabindex="0"><code>Theorem plus_assoc : forall n m p : nat,
+  n + (m + p) = (n + m) + p.
+Proof.
+  intros n m p.
+  induction n as [|n&#39; IHn].                 // IHn : n&#39; + (m + p) = n&#39; + m + p
+  - reflexivity.
+  - (* n = S n&#39; *)             //  S n&#39; + (m + p) = S n&#39; + m + p
+    simpl.                     //  S (n&#39; + (m + p)) = S (n&#39; + m + p)
+    rewrite -&gt; IHn.            //  S (n&#39; + m + p) = S (n&#39; + m + p)
+    reflexivity.
+Qed.
+</code></pre><p><strong>练习二</strong></p>
+<p>前提</p>
+<pre tabindex="0"><code>Fixpoint double (n:nat) :=
+  match n with
+  | O =&gt; O
+  | S n&#39; =&gt; S (S (double n&#39;))
+  end.
+</code></pre><p>用归纳法证明</p>
+<pre tabindex="0"><code>Lemma double_plus : forall n, double n = n + n .
+Proof.
+  intros n.
+  induction n as [|n&#39; IHn].      // double n&#39; = n&#39; + n&#39;
+  - (* n = 0 *)
+    reflexivity.
+  - (* n = S n&#39; *)               // double (S n&#39;) = S n&#39; + S n&#39;
+   simpl.                        // S (S (double n&#39;)) = S (n&#39; + S n&#39;)
+   rewrite -&gt; IHn.               // S (S (n&#39; + n&#39;)) = S (n&#39; + S n&#39;)
+   rewrite &lt;- plus_n_Sm.         // S (S (n&#39; + n&#39;)) = S (S (n&#39; + n&#39;))
+   reflexivity.
+Qed.
+
+其中
+
+plus_n_Sm
+     : forall n m : nat, S (n + m) = n + S m
+</code></pre><p><strong>练习三</strong></p>
+<pre tabindex="0"><code>Check negb_involutive.
+Theorem evenb_S : forall n : nat,
+  evenb (S n) = negb (evenb n).
+Proof.
+  intros n.
+  induction n as [|n&#39; IHn].            //  IHn : evenb (S n&#39;) = negb (evenb n&#39;)
+  - reflexivity.
+  -                                    //  evenb (S (S n&#39;)) = negb (evenb (S n&#39;))
+    rewrite -&gt; IHn.                    //  evenb (S (S n&#39;)) = negb (negb (evenb n&#39;))
+    rewrite -&gt; negb_involutive.        //  evenb (S (S n&#39;)) = evenb n&#39;
+    reflexivity.
+Qed.
+
+其中
+negb_involutive
+     : forall b : bool, negb (negb b) = b
+</code></pre><h3 id="辨析"><strong>辨析</strong></h3>
+<p>一直没懂什么时候用基于化简，什么时候用基于归纳</p>
+<p>0在n左边的时候用化简，0在n右边的时候用归纳</p>
+<p>0 + n = n ，n = 0 + n 用化简，n + 0 = n，n = n + 0用归纳</p>
+<p>0 * n = 0 用化简，n * 0 = 0用归纳</p>
+<p>因为 0 * n = 0 可以被simpl. 后者不行</p>
+<p>前者 simpl 结果</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221193907.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221193918.png" alt=""></p>
+<p>后者 simpl 结果，没有变化，这只能用归纳了</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221194002.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211221194013.png" alt=""></p>
+<h2 id="22-证明里的证明"><strong>2.2 证明里的证明</strong></h2>
+<p>在 Coq 中，大的证明通常会被分为一系列定理， 后面的定理引用之前的定理</p>
+<p>例如，我们之前对 mult_0_plus 定理的证明引用了前一个名为 plus_O_n 的定理</p>
+<pre tabindex="0"><code>Theorem mult_0_plus : forall n m : nat,
+  (0 + n) * m = n * m.
+Proof.
+  intros n m.
+  rewrite -&gt; plus_O_n.
+  reflexivity.  Qed.
+</code></pre><p>而我们只需使用 assert 就能陈述并证明 plus_O_n，后面的大括号内容是证明过程</p>
+<pre tabindex="0"><code>Theorem mult_0_plus&#39; : forall n m : nat,
+  (0 + n) * m = n * m.
+Proof.
+  intros n m.
+  assert (H: 0 + n = n). { reflexivity. }
+  rewrite -&gt; H.
+  reflexivity.  Qed.
+</code></pre><p>另一个例子</p>
+<p>为了在需要的地方使用我们的小定理，可以引入一个局部引理来陈述 n + m = m + n，之后用 plus_comm 证明它， 并用它来进行期望的改写</p>
+<pre tabindex="0"><code>Theorem plus_rearrange : forall n m p q : nat,
+  (n + m) + (p + q) = (m + n) + (p + q).
+Proof.
+  intros n m p q.
+  assert (H: n + m = m + n).
+  { rewrite -&gt; plus_comm. reflexivity. }
+  rewrite -&gt; H. reflexivity.  Qed.
+</code></pre><h2 id="23-形式化证明"><strong>2.3 形式化证明</strong></h2>
+<p>形式化证明和非形式化证明的对比</p>
+<p>非形式化证明是算法，形式化证明是代码</p>
+<p>一方面，“读者”可以是像 Coq 这样的程序， 此时灌输的是 P 能够从一个确定的，由形式化逻辑规则组成的集合中机械地推导出来，而证明则是指导程序检验这一事实的方法。这种方法就是形式化证明</p>
+<p>另一方面，读者也可以是人类，这种情况下证明可以用英语或其它自然语言写出， 因此必然是非形式化的</p>
+<p>由于我们在本课程中使用 Coq，因此会重度使用<strong>形式化证明</strong></p>
+<p>但这并不意味着我们 可以完全忽略掉非形式化的证明过程！</p>
+<h2 id="24-更多练习"><strong>2.4 更多练习</strong></h2>
+<p><strong>练习一</strong></p>
+<p>可以不用归纳</p>
+<pre tabindex="0"><code>Theorem plus_swap : forall n m p : nat,
+  n + (m + p) = m + (n + p).
+Proof.
+  intros n m p.                            //  n + (m + p) = m + (n + p)
+  rewrite -&gt; plus_assoc.                   //  n + m + p = m + (n + p)
+  assert (H: n + m = m + n).
+  { rewrite -&gt; plus_comm.  reflexivity. }
+  rewrite -&gt; H.                            //  n + m + p = n + (m + p)
+  rewrite -&gt; plus_assoc.                   //  n + m + p = n + m + p
+  reflexivity.
+Qed.
+
+plus_assoc
+     : forall n m p : nat, n + (m + p) = n + m + p
+
+plus_comm
+     : forall n m : nat, n + m = m + n
+</code></pre><p>复习一下如果用归纳做，好像不是同一道题</p>
+<pre tabindex="0"><code>Theorem plus_assoc : forall n m p : nat,
+  n + (m + p) = (n + m) + p.
+Proof.
+  intros n m p.
+  induction n as [|n&#39; IHn].                 // IHn : n&#39; + (m + p) = n&#39; + m + p
+  - reflexivity.
+  - (* n = S n&#39; *)             //  S n&#39; + (m + p) = S n&#39; + m + p
+    simpl.                     //  S (n&#39; + (m + p)) = S (n&#39; + m + p)
+    rewrite -&gt; IHn.            //  S (n&#39; + m + p) = S (n&#39; + m + p)
+    reflexivity.
+Qed.
+</code></pre><p><strong>练习二</strong></p>
+<pre tabindex="0"><code>Theorem mult_n_Sm: forall n m : nat,
+  n * S m = n + n * m.
+Proof.
+  intros n m.
+  induction n as [|n&#39; IHn].           //  IHn : n&#39; * S m = n&#39; + n&#39; * m
+  - (* n = 0 *)
+    reflexivity.
+  - (* n = S n&#39; *)                    //  S n&#39; * S m = S n&#39; + S n&#39; * m
+    simpl.                            //  S (m + (n&#39; + n&#39; * m)) = S (n&#39; + (m + n&#39; * m))
+    rewrite -&gt; IHn.                   //  S (n&#39; + (m + n&#39; * m)) = S (n&#39; + (m + n&#39; * m))
+    rewrite plus_swap.
+    reflexivity.
+Qed.
+</code></pre><p><strong>练习三</strong></p>
+<pre tabindex="0"><code>Theorem mult_comm : forall m n : nat,
+  m * n = n * m.
+Proof.
+  intros n m.
+  induction n as [|n&#39; IHn].
+  - rewrite -&gt; mult_0_l.
+    rewrite &lt;- mult_n_O.
+    reflexivity.
+  - simpl.
+    rewrite -&gt; IHn.
+    rewrite -&gt; mult_n_Sm.
+    reflexivity.
+Qed.
+</code></pre><p><strong>练习四</strong></p>
+<p>区分什么时候该用什么方法</p>
+<p>(a) 它能否能只用化简和改写来证明</p>
+<p>(b) 它还需要分类讨论（destruct）</p>
+<p>(c) 它还需要归纳证明</p>
+<pre tabindex="0"><code>Theorem leb_refl : forall n:nat,
+  true = leb n n.
+Proof.
+  intros n.
+  induction n as [|n&#39; IHn].
+  - (* n = 0 *)
+    reflexivity.
+  - simpl. rewrite &lt;- IHn. reflexivity.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem zero_nbeq_S : forall n:nat,
+  beq_nat 0 (S n) = false.
+Proof.
+  intros n.
+  simpl.
+  reflexivity.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem S_nbeq_0 : forall n:nat,
+  beq_nat (S n) 0 = false.
+Proof.
+  reflexivity.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem plus_ble_compat_l : forall n m p : nat,
+  leb n m = true -&gt; leb (p + n) (p + m) = true.
+Proof.
+  intros n m p H.
+  induction p as [|p&#39; IHp].
+  - simpl.
+    rewrite -&gt; H.
+    reflexivity.
+  - simpl.
+    rewrite -&gt; IHp.
+    reflexivity.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem mult_1_l : forall n:nat, 1 * n = n.
+Proof.
+  intros n.
+  simpl. rewrite &lt;- plus_n_O. reflexivity.
+Qed.
+</code></pre><p>这里simpl又可以把 1 * n = n 改写为 n + 0 = n，真是搞不懂</p>
+<pre tabindex="0"><code>Theorem mult_plus_distr_r : forall n m p : nat,
+  (n + m) * p = (n * p) + (m * p).
+Proof.
+  intros n m p.
+  induction n as [|n&#39; IHn].
+  - reflexivity.
+  - simpl.
+    rewrite -&gt; IHn.
+    rewrite -&gt; plus_assoc.
+    reflexivity.
+Qed.
+</code></pre><h2 id="25-本章可以复用的定理总结"><strong>2.5 本章可以复用的定理总结</strong></h2>
+<pre tabindex="0"><code> plus_n_O : n = n + 0.
+ plus_n_Sm : S (n + m) = n + (S m).
+ plus_comm : n + m = m + n.
+ plus_swap : n + (m + p) = m + (n + p).
+ plus_assoc : n + (m + p) = (n + m) + p.
+
+ mult_n_O : 0 = n * 0.
+ mult_n_Sm: n * S m = n + n * m.
+ mult_comm : m * n = n * m.
+ mult_0_l : 0 * n = 0.
+ mult_0_r : n * 0 = 0.
+ mult_assoc : n * (m * p) = n * m * p
+
+ negb_involutive : negb (negb b) = b
+</code></pre><h1 id="三list"><strong>三、LIST</strong></h1>
+<h2 id="31-数值序对"><strong>3.1 数值序对</strong></h2>
+<p>定义pair 数值序对</p>
+<pre tabindex="0"><code>Inductive natprod : Type :=
+| pair (n1 n2 : nat).
+</code></pre><p>提取pair的第一个和第二个元素</p>
+<pre tabindex="0"><code>Definition fst (p : natprod) : nat :=
+  match p with
+  | pair x y =&gt; x
+  end.
+
+Definition snd (p : natprod) : nat :=
+  match p with
+  | pair x y =&gt; y
+  end.
+</code></pre><p>用notion简化一下表示</p>
+<pre tabindex="0"><code>Notation &#34;( x , y )&#34; := (pair x y).
+
+//notion的符号也可以应用于 pattern match
+
+Definition fst&#39; (p : natprod) : nat :=
+  match p with
+  | (x,y) =&gt; x
+  end.
+
+Definition snd&#39; (p : natprod) : nat :=
+  match p with
+  | (x,y) =&gt; y
+  end.
+
+Definition swap_pair (p : natprod) : natprod :=
+  match p with
+  | (x,y) =&gt; (y,x)
+  end.
+</code></pre><p><strong>下面证明一些二元组性质</strong></p>
+<p>可以直接证明</p>
+<pre tabindex="0"><code>Theorem surjective_pairing&#39; : forall (n m : nat),
+  (n,m) = (fst (n,m), snd (n,m)).
+Proof.
+  reflexivity.  Qed.
+</code></pre><p>p的结构不明显时，用destruct</p>
+<pre tabindex="0"><code>Theorem surjective_pairing : forall (p : natprod),
+  p = (fst p, snd p).
+Proof.
+  intros p.
+  destruct p as [n m].         // (n,m) = (fst (n,m), snd (n,m))
+  reflexivity.  Qed.
+</code></pre><p>练习 1星</p>
+<p>猜想simpl应该是根据前面定义过的 defination来化简得？</p>
+<pre tabindex="0"><code>Theorem snd_fst_is_swap : forall (p : natprod),
+  (snd p, fst p) = swap_pair p.
+Proof.
+  intros p.
+  destruct p as [n m].          //  (snd (n, m), fst (n, m)) = swap_pair (n, m)
+  simpl.                        //  (m, n) = (m, n)
+  reflexivity.
+Qed.
+</code></pre><p>练习 1星</p>
+<pre tabindex="0"><code>Theorem fst_swap_is_snd : forall (p : natprod),
+  fst (swap_pair p) = snd p.
+Proof.
+  intros p.
+  destruct p as [n m].
+  simpl.
+  reflexivity.
+Qed.
+</code></pre><h2 id="32-数值列表"><strong>3.2 数值列表</strong></h2>
+<p>一个列表要么是空的，要么就是由一个数和另一个列表组成的序对</p>
+<pre tabindex="0"><code>Inductive natlist : Type :=
+  | nil  : natlist
+  | cons (n : nat) (1 : natlist).
+</code></pre><p>如下是一个三元素的列表</p>
+<pre tabindex="0"><code>Definition mylist := cons 1 (cons 2 (cons 3 nil)).
+</code></pre><p>声明一些符号简化一下</p>
+<p>注意 + 号比 :: 结合符号优先级更高，会先结合</p>
+<pre tabindex="0"><code>Notation &#34;x :: l&#34; := (cons x l)
+                     (at level 60, right associativity).
+Notation &#34;[ ]&#34; := nil.
+Notation &#34;[ x ; .. ; y ]&#34; := (cons x .. (cons y nil) ..).
+Notation &#34;x ++ y&#34; := (app x y)
+                     (right associativity, at level 60).
+</code></pre><p><strong>接下来是一些构造和操作列表的函数</strong></p>
+<p>返回一个长度为 count，每个元素都是 n 的列表</p>
+<pre tabindex="0"><code>Fixpoint repeat (n count : nat) : natlist :=
+  match count with
+  | O =&gt; nil
+  | S count&#39; =&gt; n :: (repeat n count&#39;)
+  end.
+</code></pre><p>计算列表的长度</p>
+<pre tabindex="0"><code>Fixpoint length (l:natlist) : nat :=
+  match l with
+  | nil =&gt; O
+  | n :: t =&gt; S (length t)
+  end.
+</code></pre><p>把两个列表联接起来</p>
+<pre tabindex="0"><code>Fixpoint app (l1 l2 : natlist) : natlist :=
+  match l1 with
+  | nil   =&gt; l2
+  | h :: t =&gt; h :: (app t l2)
+  end.
+</code></pre><p>返回列表第一个元素</p>
+<p>由于空表没有表头，所以传入了default</p>
+<pre tabindex="0"><code>Definition hd (default:nat) (l:natlist) : nat :=
+  match l with
+  | nil =&gt; default
+  | h :: t =&gt; h
+  end.
+</code></pre><p>返回列表除去第一个元素以外的部分</p>
+<pre tabindex="0"><code>Definition tl (l:natlist) : natlist :=
+  match l with
+  | nil =&gt; nil
+  | h :: t =&gt; t
+  end.
+</code></pre><p><strong>下面进行一些列表练习</strong></p>
+<p>去除列表里的0</p>
+<pre tabindex="0"><code>Fixpoint nonzeros (l:natlist) : natlist :=
+  match l with
+  | nil =&gt; []
+  | 0 :: t =&gt; nonzeros t
+  | h :: t =&gt; h :: (nonzeros t)
+  end.
+</code></pre><p>返回列表中的奇数</p>
+<p>if then else 的形式不用打箭头</p>
+<pre tabindex="0"><code>Fixpoint oddmembers (l:natlist) : natlist :=
+  match l with
+  | nil =&gt; []
+  | h :: t =&gt;
+      if oddb h then h :: (oddmembers t)
+      else oddmembers t
+  end.
+</code></pre><p>从两个列表中交替地取出元素并合并为一个列表</p>
+<pre tabindex="0"><code>Fixpoint alternate (l1 l2 : natlist) : natlist :=
+  match l1 with
+  | nil =&gt; l2
+  | h1 :: t1 =&gt; match l2 with
+            | nil =&gt; l1
+            | h2 :: t2 =&gt; h1 :: h2 :: (alternate t1 t2)
+            end
+  end.
+</code></pre><h2 id="33-口袋"><strong>3.3 口袋</strong></h2>
+<p>bag（或者叫 multiset 多重集）类似于集合，只是其中每个元素都能出现不止一次</p>
+<p>口袋的一种可行的表示是列表</p>
+<pre tabindex="0"><code>Definition bag := natlist.
+</code></pre><p><strong>下面为口袋设定一些函数</strong></p>
+<p>计算出现此处</p>
+<pre tabindex="0"><code>Fixpoint count (v:nat) (s:bag) : nat :=
+  match s with
+  | [] =&gt; O
+  | h :: t =&gt;
+      if beq_nat v h then S (count v t)
+      else count v t
+  end.
+</code></pre><p>append</p>
+<pre tabindex="0"><code>Definition sum : bag -&gt; bag -&gt; bag := app.
+</code></pre><p>number append list</p>
+<pre tabindex="0"><code>Definition add : nat -&gt; bag -&gt; bag := cons.
+</code></pre><p>member</p>
+<pre tabindex="0"><code>Definition member (v:nat) (s:bag) : bool :=
+  if beq_nat O (count v s) then false
+  else true.
+</code></pre><p>去除一个跟v相同的列表元素</p>
+<pre tabindex="0"><code>Fixpoint remove_one (v:nat) (s:bag) : bag :=
+  match s with
+  | nil =&gt; nil
+  | h :: t =&gt;
+              if beq_nat v h then t
+              else h :: remove_one v t
+  end.
+</code></pre><p>去除所有跟v相同的列表元素</p>
+<pre tabindex="0"><code>Fixpoint remove_all (v:nat) (s:bag) : bag :=
+  match s with
+  | [] =&gt; []
+  | h :: t =&gt;
+      if beq_nat v h then (remove_all v t)
+      else h :: (remove_all v t)
+  end.
+</code></pre><p>判断子集</p>
+<p>逻辑是一旦遇到s1中有不在s2中的元素就 return false</p>
+<p>记得判断之后要remove_one！</p>
+<pre tabindex="0"><code>Fixpoint subset (s1:bag) (s2:bag) : bool :=
+  match s1 with
+  | [] =&gt; true
+  | h :: t =&gt;
+      if beq_nat O (count h s2) then false
+      else subset t (remove_one h s2)
+  end.
+
+Example test_subset2:              subset [1;2;2] [2;1;4;1] = false.
+Proof. simpl. reflexivity. Qed.
+</code></pre><h2 id="34-有关列表的论证"><strong>3.4 有关列表的论证</strong></h2>
+<p><strong>基于化简的证明</strong></p>
+<pre tabindex="0"><code>Theorem nil_app : forall l:natlist,
+  [] ++ l = l.
+Proof. reflexivity. Qed.
+</code></pre><p><strong>基于分情况的证明</strong></p>
+<pre tabindex="0"><code>Theorem tl_length_pred : forall l:natlist,
+  pred (length l) = length (tl l).
+Proof.
+  intros l. destruct l as [| n l&#39;].
+  - reflexivity.
+  - reflexivity.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211222170521.png" alt=""></p>
+<p><strong>列表的归纳证明</strong></p>
+<p>列表可以用 nil 或者将 cons 应用到一个自然数和另一个列表上来构造</p>
+<p>一个列表要么是 nil， 要么就是 cons 应用到某个数字和某个更小的列表上</p>
+<ul>
+<li>首先，证明当 l 为 nil 时，p l 成立</li>
+<li>然后，证明当 l 为 cons n l&rsquo; 时 P l 成立，其中 n 是某个自然数，l&rsquo; 是某个更小的列表，假设 P l&rsquo; 成立</li>
+</ul>
+<p><strong>例子：</strong></p>
+<pre tabindex="0"><code>Theorem app_assoc : forall l1 l2 l3 : natlist,
+  (l1 ++ l2) ++ l3 = l1 ++ (l2 ++ l3).
+Proof.
+  intros l1 l2 l3. induction l1 as [| n l1&#39; IHl1&#39;].  // IHl1&#39; : (l1&#39; ++ l2) ++ l3 = l1&#39; ++ l2 ++ l3
+  - (* l1 = nil *)
+    reflexivity.
+  - (* l1 = cons n l1&#39; *)                   //  ((n :: l1&#39;) ++ l2) ++ l3 = (n :: l1&#39;) ++ l2 ++ l3
+    simpl.                                  //  n :: (l1&#39; ++ l2) ++ l3 = n :: l1&#39; ++ l2 ++ l3
+    rewrite -&gt; IHl1&#39;.                       //  n :: l1&#39; ++ l2 ++ l3 = n :: l1&#39; ++ l2 ++ l3
+    reflexivity.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211222171052.png" alt=""></p>
+<p><strong>反转列表：</strong></p>
+<h1 id="四poly"><strong>四、POLY</strong></h1>
+<h1 id="五tacitcs"><strong>五、TACITCS</strong></h1>
+<h2 id="51-apply"><strong>5.1 Apply</strong></h2>
+<pre tabindex="0"><code>Theorem silly1 : forall (n m o p : nat),
+     n = m  -&gt;
+     [n;o] = [n;p] -&gt;
+     [n;o] = [m;p].
+Proof.
+  intros n m o p eq1 eq2.
+  rewrite &lt;- eq1.
+  apply eq2.  Qed.
+</code></pre><p>当我们在以下证明中执行 apply eq2 时，eq2 中的通用变量 q 会以 n 实例化，而 r 会以 m 实例化</p>
+<pre tabindex="0"><code>Theorem silly2 : forall (n m o p : nat),
+     n = m  -&gt;
+     (forall (q r : nat), q = r -&gt; [q;o] = [r;p]) -&gt;
+     [n;o] = [m;p].
+Proof.
+  intros n m o p eq1 eq2.
+  apply eq2. apply eq1.  Qed.
+</code></pre><pre tabindex="0"><code>Theorem silly2a : forall (n m : nat),
+     (n,n) = (m,m)  -&gt;
+     (forall (q r : nat), (q,q) = (r,r) -&gt; [q] = [r]) -&gt;
+     [n] = [m].
+Proof.
+  intros n m eq1 eq2.
+  apply eq2. apply eq1.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226125641.png" alt=""></p>
+<p>下面这里没懂为什么是apply h0</p>
+<pre tabindex="0"><code>Theorem silly_ex :
+     (forall n, evenb n = true -&gt; oddb (S n) = true) -&gt;
+     oddb 3 = true -&gt;
+     evenb 4 = true.
+Proof.
+  intros H H0.
+  apply H0.
+Qed.
+</code></pre><p>当等式的左右两边互换后，apply 就无法起效了</p>
+<p>我们无法直接使用 apply，不过我们可以用 <strong>symmetry 策略</strong>，它会交换证明目标中等式的左右两边</p>
+<pre tabindex="0"><code>Theorem silly3_firsttry : forall (n : nat),
+     true = beq_nat n 5  -&gt;
+     beq_nat (S (S n)) 7 = true.
+Proof.
+  intros n H.
+  symmetry.
+  simpl.
+  apply H.  Qed.
+</code></pre><p><strong>Apply with</strong></p>
+<p>等式的传递性！<strong>想要证明等式的传递性，但等式两边并非自然数，就用trans_eq这个定理！</strong></p>
+<p>比如我们可以把以下自然数等式的传递性，推广到数列的传递性</p>
+<pre tabindex="0"><code>Theorem trans_eq : forall (X:Type) (n m o : X),
+  n = m -&gt; m = o -&gt; n = o.
+Proof.
+  intros X n m o eq1 eq2. rewrite -&gt; eq1. rewrite -&gt; eq2.
+  reflexivity.  Qed.
+</code></pre><p>只需传递一个数列参数，apply with 的参数是想要把结论的右式替换为的那个，比如这里是想把结论里的[e:f]替换为[c:d]</p>
+<pre tabindex="0"><code>Example trans_eq_example&#39; : forall (a b c d e f : nat),
+     [a;b] = [c;d] -&gt;
+     [c;d] = [e;f] -&gt;
+     [a;b] = [e;f].
+Proof.
+  intros a b c d e f eq1 eq2.
+  apply trans_eq with [c;d].
+  apply eq1. apply eq2.   Qed.
+</code></pre><p>一个分别apply的过程</p>
+<pre tabindex="0"><code>Example trans_eq_exercise : forall (n m o p : nat),
+     m = (minustwo o) -&gt;
+     (n + p) = m -&gt;
+     (n + p) = (minustwo o).
+Proof.
+  intros n m o p H H0.
+  apply trans_eq with m.
+  apply H0. apply H.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226131737.png" alt=""></p>
+<h2 id="52-injection"><strong>5.2 Injection</strong></h2>
+<p>利用单射性直接从条件中推导出更多的隐含条件，并且apply</p>
+<p>关键词：injection inversion</p>
+<p>使用 Basics.v 中的 pred 函数来证明 S 的单射性</p>
+<pre tabindex="0"><code>Theorem S_injective : ∀ (n m : nat),
+  S n = S m →
+  n = m.
+Proof.
+  intros n m H1.
+  assert (H2: n = pred (S n)). { reflexivity. }
+  rewrite H2. rewrite H1. reflexivity.
+Qed.
+</code></pre><p>也可以通过 <strong>inversion H</strong>，我们要求 Coq 生成它可以从 H 推断出的所有方程作为额外的假设，随着它的进行替换目标中的变量。在本示例中，这相当于添加一个新的假设 H1 : n = m 并将目标中的 n 替换为 m</p>
+<pre tabindex="0"><code>Theorem S_injective : forall (n m : nat),
+  S n = S m -&gt;
+  n = m.
+Proof.
+  intros n m H.
+  inversion H.
+  reflexivity.
+Qed.
+</code></pre><p><strong>inversion exercise 1</strong></p>
+<pre tabindex="0"><code>Theorem inversion_ex1 : forall (n m o : nat),
+  [n; m] = [o; o] -&gt;
+  [n] = [m].
+Proof.
+  intros n m o H.
+  inversion H.
+  rewrite &lt;- H1.
+  reflexivity. Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226133646.png" alt=""></p>
+<p><strong>inversion exercise 2</strong></p>
+<p>inversion H as [Hnm]</p>
+<pre tabindex="0"><code>Theorem inversion_ex2 : forall (n m : nat),
+  [n] = [m] -&gt;
+  n = m.
+Proof.
+  intros n m H. inversion H. reflexivity.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226133758.png" alt=""></p>
+<p><strong>inversion exercise 3</strong></p>
+<pre tabindex="0"><code>Example inversion_ex3 : forall (X : Type) (x y z w : X) (l j : list X),
+  x :: y :: l = w :: z :: j -&gt;
+  x :: l = z :: j -&gt;
+  x = y.
+Proof.
+  intros X x y z w l j H H0.
+  inversion H.
+  inversion H0.
+  apply trans_eq with x.
+  symmetry.
+  apply H2.
+  apply H5.
+Qed.
+</code></pre><p>从 H 可以推出 H2 H3 H4</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226133932.png" alt=""></p>
+<p>从 H0 可以推出 H5 H6</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226134030.png" alt=""></p>
+<p>这个apply with没看懂，我带入z y w都不太对</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226134412.png" alt=""></p>
+<p>单射的逆形式</p>
+<pre tabindex="0"><code>Theorem f_equal : forall (A B : Type) (f: A -&gt; B) (x y: A),
+  x = y -&gt; f x = f y.
+Proof.
+  intros A B f x y eq.
+  rewrite eq.
+  reflexivity.  Qed.
+</code></pre><h2 id="53-disjointness"><strong>5.3 Disjointness</strong></h2>
+<p>不相交性</p>
+<p>以不同构造函数（如 O 和 S，true，false）开头的两个术语永远不可能相等</p>
+<p><strong>desciminate 策略</strong>用于涉及不同构造函数之间相等的假设（例如，S n = O），它立即解决当前目标</p>
+<pre tabindex="0"><code>Theorem beq_nat_0_l : forall n,
+   beq_nat 0 n = true -&gt; n = 0.
+Proof.
+  intros n.
+  destruct n as [| n].
+  - (* n = 0 *) reflexivity.
+  - (* n = S n&#39; *)
+    simpl.
+    intros H.
+    discriminate H. Qed.
+</code></pre><p>对于这道例题，我的理解是，条件是 0\geq n，结论是 n=0，因此我们要做的就是排除掉 n&gt;0 的情况，也就是证明这种情况是错的，先用 destruct 把两种情况分开，证明第一个是对的，第二个是错的</p>
+<p>如果我们对这个假设使用 <strong>discriminate</strong> ， Coq 便会确认我们当前正在证明的目标不可行，并同时移除它，不再考虑</p>
+<p>另外我发现，injection和descriminate策略都可以用 <strong>inversion</strong> 关键字代替</p>
+<p>discriminate exercise 1</p>
+<p>下面是<strong>爆炸原理</strong>的一个实例，<strong>矛盾的前提会推出任何东西， 甚至是假命题</strong>！</p>
+<pre tabindex="0"><code>Theorem inversion_ex4 : forall (n : nat),
+  S n = O -&gt;
+  2 + 2 = 5.
+Proof.
+  intros n H. discriminate H. Qed.
+</code></pre><pre tabindex="0"><code>Theorem inversion_ex5 : forall (n m : nat),
+  false = true -&gt;
+  [n] = [m].
+Proof.
+  intros n m H. discriminate H. Qed.
+</code></pre><p>discriminate exercise 2</p>
+<pre tabindex="0"><code>Example inversion_ex6 : forall (X : Type)
+                          (x y z : X) (l j : list X),
+  x :: y :: l = [] -&gt;
+  y :: l = z :: j -&gt;
+  x = z.
+Proof.
+  intros X x y z l j H H0.
+  discriminate H.
+Qed.
+</code></pre><h2 id="54-对假设使用策略"><strong>5.4 对假设使用策略</strong></h2>
+<p>默认情况下，大部分策略会作用于目标公式并保持上下文不变。其实也可以对假设进行变体</p>
+<pre tabindex="0"><code>Theorem S_inj : forall (n m : nat) (b : bool),
+     beq_nat (S n) (S m) = b  -&gt;
+     beq_nat n m = b.
+Proof.
+  intros n m b H.
+  simpl in H.           //对条件进行化简，simpl可以把S n变成n
+  rewrite H.
+  reflexivity.  Qed.
+</code></pre><pre tabindex="0"><code>Theorem silly3&#39; : forall (n : nat),
+  (beq_nat n 5 = true -&gt; beq_nat (S (S n)) 7 = true) -&gt;
+  true = beq_nat n 5  -&gt;
+  true = beq_nat (S (S n)) 7.
+Proof.
+  intros n eq H.
+  symmetry in H.
+  apply eq in H.
+  symmetry in H.
+  apply H.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220212111457.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220212111502.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220212111454.png" alt=""></p>
+<h2 id="55-对假设进行归纳"><strong>5.5 对假设进行归纳</strong></h2>
+<p>好像是用来证明有两个参数的函数的单射性</p>
+<p>先induction再destruct，真是看不懂。。。</p>
+<p><strong>例题一：</strong></p>
+<pre tabindex="0"><code>Theorem plus_n_n_injective : forall n m,
+     n + n = m + m -&gt;
+     n = m.
+Proof.
+  intros n. induction n as [| n&#39;].
+  - (* n = O *) intros m H.
+    destruct m as [|m&#39;].
+    + (* m = O *)  reflexivity.
+    + (* m = S m&#39; *) inversion H.
+  - (* n = S n&#39; *) intros m H.
+    destruct m as [|m&#39;].
+    + (* m = O *)  inversion H.
+    + (* m = S m&#39; *)
+      apply f_equal.
+      apply IHn&#39;.
+      simpl in H.
+      rewrite &lt;- plus_n_Sm in H.
+      rewrite &lt;- plus_n_Sm in H.
+      inversion H.
+      reflexivity.
+Qed.
+</code></pre><ol>
+<li>
+<p>这里用inversion是个啥意思，万物都可inversion</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220212201235.png" alt=""></p>
+</li>
+<li>
+<p>要S n&rsquo; = S m&rsquo; 变成n&rsquo; = m&rsquo;，这里还用的不是simpl，而是 f_equal.</p>
+</li>
+<li>
+<p>从 S (S (n&rsquo; + n&rsquo;)) = S (S (m&rsquo; + m&rsquo;)) 得到n&rsquo; + n&rsquo; = m&rsquo; + m&rsquo;，直接用inversion</p>
+</li>
+</ol>
+<p><strong>例题二：</strong></p>
+<pre tabindex="0"><code>Theorem double_injective : forall n m,
+     double n = double m -&gt;
+     n = m.
+Proof.
+  intros n. induction n as [| n&#39;].
+  - (* n = O *) simpl. intros m eq. destruct m as [| m&#39;].
+    + (* m = O *) reflexivity.
+    + (* m = S m&#39; *) inversion eq.
+
+  - (* n = S n&#39; *) simpl.
+    intros m eq.
+    destruct m as [| m&#39;].
+    + (* m = O *) simpl.
+      inversion eq.
+    + (* m = S m&#39; *)
+      apply f_equal.
+      apply IHn&#39;. simpl in eq. inversion eq. reflexivity. Qed.
+</code></pre><ol>
+<li>总的套路是先intros n，induction n，再在每个分类里 intros m H，destruct m</li>
+<li>apply的作用：已知 条件 → 结果，和证明结果，可以推出条件</li>
+</ol>
+<p><strong>例题三：</strong></p>
+<p>套路是一样的，一定要记住在第四个part的证明里用到IHn！！一定要记住</p>
+<p>一眼能看出来的结论用inversion试试</p>
+<pre tabindex="0"><code>Theorem beq_nat_true : forall n m,
+    beq_nat n m = true -&gt; n = m.
+Proof.
+  intro n.
+  induction n as [|n&#39; IHn].
+  - intros m H. destruct m as [| m&#39;].
+    + reflexivity.
+    + simpl in H. inversion H.
+  - intros m H. destruct m as [| m&#39;].
+    + inversion H.
+    + apply f_equal.
+      inversion H.
+      apply IHn.   //一定要记住在第四个part的证明里用到IHn！！一定要记住
+      apply H1.
+Qed.
+</code></pre><p><strong>例题四：</strong></p>
+<p>看不懂</p>
+<pre tabindex="0"><code>Theorem nth_error_after_last: forall (n : nat) (X : Type) (l : list X),
+     length l = n -&gt;
+     nth_error l n = None.
+Proof.
+  intros n X l H.
+  generalize dependent n.
+  induction l as [|m&#39; l&#39; IHl].
+  - (* l = nil *) reflexivity.
+  - (* l = m&#39; :: l&#39; *)
+    intros n H.
+    destruct n as [|n&#39;].
+    + (* n = O *) inversion H.
+    + (* n = S n&#39; *)
+      simpl. inversion H. apply IHl.
+      reflexivity.
+Qed.
+</code></pre><h2 id="56-unfold"><strong>5.6 Unfold</strong></h2>
+<p>有时我们需要手动展开由定义引入的名称，以便我们可以操纵它表示的表达式</p>
+<pre tabindex="0"><code>Lemma square_mult : forall n m, square (n * m) = square n * square m.
+Proof.
+  intros n m.
+  simpl.
+  unfold square.           // n * m * (n * m) = n * n * (m * m)
+  rewrite mult_assoc.      // n * m * n * m = n * n * (m * m)
+  rewrite my_assoc.        // n * n * m * m = n * n * (m * m)
+  rewrite mult_assoc.      // n * n * m * m = n * n * m * m
+  reflexivity.
+Qed.
+
+其中
+Theorem my_assoc : forall n m:nat, n * m * n = n * n * m.
+Proof.
+  intros n m.
+  rewrite mult_comm.
+  rewrite mult_assoc.
+  reflexivity.
+Qed.
+</code></pre><p>记住一下</p>
+<p>mult_assoc  n * (m * p) = n * m * p</p>
+<p>mult_comm  m * n = n * m</p>
+<p><strong>下一个例子</strong></p>
+<p>对于用模式匹配定义的常数函数</p>
+<pre tabindex="0"><code>Definition bar x :=
+  match x with
+  | O =&gt; 5
+  | S _ =&gt; 5
+  end.
+</code></pre><p>要想证明关于它的函数有两种方法</p>
+<p>一种是用destruct分成两种情况，可以发现simpl也可以起到局部unfold的作用</p>
+<pre tabindex="0"><code>Fact silly_fact_2 : forall m, bar m + 1 = bar (m + 1) + 1.
+Proof.
+  intros m.
+  destruct m.
+  - simpl. reflexivity.
+  - simpl. reflexivity.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220213095911.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220213095924.png" alt=""></p>
+<p>一种是用unfold展开</p>
+<pre tabindex="0"><code>Fact silly_fact_2&#39; : forall m, bar m + 1 = bar (m + 1) + 1.
+Proof.
+  intros m.
+  unfold bar.
+  destruct m.
+  - reflexivity.
+  - reflexivity.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226155037.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226155113.png" alt=""></p>
+<h2 id="57-对复合表达式使用-destruct"><strong>5.7 对复合表达式使用 destruct</strong></h2>
+<p>对于if else的情况可以用destruct来分解</p>
+<pre tabindex="0"><code>Definition sillyfun (n : nat) : bool :=
+  if beq_nat n 3 then false
+  else if beq_nat n 5 then false
+  else false.
+
+Theorem sillyfun_false : forall (n : nat),
+  sillyfun n = false.
+Proof.
+  intros n. unfold sillyfun.
+  destruct (beq_nat n 3).
+    - reflexivity.
+    - destruct (beq_nat n 5).
+      + reflexivity.
+      + reflexivity.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226155418.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220213100355.png" alt=""></p>
+<p>下一题，看不懂了</p>
+<pre tabindex="0"><code>Definition sillyfun1 (n : nat) : bool :=
+  if beq_nat n 3 then true
+  else if beq_nat n 5 then true
+  else false.
+
+Theorem sillyfun1_odd : forall (n : nat),
+     sillyfun1 n = true -&gt;
+     oddb n = true.
+Proof.
+  intros n eq. unfold sillyfun1 in eq.
+  destruct (beq_nat n 3) eqn:Heqe3.
+    - (* e3 = true *) apply beq_nat_true in Heqe3.
+      rewrite -&gt; Heqe3. reflexivity.
+    - destruct (beq_nat n 5) eqn:Heqe5.
+        + apply beq_nat_true in Heqe5.
+          rewrite -&gt; Heqe5. reflexivity.
+        + discriminate eq.  Qed.
+</code></pre><p>下一个练习，完全tm看不懂</p>
+<p>更新：看懂了，不难，主要就是布尔和函数有各种情况要分！</p>
+<pre tabindex="0"><code>Theorem bool_fn_applied_thrice :
+  forall (f : bool -&gt; bool) (b : bool),
+  f (f (f b)) = f b.
+Proof.
+  intros f b.
+  destruct b.
+  - destruct (f true) eqn:H1.
+    + rewrite -&gt; H1.  apply H1.
+    + destruct (f false) eqn:H2.
+      * apply H1.
+      * apply H2.
+  - destruct (f false) eqn:H3.
+    + destruct (f true) eqn:H4.
+      * apply H4.
+      * apply H3.
+    + rewrite -&gt; H3. apply H3.
+Qed.
+</code></pre><h2 id="本章可用的定理"><strong>本章可用的定理</strong></h2>
+<pre tabindex="0"><code>f_equal : x = y -&gt; f x = f y
+trans_eq :  n = m -&gt; m = o -&gt; n = o.
+beq_nat_true : beq_nat n 3 = true → n=3
+</code></pre><h1 id="六logic"><strong>六、LOGIC</strong></h1>
+<h2 id="62-逻辑连接词"><strong>6.2 逻辑连接词</strong></h2>
+<h3 id="合取"><strong>合取</strong></h3>
+<p>写作 A ∧ B，表示一个 A 与 B 均为真的断言</p>
+<pre tabindex="0"><code>Example and_example : 3 + 4 = 7 ∧ 2 × 2 = 4.
+</code></pre><p>证明合取的命题通常使用 <strong>split 策略</strong>。它会分别为语句的两部分生成两个子目标</p>
+<pre tabindex="0"><code>Proof.
+  split.
+  - (* 3 + 4 = 7 *) reflexivity.
+  - (* 2 * 2 = 4 *) reflexivity.
+Qed.
+</code></pre><p>由于按照前提对某个目标应用定理会产生与该定理的前提一样多的子目标</p>
+<p>因此我们可以应用 and_intro 来达到和 split 一样的效果。</p>
+<pre tabindex="0"><code>Lemma and_intro : forall A B : Prop, A -&gt; B -&gt; A /\ B.
+Proof.
+  intros A B HA HB. split.
+  - apply HA.
+  - apply HB.
+Qed.
+
+Example and_example&#39; : 3 + 4 = 7 /\ 2 * 2 = 4.
+Proof.
+  apply and_intro.
+  - (* 3 + 4 = 7 *) reflexivity.
+  - (* 2 + 2 = 4 *) reflexivity.
+Qed.
+</code></pre><p>对于任意命题 A 和 B，如果我们假设 A 为真且 B 为真， 那么就能得出 A ∧ B 也为真的结论</p>
+<pre tabindex="0"><code>Lemma and_intro : forall A B : Prop, A -&gt; B -&gt; A /\ B.
+Proof.
+  intros A B HA HB. split.
+  - apply HA.
+  - apply HB.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211223153913.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211223153924.png" alt=""></p>
+<pre tabindex="0"><code>Example and_exercise :
+  forall n m : nat, n + m = 0 -&gt; n = 0 /\ m = 0.
+Proof.
+  intros [][].
+  - (* n = O, m = O *) apply and_intro. reflexivity.
+  - (* n = O, m = S m&#39; *) apply and_intro. reflexivity.
+  - (* n = S n&#39;, m = O *) split.
+    + inversion H.
+    + inversion H.
+  - (* n = S n&#39;, m = S m&#39; *) split.
+    + inversion H.
+    + inversion H.
+Qed.
+</code></pre><p>以上就是证明合取语句的方法。要反过来使用，即用合取前提来帮助证明时，采用 <strong>destruct 策略</strong></p>
+<pre tabindex="0"><code>Lemma and_example2 :
+  forall n m : nat, n = 0 /\ m = 0 -&gt; n + m = 0.
+Proof.
+  intros n m [Hn Hm].
+  rewrite -&gt; Hn. rewrite -&gt; Hm.
+  reflexivity.
+Qed.
+</code></pre><p>合取语句例子</p>
+<pre tabindex="0"><code>Lemma and_example3 :
+  forall n m : nat, n + m = 0 -&gt; n * m = 0.
+Proof.
+  intros n m H.
+  assert (H&#39; : n = 0 /\ m = 0).
+  { apply and_exercise. apply H. }
+  destruct H&#39; as [Hn Hm].
+  rewrite Hn. reflexivity.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211223160036.png" alt=""></p>
+<p>合取交换律</p>
+<pre tabindex="0"><code>Theorem and_commut : forall P Q : Prop,
+  P /\ Q -&gt; Q /\ P.
+Proof.
+  intros P Q [HP HQ].
+  split.
+    - (* left *) apply HQ.
+    - (* right *) apply HP.  Qed.
+</code></pre><p>合取结合律</p>
+<pre tabindex="0"><code>Theorem and_assoc : forall P Q R : Prop,
+  P /\ (Q /\ R) -&gt; (P /\ Q) /\ R.
+Proof.
+  intros P Q R [HP [HQ HR]].
+  split.
+  - (* P /\ Q *) split.
+    + apply HP.
+    + apply HQ.
+  - (* /\ R *) apply HR.
+Qed.
+</code></pre><p><strong>练习</strong></p>
+<p>没看懂</p>
+<pre tabindex="0"><code>Example and_exercise :
+  forall n m : nat, n + m = 0 -&gt; n = 0 /\ m = 0.
+Proof.
+  intros [][].
+  - (* n = O, m = O *) apply and_intro. reflexivity.
+  - (* n = O, m = S m&#39; *) apply and_intro. reflexivity.
+  - (* n = S n&#39;, m = O *) split.
+    + inversion H.
+    + reflexivity.
+  - (* n = S n&#39;, m = S m&#39; *) split.
+    + inversion H.
+    + inversion H.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211223154414.png" alt=""></p>
+<p>自己改了下，能看懂了</p>
+<pre tabindex="0"><code>Example and_exercise :
+  forall n m : nat, n + m = 0 -&gt; n = 0 /\ m = 0.
+Proof.
+  intros [][].
+  - (* n = O, m = O *) split.  + reflexivity. + reflexivity.
+  - (* n = O, m = S m&#39; *) split. + reflexivity. + inversion H.
+  - (* n = S n&#39;, m = O *) split.
+    + inversion H.
+    + inversion H.
+  - (* n = S n&#39;, m = S m&#39; *) split.
+    + inversion H.
+    + inversion H.
+Qed.
+</code></pre><h3 id="析取"><strong>析取</strong></h3>
+<p>若 A 或 B 二者之一为真，则 A ∨ B 为真</p>
+<p>可以显式地通过 <strong>destruct</strong> 或隐式地通过 intros 模式来拆分</p>
+<pre tabindex="0"><code>Lemma or_example :
+  forall n m : nat, n = 0 \/ m = 0 -&gt; n * m = 0.
+Proof.
+  intros n m [Hn | Hm].
+  - (* Here, [n = 0] *)
+    rewrite Hn. reflexivity.
+  - (* Here, [m = 0] *)
+    rewrite Hm. rewrite &lt;- mult_n_O.
+    reflexivity.
+Qed.
+</code></pre><p>要证明某个析取命题成立，只需证明其任意一边的命题成立就够了</p>
+<p><strong>left 和 right 策略</strong>来选取命题</p>
+<pre tabindex="0"><code>Lemma or_intro : forall A B : Prop, A -&gt; A \/ B.
+Proof.
+  intros A B H.
+  left.
+  apply H.
+Qed.
+</code></pre><p>因为析取是只要一边满足就行了，这里用left和right来指明满足的是哪一边</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226182719.png" alt=""></p>
+<pre tabindex="0"><code>Lemma zero_or_succ :
+  forall n : nat, n = 0 \/ n = S (pred n).
+Proof.
+  intros [|n].
+  - left. reflexivity.
+  - right. reflexivity.
+Qed.
+</code></pre><pre tabindex="0"><code>Lemma mult_eq_0 :
+  forall n m, n * m = 0 -&gt; n = 0 \/ m = 0.
+Proof.
+  intros [|n].
+  - left. reflexivity.
+  - right. destruct m as [|m&#39;].
+    + reflexivity.
+    + inversion H.
+Qed.
+</code></pre><p>下面这个完全看不懂，inversion是什么，保留疑问</p>
+<pre tabindex="0"><code>Theorem or_commut : forall P Q : Prop,kkkkkkkkkkkkkkkkkkkkkk
+  P \/ Q  -&gt; Q \/ P.
+Proof.
+  intros P Q H.
+  inversion H.
+  - right. apply H0.
+  - left. apply H0.
+Qed.
+</code></pre><h3 id="假命题与否定"><strong>假命题与否定</strong></h3>
+<p>将 ¬ P 定义为 P → False，而 False 是在标准库中特别定义的矛盾性命题</p>
+<p>由于 False 是个矛盾性命题，因此爆炸原理对它也适用</p>
+<p>如果我们让 False 进入到了证明的上下文中，可以对它使用 destruct 来完成任何待证目标</p>
+<p>（咱就是完全没看懂）</p>
+<pre tabindex="0"><code>Theorem ex_falso_quodlibet : forall (P:Prop),
+  False -&gt; P.
+Proof.
+  intros P contra.
+  destruct contra.  Qed.
+</code></pre><p><strong>练习</strong></p>
+<pre tabindex="0"><code>Fact not_implies_our_not : forall (P:Prop),
+  ~ P -&gt; (forall (Q:Prop), P -&gt; Q).
+Proof.
+  intros P H Q H0.
+  destruct H.
+  apply H0.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211223163634.png" alt=""></p>
+<p>咱就是说没看懂啊，为什么destruct一下Q就变成P了</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226163338.png" alt=""></p>
+<p><strong>练习2</strong></p>
+<p>unfold not 可以把 ~P 改写为 P -&gt; false</p>
+<pre tabindex="0"><code>Theorem zero_not_one : ~(0 = 1).
+Proof.
+  unfold not.
+  intros H.
+  discriminate H.
+Qed.
+</code></pre><p><strong>练习3</strong></p>
+<p>过程倒是都看懂了，就是不知道为什么这么就证完了？</p>
+<pre tabindex="0"><code>Theorem contradiction_implies_anything : forall P Q : Prop,
+  (P /\ ~P) -&gt; Q.
+Proof.
+  intros P Q [HP HNA].
+  unfold not in HNA.
+  apply HNA in HP.
+  destruct HP.
+  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226165114.png" alt=""></p>
+<p>不是要证明Q吗？没懂啊</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226165153.png" alt=""></p>
+<p><strong>练习4</strong></p>
+<p>大概看懂了就是没看懂 apply H0那一步</p>
+<pre tabindex="0"><code>Theorem double_neg : forall P : Prop,
+  P -&gt; ~~P.
+Proof.
+  intros P H.
+  unfold not.
+  intros H0.
+  apply H0.
+  apply H.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226165510.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226165523.png" alt=""></p>
+<p>apply是可以从结论推出条件吗？</p>
+<p><strong>练习5</strong></p>
+<p>这道题我自己做的哈哈啊哈，就根据右边的提示一步一步来就好</p>
+<pre tabindex="0"><code>Theorem contrapositive : forall (P Q : Prop),
+  (P -&gt; Q) -&gt; (~Q -&gt; ~P).
+Proof.
+  unfold not.
+  intros P Q H.
+  intros H1 H2.
+  apply H1.
+  apply H.
+  apply H2.
+Qed.
+</code></pre><p><strong>练习6</strong></p>
+<p>也是我自己做的，仿佛已经掌握了哈哈哈</p>
+<pre tabindex="0"><code>Theorem not_both_true_and_false : forall P : Prop,
+  ~ (P /\ ~P).
+Proof.
+  unfold not.
+  intros P.
+  intros [H1 H2].
+  apply H2.
+  apply H1.
+Qed.
+</code></pre><p><strong>练习7</strong></p>
+<p>补充：爆炸定理</p>
+<pre tabindex="0"><code>ex_falso_quodlibet
+     : forall P : Prop, False -&gt; P
+</code></pre><pre tabindex="0"><code>Theorem not_true_is_false : forall b : bool,
+  b &lt;&gt; true -&gt; b = false.
+Proof.
+  intros [] H.
+  - (* b = true *)
+    unfold not in H.
+    apply ex_falso_quodlibet.
+    apply H. reflexivity.
+  - (* b = false *)
+    reflexivity.
+Qed.
+</code></pre><p>由于用 ex_falso_quodlibet 推理十分常用，因此 Coq 提供了内建的策略 <strong>exfalso</strong></p>
+<pre tabindex="0"><code>Theorem not_true_is_false&#39; : forall b : bool,
+  b &lt;&gt; true -&gt; b = false.
+Proof.
+  intros [] H.
+  - (* b = true *)
+    unfold not in H.
+    exfalso.
+    apply H. reflexivity.
+  - (* b = false *) reflexivity.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226171700.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226171715.png" alt=""></p>
+<p>怎么化的啊？没懂again</p>
+<h3 id="真值"><strong>真值</strong></h3>
+<p>不常用，用到再来看</p>
+<h3 id="逻辑等价"><strong>逻辑等价</strong></h3>
+<p>当且仅当，充分必要条件</p>
+<pre tabindex="0"><code>Definition iff (P Q : Prop) := (P -&gt; Q) /\ (Q -&gt; P).
+
+Notation &#34;P &lt;-&gt; Q&#34; := (iff P Q)
+                      (at level 95, no associativity)
+                      : type_scope.
+</code></pre><p><strong>例题</strong></p>
+<pre tabindex="0"><code>Theorem iff_sym : forall P Q : Prop,
+  (P &lt;-&gt; Q) -&gt; (Q &lt;-&gt; P).
+Proof.
+  intros P Q [HAB HBA].
+  split.
+  - apply HBA.
+  - apply HAB.  Qed.
+</code></pre><p><strong>例题2</strong></p>
+<pre tabindex="0"><code>Lemma not_true_iff_false : forall b,
+  b &lt;&gt; true &lt;-&gt; b = false.
+Proof.
+  intros b.
+  split.
+  - apply not_true_is_false.
+  - unfold not.
+    intros H.
+    rewrite H.
+    intros H2.
+    inversion H2.
+Qed.
+</code></pre><p><strong>例题3</strong></p>
+<pre tabindex="0"><code>Theorem iff_trans : forall P Q R : Prop,
+  (P &lt;-&gt; Q) -&gt; (Q &lt;-&gt; R) -&gt; (P &lt;-&gt; R).
+Proof.
+  intros P Q R [H1 H2].
+  intros [H3 H4].
+  split.
+  - intros H5.
+    apply H3.
+    apply H1.
+    apply H5.
+  - intros H6.
+    apply H2.
+    apply H4.
+    apply H6.
+Qed.
+</code></pre><p><strong>例题4⭐️</strong></p>
+<p>一定要注意这种引入条件拆分的语法</p>
+<p>条件为 kkk P / (Q /\ R) ：intros [H1|[H2 H3]].</p>
+<p>条件为 (P / Q) /\ (P / R)：intros[[H1|H2] [H3|H4]].</p>
+<pre tabindex="0"><code>Theorem or_distributes_over_and : forall P Q R : Prop,
+  P \/ (Q /\ R) &lt;-&gt; (P \/ Q) /\ (P \/ R).
+Proof.
+  intros P Q R.
+  split.
+  - intros [H1|[H2 H3]].
+     + split.
+        * left. apply H1.
+        * left. apply H1.
+     + split.
+        * right. apply H2.
+        * right. apply H3.
+  - intros[[H1|H2] [H3|H4]].
+    +left. apply H1.
+    +left. apply H1.
+    +left. apply H3.
+    +right. split.
+      * apply H2.
+      * apply H4.
+Qed.
+</code></pre><h3 id="广集"><strong>广集</strong></h3>
+<p>导入库</p>
+<pre tabindex="0"><code>Require Import Coq.Setoids.Setoid.
+</code></pre><p>广集（Setoid）指配备了等价关系的集合，即满足自反性、对称性和传递性的关系</p>
+<p>当一个集合中的两个元素在这种关系上等价时，可以用 rewrite 将其中一个元素替换为另一个</p>
+<p>逻辑等价关系 ↔ 也满足自反性、对称性和传递性，因此若 P ↔ Q，那么我们可以用 rewrite 将 P 替换为 Q</p>
+<p>为了复习之前的知识先做两个证明</p>
+<pre tabindex="0"><code>Check mult_eq_0.
+Lemma mult_0 : forall n m, n * m = 0 &lt;-&gt; n = 0 \/ m = 0.
+Proof.
+  split.
+  - apply mult_eq_0.
+  - apply or_example.
+Qed.
+
+Lemma or_assoc :
+  forall P Q R : Prop, P \/ (Q \/ R) &lt;-&gt; (P \/ Q) \/ R.
+Proof.
+  intros P Q R. split.
+  - intros [H | [H | H]].
+    + left. left. apply H.
+    + left. right. apply H.
+    + right. apply H.
+  - intros [[H | H] | H].
+    + left. apply H.
+    + right. left. apply H.
+    + right. right. apply H.
+Qed.
+</code></pre><p>现在我们可以配合这两个证明和rewrite证明下面的东西</p>
+<pre tabindex="0"><code>Lemma mult_0_3 :
+  forall n m p, n * m * p = 0 &lt;-&gt; n = 0 \/ m = 0 \/ p = 0.
+Proof.
+  intros n m p.
+  rewrite mult_0. rewrite mult_0. rewrite or_assoc.
+  reflexivity.
+Qed.
+</code></pre><p>apply关系也可以用在逻辑蕴含上</p>
+<pre tabindex="0"><code>Lemma apply_iff_example :
+  forall n m : nat, n * m = 0 -&gt; n = 0 \/ m = 0.
+Proof.
+  intros n m H. apply mult_0. apply H.
+Qed.
+</code></pre><h3 id="存在量化"><strong>存在量化</strong></h3>
+<p><strong>exists t 策略</strong> 指出已经知道了使 P 成立的例子 t</p>
+<pre tabindex="0"><code>Lemma four_is_even : exists n : nat, 4 = n + n.
+Proof.
+  exists 2. reflexivity.
+Qed.
+</code></pre><p>找到例子t之后把所有出现的x换成t代入</p>
+<pre tabindex="0"><code>Theorem exists_example_2 : forall n,
+  (exists m, n = 4 + m) -&gt;
+  (exists o, n = 2 + o).
+Proof.
+  intros n [m Hm].    // Hm : n = 4 + m
+  exists (2 + m).     // n = 2 + (2 + m)
+  apply Hm.  Qed.
+</code></pre><p><strong>练习1</strong></p>
+<p><strong>destruct H as [x E] 可以用于存在假设！</strong></p>
+<pre tabindex="0"><code>Theorem dist_not_exists : forall (X:Type) (P : X -&gt; Prop),
+  (forall x, P x) -&gt; ~ (exists x, ~ P x).
+Proof.
+  intros X P H.
+  unfold not.
+  intros [x H2].
+  destruct H2.
+  apply H.
+Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226202215.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226202230.png" alt=""></p>
+<p><strong>练习2</strong></p>
+<pre tabindex="0"><code>Theorem dist_exists_or : forall (X:Type) (P Q : X -&gt; Prop),
+  (exists x, P x \/ Q x) &lt;-&gt; (exists x, P x) \/ (exists x, Q x).
+Proof.
+  intros X P Q.
+  split.
+  - intros [n [H1|H2]].
+    +left. exists n. apply H1.
+    +right. exists n. apply H2.
+  - intros [[n H1]|[n H2]].
+    +exists n. left. apply H1.
+    +exists n. right. apply H2.
+Qed.
+</code></pre><p>要注意的是 intro 的时候要对应！</p>
+<p>(exists x : X, P x / Q x)：[n [H1|H2]]</p>
+<p>(exists x : X, P x) / (exists x : X, Q x)：[[n H1]|[n H2]]</p>
+<p>还有注意apply和exists的顺序</p>
+<p>(exists x : X, P x) / (exists x : X, Q x)： left. exists n. apply H1.</p>
+<p>exists x : X, P x / Q x：exists n. left. apply H1.</p>
+<h2 id="63-使用命题编程"><strong>6.3 使用命题编程</strong></h2>
+<p>判断一个元素在不在列表中</p>
+<pre tabindex="0"><code>Fixpoint In {A : Type} (x : A) (l : list A) : Prop :=
+  match l with
+  | [] =&gt; False
+  | x&#39; :: l&#39; =&gt; x&#39; = x \/ In x l&#39;
+  end.
+</code></pre><p>当 In 应用于具体的列表时，它会被展开为一系列具体的析取式</p>
+<pre tabindex="0"><code>Example In_example_1 : In 4 [1; 2; 3; 4; 5].
+Proof.
+  simpl.   //1 = 4 \/ 2 = 4 \/ 3 = 4 \/ 4 = 4 \/ 5 = 4 \/ False
+  right.   //2 = 4 \/ 3 = 4 \/ 4 = 4 \/ 5 = 4 \/ False
+  right.   //3 = 4 \/ 4 = 4 \/ 5 = 4 \/ False
+  right.   //4 = 4 \/ 5 = 4 \/ False
+  left.    //4 = 4
+  reflexivity.
+Qed.
+</code></pre><p><strong>练习</strong></p>
+<p>intros的时候多加注意呀！</p>
+<pre tabindex="0"><code>Example In_example_2 :
+  forall n, In n [2; 4] -&gt;
+  exists n&#39;, n = 2 * n&#39;.
+Proof.
+  (* WORKED IN CLASS *)
+  simpl.
+  intros n [H1 | [H2 | []]].
+  - exists 1. rewrite &lt;- H1. reflexivity.
+  - exists 2. rewrite &lt;- H2. reflexivity.
+Qed.
+</code></pre><p>首先 In 会被应用到一个变量上，只有当我们对它进行分类讨论时， 它才会被展开</p>
+<pre tabindex="0"><code>Lemma In_app_iff : forall A l1 l2 (a:A),
+  In a (l1 ++ l2) &lt;-&gt; In a l1 \/ In a l2.
+Proof.
+  intros A l1 l2 a.
+  split.
+  - (* -&gt; *) intro H.
+    induction l1 as [|n l1&#39; IHl1].
+    + (* l1 = nil *) simpl in H. right. apply H.
+    + (* l1 = n :: l1&#39; *) simpl in H.
+      destruct H as [H1 | H2].
+      * left. simpl. left. apply H1.
+      * apply IHl1 in H2. simpl. apply or_assoc. right. apply H2.
+  - (* &lt;- *) intro H.
+    induction l1 as [|n l1&#39; IHl1].
+    + simpl. destruct H.
+      * inversion H.
+      * apply H.
+    + simpl in H.
+      apply or_assoc in H. destruct H as [H1 | H2].
+      * simpl. left. apply H1.
+      * apply IHl1 in H2. simpl. right. apply H2.
+Qed.
+</code></pre><p><strong>练习</strong></p>
+<p>定义一个关系对列表中所有的元素都成立</p>
+<pre tabindex="0"><code>Fixpoint All {T : Type} (P : T -&gt; Prop) (l : list T) : Prop :=
+  match l with
+  | nil =&gt; True
+  | h :: t =&gt; P h /\ All P t
+  end.
+</code></pre><p>证明</p>
+<p>总结了一些</p>
+<ol>
+<li>看到蕴含关系就split</li>
+<li>看到 In 加列表就 induction</li>
+</ol>
+<pre tabindex="0"><code>Lemma All_In :
+  forall T (P : T -&gt; Prop) (l : list T),
+    (forall x, In x l -&gt; P x) &lt;-&gt;
+    All P l.
+Proof.
+  intros T P l.
+  split.
+  - (* -&gt; *) intros H.
+    induction l as [|n&#39; l&#39; IHl].
+    + (* l = nil *) reflexivity.
+    + (* l = n :: l&#39; *) simpl. split. (*P n&#39; /\ All P l&#39;*)
+      * apply H. simpl. left. reflexivity.
+      * apply IHl. intros x H1. apply H. simpl. right. apply H1.
+  - (* &lt;- *) intros H. induction l as [|n l&#39; IHl].
+    + intros x H0. inversion H0.
+    + simpl. intros x H0. destruct H0.
+      * simpl in H. apply proj1 in H. rewrite &lt;- H0. apply H.
+      * simpl in H. apply proj2 in H. apply IHl with x in H.
+        { apply H. }
+        { apply H0. }
+Qed.
+</code></pre><p>好他妈难啊，不想学了</p>
+<h2 id="63-可以用的定理"><strong>6.3 可以用的定理</strong></h2>
+<pre tabindex="0"><code>and_intro : A -&gt; B -&gt; A /\ B.
+and_exercise : n + m = 0 -&gt; n = 0 /\ m = 0.
+and_example2 : n = 0 /\ m = 0 -&gt; n + m = 0.
+</code></pre><h1 id="七归纳定义的命题"><strong>七、归纳定义的命题</strong></h1>
+<h2 id="71-偶数性的归纳定义"><strong>7.1 偶数性的归纳定义</strong></h2>
+<p>为了理解这个新的偶数性质定义如何工作，我们可想象如何证明 4 是偶数。 根据规则 ev_SS，需要证明 2 是偶数。这时，只要证明 0 是偶数， 我们可继续通过规则 ev_SS 确保它成立。而使用规则 ev_0 可直接证明 0 是偶数</p>
+<p>基于上述，可将偶数性质的定义翻译为在 Coq 中使用 Inductive 声明的定义， 声明中每一个构造子对应一个推断规则：</p>
+<pre tabindex="0"><code>Inductive ev : nat -&gt; Prop :=
+| ev_0 : ev 0
+| ev_SS : forall n : nat, ev n -&gt; ev (S (S n)).
+</code></pre><p>可以用apply来证明</p>
+<pre tabindex="0"><code>Theorem ev_4 : ev 4.
+Proof. apply ev_SS. apply ev_SS. apply ev_0. Qed.
+</code></pre><pre tabindex="0"><code>Theorem ev_4&#39; : ev 4.
+Proof. apply (ev_SS 2 (ev_SS 0 ev_0)). Qed.
+</code></pre><pre tabindex="0"><code>Theorem ev_plus4 : forall n, ev n -&gt; ev (4 + n).
+Proof.
+  intros n. simpl. intros Hn.
+  apply ev_SS. apply ev_SS. apply Hn.
+Qed.
+</code></pre><p>证明任何数乘以2都是偶数</p>
+<pre tabindex="0"><code>Theorem ev_double : forall n,
+  ev (double n).
+Proof.
+  induction n as [|n&#39; IHn].
+  - apply ev_0.
+  - simpl. apply ev_SS. apply IHn.
+Qed.
+</code></pre><h2 id="72-在证明中使用证据"><strong>7.2 在证明中使用证据</strong></h2>
+<h3 id="对证据进行反演"><strong>对证据进行反演</strong></h3>
+<p>可以使用 destruct 来证明我们对 ev n 的证据特征</p>
+<ul>
+<li>E is ev_0(and n is 0)</li>
+<li>E is ev_SS n&rsquo; E&rsquo; (and n is S (S n)), E&rsquo; is the evidence for even n'</li>
+</ul>
+<p>证明任意偶数减2都是偶数</p>
+<pre tabindex="0"><code>Theorem ev_minus2 : forall n,
+  ev n -&gt; ev (pred (pred n)).
+Proof.
+  intros n E.
+  destruct E as [| n&#39; E&#39;].
+  - (* E = ev_0 *) simpl. apply ev_0.
+  - (* E = ev_SS n&#39; E&#39; *) simpl. apply E&#39;.  Qed.
+</code></pre><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20211226231636.png" alt=""></p>
+<pre tabindex="0"><code>Theorem evSS_ev : forall n,
+  ev (S (S n)) -&gt; ev n.
+Proof.
+  intros n E.
+  inversion E as [| n&#39; E&#39;].
+  (* We are in the [E = ev_SS n&#39; E&#39;] case now. *)
+  apply E&#39;.
+Qed.
+</code></pre><h3 id="对证明进行归纳"><strong>对证明进行归纳</strong></h3>
+<h2 id="73-归纳关系"><strong>7.3 归纳关系</strong></h2>
+<p>和和</p>
+<h1 id="八关系的性质"><strong>八、关系的性质</strong></h1>
+<p>集合 X 上的二元*&lsquo;关系（Relation）&rsquo;*指所有由两个 X 中的元素参数化的命题， 即，有关一对 X 中的元素的命题。</p>
+<h2 id="偏函数"><strong>偏函数</strong></h2>
+<p>对于集合 X 上的关系 R ，如果对于任何 x 最多只有一个 y 使得 R x y 成立 &ndash; 即，R x y1 和 R x y2 同时成立蕴含 y1 = y2， 则称 R 为&rsquo;偏函数</p>
+<h1 id="九期末考试题"><strong>九、期末考试题</strong></h1>
+<h2 id="简单证明"><strong>简单证明</strong></h2>
+<p>1.mul_2_r</p>
+<pre tabindex="0"><code>Theorem my : forall n m: nat,
+  S (n + m + 2) = n + S m + 2.
+Proof.
+  intros n m.
+  induction n as [| n&#39; IHn&#39;].
+  - simpl. reflexivity.
+  - simpl. rewrite &lt;- IHn&#39;. reflexivity.
+Qed.
+
+Lemma mul_2_r : forall  n : nat,
+  (n + 1) * 2 = n + n + 2.
+Proof.
+  intros n.
+  induction n as [| n&#39; IHn&#39;].
+  - simpl. reflexivity.
+  - simpl. rewrite IHn&#39;. rewrite my. reflexivity.
+Qed.
+</code></pre><p>2.mult_3_r</p>
+<pre tabindex="0"><code>Theorem plus_n_Sm : forall n m : nat,
+  S (n + m) = n + (S m).
+Proof.
+  intros n m.
+  induction n as [| n&#39; IHn&#39;].
+  - simpl. reflexivity.
+  - simpl. rewrite IHn&#39;. reflexivity.
+Qed.
+
+Theorem buchong: forall n m p:nat,
+S(S(n+m+p))=n+(S m)+(S p).
+Proof.
+intros n m p. induction n as[|n&#39; xs].
+-simpl. rewrite plus_n_Sm.  reflexivity.
+-simpl. rewrite xs. reflexivity.
+Qed.
+
+Lemma mul_3_r : forall n : nat, n * 3 = n + n + n.
+Proof.
+intros n.
+induction n.
+-simpl. reflexivity.
+-simpl. rewrite IHn. rewrite buchong. reflexivity.
+Qed.
+</code></pre><h2 id="递归定义"><strong>递归定义</strong></h2>
+<p>1.div2021</p>
+<pre tabindex="0"><code>Fixpoint div2021 (n : nat ) : bool :=
+ match n with
+  | O =&gt; true
+  | S n&#39; =&gt; match leb n 2020 with
+    | true =&gt; false
+    | false =&gt; div2021 (n&#39;-2020)
+    end
+ end.
+
+Example div2021_test0: div2021 2020 = false.
+Proof. reflexivity. Qed.
+
+Example div2021_test1: div2021 4042 = true.
+Proof. reflexivity. Qed.
+
+Example div2021_test2: div2021 2027 = false.
+Proof. reflexivity. Qed.
+</code></pre><p>2.div5</p>
+<pre tabindex="0"><code>Fixpoint div5 (n : nat) : bool :=
+match n with
+  |0 =&gt; true
+  |1 =&gt; false
+  |2 =&gt; false
+  |3 =&gt; false
+  |4 =&gt; false
+  |S (S (S (S (S n&#39;)))) =&gt; div5 n&#39;
+end.
+</code></pre><p>3.关于奇数和偶数</p>
+<pre tabindex="0"><code>Fixpoint evenb (n: nat) : bool :=
+match n with
+|0 =&gt; true
+|1 =&gt; false
+|S (S n&#39;) =&gt; evenb n&#39;
+end.
+
+Definition oddb (n:nat) : bool :=
+  negb (evenb n).
+</code></pre><p>4.square（还没做出来）</p>
+<pre tabindex="0"><code>Definition squared (n : nat) : bool :=
+  (* FILL IN HERE *) admit.
+
+Example square_test1 : squared 8 = false.
+Proof. (* FILL IN HERE *)
+Admitted.
+
+Example square_test2 : squared 25 = true.
+Proof. (* FILL IN HERE *)
+Admitted.
+</code></pre><h2 id="逻辑证明"><strong>逻辑证明</strong></h2>
+<pre tabindex="0"><code>Definition excluded_middle := forall P : Prop,
+  P \/ ~ P.
+
+Definition peirce := forall P Q: Prop,
+  ((P-&gt;Q)-&gt;P)-&gt;P.
+
+Definition double_negation_elimination := forall P:Prop,
+  ~~P -&gt; P.
+
+Definition de_morgan_not_and_not := forall P Q:Prop,
+  ~(~P /\ ~Q) -&gt; P\/Q.
+
+Definition implies_to_or := forall P Q:Prop,
+  (P-&gt;Q) -&gt; (~P\/Q).
+</code></pre><pre tabindex="0"><code>Theorem peirce_valid : excluded_middle &lt;-&gt; peirce.
+Proof.
+  split.
+  - (* -&gt; *) intros E P Q.
+    intro H. destruct (E P) as [H&#39;|H&#39;].
+    + apply H&#39;.
+    + apply H. intro HP. exfalso. apply H&#39;. apply HP.
+  - (* &lt;- *) intros E H.
+    apply (E (H \/ ~H) False).
+    intro H1.
+    apply excluded_middle_irrefutable in H1.
+    inversion H1.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem double_negation_elimination_valid :
+  excluded_middle &lt;-&gt; double_negation_elimination.
+Proof.
+  split.
+  - (* -&gt; *) intros E P.
+    destruct (E P) as [H&#39; | H&#39;].
+    + intro HP. apply H&#39;.
+    + intro HNP.
+      unfold not in H&#39;.
+      unfold not in HNP.
+      apply HNP in H&#39;.
+      inversion H&#39;.
+  - (* &lt;- *) intros DNE EXM.
+    apply DNE. apply excluded_middle_irrefutable.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem de_morgan_not_and_not_valid :
+  excluded_middle &lt;-&gt; de_morgan_not_and_not.
+Proof.
+  split.
+  - (* -&gt; *) intros E P Q.
+    destruct (E P) as [HP | HP].
+    + intro H. left. apply HP.
+    + destruct (E Q) as [HQ | HQ].
+      * intro H. right. apply HQ.
+      * intro H. exfalso. apply H. split.
+        { apply HP. }
+        { apply HQ. }
+  - (* &lt;- *) intros D E.
+    apply D.
+    unfold not.
+    intros [H1 H2].
+    apply H2. apply H1.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem implies_to_or_valid :
+  excluded_middle &lt;-&gt; implies_to_or.
+Proof.
+  split.
+  - (* -&gt; *) intros E P Q.
+    destruct (E P) as [HP | HP].
+    + intro H. right. apply H. apply HP.
+    + intro H. left. apply HP.
+  - (* &lt;- *) intros IO E.
+    rewrite -&gt; or_comm. apply IO. intro HE. apply HE.
+Qed.
+</code></pre><p><strong>发现两年的考试题都是书上最后的原题：</strong></p>
+<pre tabindex="0"><code>Theorem excluded_middle :
+  (forall P Q : Prop, (P -&gt; Q) -&gt; (~P \/ Q)) -&gt; (forall P, P \/ ~P).
+Proof.
+  intros IO E.
+  rewrite -&gt; or_comm. apply IO. intro HE. apply HE.
+Qed.
+</code></pre><pre tabindex="0"><code>Theorem de_morgan :
+   (forall P, P \/ ~P) -&gt; (forall P Q, ~(~P /\ ~Q) -&gt; P \/Q).
+Proof.
+    intros E P Q.
+    destruct (E P) as [HP | HP].
+    + intro H. left. apply HP.
+    + destruct (E Q) as [HQ | HQ].
+      * intro H. right. apply HQ.
+      * intro H. exfalso. apply H. split.
+        { apply HP. }
+        { apply HQ. }
+Qed.
+</code></pre><h2 id="列表相关"><strong>列表相关</strong></h2>
+<p><strong>一、构造列表</strong></p>
+<p>1.Define a function createList such that (createList n) returns  a list of numbers in the form:</p>
+<p><strong>[n;(n-1);&hellip;;2;1;2;&hellip;;(n-1);n]</strong></p>
+<pre tabindex="0"><code>Fixpoint createList1 (n : nat) : list nat :=
+match n with
+| 0 =&gt; nil
+| S n&#39; =&gt;  (createList1 n&#39;) ++[n]
+end.
+
+Fixpoint createList2 (n : nat) : list nat :=
+match n with
+| 0 =&gt; nil
+| 1 =&gt; nil
+| S n&#39; =&gt; [n] ++ (createList2 n&#39;)
+end.
+
+Definition createList (n : nat) : list nat :=
+(createList2 n )++(createList1 n).
+
+Example createList_test : createList 6 = [6;5;4;3;2;1;2;3;4;5;6].
+Proof. reflexivity. Qed.
+</code></pre><p>2.Let two sequences of numbers F1(n) and F2(n) be given as follows.</p>
+<p>F1(0) = 0</p>
+<p>F1(n) = F1(n-1) + 2 * n   for n &gt; 0.</p>
+<p>F2(0) = F2(1) = 1</p>
+<p>F2(n+2) = F2(n) + F2(n+1)    for n &gt;= 0.</p>
+<p>Define the function Seq such that (Seq n) returns the sequence</p>
+<p><strong>[F1(0); F2(0); F1(1); F2(1); &hellip; ; F1(n); F2(n)].</strong></p>
+<pre tabindex="0"><code>Notation &#34;x :: l&#34; := (cons x l)
+                     (at level 60, right associativity).
+Notation &#34;x ++ y&#34; := (app x y)
+                     (right associativity, at level 60).
+
+Fixpoint feb1 (n:nat) : nat :=
+  match n with
+  | O =&gt; 0
+  | S n&#39; =&gt; (feb1 n&#39;) + 2*n
+  end.
+
+Fixpoint feblist1 (n : nat) : list nat :=
+  match n with
+  | O =&gt; [0]
+  | S n&#39; =&gt; (feblist1 n&#39;) ++ [feb1 n]
+  end.
+
+Fixpoint feb2 (n:nat) : nat :=
+  match n with
+  | O =&gt; 1
+  | S O =&gt; 1
+  | S n&#39; =&gt; feb2 n&#39; + feb2 (n&#39;-1)
+  end.
+
+Fixpoint feblist2 (n : nat) : list nat :=
+  match n with
+  | O =&gt; [1]
+  | S O =&gt; [1;1]
+  | S n&#39; =&gt; (feblist2 n&#39;) ++ [feb2 n]
+  end.
+
+Fixpoint alternate (l1 l2 : list nat) : list nat :=
+  match l1 with
+  | nil =&gt; l2
+  | h1 :: t1 =&gt; match l2 with
+            | nil =&gt; l1
+            | h2 :: t2 =&gt; h1 :: h2 :: (alternate t1 t2)
+            end
+  end.
+
+Definition Seq (n: nat) : list nat :=
+ alternate (feblist1 n) (feblist2 n).
+
+Example Seq_test :  Seq 5 = [0; 1; 2; 1; 6; 2; 12; 3; 20; 5; 30; 8].
+Proof. reflexivity. Qed.
+</code></pre><p><strong>二、过滤器</strong></p>
+<p>1.which partitions a list into a list of 3 sublists. The first sublist
+contains all even numbers in the original list. The second sublist
+contains all odd numbers divisible by 5 in the original list. The last
+sublist contains all other elements. The order of elements in the
+three sublists should be the same as their order in the original list.</p>
+<pre tabindex="0"><code>
+Search filter.
+Fixpoint evenb (n: nat) : bool :=
+match n with
+|0 =&gt; true
+|1 =&gt; false
+|S (S n&#39;) =&gt; evenb n&#39;
+end.
+
+Fixpoint div5 (n : nat) : bool :=
+match n with
+  |0 =&gt; true
+  |1 =&gt; false
+  |2 =&gt; false
+  |3 =&gt; false
+  |4 =&gt; false
+  |S (S (S (S (S n&#39;)))) =&gt; div5 n&#39;
+end.
+
+Definition find (l: nat) : bool :=
+match orb (evenb l) (div5 l)  with
+|true =&gt; false
+|false =&gt; true
+end.
+
+Definition partition (l : list nat) : list (list nat) :=
+[filter evenb l] ++ [filter div5 l] ++ [filter find l].
+
+Compute partition [1;2;3;9;4;5;6;15;8;10].
+
+Example partition_test: partition [1;2;3;9;4;5;6;15;8] = [[2;4;6;8]; [5;15]; [1;3;9]].
+Proof. reflexivity. Qed.
+</code></pre><p>2.which partitions a list into a list of 3 sublists. The first sublist
+contains all odd numbers divisible by 3 in the original list.
+The second sublist contains all other odd numbers in the original list.
+The last sublist contains all the even numbers in the original list.
+The order of elements in the three sublists should be the same as their
+order in the original list.</p>
+<pre tabindex="0"><code>Fixpoint evenb (n: nat) : bool :=
+match n with
+|0 =&gt; true
+|1 =&gt; false
+|S (S n&#39;) =&gt; evenb n&#39;
+end.
+
+Definition oddb (n:nat) : bool :=
+  negb (evenb n).
+
+Fixpoint div3 (n : nat) : bool :=
+match n with
+  |0 =&gt; true
+  |1 =&gt; false
+  |2 =&gt; false
+  |S (S (S n&#39;)) =&gt; div3 n&#39;
+end.
+
+Definition find1 (l: nat) : bool :=
+match andb (oddb l) (div3 l)  with
+|true =&gt; true
+|false =&gt; false
+end.
+
+Definition find2 (l: nat) : bool :=
+match andb (oddb l) (negb(div3 l))  with
+|true =&gt; true
+|false =&gt; false
+end.
+
+Definition partition (l : list nat) : list (list nat) :=
+[filter find1 l] ++ [filter find2 l] ++ [filter evenb l].
+
+Compute partition [1;2;3;9;4;5;6;15;21;8;7].
+
+Example partition_test:
+  partition [1;2;3;9;4;5;6;15;8] = [[3; 9; 15]; [1; 5]; [2; 4; 6; 8]].
+Proof. reflexivity. Qed.
+</code></pre><p>三、复杂的列表操作</p>
+<p>1.旋转</p>
+<pre tabindex="0"><code>Fixpoint rotate1 (l : list nat) : list nat :=
+(* FILL IN HERE *)
+match l with
+| nil =&gt; nil
+| h::t =&gt; match t with
+         | nil =&gt; [h]
+         | h&#39; :: t&#39; =&gt; rotate1 t
+         end
+end.
+
+Compute rotate1 [1;2;3;4;5].
+
+Fixpoint rotate2 (l : list nat) : list nat :=
+(* FILL IN HERE *)
+match l with
+| nil =&gt; nil
+| h::t =&gt; match t with
+         | nil =&gt; nil
+         | h&#39; :: t&#39; =&gt; [h] ++ rotate2 t
+         end
+end.
+
+Definition rotate (l : list nat) : list nat :=
+(* FILL IN HERE *)
+match l with
+| nil =&gt; nil
+| h::t =&gt; rotate1 l ++ rotate2 l
+end.
+
+Compute  rotate [1;2;3;4;5].
+
+Example rotate_test : rotate [1;2;3;4;5] = [5;1;2;3;4].
+Proof. reflexivity. Qed.
+</code></pre><p>2.交换第一个数和最后一个数</p>
+<pre tabindex="0"><code>Definition swap2 (l : list nat) : list nat :=
+  match l with
+  | nil =&gt; nil
+  | h::t =&gt; match rev t with
+            | nil =&gt; [h]
+            | h&#39;::t&#39; =&gt; h&#39;::rev t&#39;++[h]
+            end
+  end.
+
+Compute rev [1;2;3].
+</code></pre><p>3.交换最大的数和最小的数</p>
+<pre tabindex="0"><code></code></pre><p>4.数列排序</p>
+<pre tabindex="0"><code>Fixpoint insert(x:nat)(l:list nat):list nat:=
+  match l with
+  | nil =&gt; [x]
+  | a::t =&gt; match leb x a with
+            | true =&gt; x::l
+            | false =&gt; a::insert x t
+            end
+  end.
+
+Compute insert 7 [3;6;5].
+
+Fixpoint sort(l:list nat):list nat:=
+  match l with
+  | nil =&gt; nil
+  | h::t =&gt; insert h (sort t)
+  end.
+
+Compute sort [3;7;2;5;1;4;6].
+Example sort_test : sort [3;7;2;5;1;4;6] = [1;2;3;4;5;6;7].
+Proof. reflexivity. Qed.
+</code></pre><h2 id="二叉树"><strong>二叉树</strong></h2>
+<p>1.Define a function taking as argument a tree t: btree and returning the <strong>sum of all numbers</strong> occurring in the tree.</p>
+<pre tabindex="0"><code>Inductive btree : Set :=
+ | leaf : nat -&gt; btree
+ | node : nat -&gt; btree -&gt; btree -&gt; btree.
+
+Fixpoint sum (t: btree) : nat :=
+  match t with
+    | leaf a=&gt;a
+    | node h f e =&gt; h + sum f + sum e
+  end.
+
+Example bt_test : sum (node 5 (node 1 (leaf 0) (node 3 (leaf 2) (leaf 4)))
+                              (node 9 (node 7 (leaf 6) (leaf 8)) (leaf 10)))
+                  = 55.
+Proof. reflexivity. Qed.
+</code></pre><p>2.Define a function to give a <strong>preorder traversal</strong> of the tree and collect all the odd numbers in a list.</p>
+<pre tabindex="0"><code>Inductive btree : Set :=
+ | leaf : nat -&gt; btree
+ | node : nat -&gt; btree -&gt; btree -&gt; btree.
+
+Fixpoint preorder (t: btree) : list nat :=
+  match t with
+    | leaf a =&gt; [a]
+    | node h f e =&gt; [h] ++ preorder f ++ preorder e
+  end.
+
+Definition preorder2 (t: btree) :  list nat :=
+  filter oddb (preorder t).
+
+Example bt_test : preorder2 (node 5 (node 1 (leaf 0) (node 3 (leaf 2) (leaf 4)))
+                                   (node 9 (node 7 (leaf 6) (leaf 8)) (leaf 10)))
+                   = [5; 1; 3; 9; 7].
+Proof. reflexivity. Qed.
+</code></pre><p>3.<strong>postorder traversal</strong></p>
+<pre tabindex="0"><code>Fixpoint postorder (t: btree) : list nat :=
+  match t with
+    | leaf a =&gt; [a]
+    | node h f e =&gt;  postorder f ++ postorder e ++ [h]
+  end.
+
+Compute postorder (node 5 (node 1 (leaf 0) (node 3 (leaf 2) (leaf 4)))
+                                   (node 9 (node 7 (leaf 6) (leaf 8)) (leaf 10))).
+</code></pre><h2 id="优化"><strong>优化</strong></h2>
+<pre tabindex="0"><code></code></pre><h1 id="函数式程序语言设计-examb"><strong>函数式程序语言设计 examB</strong></h1>
+<p>张彩仪 10184602316</p>
+<p>2022/2/18</p>
+<h2 id="第一题"><strong>第一题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105644.png" alt=""></p>
+<h2 id="第二题"><strong>第二题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105702.png" alt=""></p>
+<h2 id="第三题"><strong>第三题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105728.png" alt=""></p>
+<h2 id="第四题"><strong>第四题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105748.png" alt=""></p>
+<h2 id="第五题"><strong>第五题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105813.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105823.png" alt=""></p>
+<h2 id="第六题"><strong>第六题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105842.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105857.png" alt=""></p>
+<h2 id="第七题"><strong>第七题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105914.png" alt=""></p>
+<h2 id="第八题"><strong>第八题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105928.png" alt=""></p>
+<h2 id="第九题"><strong>第九题</strong></h2>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220218105943.png" alt=""></p>
+<h2 id="第十题"><strong>第十题</strong></h2>
+<pre tabindex="0"><code>(* 10. The following definitions specify the abstract syntax of
+    some arithmetic expressions and an evaluation function. *)
+
+Inductive aexp : Type :=
+  | ANum : nat -&gt; aexp
+  | APlus : aexp -&gt; aexp -&gt; aexp
+  | AMinus : aexp -&gt; aexp -&gt; aexp
+  | AMult : aexp -&gt; aexp -&gt; aexp.
+
+Fixpoint aeval (a : aexp) : nat :=
+  match a with
+  | ANum n =&gt; n
+  | APlus a1 a2 =&gt; (aeval a1) + (aeval a2)
+  | AMinus a1 a2 =&gt; (aeval a1) - (aeval a2)
+  | AMult a1 a2 =&gt; (aeval a1) * (aeval a2)
+  end.
+
+(* Suppose we define a function that takes an arithmetic expression
+   and slightly simplifies it, changing every occurrence of [e + 0]
+   and [e - 0] into just [e], and [e * 1] into [e]. *)
+
+Fixpoint optimize (a:aexp) : aexp :=
+  match a with
+  | ANum n =&gt; ANum n
+  | APlus e2 (ANum 0) =&gt; optimize e2
+  | APlus e1 e2 =&gt; APlus (optimize e1) (optimize e2)
+  | AMinus e1 e2 =&gt; AMinus (optimize e1) (optimize e2)
+  | AMult e2 (ANum 1)  =&gt; optimize e2
+  | AMult e1 e2 =&gt; AMult (optimize e1) (optimize e2)
+  end.
+
+(* Prove the following theorem that states the correctness of the
+optimization with respect to the evaluation of arithmetic expressions. *)
+
+Theorem plus_n_O : forall n:nat, n = n + 0.
+Proof.
+  intros n. induction n as [| n&#39; IHn&#39;].
+  - (* n = 0 *)    reflexivity.
+  - (* n = S n&#39; *) simpl. rewrite &lt;- IHn&#39;. reflexivity.  Qed.
+
+Theorem mult_n_1 : forall n : nat,
+  n = n*1.
+Proof.
+  intros n. induction n as [|n&#39; js].
+- reflexivity.
+- simpl. rewrite &lt;- js. reflexivity. Qed.
+Theorem optimize_mult1_sound: forall a,
+  aeval (optimize a) = aeval a.
+Proof.
+intros a. induction a.
+- try simpl ;reflexivity.
+-destruct a2.
+  +destruct n.  {simpl. rewrite IHa1. apply plus_n_O with (n:= aeval a1). }
+   {simpl. rewrite IHa1. reflexivity. }
+  +assert(optimize (APlus a1 (APlus a2_1 a2_2)) = APlus (optimize a1) (optimize (APlus a2_1 a2_2)) ).
+   {simpl. reflexivity. } rewrite H. assert(aeval (APlus (optimize a1) (optimize (APlus a2_1 a2_2))) =
+  (aeval (optimize a1))+(aeval (optimize (APlus a2_1 a2_2)))). {simpl. reflexivity. }
+  rewrite H0. rewrite IHa1. rewrite IHa2. simpl. reflexivity.
+  +assert(optimize (APlus a1 (AMinus a2_1 a2_2)) = APlus (optimize a1) (optimize (AMinus a2_1 a2_2)) ).
+   {simpl. reflexivity. }  rewrite H. assert(aeval (APlus (optimize a1) (optimize (AMinus a2_1 a2_2))) =
+  (aeval (optimize a1))+(aeval (optimize (AMinus a2_1 a2_2)))). {simpl. reflexivity. }
+  rewrite H0.  rewrite IHa1. rewrite IHa2. simpl. reflexivity.
+  +assert(optimize (APlus a1 (AMult a2_1 a2_2)) = APlus (optimize a1) (optimize (AMult a2_1 a2_2)) ).
+   {simpl. reflexivity. }  rewrite H. assert(aeval (APlus (optimize a1) (optimize (AMult a2_1 a2_2))) =
+  (aeval (optimize a1))+(aeval (optimize (AMult a2_1 a2_2)))). {simpl. reflexivity. }
+  rewrite H0.  rewrite IHa1. rewrite IHa2. simpl. reflexivity.
+-simpl. rewrite IHa1. rewrite IHa2. reflexivity.
+-destruct a2.
+  +destruct n.
+  simpl. rewrite IHa1. reflexivity.
+  destruct n. {simpl. rewrite IHa1. apply mult_n_1 with (n:=aeval a1). }
+  assert(optimize (AMult a1 (ANum (S(S n))))= AMult (optimize a1) (optimize (ANum (S(S n))))). { simpl. reflexivity. }
+  rewrite H. assert(aeval (AMult (optimize a1) (optimize (ANum (S (S n)))))= (aeval (optimize a1))*(aeval (optimize (ANum (S(S n)))))).
+  {simpl. reflexivity. }
+  rewrite H0. simpl. rewrite IHa1. reflexivity.
+  + assert(optimize (AMult a1 (APlus a2_1 a2_2))= AMult (optimize a1) (optimize (APlus a2_1 a2_2))).
+    {simpl. reflexivity. } rewrite H.
+    assert(aeval (AMult (optimize a1) (optimize (APlus a2_1 a2_2)))= (aeval (optimize a1))*(aeval (optimize (APlus a2_1 a2_2)))).
+    {simpl. reflexivity. } rewrite H0. rewrite IHa2. rewrite IHa1. simpl. reflexivity.
+  +assert(optimize (AMult a1 (AMinus a2_1 a2_2))= AMult (optimize a1) (optimize (AMinus a2_1 a2_2))).
+    {simpl. reflexivity. } rewrite H.
+    assert(aeval (AMult (optimize a1) (optimize (AMinus a2_1 a2_2)))= (aeval (optimize a1))*(aeval (optimize (AMinus a2_1 a2_2)))).
+    {simpl. reflexivity. } rewrite H0. rewrite IHa2. rewrite IHa1. simpl. reflexivity.
+  +assert(optimize (AMult a1 (AMult a2_1 a2_2))= AMult (optimize a1) (optimize (AMult a2_1 a2_2))).
+    {simpl. reflexivity. } rewrite H.
+    assert(aeval (AMult (optimize a1) (optimize (AMult a2_1 a2_2)))= (aeval (optimize a1))*(aeval (optimize (AMult a2_1 a2_2)))).
+    {simpl. reflexivity. } rewrite H0. rewrite IHa2. rewrite IHa1. simpl. reflexivity.
+Qed.
+</code></pre>
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/software-testing/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/object-oriented-design/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#11-数据与函数"><strong>1.1 数据与函数</strong></a>
+      <ul>
+        <li><a href="#枚举类型"><strong>枚举类型</strong></a></li>
+        <li><a href="#布尔值"><strong>布尔值</strong></a></li>
+        <li><a href="#类型"><strong>类型</strong></a></li>
+        <li><a href="#由旧类型构造新类型"><strong>由旧类型构造新类型</strong></a></li>
+        <li><a href="#元组"><strong>元组</strong></a></li>
+        <li><a href="#数值"><strong>数值</strong></a></li>
+        <li><a href="#递归"><strong>递归</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#12-基于化简的证明"><strong>1.2 基于化简的证明</strong></a></li>
+    <li><a href="#13-基于改写的证明"><strong>1.3 基于改写的证明</strong></a></li>
+    <li><a href="#14-基于情况分析的证明"><strong>1.4 基于情况分析的证明</strong></a></li>
+    <li><a href="#15-递归函数fixpoint"><strong>1.5 递归函数Fixpoint</strong></a></li>
+    <li><a href="#16-更多练习"><strong>1.6 更多练习</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#21-归纳证明"><strong>2.1 归纳证明</strong></a>
+      <ul>
+        <li><a href="#例题"><strong>例题</strong></a></li>
+        <li><a href="#练习"><strong>练习</strong></a></li>
+        <li><a href="#辨析"><strong>辨析</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#22-证明里的证明"><strong>2.2 证明里的证明</strong></a></li>
+    <li><a href="#23-形式化证明"><strong>2.3 形式化证明</strong></a></li>
+    <li><a href="#24-更多练习"><strong>2.4 更多练习</strong></a></li>
+    <li><a href="#25-本章可以复用的定理总结"><strong>2.5 本章可以复用的定理总结</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-数值序对"><strong>3.1 数值序对</strong></a></li>
+    <li><a href="#32-数值列表"><strong>3.2 数值列表</strong></a></li>
+    <li><a href="#33-口袋"><strong>3.3 口袋</strong></a></li>
+    <li><a href="#34-有关列表的论证"><strong>3.4 有关列表的论证</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#51-apply"><strong>5.1 Apply</strong></a></li>
+    <li><a href="#52-injection"><strong>5.2 Injection</strong></a></li>
+    <li><a href="#53-disjointness"><strong>5.3 Disjointness</strong></a></li>
+    <li><a href="#54-对假设使用策略"><strong>5.4 对假设使用策略</strong></a></li>
+    <li><a href="#55-对假设进行归纳"><strong>5.5 对假设进行归纳</strong></a></li>
+    <li><a href="#56-unfold"><strong>5.6 Unfold</strong></a></li>
+    <li><a href="#57-对复合表达式使用-destruct"><strong>5.7 对复合表达式使用 destruct</strong></a></li>
+    <li><a href="#本章可用的定理"><strong>本章可用的定理</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#62-逻辑连接词"><strong>6.2 逻辑连接词</strong></a>
+      <ul>
+        <li><a href="#合取"><strong>合取</strong></a></li>
+        <li><a href="#析取"><strong>析取</strong></a></li>
+        <li><a href="#假命题与否定"><strong>假命题与否定</strong></a></li>
+        <li><a href="#真值"><strong>真值</strong></a></li>
+        <li><a href="#逻辑等价"><strong>逻辑等价</strong></a></li>
+        <li><a href="#广集"><strong>广集</strong></a></li>
+        <li><a href="#存在量化"><strong>存在量化</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#63-使用命题编程"><strong>6.3 使用命题编程</strong></a></li>
+    <li><a href="#63-可以用的定理"><strong>6.3 可以用的定理</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#71-偶数性的归纳定义"><strong>7.1 偶数性的归纳定义</strong></a></li>
+    <li><a href="#72-在证明中使用证据"><strong>7.2 在证明中使用证据</strong></a>
+      <ul>
+        <li><a href="#对证据进行反演"><strong>对证据进行反演</strong></a></li>
+        <li><a href="#对证明进行归纳"><strong>对证明进行归纳</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#73-归纳关系"><strong>7.3 归纳关系</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#偏函数"><strong>偏函数</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#简单证明"><strong>简单证明</strong></a></li>
+    <li><a href="#递归定义"><strong>递归定义</strong></a></li>
+    <li><a href="#逻辑证明"><strong>逻辑证明</strong></a></li>
+    <li><a href="#列表相关"><strong>列表相关</strong></a></li>
+    <li><a href="#二叉树"><strong>二叉树</strong></a></li>
+    <li><a href="#优化"><strong>优化</strong></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#第一题"><strong>第一题</strong></a></li>
+    <li><a href="#第二题"><strong>第二题</strong></a></li>
+    <li><a href="#第三题"><strong>第三题</strong></a></li>
+    <li><a href="#第四题"><strong>第四题</strong></a></li>
+    <li><a href="#第五题"><strong>第五题</strong></a></li>
+    <li><a href="#第六题"><strong>第六题</strong></a></li>
+    <li><a href="#第七题"><strong>第七题</strong></a></li>
+    <li><a href="#第八题"><strong>第八题</strong></a></li>
+    <li><a href="#第九题"><strong>第九题</strong></a></li>
+    <li><a href="#第十题"><strong>第十题</strong></a></li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

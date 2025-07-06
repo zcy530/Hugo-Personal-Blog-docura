@@ -1,6 +1,7 @@
 ---
 title: Operating System
 slug: Operating-System
+lastmod: 2025-07-01T00:00:00+00:00
 ---
 
 用于记录大二的操作系统课程笔记

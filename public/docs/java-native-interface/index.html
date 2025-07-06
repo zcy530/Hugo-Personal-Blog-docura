@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Java Native Interface · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/java-native-interface/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Java Native Interface</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="jni-usage">JNI usage</h1>
+<h2 id="介绍和作用">介绍和作用</h2>
+<p>JNI 是 Java Native Interface，作用是让 Java 和 C/C++ 之间可以互相调用对方的函数，因为Java是运行在 JVM 上的，而 C/C++ 是本地语言（Native），它们本身不能直接通信，所以需要 JNI 这个中介</p>
+<h2 id="为什么java需要调用c函数">为什么Java需要调用C++函数</h2>
+<ol>
+<li>
+<p>复用已有的 C/C++ 库</p>
+<p>比如你已经有个很牛的图像处理库是用 C++ 写的，现在想在 Android App（Java/Kotlin 写的）里用它，就得用 JNI</p>
+</li>
+<li>
+<p>性能要求高的部分用 C/C++ 实现</p>
+<p>比如视频编解码、图像滤镜这种对速度要求特别高的模块，Java 跑得慢，所以用 C++</p>
+</li>
+<li>
+<p>调用系统底层接口</p>
+<p>比如 Android 上一些底层系统功能只能用 Native 层的 API，Java 访问不到，只能通过 JNI 间接访问</p>
+</li>
+</ol>
+<h2 id="为什么c需要回调java函数">为什么C++需要回调Java函数</h2>
+<ol>
+<li>当 Java 需要执行一个 C++ 函数时，Java 会调用一个 native 方法</li>
+<li>而当过程中 C++ 执行一些任务时，它需要访问 Java 的功能（比如 log 方法），这就必须通过 JNI 来实现。因此，C++ 通过 JNI 来间接调用 Java 方法</li>
+</ol>
+<h2 id="从java调用c函数的流程">从Java调用C++函数的流程</h2>
+<p>首先在 java 端定义 native 函数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// MyClass.java
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">public</span> <span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="p">.</span><span class="n">loadLibrary</span><span class="p">(</span><span class="s">&#34;native-lib&#34;</span><span class="p">);</span> <span class="c1">// 加载 native 库
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="n">native</span> <span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span> <span class="c1">// 声明 native 方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">MyClass</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">obj</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Result from C++: &#34;</span> <span class="o">+</span> <span class="n">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>实现这个 add 函数的 C++ 版本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// C++ 代码（native-lib.cpp）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;jni.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="s">&#34;C&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">JNIEXPORT</span> <span class="n">jint</span> <span class="n">JNICALL</span>
+</span></span><span class="line"><span class="cl"><span class="n">Java_MyClass_add</span><span class="p">(</span><span class="n">JNIEnv</span> <span class="o">*</span><span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">obj</span><span class="p">,</span> <span class="n">jint</span> <span class="n">a</span><span class="p">,</span> <span class="n">jint</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="从c调用java函数的流程">从C++调用Java函数的流程</h2>
+<p>现在我们让 C++ 反过来调用 Java 中的 printLog(String) 方法</p>
+<p>比如你有一个 Java 类，里面有个方法是打印日志的</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Logger.java
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">public</span> <span class="k">class</span> <span class="nc">Logger</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="kt">void</span> <span class="nf">printLog</span><span class="p">(</span><span class="n">String</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Java log: &#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>你在 C++ 中想调用这个 Java 方法，就要用到 GetObjectClass() 和 GetMethodID()</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;jni.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="s">&#34;C&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">JNIEXPORT</span> <span class="kt">void</span> <span class="n">JNICALL</span>
+</span></span><span class="line"><span class="cl"><span class="n">Java_MyClass_callLogger</span><span class="p">(</span><span class="n">JNIEnv</span> <span class="o">*</span><span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">thiz</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">loggerObj</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取 loggerObj 的类，创建了 local reference（1）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">jclass</span> <span class="n">loggerClass</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetObjectClass</span><span class="p">(</span><span class="n">loggerObj</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取 printLog(String) 方法 ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">jmethodID</span> <span class="n">logMethod</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetMethodID</span><span class="p">(</span><span class="n">loggerClass</span><span class="p">,</span> <span class="s">&#34;printLog&#34;</span><span class="p">,</span> <span class="s">&#34;(Ljava/lang/String;)V&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 创建 Java 字符串作为参数，创建了 local reference（2）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">jstring</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">NewStringUTF</span><span class="p">(</span><span class="s">&#34;Hello from C++&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 调用 Java 方法：logger.printLog(&#34;Hello from C++&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">env</span><span class="o">-&gt;</span><span class="n">CallVoidMethod</span><span class="p">(</span><span class="n">loggerObj</span><span class="p">,</span> <span class="n">logMethod</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清理局部引用（好习惯）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">env</span><span class="o">-&gt;</span><span class="n">DeleteLocalRef</span><span class="p">(</span><span class="n">loggerClass</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">env</span><span class="o">-&gt;</span><span class="n">DeleteLocalRef</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>最后，使用java来调用这个 JNI 函数，注意 JNI 的工作方式是 C++ 通过 Java 提供的接口调用 Java 方法，但是 C++ 不能直接运行 Java 方法，所以还需要写一个类来调用这个 native 函数作为入口</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="p">.</span><span class="n">loadLibrary</span><span class="p">(</span><span class="s">&#34;native-lib&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="n">native</span> <span class="kt">void</span> <span class="nf">callLogger</span><span class="p">(</span><span class="n">Logger</span> <span class="n">logger</span><span class="p">);</span>  <span class="c1">// 声明 native 方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Logger</span> <span class="n">logger</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Logger</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">MyClass</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">obj</span><span class="p">.</span><span class="n">callLogger</span><span class="p">(</span><span class="n">logger</span><span class="p">);</span>  <span class="c1">// 这里调用了 native 方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="jnienv-env-和-jobject">JNIEnv* env 和 jobject</h2>
+<p>JNIEnv* env 是 JNI 的“上下文”，你用它来访问 Java 世界，比如调用 Java 方法、创建对象等等。jobject obj 是 MyClass 的实例，相当于 Java 中的 this，你可以通过它访问成员变量、方法</p>
+<h2 id="jni-local-reference">JNI Local Reference</h2>
+<p>每次你在 C++ 里通过 env-&gt;NewObject()、env-&gt;GetObjectClass() 创建了一个 Java 对象或类引用，它就是一个 local reference</p>
+<p>哪些 JNI 方法会创建 local reference</p>
+<table>
+  <thead>
+      <tr>
+          <th>类别</th>
+          <th>方法</th>
+          <th>创建 LocalRef 吗？</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>类/方法查找</td>
+          <td>FindClass</td>
+          <td>✅ 是</td>
+          <td>返回 jclass，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetMethodID / GetStaticMethodID</td>
+          <td>❌ 否</td>
+          <td>返回 ID，不是引用</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetFieldID / GetStaticFieldID</td>
+          <td>❌ 否</td>
+          <td>返回 ID，不是引用</td>
+      </tr>
+      <tr>
+          <td>数组操作</td>
+          <td>NewObjectArray / NewBooleanArray</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>NewByteArray / NewCharArray</td>
+          <td>✅ 是</td>
+          <td>创建数组对象，是 local ref</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetObjectArrayElement</td>
+          <td>✅ 是</td>
+          <td>每次返回数组里的元素</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>SetObjectArrayElement</td>
+          <td>❌ 否</td>
+          <td>只赋值，不返回引用</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetArrayLength</td>
+          <td>❌ 否</td>
+          <td>只返回长度，不产生引用</td>
+      </tr>
+      <tr>
+          <td>对象操作</td>
+          <td>NewObject</td>
+          <td>✅ 是</td>
+          <td>返回实例，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetObjectClass</td>
+          <td>✅ 是</td>
+          <td>返回 jclass，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetSuperclass</td>
+          <td>✅ 是</td>
+          <td>返回 jclass，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>IsInstanceOf</td>
+          <td>❌ 否</td>
+          <td>返回 jboolean，不是引用</td>
+      </tr>
+      <tr>
+          <td>调用方法</td>
+          <td>CallObjectMethod</td>
+          <td>✅ 是</td>
+          <td>返回对象，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>CallStaticObjectMethod</td>
+          <td>✅ 是</td>
+          <td>返回对象，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Call<Type>Method</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>(Type是Int/Float等基本类型)</td>
+          <td>❌ 否</td>
+          <td>基本类型不产生引用</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>CallStatic<Type>Method(Type是Int/Float等基本类型)</td>
+          <td>❌ 否</td>
+          <td>基本类型不产生引用</td>
+      </tr>
+      <tr>
+          <td>异常处理</td>
+          <td>ExceptionOccurred</td>
+          <td>✅ 是</td>
+          <td>返回异常对象，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>ExceptionClear / ExceptionDescribe</td>
+          <td>❌ 否</td>
+          <td>只操作，不返回对象</td>
+      </tr>
+      <tr>
+          <td>字符串操作</td>
+          <td>NewString / NewStringUTF</td>
+          <td>✅ 是</td>
+          <td>返回字符串对象，是 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetStringChars / GetStringUTFChars</td>
+          <td>❌ 否</td>
+          <td>返回原始指针，不是引用</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>ReleaseStringChars / ReleaseStringUTFChars</td>
+          <td>❌ 否</td>
+          <td>释放原始指针</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetStringLength / GetStringUTFLength</td>
+          <td>❌ 否</td>
+          <td>返回长度，不产生引用</td>
+      </tr>
+      <tr>
+          <td>引用管理</td>
+          <td>NewLocalRef</td>
+          <td>✅ 是</td>
+          <td>明确创建一个新的 local ref</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>DeleteLocalRef</td>
+          <td>❌ 否</td>
+          <td>删除引用，不产生引用</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>NewGlobalRef</td>
+          <td>✅ 是</td>
+          <td>不是 LocalRef，但要注意内存</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>DeleteGlobalRef</td>
+          <td>❌ 否</td>
+          <td>删除 GlobalRef</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>NewWeakGlobalRef</td>
+          <td>✅ 是</td>
+          <td>不是 LocalRef，但需要管理</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>DeleteWeakGlobalRef</td>
+          <td>❌ 否</td>
+          <td>删除 WeakGlobalRef</td>
+      </tr>
+      <tr>
+          <td>线程管理</td>
+          <td>AttachCurrentThread / DetachCurrentThread</td>
+          <td>❌ 否</td>
+          <td>和 local ref 无关</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>GetEnv</td>
+          <td>❌ 否</td>
+          <td>获取 JNIEnv 指针，不涉及引用</td>
+      </tr>
+      <tr>
+          <td>其他</td>
+          <td>MonitorEnter / MonitorExit</td>
+          <td>❌ 否</td>
+          <td>线程同步，不产生引用</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>PushLocalFrame / PopLocalFrame</td>
+          <td>❌ 否</td>
+          <td>手动管理 local ref 容量，自己不产生引用</td>
+      </tr>
+  </tbody>
+</table>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/python-basic/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/c-plus-plus/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#介绍和作用">介绍和作用</a></li>
+    <li><a href="#为什么java需要调用c函数">为什么Java需要调用C++函数</a></li>
+    <li><a href="#为什么c需要回调java函数">为什么C++需要回调Java函数</a></li>
+    <li><a href="#从java调用c函数的流程">从Java调用C++函数的流程</a></li>
+    <li><a href="#从c调用java函数的流程">从C++调用Java函数的流程</a></li>
+    <li><a href="#jnienv-env-和-jobject">JNIEnv* env 和 jobject</a></li>
+    <li><a href="#jni-local-reference">JNI Local Reference</a></li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

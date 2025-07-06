@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Video Compression · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/video-compression/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Video Compression</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="video-compression-tech-in-teams">Video Compression Tech in Teams</h1>
+<p>讲视频压缩技术</p>
+<h2 id="视频压缩的必要性">视频压缩的必要性</h2>
+<p>一个视频一秒钟不压缩的内存是 710 MB，相当于带宽需要 710 Mbps，编码之后的带宽是 2-10 Mbps，视频压缩的目的就是可以用尽量少的带宽，传送更高质量的图像</p>
+<p>YUV420: 表示有 YUV 三个分量，每个像素有一个亮度分量，有 1/4 个 U 分量和 1/4 个 V 分量</p>
+<p><img src="image.png" alt="image.png"></p>
+<h2 id="视频压缩技术">视频压缩技术</h2>
+<p><img src="image%201.png" alt="image.png"></p>
+<ol>
+<li>带宽有限的情况下，对运动的图像 (high motion, people video) 分辨率降低，对静态的图像 (low motion, vbss share ppt) 帧率降低，最低 1.75</li>
+<li>给调整过后的图像编码，编成更少的带宽，在接收端再解码</li>
+<li>Encoder 都是基于块的
+<ol>
+<li>Devide, 把一个图像分为一些大小相等的块，比如说 H264 里面宏块的大小就是 16x16，但是 H265 里面就变成了 64x64，就可以适用于更大的图像比如 4K 之类的</li>
+<li>Prediction, 把块拿出来之后就会进行一个预测，分为帧内预测，也有可能是帧间预测，把预测块和当前的块一减就会得到一个差值，这个差就会更小</li>
+<li>Transform/Quantization, 把这个差经过变换和量化的技术，起到了压缩的目的</li>
+</ol>
+</li>
+<li>Decoder 这边是相反的，先解码，然后反量化，反变换，再根据编码传过来的预测信息重建预测块，就把这个图像复原了。复原以后，因为他在量化或者预测的过程中可能会失真，引起一些块效应。所以再最后解码的部分他又加上了 deblocking 这个滤波，然后 H265 里面他又加上了 SAO 这种算法，为了这个图像主观看上去更好一些</li>
+</ol>
+<p><img src="image%202.png" alt="image.png"></p>
+<p>H264或者H265 他们都有 I/B/P 帧，把图像分为 GOP ( group of pictures)，在一个 GOP 里面会有一些头信息，然后再加上 IDR 帧，P 帧只能向前参考，只能参考它前面的帧，B 帧前后的帧都可以参考。因为我们 Teams 是实时的，所以一般不用 B 帧，只用 P 帧，都是 I P P P P 这样的</p>
+<ul>
+<li>帧内预测：IDR 只能用帧内预测，去除了本帧的一些冗余，靠的是帧里边自己的这些像素来计算的，跟其他的帧没有关系，自己就能解。比如说云朵这一块的图像，就是把挨它最近的这些像素块都拿出来，通过水平预测等方式（跟水平的像素块相减得到<strong>残差</strong>），只需要编码这个残差就好</li>
+<li>帧间预测：对于一个运动的图像，汽车就是往前平行移动的，如果要编码第二个块，可以去第一个块里找比较接近的，找到了把位置信息和他俩相减的一个差，把这个差值传过去编码就可以了</li>
+</ul>
+<p>帧内预测和帧间预测都是在时域上的，然后把得到的残差块，继续去做频域上的压缩</p>
+<p><img src="image%203.png" alt="image.png"></p>
+<p>通过 DCT（离散余弦变化）就可以把时域的信息转化到频域上来，因为转化了之后重要的信息都会分布在低频分量上。比如图一图二图三，就是把64个绿色方块，变成9个低频分量和1个低频分量的绿色方块，虽然有失真明显，但还是能得到一个跟原图差不多的图像，通过反变换就能还原回去。但是如果像图四只保留了高频分量，而把最重要的低频分量丢掉了，图像就会变得面无全非。我们把预测之后的残差，经过 DCT 变换之后，能量也是集中在低频分量区域，再去编码的话就更节省码流了</p>
+<p>量化就是把更大的数，变化成一些更小的数，就是图上的 QP=1 到 QP=4，简单理解为除，就可以得到更多为零的值了。带来的就是会有些失真，一个图像的失真主要就是量化这部分引入的。带宽也和 QP 有直接的关系。比如如果你带宽低的情况下，想要编码器输出一个匹配画质的图像，那你就直接告诉编码器给一个大一点的 QP，来实现控制图像质量失真情况。QP 越大，视频主观质量就没那么好</p>
+<p><img src="image%204.png" alt="image.png"></p>
+<p>变换和量化之后，并不是就这样直接发出去，还要经过一个变长的编码。原理是给一些概率更高的值，给他们一些更短的 code，用一个更短的数来表示它，给概率更低的值，给一个更长的值。比如说有熵编码，霍夫曼编码，算术编码，在 264 里对于分辨率高一点的都用算术编码（arithmetic coding）来实现，因为复杂性比较高，压缩率比较高，用硬件实现的话收益就比较大。编码带来的压缩率就是 1/2 或者 1/4，也不会引入失真，因为这个过程是可逆的</p>
+<p><img src="image%205.png" alt="image.png"></p>
+<p>如果在量化过程中失真比较大，QP 值比较大，就会引入失真，产生左图的块效应。通过 deblocking 去块效应的滤波器，来判断是不是图像的边界，如果不是图像的边界，仅仅是量化引起的话，就给周围的像素取个平均，能让图像看起来柔和一些</p>
+<h2 id="teams-当中的运用">Teams 当中的运用</h2>
+<p><img src="image%206.png" alt="image.png"></p>
+<p>目前 H264 占 90%，AV1 压缩率要更高，但复杂性也更高，在 mobile 上用不太合适，一般不用做 encoder，而是用来解编码 vbss 的时候用。我们 team 在做的就是看怎么样用更多的 hardware codec 来做编解码，这样就可以省电，让续航变长。接下来会继续做 H265，AV1，ML codec</p>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/android-camera-2/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/video-knowledge/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#视频压缩的必要性">视频压缩的必要性</a></li>
+    <li><a href="#视频压缩技术">视频压缩技术</a></li>
+    <li><a href="#teams-当中的运用">Teams 当中的运用</a></li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

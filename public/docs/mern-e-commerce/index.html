@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>MERN E-Commerce · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/mern-e-commerce/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>MERN E-Commerce</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h3 id="项目简介">项目简介</h3>
+<ul>
+<li>
+<p>简历</p>
+<p>项目介绍：采用 MERN 技术架构 (react全家桶 + nodejs + MongeDB数据库 + Express框架)，包括 Redux 的状态管理方案和 React Router 6 路由管理方案，使用 mongoose 来连接 MongoDB 数据库，实现了产品的完整增删查改操作，分页浏览和模糊搜索，用户的登录注册和信息管理，使用 JWT 身份验证和授权，验证电子邮件，加入购物车和下订单等功能，并把项目部署在 Heroku 上</p>
+</li>
+<li>
+<p>Udemy 介绍</p>
+<p>There are a lot of &ldquo;eCommerce&rdquo; courses out there, but most use some kind of prebuilt plugin or platform. In this course, we will build a completely customized eCommerce / shopping cart application from scratch with the MERN stack with the following functionality&hellip;</p>
+<p>现在有很多 &ldquo;电子商务 &ldquo;课程，但大多数都使用某种预制的插件或平台。在本课程中，我们将使用MERN堆栈从头开始建立一个完全定制的电子商务/购物车应用程序，具有以下功能…</p>
+<p>Full featured shopping cart</p>
+<p>Product reviews and ratings</p>
+<p>Top products carousel top3 产品轮播图</p>
+<p>Product pagination 产品分页</p>
+<p>Product search feature 产品搜索功能</p>
+<p>User profile with orders 带订单的用户资料</p>
+<p>Admin product management admin 产品管理</p>
+<p>Admin user management admin 用户管理</p>
+<p>Admin Order details page admin 订单详情页</p>
+<p>Mark orders as delivered option 标记订单为已交付选项</p>
+<p>Checkout process (shipping, payment method, etc)</p>
+<p>结账流程（运输、支付方式等）</p>
+<p>PayPal / credit card integration 贝宝/信用卡整合</p>
+<p>Custom database seeder script 自定义数据库播种机脚本</p>
+<p>This is not a documentation-type course. This is a jump in and get your hands dirty course where by the end, you have an actual real-world project to use and put on your portfolio. You will learn the following by completing this course..</p>
+<p>这不是一个文档类型的课程。这是一个跳入并弄脏你的手的课程，到最后，你有一个实际的真实世界的项目来使用并放在你的投资组合上。通过完成本课程，你将学到以下内容。</p>
+<p>React with Functional Components &amp; Hooks</p>
+<p>React router</p>
+<p>React-Bootstrap UI library</p>
+<p>How to structure components</p>
+<p>Component level state &amp; props</p>
+<p>Managing global state with Redux (Actions &amp; Reducers)</p>
+<p>Using Redux state in components (useDispatch &amp; useSelector)</p>
+<p>Creating an extensive back end with Express</p>
+<p>Working with a MongoDB database and the Mongoose ODM</p>
+<p>JWT authentication (JSON web tokens)</p>
+<p>Creating custom authentication middleware</p>
+<p>Custom error handler</p>
+<p>Integrating the PayPal API</p>
+<p>Environment variables</p>
+<p>Project deployment</p>
+<p>Much more!</p>
+<p>您将会学到什么</p>
+<p>Build a custom eCommerce platform with React, Redux, Node, Express &amp; MongoDB</p>
+<p>用React、Redux、Node、Express和MongoDB建立一个定制的电子商务平台</p>
+<p>An actual real-world project built in a linear and progressive manner</p>
+<p>以线性和渐进的方式构建一个实际的真实世界项目</p>
+<p>Full featured shopping cart with PayPal &amp; credit/debit payments</p>
+<p>具有PayPal和信用卡/借记卡支付功能的全功能购物车</p>
+<p>Admin area to manage customers, products &amp; orders</p>
+<p>管理区可以管理客户、产品和订单</p>
+<p>Product rating &amp; review system</p>
+<p>产品评级和评论系统</p>
+<p>Product search, carousel, pagination &amp; more</p>
+<p>产品搜索、旋转木马、分页等功能</p>
+</li>
+<li>
+<p>用通俗的语言介绍这个项目</p>
+<p>这是一个功能比较齐全的购物网站，首页会展示一些商品，每张商品卡片上有详细信息，顶部有搜索框进行模糊搜索。点开之后是商品详情页，可以查看详细信息，对其进行评论，或者选择数量，加入购物车。这里涉及到用户登录注册的问题，因此我实现了用户的认证和授权 Authentication 和 Authorization。加入之后呢，会跳转到购物车页面里，购物车中可以也进行产品的修改和删除，左侧会显示总的数量和总的价格。接下来的支付功能，我实现了微信支付和支付宝支付的接口。除此之外有一个对应的 admin 管理系统，可以对所以产品和用户进行增删改。除此之外还有一些小的功能，比如模糊搜索商品，显示top3的商品。大概就是这样</p>
+</li>
+<li>
+<p>项目亮点</p>
+<ol>
+<li>复杂度高，完成度高，全栈开发，功能完善，项目文件结构很清晰</li>
+<li>对业务组件进行了抽象，比如 Messenger、Loder、搜索栏组件，抽离了一些开箱即用的组件</li>
+<li>在项目技术选型上选取了比较流行的 mern 技术栈</li>
+<li>对前端的性能优化有一定的实践，包括图片懒加载、资源预加载</li>
+<li>部署在了云平台上面</li>
+</ol>
+<p><img src="Untitled.png" alt="Untitled"></p>
+</li>
+<li>
+<p>项目难点</p>
+<ol>
+<li>复杂度高，工作量大，全栈开发，很多功能的实现</li>
+<li>对这种复杂的项目的结构的掌握，经常就是改了这个忘记改那个，比如给 redux 里的 action 加了参数，又忘了给 homeScreen 里面加上参数</li>
+<li>用户认证和授权</li>
+<li>Redux 的使用，概念抽象，步骤复杂，但我总结了一下</li>
+<li>支付的 api</li>
+<li>部署</li>
+</ol>
+</li>
+</ul>
+<h3 id="项目细节">项目细节</h3>
+<ul>
+<li>
+<p>MERN 技术栈</p>
+<p>MERN(MongoDB、Express、React、Node.js)技术栈是专门针 对 SPA 和 NoSQL 热潮而发展起来的早期开源技术栈之一。MERN 技 术栈中的 React 是 一个用来构建用户界面的 JavaScript 库。MongoDB 是一个流行的数据 存储 NoSQL 数据库。Node.js 是一个服务器端 JavaScript 运行环境，而 Express 是一个构建于 Node.js 之上的 Web 服务器</p>
+<ol>
+<li>前端和后端开发之间进行自由切换的能力。mern 技术栈它全部使用的是同一个语言，无论在后端还是前端，都使用 JavaScript，所以只需熟悉一种语言，便可在客户端和服务器之间轻松切换，就可以高效开发一个完整的web应用，我们可以将JavaScript用于客户端和服务器端代码，甚至可以用它来编写MongoDB的数据库脚本</li>
+<li>具有效率和生产率上的优势。所有这四种技术均基于框架中的Javascript和JSON(JavaScript Object Notation，对象表示法)数据，进而节省了消耗在潜在JSON编码上的时间。由于均栈里各种工具都可以在本地使用底层的JSON数据，因此Node + Express.js + MongoDB数据库的结合，为基于JSON的Web服务提供了出色的实现效果</li>
+<li>鉴于其事件驱动的架构和无阻塞的I/O特点，Node.js在此成为了一种非常快速和灵活的Web服务器</li>
+<li>MERN栈提供了大量可供人们免费使用的 npm 软件包。即便它们无法完全满足您的需求，您也可以通过对其 fork，来制作出属于自己的 npm 软件包</li>
+</ol>
+</li>
+<li>
+<p>Express</p>
+<p><a href="https://www.notion.so/Express-detail-6998fb67b6614fec9e6e500e6c190bff?pvs=21" target="_blank">Express detail</a></p>
+<p><a href="https://blog.csdn.net/Nicker_/article/details/110881857" target="_blank">(190条消息) 一些基于nodejs的服务端框架对比。express、koa、egg、nest、midway_Nicker2013的博客-CSDN博客_egg express koa</a></p>
+<p><a href="https://so.csdn.net/so/search?q=express&amp;spm=1001.2101.3001.7020" target="_blank">express</a>、koa、egg、nest、midway都是常见的nodejs开源框架。其关系，基本如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">Midway</span><span class="p">.</span><span class="nx">js</span> <span class="o">---|&gt;</span> <span class="nx">Egg</span><span class="p">.</span><span class="nx">js</span> <span class="o">---|&gt;</span> <span class="nx">Koa</span><span class="p">.</span><span class="nx">js</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">               <span class="nx">Nest</span><span class="p">.</span><span class="nx">js</span> <span class="o">---|&gt;</span> <span class="nx">Express</span><span class="p">.</span><span class="nx">js</span>
+</span></span></code></pre></div><p>而koa实际上是 express 团队用新理念重写的，从<a href="https://so.csdn.net/so/search?q=%E6%9E%B6%E6%9E%84&amp;spm=1001.2101.3001.7020" target="_blank">架构</a>上讲，更加先进一些</p>
+<p>midway.js和egg.js背后都是阿里的团队，其架构基于koa</p>
+<p>nest.js背后是国外的Trilon团队，其架构基于express</p>
+<p>Express 是一个保持最小规模的灵活的 <a href="https://so.csdn.net/so/search?q=Node&amp;spm=1001.2101.3001.7020" target="_blank">Node</a>.js Web 应用程序开发框架，为 Web 和移动应用程序提供强大的功能</p>
+<p>koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。koa 不在内核方法中绑定任何中间件，它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手</p>
+<p>nest 是一个封装了node的有规范的框架，什么是有规范？意思是必须按照它制定的一套规则来写代码，否则程序就会无法运行。上手成本稍高一点，但是后期维护与扩展会很方便，nest属于前端ts大趋势下深度使用注解特性并提供各种增强开发体验的框架，它提供了一套完整的解决方案，包含了认证、数据库、路由、http状态码、安全、配置、请求等开箱即用的技术</p>
+</li>
+<li>
+<p>MongoDB &amp; Mongoose</p>
+<p><a href="https://blog.csdn.net/weixin_38601104/article/details/88367741" target="_blank">https://blog.csdn.net/weixin_38601104/article/details/88367741</a></p>
+<p><a href="https://blog.csdn.net/qq_38721111/article/details/111074981" target="_blank">https://blog.csdn.net/qq_38721111/article/details/111074981</a></p>
+<p><strong>Mongoose</strong></p>
+<p>它也是针对 mongoDB 操作的一个对象模型库，封装了 mongoDB 对文档的一些增删改查等常用方法，让 nodejs 操作 mongoDB 数据库变得更加容易</p>
+<p><strong>MongoDB</strong> <strong>主要特征：</strong></p>
+<ul>
+<li><strong>NoSql数据库</strong>：与一些关系型数据库相比，它更显得轻巧、灵活，缺点是不支持事务。非常适合在数据规模很大、事务性不强的场合下使用
+在 sql 中，我们的数据层级是：数据库（db）-&gt; 表（table）-&gt; 记录（record）-&gt; 字段。在 mongodb 中，数据的层级是：数据库 -&gt; 集合（collection）-&gt; 文档（document）-&gt; 字段，这四个概念可以对应得上</li>
+<li><strong>面向文档存储的数据库</strong>：操作起来比较简单和容易。将数据存储为一个文档，数据结构由键值对组成。这个文档就是 bson 格式，bson 是 json 的超集，比如 json 中没法储存二进制类型，而 bson 拓展了类型，提供了二进制支持</li>
+<li>MongoDB 允许在服务端执行脚本，可以用Javascript编写某个函数，直接在服务端执行，也可以把函数的定义存储在服务端，下次直接调用即可</li>
+<li><strong>分布式文件存储</strong>：在高负载的情况下，添加更多的节点，可以保证服务器性能，保证海量数据存储的同时，具有良好的查询性能</li>
+<li><strong>分片技术</strong>：MongoDB 使用分片技术对数据进行扩展，MongoDB能自动分片、自动转移分片里面的数据块，去掉了关系型数据库的关系型特性，数据之间没有关系。让每一个服务器里面存储的数据都是一样大小。这样就非常容易扩展</li>
+<li><strong>内嵌数据库</strong>：表与表之间没有联系，好处就是查关联数据的时候比较方便，坏处就是数据可能不统一，不像 sql 中一样，可以设定外键，可以进行表连接</li>
+</ul>
+<p><strong>和其他 nosql 数据库的对比：</strong></p>
+<p>hbase 、redis 、mongodb 虽然都属于 nosql 的大范畴。但它们关注的领域是不一样的。hbase 是存海量数据的，redis 用来做缓存，而 mongodb 则试图取代一些使用 mysql 的场景</p>
+</li>
+<li>
+<p>MongoDB 的操作</p>
+<p><a href="https://www.runoob.com/mongodb/mongodb-indexing.html" target="_blank">MongoDB 索引 | 菜鸟教程 (runoob.com)</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">显示所有数据库</span>
+</span></span><span class="line"><span class="cl"><span class="nx">show</span> <span class="nx">databases</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">创建数据库</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">use</span> <span class="nx">Products</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">查看数据库</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">显示所有集合</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">show</span> <span class="nx">collections</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">创建集合</span> <span class="nx">插入文档数据</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1.</span> <span class="nx">插入文档数据时创建</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">Name</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">doc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.</span> <span class="nx">直接创建</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">createCollection</span><span class="p">(</span><span class="s1">&#39;新建集合名&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">插入文档数据</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">Name</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">doc</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;jack&#39;</span><span class="p">,</span><span class="nx">age</span><span class="o">:</span><span class="mi">18</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">查看所有数据</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">find</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">查看name是jack的数据</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;jack&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">修改数据</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;jack&#39;</span><span class="p">},{</span><span class="nx">$set</span><span class="o">:</span><span class="p">{</span><span class="nx">age</span><span class="o">:</span><span class="mi">28</span><span class="p">}})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">删除文档数据</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">remove</span><span class="p">({</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;jack&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">删除集合</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">users</span><span class="p">.</span><span class="nx">drop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">删除数据库</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">dropDatabase</span><span class="p">()</span>
+</span></span></code></pre></div><p>索引</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="mi">1</span><span class="err">、</span><span class="nx">查看集合索引</span>
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">col</span><span class="p">.</span><span class="nx">getIndexes</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="err">、</span><span class="nx">查看集合索引大小</span>
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">col</span><span class="p">.</span><span class="nx">totalIndexSize</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="err">、</span><span class="nx">删除集合所有索引</span>
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">col</span><span class="p">.</span><span class="nx">dropIndexes</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">4</span><span class="err">、</span><span class="nx">删除集合指定索引</span>
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">col</span><span class="p">.</span><span class="nx">dropIndex</span><span class="p">(</span><span class="s2">&#34;索引名称&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">5</span><span class="err">、</span><span class="nx">创建索引</span>
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">col</span><span class="p">.</span><span class="nx">createIndex</span><span class="p">({</span><span class="s2">&#34;title&#34;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;description&#34;</span><span class="o">:-</span><span class="mi">1</span><span class="p">})</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Mongoose 的操作</p>
+<ol>
+<li>
+<p>导出</p>
+</li>
+<li>
+<p>创建 schema：</p>
+<p>Schema 是 mongoose 里会用到的一种数据模式，是对 ducument 结构的定义，每个 schema 会映射到 mongodb 中的一个 collection，它不具备操作数据库的能力，仅仅只是定义数据库模型</p>
+</li>
+<li>
+<p>创建 model：</p>
+<p>model是由schema生成的模型，可以对数据库的操作</p>
+</li>
+<li>
+<p>进行增删查改的操作</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="mf">1.</span> <span class="kr">const</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;mongoose&#34;</span><span class="p">);</span><span class="nx">导入mongoose模块</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">2.</span> <span class="nx">连接数据库</span> <span class="c1">// 注意url地址最后面的地址是数据库的名称
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&#34;mongodb://127.0.0.1:27017/bk1824&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">url</span><span class="p">,(</span><span class="nx">err</span><span class="p">)=&gt;{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;链接失败&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;链接成功&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">2.</span> <span class="nx">创建文档结构schema</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">UserSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">db</span><span class="p">.</span><span class="nx">Schema</span><span class="p">({</span> 
+</span></span><span class="line"><span class="cl">            <span class="nx">username</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">password</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">nick</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">headerimg</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">3.</span> <span class="nx">创建</span> <span class="nx">model</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">userModel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">db</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="nx">UserSchema</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">5.</span><span class="nx">添加数据</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="p">{</span> <span class="nx">username</span><span class="p">,</span> <span class="nx">password</span><span class="p">,</span> <span class="nx">nick</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span> <span class="c1">// 接收参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UserModel</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">username</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">password</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">nick</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">headerimg</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">6.</span> <span class="nx">将增加的数据存入数据库的表中</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">()</span> <span class="c1">// 保存数据到db
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="mf">7.</span> <span class="nx">删除数据</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">User</span><span class="p">.</span><span class="nx">remove</span><span class="p">({</span><span class="nx">username</span><span class="o">:</span><span class="s2">&#34;zhao1234&#34;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">8.</span> <span class="nx">改数据</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">User</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="nx">username</span><span class="o">:</span><span class="s2">&#34;1111&#34;</span><span class="p">},{</span><span class="nx">$set</span><span class="o">:</span><span class="p">{</span><span class="nx">username</span><span class="o">:</span><span class="s2">&#34;zhao&#34;</span><span class="p">}})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">9.</span><span class="p">.</span> <span class="nx">查数据</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="p">{</span> <span class="nx">username</span><span class="p">,</span> <span class="nx">password</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">UserModel</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">username</span><span class="p">,</span><span class="nx">password</span><span class="p">})</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Redux 的实现</p>
+<p>可以理解为把需要多个组件共享的变量全部存储在一个对象里面，把这个对象放在顶层的 react 实例当中，让其他组件可以使用</p>
+<p><strong>使用情景：</strong></p>
+<ul>
+<li>大型开发，多个界面间的共享问题</li>
+<li>比如用户的登录状态、拿到和保存 token、用户名称、头像、地理位置信息等等</li>
+<li>比如商品的收藏、购物车中的物品（在很多页面都有添加购物车的功能）</li>
+<li>这些状态信息，我们都可以放在统一的地方，对它进行保存和管理，而且它们还是响应式的</li>
+</ul>
+<p><strong>实现方法：</strong></p>
+<p>顶层套一个 provider，底层的组件都可以使用顶层的数据</p>
+<ol>
+<li>首先，用户（通过View）发出 Action，发出方式就用到了 dispatch 方法。</li>
+<li>然后，Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action，Reducer 会返回新的 State</li>
+<li>State 一旦有变化，Store 就会调用监听函数，来更新 View</li>
+</ol>
+<p>Product reducer</p>
+<p><img src="Untitled%201.png" alt="Untitled"></p>
+<p>Product Actions</p>
+<p><img src="Untitled%202.png" alt="Untitled"></p>
+<p>User Reducer</p>
+<p><img src="Untitled%203.png" alt="Untitled"></p>
+<p>User Actions</p>
+<p><img src="Untitled%204.png" alt="Untitled"></p>
+</li>
+<li>
+<p>中间件 middleware 的使用</p>
+<p>中间件就是处理 HTTP 请求的函数。它最大的特点就是，一个中间件处理完，再传递给下一个中间件</p>
+<p>每个中间件可以从 App 实例里接收三个参数，依次为 request 对象（HTTP 请求）、response 对象（HTTP 回应），next() 回调函数（下一个中间件）。每个中间件都可以对 HTTP 请求（request 对象）进行加工，并且决定是否调用 next() 方法，将 request 对象再传给下一个中间件</p>
+<p><strong>anthMiddleware.js</strong></p>
+<ol>
+<li>
+<p>从 header 里面的 authorization 头里面的信息拿到 token</p>
+</li>
+<li>
+<p>通过 jwt.decode(token,secret)，来解析 token，解析出来的信息打印出来就是下面的 json，于是就可以拿到 id</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">id</span><span class="o">:</span> <span class="s1">&#39;5f6bf78dqi0w&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">iat</span><span class="o">:</span> <span class="mi">1600978514</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">exp</span><span class="o">:</span> <span class="mi">1600978514</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>通过 id 查找用户，返回除了密码以外的信息</p>
+</li>
+</ol>
+</li>
+<li>
+<p>location 和 history 的使用</p>
+<p>在 react 组件的 componentDidMount 方法中打印一下 this.props，在浏览器控制台中查看输出如下，其中页面的 url 信息全都包含在 match 字段中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">localhost</span><span class="o">:</span><span class="mi">3000</span><span class="o">/</span><span class="nx">app</span><span class="o">/</span><span class="nx">knowledgeManagement</span><span class="o">/</span><span class="nx">modify</span>
+</span></span><span class="line"><span class="cl"><span class="err">/STY20171011124209535/3/1507701970070/0/?s=1&amp;f=7</span>
+</span></span></code></pre></div><p><img src="Untitled%205.png" alt="Untitled"></p>
+<p><img src="Untitled%206.png" alt="Untitled"></p>
+<ul>
+<li>**match：**包含了具体的 url 信息，在 params 字段中可以获取到各个路由参数的值</li>
+<li>**history：**包含了组件可以使用的各种路由系统的方法，常用的有 push 和 replace，两者都是跳转页面，但是 replace 不会引起页面的刷新，仅仅是改变 url</li>
+<li>**location：**相当于 URL 的对象形式表示，通过 search 字段可以获取到 url 中的 query 信息，所以location.search 是获取 url 参数的方法
+这里 state 的含义与 HTML5 history.pushState API 中的 state 对象一样。每个 URL 都会对应一个 state 对象，你可以在对象里存储数据，但这个数据却不会出现在 URL 中。实际上，数据被存在了 sessionStorage 中</li>
+</ul>
+</li>
+<li>
+<p>身份认证的实现</p>
+<p>分成两个方面吧，一个是身份认证，一个是授权，Authentication 和 Authorization</p>
+<p><strong>认证</strong>(Authentication)，我们接受电子邮件和密码，在数据库中对其进行认证，证明是这个用户本人。<strong>授权</strong>(Authorization)，是让这个用户有权限访问某些信息，或者使用受到保护的 API 的权限，这个通过发送 Json Web Token来做到这一点</p>
+<p><strong>普通用户认证：</strong></p>
+<p>(1) 为了密码的安全，我使用了 bcrypt 这个包，注册的时候通过 bcrypt.hash 把密码保存在数据库里，在登录的时候用 bcrypt.compare 的方法来比较输入的这个文本字符串和数据库中加密过的密码是不是一样的</p>
+<p>(2) 登录的时候，会使用 authUser 这个接口，在这个接口里面，如果匹配成功了，返回 userInfo，存储在 redux 的 store 里面，是一个全局的状态 (将 userInfo 存进 localstorage 里面去)</p>
+<p>(3) 前端的处理就是在登录页面，把 userInfo 注册在 useEffect 这个 hook 里面随时检测更新，如果收到有返回的用户信息了，就跳转到首页</p>
+<p><strong>授权：</strong></p>
+<p>(1) 后端，在登录的时候，引入了 jsonwebtoken 的库，下载Openssl，下载后生成私钥。使用 jwt.sign 的方法通过一些用户信息和私钥生成一个 token(RS256 加密算法)，那这个 token 放在哪个位置呢，就是用户身份认证成功之后返回的 user 信息里的那个 json 文件里。于是在用户成功登录之后，我们就可以在保存在 redux 里面的 userInfo 这个对象里面得到了 token</p>
+<p>(2) 前端，在需要调用一些受到保护的 api 的时候，前端会使用 getState() 的方法从 redux 里面拿到这个 token，然后封装在 header 的 Authorization 头部，再对这个接口发起 http 请求</p>
+<p><img src="Untitled%207.png" alt="Untitled"></p>
+<p><strong>Admin 权限的认证：</strong></p>
+<p>添加了一个 authAdmin 的中间件，就是判断一下</p>
+<p><img src="Untitled%208.png" alt="Untitled"></p>
+<p>在 userRoutes.js 里面注册这个 api 的时候，执行函数前面要加上 protect 和 admin 两个中间件，admin 放在 protect 中间件后面，就表示首先登录，再验证是否有 admin 的权限，只有都满足，才能调用这个 api</p>
+<p><img src="Untitled%209.png" alt="Untitled"></p>
+</li>
+<li>
+<p>支付宝 api</p>
+<p><a href="https://blog.csdn.net/njweiyukun/article/details/79478455?spm=1001.2101.3001.6650.17&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-17-79478455-blog-113250029.pc_relevant_default&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-17-79478455-blog-113250029.pc_relevant_default&amp;utm_relevant_index=18" target="_blank">(225条消息) Node.js接入支付宝（蚂蚁金服）支付_nj物是人非的博客-CSDN博客</a></p>
+<p><a href="https://juejin.cn/post/6844903984478552078" target="_blank">NodeJS 支付宝网站支付 Demo 开发 - 掘金 (juejin.cn)</a></p>
+<p>前端页面 -&gt; 向服务端发送订单信息 -&gt; 服务端确认信息，向客户端发送确认信息 -&gt; 客户端确认信息向服务端发送订单请求 -&gt; 服务端验证订单请求信息 -&gt; 服务端像支付宝发送订单生成 -&gt; 支付宝向服务端返回订单数据 -&gt; 服务端向客户端发送支付宝的表单信息 -&gt; 客户端跳转到支付宝支付页面 -&gt; 客户端支付成功 -&gt; 支付宝让客户端同步跳转到服务端指定的页面 -&gt; 支付宝异步通知服务端订单支付结果 -&gt; 服务端接收异步通知做相应的业务处理</p>
+<p><img src="Untitled%2010.png" alt="Untitled"></p>
+</li>
+<li>
+<p>前端的性能优化</p>
+<p><img src="Untitled.png" alt="Untitled"></p>
+</li>
+<li>
+<p>商品模糊搜索的实现</p>
+<p>正则表达式是使用几个简单的字符串来描述和匹配一系列符合某个句法规则的字符串</p>
+<p>MongoDB 使用 $regex 操作符来设置匹配字符串的正则表达式，比如搜索 iph 就可以搜到 iphone，搜 ar 就可以搜到 airpords，设置 $option = “$i”，就可以不区分大小写</p>
+<p><img src="Untitled%2011.png" alt="Untitled"></p>
+</li>
+<li>
+<p>TOP3 的实现</p>
+<p>Product.find({}).sort({rating:-1}).limit(3)</p>
+</li>
+<li>
+<p>Admin 后台管理怎么实现</p>
+</li>
+<li>
+<p>部署在 horuku 上面具体实现</p>
+<p><em>Heroku</em> 是一个支持多种编程语言的云平台</p>
+<blockquote>
+<p>为什么要用云平台？</p>
+<p>——云平台不用租域名不用租服务器不用备案不用自己手动配置各种软件，而且是免费的。</p></blockquote>
+<blockquote>
+<p>云平台有什么缺点？</p>
+<p>缺点就是流量限制一般比较严，性能相对较差。但是就我自己的实际使用经验来看，一般的小站或者个人博客放在云平台上是完全够用的。并且云平台会提供无缝扩展的服务，如果需要更高性能或者更多流量可以花钱扩展。还有一点就是云平台的域名是二级域名，如果您想使用自己的域名的话，可以通过alias别名设置。</p></blockquote>
+<blockquote>
+<p>为什么要用国外的云平台？</p>
+<p>国内的云平台我个人总结有两大缺点：1、文档不完善，2、限制较多</p>
+<p>文档不完善就导致了新手很难入门，往往会遇到各种各样的问题难以解决。国外的云平台文档非常完善，并且有很多示例，只要你懂一些基本的英文就可以轻松搞定。限制较多主要体现在开发者认证以及开发环境这两方面。新浪云和百度云都需要申请开发者认证，我自己是很讨厌这种方式的。开发环境限制就是版本旧，自由度低。</p></blockquote>
+<blockquote>
+<p>为什么要用heroku？</p>
+<p>国外的云平台，我自己也试用过几个。因为国外的云平台文档大多很完善，所以不存在使用障碍，选择的标准就变成了适不适合自己。因为我使用的是express框架，所以对比之下发现heroku对JavaScript的支持更好，并且官方就有部署JavaScript的示例，所以选择了heroku。实际应用中发现确实很不错</p></blockquote>
+<blockquote>
+<p>步骤？</p>
+<ol>
+<li>npm run build → 生成一个build包</li>
+<li>下载 Heroku CLI，通过 heruko login 进行登录</li>
+<li>创建一个新项目 heroku create projname，这时候就会生成一个以 <a href="https://projname.herukoapp.com" target="_blank">https://projname.herukoapp.com</a> 的网址，点开是新项目的欢迎页面</li>
+<li>创建 Procfile 文件：Heroku 需要一个 Procfile 才能知道如何运行应用程序，Procfile 是一个“进程文件”，用于告诉 Heroku 运行哪个命令来管理给定的进程，比如告诉 Heroku 如何在 Web 上启动服务器进行监听，没有 Procfile，Heroku 就不能让服务器在线</li>
+<li>使用 git add commit push，添加和提交文件</li>
+<li>在 Heroku 网站的 setting 里配置 .env 文件的参数，包括数据库、jwt_secret，端口号等等</li>
+</ol></blockquote>
+<ul>
+<li>我在部署中就遇到了打不开网站的情况，错误日志如下，经排查发现代码中打开端口的时候写死了6789，所以导致报错，heroku推荐用$port的方式绑定端口，而不是写死某一个端口</li>
+<li>heroku buildpacks:set heroku/python #显示指定用python来构建打包，这个非常重要，没有这句会报以下错误</li>
+</ul>
+<p><img src="Untitled%2012.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="支付的实现">支付的实现</h3>
+<ul>
+<li>
+<p>教程</p>
+<p><a href="https://www.bilibili.com/video/BV1ZT4y1c7iL?p=3&amp;spm_id_from=pageDriver&amp;vd_source=a314bfb0589f50a82d60a44b2d833d8a" target="_blank">https://www.bilibili.com/video/BV1ZT4y1c7iL?p=3&amp;spm_id_from=pageDriver&amp;vd_source=a314bfb0589f50a82d60a44b2d833d8a</a></p>
+</li>
+<li>
+<p>前期准备，账号申请</p>
+<p>**微信公众账号：**必须有企业认证过的公众账号，个人是不能申请微信支付的</p>
+<p>**微信商户平台：**需要一个商户平台账号，也是要企业主体的，当我们申请完之后微信官方会给我们发一封邮件，包含了账号信息</p>
+<p><img src="Untitled%2013.png" alt="Untitled"></p>
+<p>**支付宝商户平台：**需要一个支付宝商户平台账号</p>
+<p>**备案过的域名：**已经在工信部备案通过的域名</p>
+<p>**服务器：**需要一个具有外网 ip 的服务器，用来部署项目</p>
+</li>
+<li>
+<p>服务器配置</p>
+</li>
+<li>
+<p>微信 API 的官方文档研究</p>
+<p><strong>这里用到的是 native 支付方式：</strong></p>
+<p>就是二维码</p>
+<p><img src="Untitled%2014.png" alt="Untitled"></p>
+<p><strong>使用的是统一下单 API 流程：</strong></p>
+<ol>
+<li>后台系统根据用户选购的商品生成订单</li>
+<li>用户确认支付后调用微信支付的<strong>统一下单API</strong>生成预支付</li>
+<li>微信支付系统收到请求后，如果成功会返回 code_url 就是二维码的链接，当我们拿到这个 code_url 只需要把这个二维码生成，在页面上展示就可以</li>
+<li>用户扫描二维码付款</li>
+</ol>
+<p><img src="Untitled%2015.png" alt="Untitled"></p>
+<p><img src="Untitled%2016.png" alt="Untitled"></p>
+<p><strong>统一下单 api 请求参数介绍：</strong></p>
+<p>其中比较复杂的是签名的生成算法和随机数生成算法</p>
+<p><img src="Untitled%2017.png" alt="Untitled"></p>
+<p>把这些信息拼接成一个 xml 字符串</p>
+<p><img src="Untitled%2018.png" alt="Untitled"></p>
+<p><strong>统一下单 API 的返回信息：</strong></p>
+<p><img src="Untitled%2019.png" alt="Untitled"></p>
+<p><img src="Untitled%2020.png" alt="Untitled"></p>
+<p><strong>下面是一些错误信息的描述：</strong></p>
+<p><img src="Untitled%2021.png" alt="Untitled"></p>
+<p><strong>下面介绍签名算法：分为两步</strong></p>
+<p>第一步，把所有参数按照顺序拼接成 URL 的格式</p>
+<p>第二步，在拼接好的字符串后面，拼接商户密钥（微信商户平台的密钥设置得到），用MD5的方法加密</p>
+<p><img src="Untitled%2022.png" alt="Untitled"></p>
+<p><img src="Untitled%2023.png" alt="Untitled"></p>
+</li>
+<li>
+<p>微信 API 对接实战</p>
+<p><strong>对接接口，拼接xml</strong></p>
+<p><img src="Untitled%2024.png" alt="Untitled"></p>
+<p>使用qs模块做字符串拼接</p>
+<p><img src="Untitled%2025.png" alt="Untitled"></p>
+<p>通过axios调用接口</p>
+<p><img src="Untitled%2026.png" alt="Untitled"></p>
+<p><strong>支付接口的实现：</strong></p>
+<p>使用 mongoose 创建 order 的 schema</p>
+<p><img src="Untitled%2027.png" alt="Untitled"></p>
+<p><strong>实现接口：</strong></p>
+<p>成功之后可以生成一个二维码</p>
+<p><img src="Untitled%2028.png" alt="Untitled"></p>
+<p>现在的效果：</p>
+<p><img src="Untitled%2029.png" alt="Untitled"></p>
+<p>处理 code_url 生成二维码，使用 qrcode 的包</p>
+<p><img src="Untitled%2030.png" alt="Untitled"></p>
+<ol>
+<li>微信开发服务器验证</li>
+<li>微信登录授权获取 openid</li>
+<li>微信 jsapi 签名认证</li>
+<li>微信支付接口签名</li>
+<li>公众账号调用支付 api</li>
+</ol>
+</li>
+<li>
+<p>支付宝 API 对接</p>
+<p><img src="Untitled%2031.png" alt="Untitled"></p>
+<p><img src="Untitled%2032.png" alt="Untitled"></p>
+<p><img src="Untitled%2033.png" alt="Untitled"></p>
+<p>开发工具生成私钥和公钥</p>
+<p><img src="Untitled%2034.png" alt="Untitled"></p>
+<p>配置 sdk</p>
+<p><img src="Untitled%2035.png" alt="Untitled"></p>
+<p><img src="Untitled%2036.png" alt="Untitled"></p>
+<p><img src="Untitled%2037.png" alt="Untitled"></p>
+<p><img src="Untitled%2038.png" alt="Untitled"></p>
+<p><img src="Untitled%2039.png" alt="Untitled"></p>
+<p><img src="Untitled%2040.png" alt="Untitled"></p>
+<ol>
+<li>支付宝证书生成</li>
+<li>支付宝服务器端 sdk 对接
+<ol>
+<li>页面效果实现</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="1-搭建前端页面">1️⃣ 搭建前端页面</h3>
+<ul>
+<li>
+<ol>
+<li>新建 React 项目</li>
+</ol>
+<p>create react app</p>
+<p><img src="Untitled%2041.png" alt="Untitled"></p>
+<p>regular function &amp; arrow function</p>
+<p><img src="Untitled%2042.png" alt="Untitled"></p>
+<p><img src="Untitled%2043.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="2-从epress框架获取数据">2️⃣ 从Epress框架获取数据</h3>
+<ul>
+<li>
+<ol>
+<li>后端简单接口，跑起来</li>
+</ol>
+<p>下载 express 框架</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">express</span> <span class="o">--</span><span class="nx">save</span>
+</span></span></code></pre></div><p>创建 backend 文件夹，创建 server.js 文件，然后写一点简单的代码尝试</p>
+<p><img src="Untitled%2044.png" alt="Untitled"></p>
+<p>运行下面的命令，可以把这个程序在 5000 端口跑起来</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">backend</span><span class="o">/</span><span class="nx">server</span><span class="p">.</span><span class="nx">js</span>
+</span></span></code></pre></div><p>打开 <a href="http://localhost:5000" target="_blank">localhost:5000</a> 看到已经跑起来了</p>
+<p><img src="Untitled%2045.png" alt="Untitled"></p>
+<p>引入 product datas，再写两个接口</p>
+<p><img src="Untitled%2046.png" alt="Untitled"></p>
+<p><img src="Untitled%2047.png" alt="Untitled"></p>
+<p><img src="Untitled%2048.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>前端获取产品的数据 (useState useEffect axios)</li>
+<li><strong>配置环境</strong></li>
+</ol>
+<p>import axios, a http library</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">axios</span>
+</span></span></code></pre></div><p>配置 proxy</p>
+<p><img src="Untitled%2049.png" alt="Untitled"></p>
+<ol>
+<li><strong>连接 home screen</strong></li>
+</ol>
+<p>引入 product state</p>
+<p><img src="Untitled%2050.png" alt="Untitled"></p>
+<p>useEffect 的作用是想在这个 component load 的时候执行这个 arrow function</p>
+<p><img src="Untitled%2051.png" alt="Untitled"></p>
+<ol>
+<li><strong>连接 product detail screen</strong></li>
+</ol>
+<p><img src="Untitled%2052.png" alt="Untitled"></p>
+<p>如何把 product 的信息显示出来呢</p>
+<p><img src="Untitled%2053.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="3">
+<li>配置 Nodemon Concurrently</li>
+</ol>
+<p>import both</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">D</span> <span class="nx">nodemon</span> <span class="nx">concurrently</span>
+</span></span></code></pre></div><p><img src="Untitled%2054.png" alt="Untitled"></p>
+<p><strong>Nodemon</strong> is a tool that we can use to constantly watch our server so that we dont have to resetting it.  就是说他会自动监听到你后端的变化，所以当你有任何的改动代码时，不用重新启动后端</p>
+<p><img src="Untitled%2055.png" alt="Untitled"></p>
+<p><strong>Concurrently</strong> 可以同时把前端和后端跑起来，不用分开跑</p>
+<p><img src="Untitled%2056.png" alt="Untitled"></p>
+<p>所以现在只需要运行 <code>npm run dev</code> 命令就可以</p>
+</li>
+<li>
+<ol start="4">
+<li>配置 .env 文件</li>
+</ol>
+<p>To put any API key or stuff like that, any secert token, database strings, database password, and any secerts you want to put in here</p>
+<p>要把端口号，任何 API 密钥，或者任何 secret token，数据库字符串，数据库密码，开发模式，以及任何你想放在这里的 secret 放进去</p>
+<p>在**根目录(不是backend也不是frontend)**新建 <code>.env</code> 文件</p>
+<p><img src="Untitled%2057.png" alt="Untitled"></p>
+<p>在 <code>server.js</code> 中使用定义的环境变量 import dotenv</p>
+<p><img src="Untitled%2058.png" alt="Untitled"></p>
+<p><img src="Untitled%2059.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="6">
+<li>ES module in Node.js</li>
+</ol>
+<p>修改模块导入部分</p>
+<p>common js : const express = require(’express’)</p>
+<p>ES : impor … from …</p>
+<p><img src="Untitled%2060.png" alt="Untitled"></p>
+<p>修改模块导出部分</p>
+<p>common js : module.export = products</p>
+<p>ES: export defalut products</p>
+<p><img src="Untitled%2061.png" alt="Untitled"></p>
+<p><img src="Untitled%2062.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="3-配置-mongo-db">3️⃣ 配置 Mongo DB</h3>
+<ul>
+<li>
+<ol>
+<li>Mongodb 官网配置，下载 Compass</li>
+</ol>
+<p><strong>进入官网并登录账号</strong></p>
+<p><a href="https://www.mongodb.com/" target="_blank">https://www.mongodb.com/</a></p>
+<p><img src="Untitled%2063.png" alt="Untitled"></p>
+<p><img src="Untitled%2064.png" alt="Untitled"></p>
+<p><strong>设置 security informations</strong></p>
+<p>包括 database access 和 network access</p>
+<p><img src="Untitled%2065.png" alt="Untitled"></p>
+<p><img src="Untitled%2066.png" alt="Untitled"></p>
+<p><strong>下载 compass</strong></p>
+<p>compass 是桌面的 gui 软件，可以用来连接database和管理数据</p>
+<p><img src="Untitled%2067.png" alt="Untitled"></p>
+<p><strong>添加表和数据</strong></p>
+<p>点击collections → add my own data</p>
+<p><img src="Untitled%2068.png" alt="Untitled"></p>
+<p><strong>把数据连接到本地的 compass</strong></p>
+<p><img src="Untitled%2069.png" alt="Untitled"></p>
+<p>复制这个connection string</p>
+<p><img src="Untitled%2070.png" alt="Untitled"></p>
+<p>粘贴到 compass，然后把密码填写成自己的密码，test改成自己的数据库名</p>
+<p><img src="Untitled%2071.png" alt="Untitled"></p>
+<p>连接成功</p>
+<p><img src="Untitled%2072.png" alt="Untitled"></p>
+<p><strong>连接 mongo db 到项目里</strong></p>
+<p>点击第二个 connect your application</p>
+<p><img src="Untitled%2073.png" alt="Untitled"></p>
+<p>同样是复制这个connection string</p>
+<p><img src="Untitled%2074.png" alt="Untitled"></p>
+<p>然后 copy 进 .env file</p>
+<p><img src="Untitled%2075.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>用 mongoose ****连接 Mongo DB</li>
+</ol>
+<p><strong>下载 mongoose</strong></p>
+<p>Mongoose 是一个让我们可以通过 Node 来操作 MongoDB 数据库的一个模块
+Mongoose 是一个对象文档模型（ODM）库，它是对 Node 原生的 MongoDB 模块进行了进一步的优化封装。大多数情况下，他被用来把结构化的模式应用到一个 MongoDB 集合，并提供了验证和类型装换等好处，基于MongoDB驱动，通过关系型数据库的思想来实现非关系型数据库</p>
+<p><img src="Untitled%2076.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">mongoose</span>
+</span></span></code></pre></div><p><strong>写配置文件</strong></p>
+<p>在后端文件夹新建 config 文件夹，新建 db.js 文件</p>
+<p>使用 <code>mongoose.connect(MONGO_URL)</code> 的方法来连接</p>
+<p><img src="Untitled%2077.png" alt="Untitled"></p>
+<p>然后在 server 引入</p>
+<p><img src="Untitled%2078.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="3">
+<li>用 mongoose 创建 ****Schema 和 modal</li>
+</ol>
+<p>通过 <code>Schema</code> 创建 <code>Model</code></p>
+<p>Model 代表的是数据库中的集合，通过 Model 才能对数据库进行操作</p>
+<p>首先在 backend 目录下创建 <strong>model</strong> 文件夹，里面装的是三个数据表的schema，是通过 <code>moogose.Schema({})</code> 的方法创建的，然后用 <code>mongoose.modal(name, schema)</code> 的方法创建 modal</p>
+<p><strong>userModel</strong></p>
+<p><img src="Untitled%2079.png" alt="Untitled"></p>
+<p><img src="Untitled%2080.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">mongoose</span> <span class="nx">from</span> <span class="s1">&#39;mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">userSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">email</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">unique</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">password</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isAdmin</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Boolean</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isSeller</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Boolean</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">seller</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">name</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">logo</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">description</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">rating</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">numReviews</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timestamps</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">User</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;User&#39;</span><span class="p">,</span> <span class="nx">userSchema</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">User</span><span class="p">;</span>
+</span></span></code></pre></div><p><strong>peoductModel</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">mongoose</span> <span class="nx">from</span> <span class="s1">&#39;mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">reviewSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">comment</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">rating</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timestamps</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">productSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">unique</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">seller</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">Types</span><span class="p">.</span><span class="nx">ObjectID</span><span class="p">,</span> <span class="nx">ref</span><span class="o">:</span> <span class="s1">&#39;User&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">image</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">brand</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">category</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">description</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">price</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">countInStock</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">rating</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">numReviews</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">reviews</span><span class="o">:</span> <span class="p">[</span><span class="nx">reviewSchema</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timestamps</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Product</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;Product&#39;</span><span class="p">,</span> <span class="nx">productSchema</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">Product</span><span class="p">;</span>
+</span></span></code></pre></div><p><strong>orderModel</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">mongoose</span> <span class="nx">from</span> <span class="s1">&#39;mongoose&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">orderSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">orderItems</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">name</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">qty</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">image</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">price</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">product</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">type</span><span class="o">:</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">Types</span><span class="p">.</span><span class="nx">ObjectId</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">ref</span><span class="o">:</span> <span class="s1">&#39;Product&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shippingAddress</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">fullName</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">address</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">city</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">postalCode</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">country</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">lat</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">lng</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">paymentMethod</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">paymentResult</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">id</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">status</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">update_time</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">email_address</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">itemsPrice</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shippingPrice</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">taxPrice</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">totalPrice</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">user</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">Types</span><span class="p">.</span><span class="nx">ObjectId</span><span class="p">,</span> <span class="nx">ref</span><span class="o">:</span> <span class="s1">&#39;User&#39;</span><span class="p">,</span> <span class="nx">required</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">seller</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">.</span><span class="nx">Types</span><span class="p">.</span><span class="nx">ObjectID</span><span class="p">,</span> <span class="nx">ref</span><span class="o">:</span> <span class="s1">&#39;User&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isPaid</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Boolean</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="kc">false</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">paidAt</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Date</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">isDelivered</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Boolean</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="kc">false</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">deliveredAt</span><span class="o">:</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="nb">Date</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timestamps</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Order</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;Order&#39;</span><span class="p">,</span> <span class="nx">orderSchema</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">Order</span><span class="p">;</span>
+</span></span></code></pre></div></li>
+<li>
+<ol start="4">
+<li>伪造一些简单的数据  bcryptjs</li>
+</ol>
+<p>关于用户的密码使用 bcryptjs</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">i</span> <span class="nx">bcryptjs</span>
+</span></span></code></pre></div><p>下面是伪造好的一些数据：</p>
+<p><img src="Untitled%2081.png" alt="Untitled"></p>
+<p><img src="Untitled%2082.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="5">
+<li>数据 Seeder 批量导入脚本</li>
+</ol>
+<p>把 json 里的数据导入到数据库里面去</p>
+<p><img src="Untitled%2083.png" alt="Untitled"></p>
+<p><img src="Untitled%2084.png" alt="Untitled"></p>
+<p>定义另一个 destroy 所有数据的方法 &amp;&amp; 如何定义命令行的快捷指令：</p>
+<p><img src="Untitled%2085.png" alt="Untitled"></p>
+<p>刷新之后，可以看到数据库本来是空的，现在已经导入了</p>
+<p><img src="Untitled%2086.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="6">
+<li>后端新建 route 文件，封装 server.js 中的 api</li>
+</ol>
+<p>首先在后端文件夹里，新建  route 文件夹，存放 api</p>
+<p>把 server.js 里的 api 复制过去</p>
+<p><img src="Untitled%2087.png" alt="Untitled"></p>
+<p>把app.get 改成 route.get</p>
+<p><img src="Untitled%2088.png" alt="Untitled"></p>
+<p>然后，在 server.js 里面，把跟/api/products 相关的api，跟 productRoutes 这个 route 关联起来</p>
+<p><img src="Untitled%2089.png" alt="Untitled"></p>
+<p>所以 <code>app.get('/api/products/',()=&gt;{})</code> 相当于</p>
+<p><code>app.use('/api/products', productRoutes )</code> +  productRoutes 文件夹中的   <code>route.get('/',()=&gt;{})</code></p>
+</li>
+<li>
+<ol start="7">
+<li>从 MongoDB 中获得数据</li>
+</ol>
+<p>关于 express-async-handler，用来错误处理：</p>
+<p><img src="Untitled%2090.png" alt="Untitled"></p>
+<p>用 asyncHandler包裹函数</p>
+<ul>
+<li>
+<p>getAllProduct api</p>
+<p><img src="Untitled%2091.png" alt="Untitled"></p>
+</li>
+<li>
+<p>getProductById api</p>
+<p><img src="Untitled%2092.png" alt="Untitled"></p>
+</li>
+</ul>
+<p>⭐所以在 mongodb里面获取数据是用 <code>.find</code>  或者 <code>.findById</code></p>
+</li>
+<li>
+<ol start="8">
+<li>创建 Error Handler 的 node 中间件</li>
+</ol>
+<p>server.js 里面 app.use 表示使用中间件</p>
+<p><img src="Untitled%2093.png" alt="Untitled"></p>
+<p>效果</p>
+<p><img src="Untitled%2094.png" alt="Untitled"></p>
+<p>为了让代码看起来简约，我们新建 middleware 文件夹，把这个错误处理的 middleware 放在文件夹里</p>
+<p><img src="Untitled%2095.png" alt="Untitled"></p>
+<p>然后在 serverjs 里面引入</p>
+<p><img src="Untitled%2096.png" alt="Untitled"></p>
+<p><img src="Untitled%2097.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="4-引入-redux-状态管理">4️⃣ 引入 Redux 状态管理</h3>
+<ul>
+<li>
+<ol>
+<li>Redux 介绍</li>
+</ol>
+<p>state 的属性有两种，一种是组件 level，一个是全局 level ，redux 是针对于整个应用的全局性的 state 管理。 比如在我们项目中的 product 这个 state，我们在项目中会在不同的组件当中都用到这个 state，可能是更新、添加、删除这样，你希望 product 是对所有的组件都 available 的。另一个例子是经过身份验证的 user，当我们登录之后，购物车物品，订单之类的都需要对这个 user 的 state 进行操作</p>
+<p><img src="Untitled%2098.png" alt="Untitled"></p>
+<p>改变 state 的方式是通过 reducer 或 reduce 或函数，基本上，除了 Actions，它只是一些函数，它们负责操作并将 state 传递给组件。现在，Action 只是代表改变这个 state 的意图的对象。我们也有 action creator，他们是将 dispatch 或 fire off 这些 action 的函数</p>
+<p>举个例子，我们可能有一个名为 Get Products 的 action creator function 。在这个 action creator 中，我们向后端发出一个功能请求，使用 Axios 或 Fetch API 或其他方式获取数据。然后我们得到这些数据，然后我们 dispatch  一个 action 到 reducer，并附加一个 payload。该 payload 将包含获取的数据</p>
+<p>现在在 reducer 中，我们可以将 payload 数据分配给 state，我们可以将其传递给任何需要它的组件。好的，所以我们可以有多个组件要求得到同一块 state。所以， 把 state 想成是盘旋在你的应用程序上的一朵云。当我们需要发生一些事情时，比如说我们想点击一个按钮，从服务器上获取一些数据，然后显示出来，我们必须创建一个 action 或一个  action creator，将一个特定的动作 dispatch 给 reducer，然后 reducer 将其传递给组件</p>
+<p>同样，我知道这听起来可能超级混乱。我在理论上解释redux和看图说话时总是遇到困难，但当我们开始跳入代码并看到它的实际工作时，大多数人真的倾向于掌握它</p>
+<p><strong>之前系统学的时候的一些笔记：</strong></p>
+<p><strong>简介</strong></p>
+<p>专门针对 react 所设计的状态管理工具，顶层套一个 provider，底层的组件都可以使用顶层的数据</p>
+<p><img src="Untitled%2099.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">npm</span> <span class="n">i</span> <span class="n">redux</span> <span class="n">react</span><span class="o">-</span><span class="n">redux</span>
+</span></span></code></pre></div><p><strong>简单使用</strong></p>
+<p>需要在项目里新建文件夹 store，里面有</p>
+<ul>
+<li>左：index.js (仓库的入口文件)</li>
+<li>右：reduce.js (创建初始状态，并导出一个函数)</li>
+</ul>
+<p><img src="Untitled%20100.png" alt="Untitled"></p>
+<p>修改组件</p>
+<ul>
+<li>修改 src/index.js 添加 <strong>provider</strong></li>
+<li>修改 app componant，添加 <strong>connect</strong>，定义状态映射（将 reducer 中的 state 映射成 props，让开发者可以在组件中使用 props.num 去调用 state 中的 num），传入参数props</li>
+</ul>
+<p><img src="Untitled%20101.png" alt="Untitled"></p>
+<h2 id="22-mapstate-vs-mapdispatch">2.2 mapState vs mapDispatch</h2>
+<p><strong>mapState</strong>：状态映射，将 reducer 中的 state 映射成 props，让开发者可以在组件中使用 props.num 去调用 state 中的 num</p>
+<p><strong>mapDispatch</strong>：事件派发映射，将 reducer 中的事件映射成 props，让开发者可以在组件中使用 props.add() 去实现 num 的累加</p>
+<p><img src="Untitled%20102.png" alt="Untitled"></p>
+<p>注意：左图的reduce.js文件里面，比起 if 判断，一般还是常用 switch</p>
+</li>
+<li>
+<ol start="2">
+<li>在 src 目录下新建文件 store.js，createStore</li>
+</ol>
+<p>在 frontend 文件夹下安装 redux 以及相关的中间件和插件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">npm</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">redux</span><span class="w"> </span><span class="n">react</span><span class="o">-</span><span class="n">redux</span><span class="w"> </span><span class="n">redux</span><span class="o">-</span><span class="n">thunk</span><span class="w"> </span><span class="n">redux</span><span class="o">-</span><span class="n">devtools</span><span class="o">-</span><span class="n">extension</span><span class="w">
+</span></span></span></code></pre></div><p><img src="Untitled%20103.png" alt="Untitled"></p>
+<p>在 src 目录下新建文件 store.js ，这里是我们连接 reducers 和一些 middleware 的地方</p>
+<p><img src="Untitled%20104.png" alt="Untitled"></p>
+<p>在 src 的 index 目录下 引入 provider 和 store，用 provider 标签包裹 App 标签</p>
+<p><img src="Untitled%20105.png" alt="Untitled"></p>
+<p>PS：之前包裹 app 的是这个</p>
+<p><img src="Untitled%20106.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="3">
+<li>创建 Product list 的 Reduce &amp; Action</li>
+</ol>
+<p><strong>创建 Reducers</strong></p>
+<p>在 frontend 的 src 目录创建 reducers 文件夹</p>
+<p>基本上我们应用程序的每个资源都会有一个 reduce，比如产品。所以在 reducers 文件夹里创建一个 <code>productReducers.js</code> 文件，然后在这个文件里，创建 <code>productListReducer</code></p>
+<p>创建 Reducer 是一个箭头函数，传入的参数是 state 和 action</p>
+<p><img src="Untitled%20107.png" alt="Untitled"></p>
+<p>在 store 中引入 productList，放到 combineReducers 里面去</p>
+<p><img src="Untitled%20108.png" alt="Untitled"></p>
+<p>现在已经可以在浏览器插件里看到 state 了，虽然它还是空的</p>
+<p><img src="Untitled%20109.png" alt="Untitled"></p>
+<p><strong>创建 Actions</strong></p>
+<p>在 frontend 的 src 目录创建 actions 文件夹，在 actions 文件夹里创建一个 <code>productActions.js</code> 文件，然后在这个文件里，创建 <code>ListProducts</code></p>
+<p><img src="Untitled%20110.png" alt="Untitled"></p>
+<p>PS: 现在这个 ListProducts action 要做的事情和我们之前在 HomeScreen 组件的使用效果中做的差不多 👇 We&rsquo;re going to do it through this action and we&rsquo;re going to dispatch actions to the reducer.</p>
+<p><img src="Untitled%20111.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="4">
+<li>
+<p>在 HomeScreen 里引入 Product list 的 Redux</p>
+</li>
+<li>
+<p>把之前的 local state 的 product 删掉，因为我们不需要再把 product 设置为我们的 loacal state 或我们的 component level state，我们需要从 Redux 中把它带进来</p>
+</li>
+<li>
+<p>把 axios 删掉，因为已经交给 action 去处理了</p>
+</li>
+<li>
+<p>引入 hooks <strong>useDispatch</strong>，会被用来 dispatch or call in action</p>
+<p>PS：在过去，我们会使用一个叫做 Connect 的高阶方法，我们把 state 映射到 props 上，现在这种 useDispatch 方法更加简单</p>
+</li>
+<li>
+<p>引入 hooks <strong>useSelector</strong>，用来选择部分需要的 state，我们将想要 product list 中的部分状态</p>
+</li>
+</ol>
+<p><img src="Untitled%20112.png" alt="Untitled"></p>
+<p>修改 homePage 的页面，设置 loading/error/正常 三种状态的显示</p>
+<p><img src="Untitled%20113.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="5">
+<li>在主页添加 Loading 和 Message 组件</li>
+</ol>
+<p>刚刚在 homePage 的页面，设置 loading/error/正常 三种状态的显示，现在来细化 loading/error 的显示</p>
+<p>在 component 中创建 Loader.js</p>
+<p><img src="Untitled%20114.png" alt="Untitled"></p>
+<p>在 component 中创建 Message.js</p>
+<p><img src="Untitled%20115.png" alt="Untitled"></p>
+<p>修改 homeScreen 中的组件</p>
+<p><img src="Untitled%20116.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="6">
+<li>创建 Product detail 的 Reduce &amp; Action (对应3)
+并在 productScreen 里引入 Product dtail 的 Redux (对应4)</li>
+</ol>
+<p><strong>可作为以后创建其他 redux state 的 general 流程</strong></p>
+<ol>
+<li>
+<p>在 constant 文件里面添加相应的 action.type</p>
+<p><img src="Untitled%20117.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 Reducers 文件夹 的 productReducers 里面创建新的 productDetailsReducer</p>
+<p><img src="Untitled%20118.png" alt="Untitled"></p>
+</li>
+<li>
+<p>进入 store 文件，在 combineReducers 里面引入这个新建的 productDetailsReducer</p>
+<p><img src="Untitled%20119.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 action 文件夹中的 productActions.js 中，新建 listProductDetails 这个 action creator function</p>
+<p><img src="Untitled%20120.png" alt="Untitled"></p>
+</li>
+<li>
+<p>进入 productScreen，跟上面的(3)和(4)做一样的操作</p>
+<p><img src="Untitled%20121.png" alt="Untitled"></p>
+<p><img src="Untitled%20122.png" alt="Untitled"></p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="5-添加购物车">5️⃣ 添加购物车</h3>
+<ul>
+<li>
+<ol>
+<li>选择添加到购物车 item 数量，实现 add 按钮事件</li>
+</ol>
+<p>实现效果</p>
+<p><img src="Untitled%20123.png" alt="Untitled"></p>
+<p>实现选择 qty 的下拉菜单，如果 product 的 countInStock 数据还大于 0，则显示这个选择 qty 的下拉框，并且把 countInStock 的数量 map 为多个 option</p>
+<p><img src="Untitled%20124.png" alt="Untitled"></p>
+<p>实现这个 button 的 onclick 函数</p>
+<p><img src="Untitled%20125.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>添加到购物车的 reducer &amp; action</li>
+</ol>
+<p>跟之前的步骤一样</p>
+<ol>
+<li>
+<p>创建 cartConstant.js 文件</p>
+<p><img src="Untitled%20126.png" alt="Untitled"></p>
+</li>
+<li>
+<p>创建 cartReducers.js 文件夹，添加 add_to_cart reducer</p>
+<p><img src="Untitled%20127.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 store.js 里面注册这个 reducer</p>
+<p><img src="Untitled%20128.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 actions 文件夹里创建 cartActions.js，新建 addToCart Action，在 action 的 payload 里面返回查找到的商品对象，并且保存在 localStorage 中</p>
+<p><img src="Untitled%20129.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 store.js 里面引入 cartItem 的 localStorage</p>
+<p><img src="Untitled%20130.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 CartScreen view 里面实现添加到购物车的功能，放在下一节讲</p>
+</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>添加到购物车的 screen function</li>
+</ol>
+<p>引入需要的hook，useEffect 是我们要实际 dispatch 添加到购物车的地方</p>
+<p><img src="Untitled%20131.png" alt="Untitled"></p>
+<p>在 view 中实现添加购物车的功能</p>
+<p>match 可以从 url 中找到 id，location.search 可以从 url 中提取出问号后面的参数，这里提取出来的是 ?qty=1 这个字符串</p>
+<p><img src="Untitled%20132.png" alt="Untitled"></p>
+<p>现在的效果是，可以在 state 中看见 cartItem 的增加了</p>
+<p><img src="Untitled%20133.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="4">
+<li>写购物车的前端界面 CartScreen</li>
+</ol>
+<p>在 App.js 当中引入这个路由</p>
+<p><img src="Untitled%20134.png" alt="Untitled"></p>
+<p>效果</p>
+<p><img src="Untitled%20135.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{8}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Shopping Cart<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {cartItems.length === 0 ? (
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">Message</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Your cart is empty <span class="p">&lt;</span><span class="nt">Link</span> <span class="na">to</span><span class="o">=</span><span class="s">&#39;/&#39;</span><span class="p">&gt;</span>Go Back<span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">Message</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    ) : (
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">ListGroup</span> <span class="na">variant</span><span class="o">=</span><span class="s">&#39;flush&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {cartItems.map((item) =&gt; (
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">ListGroup.Item</span> <span class="na">key</span><span class="o">=</span><span class="s">{item.product}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{2}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Image</span> <span class="na">src</span><span class="o">=</span><span class="s">{item.image}</span> <span class="na">alt</span><span class="o">=</span><span class="s">{item.name}</span> <span class="na">fluid</span> <span class="na">rounded</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{3}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Link</span> <span class="na">to</span><span class="o">=</span><span class="s">{`/product/${item.product}`}</span><span class="p">&gt;</span>{item.name}<span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{2}</span><span class="p">&gt;</span>${item.price}<span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{2}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Form.Control</span>
+</span></span><span class="line"><span class="cl">                  <span class="na">as</span><span class="o">=</span><span class="s">&#39;select&#39;</span>
+</span></span><span class="line"><span class="cl">                  <span class="na">value</span><span class="o">=</span><span class="s">{item.qty}</span>
+</span></span><span class="line"><span class="cl">                  <span class="na">onChange</span><span class="o">=</span><span class="s">{(e)</span> <span class="err">=</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    dispatch(
+</span></span><span class="line"><span class="cl">                      addToCart(item.product, Number(e.target.value))
+</span></span><span class="line"><span class="cl">                    )
+</span></span><span class="line"><span class="cl">                  }
+</span></span><span class="line"><span class="cl">                &gt;
+</span></span><span class="line"><span class="cl">                  {[...Array(item.countInStock).keys()].map((x) =&gt; (
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">key</span><span class="o">=</span><span class="s">{x</span> <span class="err">+</span> <span class="na">1</span><span class="err">}</span> <span class="na">value</span><span class="o">=</span><span class="s">{x</span> <span class="err">+</span> <span class="na">1</span><span class="err">}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                      {x + 1}
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                  ))}
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">Form.Control</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{2}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Button</span>
+</span></span><span class="line"><span class="cl">                  <span class="na">type</span><span class="o">=</span><span class="s">&#39;button&#39;</span>
+</span></span><span class="line"><span class="cl">                  <span class="na">variant</span><span class="o">=</span><span class="s">&#39;light&#39;</span>
+</span></span><span class="line"><span class="cl">                  <span class="na">onClick</span><span class="o">=</span><span class="s">{()</span> <span class="err">=</span><span class="p">&gt;</span> removeFromCartHandler(item.product)}
+</span></span><span class="line"><span class="cl">                &gt;
+</span></span><span class="line"><span class="cl">                  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">className</span><span class="o">=</span><span class="s">&#39;fas fa-trash&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">Button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">Row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">ListGroup.Item</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        ))}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">ListGroup</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    )}
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Col</span> <span class="na">md</span><span class="o">=</span><span class="s">{4}</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">Card</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">ListGroup</span> <span class="na">variant</span><span class="o">=</span><span class="s">&#39;flush&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">ListGroup.Item</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            Subtotal ({cartItems.reduce((acc, item) =&gt; acc + item.qty, 0)})
+</span></span><span class="line"><span class="cl">            items
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          $
+</span></span><span class="line"><span class="cl">          {cartItems
+</span></span><span class="line"><span class="cl">            .reduce((acc, item) =&gt; acc + item.qty * item.price, 0)
+</span></span><span class="line"><span class="cl">            .toFixed(2)}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">ListGroup.Item</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">ListGroup.Item</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">Button</span>
+</span></span><span class="line"><span class="cl">            <span class="na">type</span><span class="o">=</span><span class="s">&#39;button&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="na">className</span><span class="o">=</span><span class="s">&#39;btn-block&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="na">disabled</span><span class="o">=</span><span class="s">{cartItems.length</span> <span class="err">===</span> <span class="na">0</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl">            <span class="na">onClick</span><span class="o">=</span><span class="s">{checkoutHandler}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            Proceed To Checkout
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">Button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">ListGroup.Item</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">ListGroup</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">Card</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">Col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">Row</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<ol start="5">
+<li>
+<p>从购物车删除的 reducer &amp; action &amp; screen function</p>
+</li>
+<li>
+<p>添加 remove constant</p>
+</li>
+<li>
+<p>添加 cartReducer 的另一个 case</p>
+<p><img src="Untitled%20136.png" alt="Untitled"></p>
+</li>
+<li>
+<p>添加 action</p>
+<p><img src="Untitled%20137.png" alt="Untitled"></p>
+</li>
+<li>
+<p>在 cartScreen 里实现功能，实现这个 removeFromCartHandler</p>
+<p><img src="Untitled%20138.png" alt="Untitled"></p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="6-后端身份认证">6️⃣ 后端身份认证</h3>
+<ul>
+<li>
+<ol start="0">
+<li>Prepare：把后端 route 封装成 Controller</li>
+</ol>
+<p>新建 controllers 文件夹，新建 productController.js</p>
+<p>以前的 productRoutes 文件，都是把具体函数的实现写在 router.get()里面</p>
+<p><img src="Untitled%2091.png" alt="Untitled"></p>
+<p>现在直接用 router.route(’url’).get(controler) 来封装起来</p>
+<p><img src="Untitled%20139.png" alt="Untitled"></p>
+<p>在 controller 内部，只需要把以前写在 router 里面的函数复制过去</p>
+<p><img src="Untitled%20140.png" alt="Untitled"></p>
+</li>
+<li>
+<ol>
+<li>新建 authUser 的 Route 和 Controller (r+u=接口)</li>
+</ol>
+<p>(1)在 server.js 中添加 userRoutes</p>
+<p><img src="Untitled%20141.png" alt="Untitled"></p>
+<p>(2)新建 userRoutes.js，接到 authUser 这个 Controller</p>
+<p><img src="Untitled%20142.png" alt="Untitled"></p>
+<p>(3)新建 userController.js，创建 authUser 这个 Controller，处理 request</p>
+<p><img src="Untitled%20143.png" alt="Untitled"></p>
+<p>为了我们能在 body 中接收 json 数据，需要在 server.js 里面添加一个中间件</p>
+<p><img src="Untitled%20144.png" alt="Untitled"></p>
+<p>效果：</p>
+<p><img src="Untitled%20145.png" alt="Untitled"></p>
+<p>上面只是测试一下接口能不能跑通，下面开始正式匹配账号和密码，并且返回用户信息：</p>
+<p>(1)在 userModel 里面添加 bcrypt match 的方法：</p>
+<p>因为数据库里面的密码是加密的，所以我们需要通过 bcrypt.compare 的方法来比较输入的这个文本字符串和数据库中加密过的密码是不是一样的</p>
+<p><img src="Untitled%20146.png" alt="Untitled"></p>
+<p><img src="Untitled%20147.png" alt="Untitled"></p>
+<p>(2)修改 userController 里的方法，判断身份验证是否成功：</p>
+<p><img src="Untitled%20148.png" alt="Untitled"></p>
+<p>(3)现在的效果：验证 email 和 passward 成功之后，会返回 user 的信息</p>
+<p><img src="Untitled%20149.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>Authentication 和 Authorization 的区别</li>
+</ol>
+<p><strong>认证和授权是两件不同的事情</strong></p>
+<p>之前，我们已经实现了<strong>认证</strong>(Authentication)，我们接受电子邮件和密码，在数据库中对其进行认证，证明是这个用户本人</p>
+<p>现在，<strong>授权</strong>(Authorization)是让该用户有权限访问某些部分，或者 API 中的某些受保护 routes，我们通过发送 Json Web令牌来做到这一点</p>
+<p>当登录时，它将创建一个Json Web 令牌，并将其与一个密钥 sign。这样服务器就可以知道它是否被篡改了，然后这个 token 就会被送回给客户，可以把它存储在客户端，可以把它存储在浏览器中。当我们必须访问任何受保护的 routes 时，我们可以在 header 中发送该令牌</p>
+<p><strong>token</strong> <strong>有三个不同的部分</strong></p>
+<ul>
+<li>header，包括令牌的类型，这将是JWT，然后是用来签名的算法。</li>
+<li>payload 数据是实际内容,通常我们会发送一个 user ID 或 session ID 来识别用户，我们会把它放在 payload 中。你要确保不要把安全数据，如密码诸如此类的数据放在里面，所以通常我们只发送一个用户ID。这样，服务器就可以收到它，我们就可以做一个数据库调用，或者我们可以得到那个用户</li>
+<li>signature 签名是用来验证沿途是否有任何改变，它验证了发件人是他们所说的那个人</li>
+</ul>
+<p>可以在这个网站解析 token，<strong>jwt.io</strong></p>
+<p><img src="Untitled%20150.png" alt="Untitled"></p>
+<p><strong>方法：在 header 里面添加 Authentication</strong></p>
+<p>如果我们现在跳回到 Postman上，当我们 post 这个 login route时，它就会<strong>认证</strong>我们的身份(Authentication)。但我们只得到一些基本的用户数据，我们并没有得到一个我们可以用来发送到受保护 route 的 token</p>
+<p><img src="Untitled%20151.png" alt="Untitled"></p>
+<p>所以在下一个视频中，我们将使它能够发送一个令牌回来</p>
+<p>这样做的方法是，一旦我们得到它，就说明，这个 route 是受保护的，我们将创建我们自己的 middleware，我们将创建我们自己的中间件来保护路由，但如果这是受保护的，我们将不得不在 header 中发送授权值，我们将放置令牌，like this</p>
+<p><img src="Untitled%20152.png" alt="Untitled"></p>
+<p>当我们到达我们的前端时，我们将采取令牌，我们将把它存储在客户端，然后我们会用 Axios 发送。当然如果你愿意，你也可以使用Fetch</p>
+</li>
+<li>
+<ol start="3">
+<li>在身份认证成功之后，生成并返回 JWT json web token</li>
+</ol>
+<p>安装 jsonwebtoken</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">i</span> <span class="nx">jsonwebtoken</span>
+</span></span></code></pre></div><p>新建 utils 文件夹，在里面写 generateToken 的方法：</p>
+<p><img src="Untitled%20153.png" alt="Untitled"></p>
+<p>在 userController 引入这个生成 token 的函数，然后在用户身份认证成功之后返回的 user 信息里，用这个函数生成一个 token：</p>
+<p><img src="Untitled%20154.png" alt="Untitled"></p>
+<p><img src="Untitled%20155.png" alt="Untitled"></p>
+<p>效果：身份认证成功之后，我们得到了 token</p>
+<p><img src="Untitled%20156.png" alt="Untitled"></p>
+<p>可以看到 token 里隐藏的信息，exp 是过期时间，exp 的值是个时间戳：</p>
+<p><img src="Untitled%20157.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="4">
+<li>新建 middleware 匹配并解析 token 信息</li>
+</ol>
+<p><strong>下面创建一个需要授权才能访问的受保护的 route：</strong></p>
+<p>新建一个 access 属性为 private (怎么才能实现它的私有属性呢，后面需要通过一个 protect 的中间件来实现) 的 getUserProfile 的 controller，只有当身份认证成功之后才能访问这个接口：</p>
+<p>(测试版本)</p>
+<p><img src="Untitled%20158.png" alt="Untitled"></p>
+<p>(完善版本)</p>
+<p><img src="Untitled%20159.png" alt="Untitled"></p>
+<p>在 userRoute 里添加这个 /profile，对接 getUserProfile 这个 controller，每次添加了新的 controller 之后都要记得在这里注册呀！</p>
+<p><img src="Untitled%20160.png" alt="Untitled"></p>
+<p><strong>下面开始实现 protect 中间件：</strong></p>
+<p>在 middleware 文件夹下面，新建 anthMiddleware.js 文件</p>
+<ol>
+<li>
+<p>从 header 里面的 authorization 头里面的信息拿到 token</p>
+</li>
+<li>
+<p>通过 jwt.decode(token,secret)，来解析 token，解析出来的信息打印出来就是下面的 json，于是就可以拿到 id</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">id</span><span class="o">:</span> <span class="s1">&#39;5f6bf78dqi0w&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">iat</span><span class="o">:</span> <span class="mi">1600978514</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">exp</span><span class="o">:</span> <span class="mi">1600978514</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>通过 id 查找用户，返回除了密码以外的信息</p>
+</li>
+<li>
+<p>没有 token 的情况处理</p>
+</li>
+</ol>
+<p><img src="Untitled%20161.png" alt="Untitled"></p>
+<p>然后，在 profile 这个 route 的参数里面，加上 protect 这个中间件，这样只要我们触发了这个 route，protect 中间件就会运行</p>
+<p><img src="Untitled%20162.png" alt="Untitled"></p>
+<p>效果：</p>
+<p><img src="Untitled%20163.png" alt="Untitled"></p>
+<p><strong>TIPS：</strong></p>
+<p>把 /login 生成的 token 保留在 postman 里面，这样在调用 /profile 的时候就不用一直 copy了</p>
+<p><img src="Untitled%20164.png" alt="Untitled"></p>
+<p>当我们运行完 /login 之后，可以发现 postman 的 env 文件里保留了这个 token</p>
+<p><img src="Untitled%20165.png" alt="Untitled"></p>
+<p>在这个地方设置好 {{TOKEN}}</p>
+<p><img src="Untitled%20166.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="5">
+<li>新建 userRegister 的 Route 和 Controller</li>
+</ol>
+<p>新建 registerUser 的 Controller，作用是解析 request body 里面传进来的 user 对象，然后通过 User.create() 在数据库创建一个新的用户信息</p>
+<p><img src="Untitled%20167.png" alt="Untitled"></p>
+<p><img src="Untitled%20168.png" alt="Untitled"></p>
+<p>一定要记得在 userRoutes 里注册 registerUser 这个 controller(第一个)</p>
+<p><img src="Untitled%20169.png" alt="Untitled"></p>
+<p>为了密码的安全，在 useModel 里面预处理密码加密：</p>
+<p><img src="Untitled%20170.png" alt="Untitled"></p>
+<p>然后就可以看到数据库里的密码是经过 hash 加密过的：</p>
+<p><img src="Untitled%20171.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="7-前端身份认证">7️⃣ 前端身份认证</h3>
+<ul>
+<li>
+<ol>
+<li>用户登录的 reducer &amp; action</li>
+</ol>
+<p>(1) 新建 userConstant</p>
+<p><img src="Untitled%20172.png" alt="Untitled"></p>
+<p>(2) 新建 userLoginReducers</p>
+<p><img src="Untitled%20173.png" alt="Untitled"></p>
+<p>(3) 在 store.js 里面注册这个 reducer</p>
+<p><img src="Untitled%20174.png" alt="Untitled"></p>
+<p>(4) 在 useAction.js 文件里面新建 login 的 action creator，如果匹配成功了，要将 userInfo 存进 localstorage 里面去</p>
+<p><img src="Untitled%20175.png" alt="Untitled"></p>
+<p><img src="Untitled%20176.png" alt="Untitled"></p>
+<p>(5) 在 store.js 里面引入 cartItem 的 localStorage</p>
+<p><img src="Untitled%20177.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>用户登录的 screen function</li>
+</ol>
+<p>t在 screen 文件夹里面新建 loginScreen.js，然后在 app.js 里面添加 loginScreen 的路由</p>
+<p><img src="Untitled%20178.png" alt="Untitled"></p>
+<p>在 component 文件夹里新建 formContainer.js</p>
+<p><img src="Untitled%20179.png" alt="Untitled"></p>
+<p><strong>loginScreen.js：</strong></p>
+<blockquote>
+<p>路由重定向的部分没有看懂，为什么登录成功之后就直接跳转到主页了呢？还有组件的参数 location, history 也没有看懂</p></blockquote>
+<p>好像看懂了，location.search 是获取 url 参数的方法，在 react 组件的 componentDidMount 方法中打印一下 this.props，在浏览器控制台中查看输出如下，其中页面的 url 信息全都包含在 match 字段中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">localhost</span><span class="o">:</span><span class="mi">3000</span><span class="o">/</span><span class="nx">app</span><span class="o">/</span><span class="nx">knowledgeManagement</span><span class="o">/</span><span class="nx">modify</span>
+</span></span><span class="line"><span class="cl"><span class="err">/STY20171011124209535/3/1507701970070/0/?s=1&amp;f=7</span>
+</span></span></code></pre></div><p><img src="Untitled%205.png" alt="Untitled"></p>
+<p><img src="Untitled%206.png" alt="Untitled"></p>
+<ul>
+<li>match：包含了具体的 url 信息，在 params 字段中可以获取到各个路由参数的值</li>
+<li>history：包含了组件可以使用的各种路由系统的方法，常用的有 push 和 replace，两者都是跳转页面，但是 replace 不会引起页面的刷新，仅仅是改变 url</li>
+<li>location：相当于 URL 的对象形式表示，通过 search 字段可以获取到 url 中的 query 信息（这里 state 的含义与 HTML5 history.pushState API 中的 state 对象一样。每个 URL 都会对应一个 state 对象，你可以在对象里存储数据，但这个数据却不会出现在 URL 中。实际上，数据被存在了 sessionStorage 中）</li>
+</ul>
+<p>所以，如果 url 里面没有携带 query 参数的话，redirect 的值就是 ‘/’，这样在 useEffect 里面，只要登录成功拿到 userInfo 了，就可以跳转到 ‘/’ 也就是 homeScreen.js 组件页面</p>
+<p><img src="Untitled%20180.png" alt="Untitled"></p>
+<p><img src="Untitled%20181.png" alt="Untitled"></p>
+<p><img src="Untitled%20182.png" alt="Untitled"></p>
+<p>在 userActions 里面实现 logout 这个 action</p>
+<p><img src="Untitled%20183.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="3">
+<li>用户注册的 reducer &amp; action &amp; screen function</li>
+</ol>
+<p>(1) 在 userConstant.js 里面添加常数</p>
+<p><img src="Untitled%20184.png" alt="Untitled"></p>
+<p>(2) 在 userReducers.js 文件里添加 userRegisterReducer</p>
+<p><img src="Untitled%20185.png" alt="Untitled"></p>
+<p>(3) 在 store.js 里面注册这个 reducer</p>
+<p><img src="Untitled%20186.png" alt="Untitled"></p>
+<p>(4) 在 usrActions.js 里面创建 register 这个 action creator 函数</p>
+<p><img src="Untitled%20187.png" alt="Untitled"></p>
+<p><img src="Untitled%20188.png" alt="Untitled"></p>
+<p>(5) 新建 registerScreen.js</p>
+<p><img src="Untitled%20189.png" alt="Untitled"></p>
+<p><img src="Untitled%20190.png" alt="Untitled"></p>
+<p><img src="Untitled%20191.png" alt="Untitled"></p>
+<p><img src="Untitled%20192.png" alt="Untitled"></p>
+<p><img src="Untitled%20193.png" alt="Untitled"></p>
+<p>(6) 在 App.js 里面注册 registerScreen</p>
+<p><img src="Untitled%20194.png" alt="Untitled"></p>
+<p>效果</p>
+<p><img src="Untitled%20195.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="3">
+<li>导航栏登录显示头像， 退出登录</li>
+</ol>
+<p>效果：</p>
+<p><img src="Untitled%20196.png" alt="Untitled"></p>
+<p>在 component 文件夹中找到 header.js，引入 redux 的 userInfo 这个全局状态</p>
+<p><img src="Untitled%20197.png" alt="Untitled"></p>
+<p>增加判断条件，如果有 userInfo，则显示名字和下拉菜单，如果没有，则还是 sign in 按钮</p>
+<p><img src="Untitled%20198.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="5">
+<li>更新用户信息</li>
+</ol>
+</li>
+</ul>
+<h3 id="8-支付-api">8️⃣ 支付 API</h3>
+<h3 id="9-admin-系统的用户管理">9️⃣ Admin 系统的用户管理</h3>
+<ul>
+<li>
+<ol>
+<li>Get User 的 route 和 controller</li>
+</ol>
+<p>在 userController.js 里面新建 getUsers，返回所有的用户</p>
+<p><img src="Untitled%20199.png" alt="Untitled"></p>
+<p>userRoute.js 里面添加 getUsers 的 controller，这个方法也是受保护的，所以也要加上 protect 这个中间件</p>
+<p><img src="Untitled%20200.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>验证 Admin 权限的 middleware</li>
+</ol>
+<p>在 authMiddleware.js 里面添加 admin 中间件</p>
+<p><img src="Untitled%208.png" alt="Untitled"></p>
+<p>在 userRoutes.js 里面引入 admin 中间件，放在 protect 中间件后面，表示首先登录，再验证是否有 admin 的权限，只有都满足，才能调用这个 api</p>
+<p><img src="Untitled%209.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="3">
+<li>User List 的 reducer &amp; action &amp; screen function</li>
+</ol>
+<p>(1) 在 userConstant.js 里面加入 user list</p>
+<p><img src="Untitled%20201.png" alt="Untitled"></p>
+<p>(2) 在 userReducers.js 里面新增 userListReducer</p>
+<p><img src="Untitled%20202.png" alt="Untitled"></p>
+<p>(3) 在 store.js 里面引入这个 userListReducer</p>
+<p><img src="Untitled%20203.png" alt="Untitled"></p>
+<p>(4) 在 userActions.js 里面新增 listUsers 这个 action creator function</p>
+<p>这里的 204 行的代码没有看懂是什么意思</p>
+<p><img src="Untitled%20204.png" alt="Untitled"></p>
+<p><img src="Untitled%20205.png" alt="Untitled"></p>
+<p>(5) 创建 userListScreen.js</p>
+<p>效果</p>
+<p><img src="Untitled%20206.png" alt="Untitled"></p>
+<p><img src="Untitled%20207.png" alt="Untitled"></p>
+<p>表格的 html</p>
+<p><img src="Untitled%20208.png" alt="Untitled"></p>
+<p><img src="Untitled%20209.png" alt="Untitled"></p>
+<p><img src="Untitled%20210.png" alt="Untitled"></p>
+<p>(6) 在 App.js 里面引入这个 userListScreen</p>
+<p><img src="Untitled%20211.png" alt="Untitled"></p>
+<p>(7) 设置进入这个 userListScreen 的入口，在 header 的下拉菜单里面，增加了“用户管理”、“商品管理”、“订单管理”三个 drop down menu</p>
+<p><img src="Untitled%20212.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="4">
+<li>Access security</li>
+</ol>
+</li>
+</ul>
+<h3 id="10-admin-系统的商品管理">1️⃣0️⃣ Admin 系统的商品管理</h3>
+<h3 id="11-发表产品的评论">1️⃣1️⃣ 发表产品的评论</h3>
+<ul>
+<li>
+<ol>
+<li>发表评论的 route 和 controller</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>发表评论前端实现</li>
+</ol>
+<p>效果图：</p>
+<p><img src="Untitled%20213.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="12-模糊搜索栏产品分页显示top10">1️⃣2️⃣ 模糊搜索栏、产品分页、显示top10</h3>
+<ul>
+<li>
+<ol>
+<li>模糊搜索</li>
+</ol>
+<p>在 App.js 里面加入这个 route</p>
+<p><img src="Untitled%20214.png" alt="Untitled"></p>
+<p>新建 searchBox.js 这个 component</p>
+<p><img src="Untitled%20215.png" alt="Untitled"></p>
+<p><img src="Untitled%20216.png" alt="Untitled"></p>
+<p>在 header 里面引入 searchBox</p>
+<p><img src="Untitled%20217.png" alt="Untitled"></p>
+<p>修改 productAction.js 里面的 listProducts</p>
+<p><img src="Untitled%20218.png" alt="Untitled"></p>
+<p>所以在使用 listProducts 的地方就是 HomeScreen 也要有所改动</p>
+<p><img src="Untitled%20219.png" alt="Untitled"></p>
+<p>修改 productController 里面的 getProducts 函数，使用了正则表达式</p>
+<p><img src="Untitled%2011.png" alt="Untitled"></p>
+</li>
+<li>
+<ol start="2">
+<li>HomeScreen 的分页展示</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>AdminScreen 的分页展示</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>轮播图显示最火的 top3 产品</li>
+</ol>
+<p>Product.find({}).sort({rating:-1}).limit(3)</p>
+<p><img src="Untitled%20220.png" alt="Untitled"></p>
+<p>mongoDB sort 的底层实现</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">testdoc</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">&#34;a&#34;</span><span class="o">:</span><span class="mi">2222</span><span class="p">}).</span><span class="nx">sort</span><span class="p">({</span><span class="s2">&#34;_id&#34;</span><span class="o">:-</span><span class="mi">1</span><span class="p">}).</span><span class="nx">limit</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span></code></pre></div><p>当数据量少时，会使用<code>{&quot;_a&quot;:1}</code>索引，并进行内存排序，当数据量大时，会使用<code>{&quot;_id&quot;:1}</code>
+索引，这个时候<code>find</code>里的a并没有用到索引，所以最终是会扫描所有文档，速度非常慢</p>
+</li>
+<li>
+<ol start="5">
+<li>page tile</li>
+</ol>
+</li>
+</ul>
+<h3 id="13-部署在-heroku">1️⃣3️⃣ 部署在 Heroku</h3>
+<ul>
+<li>
+<ol>
+<li>npm run build 生成 build 文件夹</li>
+</ol>
+<p><img src="Untitled%20221.png" alt="Untitled"></p>
+<p>npm run build → 生成一个build包</p>
+<p>进入后端的server.js 配置</p>
+<p><img src="Untitled%20222.png" alt="Untitled"></p>
+<p>然后跑 npm start，启动backend</p>
+</li>
+<li>
+<ol start="2">
+<li>Deploy on Heruko</li>
+</ol>
+<p><strong>Heroku CLI 方法总览：</strong></p>
+<p><img src="Untitled%20223.png" alt="Untitled"></p>
+<p>登录：</p>
+<p><img src="Untitled%20224.png" alt="Untitled"></p>
+<p>下载 heruko CLI</p>
+<p><img src="Untitled%20225.png" alt="Untitled"></p>
+<p>在命令行输入 <code>heruko login</code> 的命令，弹出登录网页，点击登录</p>
+<p><img src="Untitled%20226.png" alt="Untitled"></p>
+<p><code>heroku create proshopapp</code></p>
+<p><img src="Untitled%20227.png" alt="Untitled"></p>
+<p>可以点开这个网址</p>
+<p><img src="Untitled%20228.png" alt="Untitled"></p>
+<p>可以看到新项目的欢迎页面</p>
+<p><img src="Untitled%20229.png" alt="Untitled"></p>
+<p>在项目里新建Procfile 文件</p>
+<p><img src="Untitled%20230.png" alt="Untitled"></p>
+<p><img src="Untitled%20231.png" alt="Untitled"></p>
+<p>用git工具提交</p>
+<p><img src="Untitled%20232.png" alt="Untitled"></p>
+<p>在setting里配置 .env 文件的参数</p>
+<p><img src="Untitled%20233.png" alt="Untitled"></p>
+<p><img src="Untitled%20234.png" alt="Untitled"></p>
+<p>部署成功！！</p>
+<p><img src="Untitled%20235.png" alt="Untitled"></p>
+</li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/react-native/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#项目简介">项目简介</a></li>
+        <li><a href="#项目细节">项目细节</a></li>
+        <li><a href="#支付的实现">支付的实现</a></li>
+        <li><a href="#1-搭建前端页面">1️⃣ 搭建前端页面</a></li>
+        <li><a href="#2-从epress框架获取数据">2️⃣ 从Epress框架获取数据</a></li>
+        <li><a href="#3-配置-mongo-db">3️⃣ 配置 Mongo DB</a></li>
+        <li><a href="#4-引入-redux-状态管理">4️⃣ 引入 Redux 状态管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#22-mapstate-vs-mapdispatch">2.2 mapState vs mapDispatch</a>
+      <ul>
+        <li><a href="#5-添加购物车">5️⃣ 添加购物车</a></li>
+        <li><a href="#6-后端身份认证">6️⃣ 后端身份认证</a></li>
+        <li><a href="#7-前端身份认证">7️⃣ 前端身份认证</a></li>
+        <li><a href="#8-支付-api">8️⃣ 支付 API</a></li>
+        <li><a href="#9-admin-系统的用户管理">9️⃣ Admin 系统的用户管理</a></li>
+        <li><a href="#10-admin-系统的商品管理">1️⃣0️⃣ Admin 系统的商品管理</a></li>
+        <li><a href="#11-发表产品的评论">1️⃣1️⃣ 发表产品的评论</a></li>
+        <li><a href="#12-模糊搜索栏产品分页显示top10">1️⃣2️⃣ 模糊搜索栏、产品分页、显示top10</a></li>
+        <li><a href="#13-部署在-heroku">1️⃣3️⃣ 部署在 Heroku</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

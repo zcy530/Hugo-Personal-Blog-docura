@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Android Camera 2 · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/android-camera-2/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Android Camera 2</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="android-camera-2">Android Camera 2</h1>
+<h3 id="source-code">Source code</h3>
+<p><a href="https://cs.android.com/android/platform/superproject/main/&#43;/main:frameworks/base/core/java/android/hardware/Camera.java;l=508?q=%22Fail%20to%20connect%20to%20camera%20service%22" target="_blank">Camera.java - Android Code Search</a></p>
+<h3 id="intro">Intro</h3>
+<ul>
+<li>
+<p>Introduce</p>
+<p>从 Android 5.0 开始，Google 引入了一套全新的相机框架 Camera2（android.hardware.camera2）并且废弃了旧的相机框架 Camera1（android.hardware.Camera）。基本原因是，camera1 接口过于简单，没法满足更加复杂的相机应用场景。为了给应用层提供更多的相机控制权限，从而构建出更高质量的相机应用程序，Google 才推出了 Camera2 接口</p>
+<p>看下和 Camera1 比较，Camera2 有哪些高级特性：</p>
+<ul>
+<li>在开启相机之前检查相机信息</li>
+<li>在不开启预览的情况下拍照</li>
+<li>一次拍摄多张不同格式和尺寸的图片</li>
+<li>控制曝光时间，灵活的 3A 控制</li>
+<li>以更快的间隔拍摄图像</li>
+<li>显示来自多个摄像机的预览</li>
+<li>直接应用效果和滤镜</li>
+<li>改进了新硬件的性能。Supported Hardware Level 的概念，不同厂商对 Camera2 的支持程度不同，从低到高有 LEGACY、LIMITED、FULL 和 LEVEL_3 四个级别</li>
+</ul>
+</li>
+<li>
+<p>Camera2 API class</p>
+<p>看下 Camera2 API 涉及到哪些类：</p>
+<p><img src="Untitled.png" alt="Untitled"></p>
+<p><img src="Untitled%201.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Camera2 structure</p>
+<p>Android Camera 整体框架主要包括三个进程：app 进程、camera server 进程、HAL 进程（provider进程），进程之间的通信都是通过 binder 实现，其中 app 和 camera server 通信使用 AIDL (Android Interface Definition Language) ，camera server 和 hal（provider进程）通信使用 HIDL (HAL interface definition language) 。Android 上面的框架分级，基本都是类似的</p>
+<p><img src="Untitled%202.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Pipeline</p>
+<p>Camera2 的 API 模型被设计成一个 Pipeline（管道），它按顺序处理每一帧的请求并返回请求结果给客户端。下面这张来自官方的图展示了 Pipeline 的工作流程</p>
+<p><img src="Untitled%203.png" alt="Untitled"></p>
+<p>Request的整体处理流程</p>
+<p><img src="Untitled%204.png" alt="Untitled"></p>
+<p>一个例子解释上面的第一张图的示意图，假设我们想要同时拍摄两张不同尺寸的图片，并且在拍摄的过程中闪光灯必须亮起来。整个拍摄流程如下：</p>
+<ol>
+<li>创建一个用于从 Pipeline 获取图片的 CaptureRequest</li>
+<li>修改 CaptureRequest 的闪光灯配置，让闪光灯在拍照过程中亮起来</li>
+<li>创建两个不同尺寸的 Surface 用于接收图片数据，并且将它们添加到 CaptureRequest 中</li>
+<li>发送配置好的 CaptureRequest 到 Pipeline 中等待它返回拍照结果</li>
+<li>一个新的 CaptureRequest 会被放入一个被称作 Pending Request Queue 的队列中等待被执行，当 In-Flight Capture Queue 队列空闲的时候就会从 Pending Request Queue 获取若干个待处理的 CaptureRequest，并且根据每一个 CaptureRequest 的配置进行 Capture 操作</li>
+<li>最后我们从不同尺寸的 Surface 中获取图片数据并且还会得到一个包含了很多与本次拍照相关的信息的 CaptureResult，流程结束</li>
+</ol>
+<p>Camera2开发流程：</p>
+<p><img src="Untitled%205.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Supported Hardware Level</p>
+<p>相机功能的强大与否和硬件息息相关，不同厂商对 Camera2 的支持程度也不同，所以 Camera2 定义了一个叫做 Supported Hardware Level 的重要概念，其作用是将不同设备上的 Camera2 根据功能的支持情况划分成多个不同级别以便开发者能够大概了解当前设备上 Camera2 的支持情况：</p>
+<ul>
+<li><strong>LEGACY</strong>：向后兼容的级别，处于该级别的设备意味着它只支持 Camera1 的功能，不具备任何 Camera2 高级特性</li>
+<li><strong>LIMITED</strong>：除了支持 Camera1 的基础功能之外，还支持部分 Camera2 高级特性的级别</li>
+<li><strong>FULL</strong>：支持所有 Camera2 的高级特性</li>
+<li><strong>LEVEL_3</strong>：新增更多 Camera2 高级特性，例如 YUV 数据的后处理等</li>
+</ul>
+</li>
+</ul>
+<h3 id="api">API</h3>
+<ul>
+<li>
+<p>Capture</p>
+<p>Camera 的所有操作和参数配置最终都是服务于 capture，例如对焦是为了让某一个区域的图像更加清晰，调节曝光补偿是为了调节图像的亮度。因此，在 Camera2 里面所有的相机操作和参数配置都被抽象成 Capture，所以不要简单的把 Capture 直接理解成是拍照，因为 Capture 操作可能仅仅是为了让预览画面更清晰而进行对焦而已。如果你熟悉 Camera1，那你可能会问 setFlashMode在哪，setFocusMode()，takePicture() ，告诉你它们都是通过 Capture 来实现的</p>
+<p>Capture 从执行方式上又被细分为单次模式、多次模式和重复模式三种：</p>
+<ul>
+<li>单次模式（One-shot）：指的是只执行一次的 Capture 操作，例如设置闪光灯模式、对焦模式和拍一张照片等。多个一次性模式的 Capture 会进入队列按顺序执行</li>
+<li>多次模式（Burst）：指的是连续多次执行指定的 Capture 操作，该模式和多次执行单次模式的最大区别是连续多次 Capture 期间不允许插入其他任何 Capture 操作，例如连续拍摄 100 张照片，在拍摄这 100 张照片期间任何新的 Capture 请求都会排队等待，直到拍完 100 张照片。多组多次模式的 Capture 会进入队列按顺序执行</li>
+<li>重复模式（Repeating）：指的是不断重复执行指定的 Capture 操作，当有其他模式的 Capture 提交时会暂停该模式，转而执行其他被模式的 Capture，当其他模式的 Capture 执行完毕后又会自动恢复继续执行该模式的 Capture，例如显示预览画面就是不断 Capture 获取每一帧画面。该模式的 Capture 是全局唯一的，也就是新提交的重复模式 Capture 会覆盖旧的重复模式，Capture</li>
+</ul>
+</li>
+<li>
+<p>Surface</p>
+<p>Surface 是一块用于填充图像数据的内存空间，例如你可以使用 SurfaceView 的 Surface 接收每一帧预览数据用于显示预览画面，也可以使用 ImageReader 的 Surface 接收 JPEG 或 YUV 数据。每一个 Surface 都可以有自己的尺寸和数据格式，你可以从 CameraCharacteristics 获取某一个数据格式支持的尺寸列表</p>
+</li>
+<li>
+<p>CameraManager</p>
+<p>CameraManager 是一个用于检测相机，打开相机，以及获取相机设备特性的系统服务</p>
+<p>CameraManager 的关键功能</p>
+<ol>
+<li>
+<p>获取当前连接的相机设备列表和 camera id</p>
+<p>String[] getCameraIdList()</p>
+</li>
+<li>
+<p>根据 camera id 获取对应相机设备的特征。返回一个 CameraCharacteristics，类比于旧 API 中的 Camera.Parameter 类，里面封装了相机设备固有的所有属性功能</p>
+<p>CameraCharacteristics getCameraCharacteristics(String cameraId)</p>
+</li>
+<li>
+<p>根据 camera id 打开指定的相机设备，</p>
+<p>void openCamera(id, callback, handler)</p>
+</li>
+</ol>
+<p>CameraManager 中包含两个公有的内部类</p>
+<ol>
+<li>
+<p><strong>CameraManager.AvailabilityCallback</strong></p>
+<p>当一个相机设备的可用状态发生变化时，就会回调这个类 </p>
+<p>onCameraAvailable(String cameraId)</p>
+<p>onCameraUnavailable(String cameraId) </p>
+</li>
+<li>
+<p><strong>CameraManager.TorchCallback</strong></p>
+<p>当一个相机设备的闪光灯的 Torch 模式可用状态发生变化时，就会回调这个类</p>
+<p>onTorchModeChanged(String cameraId, boolean enabled</p>
+<p>onTorchModeUnavailable(String cameraId)</p>
+<p>setTorchMode(String cameraId, boolean enabled)</p>
+</li>
+</ol>
+<p><strong>举例：打开相机设备</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">CameraManager</span><span class="w"> </span><span class="n">cameraManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">CameraManager</span><span class="p">)</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">getSystemService</span><span class="p">(</span><span class="n">Context</span><span class="p">.</span><span class="na">CAMERA_SERVICE</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">cameraIds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cameraManager</span><span class="p">.</span><span class="na">getCameraIdList</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">cameraManager</span><span class="p">.</span><span class="na">openCamera</span><span class="p">(</span><span class="n">cameraIds</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CameraDevice</span><span class="p">.</span><span class="na">StateCallback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onOpened</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraDevice</span><span class="w"> </span><span class="n">camera</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 当相机成功打开时回调该方法，接下来可以执行创建预览的操作</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraOpenCloseLock</span><span class="p">.</span><span class="na">release</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">camera</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">createCameraPreviewSession</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onDisconnected</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraDevice</span><span class="w"> </span><span class="n">camera</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 当相机断开连接时回调该方法，应该在此执行释放相机的操作</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraOpenCloseLock</span><span class="p">.</span><span class="na">release</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">camera</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onError</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraDevice</span><span class="w"> </span><span class="n">camera</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 当相机打开失败时，应该在此执行释放相机的操作</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraOpenCloseLock</span><span class="p">.</span><span class="na">release</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">camera</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onClosed</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraDevice</span><span class="w"> </span><span class="n">camera</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">onClosed</span><span class="p">(</span><span class="n">camera</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">},</span><span class="w"> </span><span class="kc">null</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><p>CameraManager.openCamera 的三个参数：</p>
+<ul>
+<li>cameraId：摄像头的唯一标识</li>
+<li>callback：设备连接状态变化的回调，类型是 CameraDevice.StateCallback</li>
+<li>handler：指定回调执行的线程，传 null 时默认使用当前线程的 Looper，我们通常创建一个后台线程来处理</li>
+</ul>
+<p>CameraDevice.StateCallback 的四个回调函数</p>
+<ul>
+<li>onOpened：成功打开时的回调，此时 camera 准备就绪，得到一个 CameraDevice</li>
+<li>onDisconnected：当相机断开连接时回调该方法，需要进行释放相机的操作</li>
+<li>onError：当相机打开失败时，error 为具体错误原因，需要进行释放相机的操作</li>
+<li>onClosed：调用 Camera.close()后的回调方法</li>
+</ul>
+</li>
+<li>
+<p>CameraDevice</p>
+<p><strong>介绍</strong>：CameraDevice 代表当前连接的相机设备，用于创建 CameraCaptureSession。你可以看作为相机设备在 java 代码中的表现。熟悉 Camera1 的人可能会说 CameraDevice 就是 Camera1 的 Camera 类，实则不是，Camera 类几乎负责了所有相机的操作，而 CameraDevice 的功能则十分的单一，就是只负责建立相机连接的事务，而更加细化的相机操作则交给了 CameraCaptureSession</p>
+<p>**获取实例：**他是通过 CameraManager → openCamera 打开相机，在 CameraDevice.State Callback.onOpened(CameraDevice camera) 方法中获得 CameraDevice 的实例</p>
+<p>**内部类：**CameraDevice.StateCallback</p>
+<p>当相机状态发生变化时，会调用该类相应的回调方法</p>
+<ul>
+<li>onOpened：成功打开时的回调，此时 camera 准备就绪，得到一个 CameraDevice</li>
+<li>onDisconnected：当相机断开连接时回调该方法，需要进行释放相机的操作</li>
+<li>onError：当相机打开失败时，error 为具体错误原因，需要进行释放相机的操作
+<table>
+  <thead>
+      <tr>
+          <th>Error Code</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>CameraDevice.StateCallback.ERROR_CAMERA_IN_USE</td>
+          <td>当前相机设备已经在一个更高优先级的地方打开了</td>
+      </tr>
+      <tr>
+          <td>CameraDevice.StateCallback.ERROR_MAX_CAMERAS_IN_USE</td>
+          <td>已打开相机数量到上限了，无法再打开新的相机了</td>
+      </tr>
+      <tr>
+          <td>CameraDevice.StateCallback.ERROR_CAMERA_DISABLED</td>
+          <td>由于相关设备策略该相机设备无法打开</td>
+      </tr>
+      <tr>
+          <td>CameraDevice.StateCallback.ERROR_CAMERA_DEVICE</td>
+          <td>相机设备发生了一个致命错误</td>
+      </tr>
+      <tr>
+          <td>CameraDevice.StateCallback.ERROR_CAMERA_SERVICE</td>
+          <td>相机设备发生了一个致命错误</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>onClosed：调用 Camera.close()后的回调方法</li>
+</ul>
+<p><strong>主要职责</strong>：</p>
+<ol>
+<li>
+<p>关闭相机设备</p>
+<p>void close()</p>
+</li>
+<li>
+<p>获得当前相机设备的 camera id</p>
+<p>String getId()</p>
+</li>
+<li>
+<p>使用内部类监听相机设备的状态，例如开启成功、开启失败、断开连接等</p>
+<p>CameraDevice.StateCallback</p>
+</li>
+<li>
+<p>创建 CaptureRequest，根据指定的模板，并且 addTarget</p>
+<p>CaptureRequest.Builder createCaptureRequest(int templateType)</p>
+<p>addTarget(Surface)</p>
+</li>
+<li>
+<p>创建 CameraCaptureSession，根据指定的 Surface output 列表</p>
+<p>void createCaptureSession(outputs, callback, handler)</p>
+</li>
+</ol>
+<p><strong>CameraDevice.createCaptureRequest</strong></p>
+<p>使用指定模板创建一个 CaptureRequest.Builder 用于新的捕获请求构建。</p>
+<table>
+  <thead>
+      <tr>
+          <th>templateType</th>
+          <th>描述</th>
+          <th>适用性</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>TEMPLATE_PREVIEW</strong></td>
+          <td>用于创建一个相机预览请求。相机会优先保证高帧率而不是高画质</td>
+          <td>所有相机设备</td>
+      </tr>
+      <tr>
+          <td>TEMPLATE_STILL_CAPTURE</td>
+          <td>用于创建一个拍照请求。相机会优先保证高画质而不是高帧率</td>
+          <td>所有相机设备</td>
+      </tr>
+      <tr>
+          <td>TEMPLATE_RECORD</td>
+          <td>用于创建一个录像请求。相机会使用标准帧率，并设置录像级别的画质</td>
+          <td>所有相机设备</td>
+      </tr>
+      <tr>
+          <td>TEMPLATE_VIDEO_SNAPSHOT</td>
+          <td>用于创建一个录像时拍照的请求。相机会尽可能的保证照片质量的同时不破坏正在录制的视频质量</td>
+          <td>硬件支持级别高于 LEGACY 的相机设备</td>
+      </tr>
+      <tr>
+          <td>TEMPLATE_ZERO_SHUTTER_LAG</td>
+          <td>用于创建一个零延迟拍照的请求。相机会尽可能的保证照片质量的同时不损失预览图像的帧率，3A（自动曝光、自动聚焦、自动白平衡）都为 auto 模式</td>
+          <td>支持 PRIVATE_REPROCESSING 和 YUV_REPROCESSING 的相机设备</td>
+      </tr>
+      <tr>
+          <td>TEMPLATE_MANUAL</td>
+          <td>用于创建一个手动控制相机参数的请求。相机所有自动控制将被禁用，后期处理参数为预览质量，手动控制参数被设置为合适的默认值，需要用户自己根据需求来调整各参数</td>
+          <td>支持 MANUAL_SENSOR 的相机设备</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>CameraDevice.createCaptureSession</strong></p>
+<p>先使用 CameraDevice.createCaptureRequest() 创建  Capture Request 对象，然后使用 CameraDevice.createCaptureSession() 创建 Capture Session，这个函数接受三个参数</p>
+<ul>
+<li>outputs：用于接受图像数据的 surface 集合，每个 CaptureRequest 的输出 Surface 都应该是 outputs 的一个子元素</li>
+<li>callback：创建 session 的回调函数，用于监听 Session 状态，类型是 CameraCaptureSession.StateCallback 对象</li>
+<li>handler：指定回调执行的线程，用于执行 CameraCaptureSession. StateCallback 的 Handler 对象，传入 null 则使用当前的主线程 Handler，默认使用当前线程的 Looper</li>
+</ul>
+<p><strong>举例：使用 cameraDevice 创建 CaptureRequest 和 CaptureSession</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">startPreview</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">**</span><span class="c1">// prepare surface as target**</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">SurfaceTexture</span><span class="w"> </span><span class="n">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mTextureView</span><span class="p">.</span><span class="na">getSurfaceTexture</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">texture</span><span class="p">.</span><span class="na">setDefaultBufferSize</span><span class="p">(</span><span class="n">mPreviewSize</span><span class="p">.</span><span class="na">getWidth</span><span class="p">(),</span><span class="w"> </span><span class="n">mPreviewSize</span><span class="p">.</span><span class="na">getHeight</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">Surface</span><span class="w"> </span><span class="n">surface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Surface</span><span class="p">(</span><span class="n">texture</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">**</span><span class="c1">// create CaptureRequest**</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mPreviewRequestBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mCameraDevice</span><span class="p">.</span><span class="na">createCaptureRequest</span><span class="p">(</span><span class="n">CameraDevice</span><span class="p">.</span><span class="na">TEMPLATE_PREVIEW</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mPreviewRequestBuilder</span><span class="p">.</span><span class="na">addTarget</span><span class="p">(</span><span class="n">surface</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">**</span><span class="c1">// create CameraCaptureSession for camera preview**</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraDevice</span><span class="p">.</span><span class="na">createCaptureSession</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span><span class="w"> </span><span class="n">mImageReader</span><span class="p">.</span><span class="na">getSurface</span><span class="p">()),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">CameraCaptureSession</span><span class="p">.</span><span class="na">StateCallback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onConfigured</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraCaptureSession</span><span class="w"> </span><span class="n">cameraCaptureSession</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">mCaptureSession</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cameraCaptureSession</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onConfigureFailed</span><span class="p">(</span><span class="n">CameraCaptureSession</span><span class="w"> </span><span class="n">cameraCaptureSession</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">},</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">CameraAccessException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>CameraCaptureSession</p>
+<p>**介绍：**是连接摄像头硬件和应用程序的桥梁，用于发送 capture 请求并接收相应的图像数据。绝大部分的相机操作都是通过向 CameraCaptureSession 提交一个 Capture 请求实现的，例如拍照、连拍、设置闪光灯模式、触摸对焦、显示预览画面等等</p>
+<p>CameraCaptureSession 实际上就是配置了目标 Surface 的相机实例，我们在使用相机功能之前必须先创建 CameraCaptureSession 实例。一个 CameraDevice 一次只能开启一个 CameraCaptureSession</p>
+<p><strong>获取实例</strong>：通过 CameraDevice.createCaptureSession() 方法创建，并在回调的 onConfigured(CameraCaptureSession session) 方法中获取实例</p>
+<p>**内部类：**CameraCaptureSession.StateCallback</p>
+<p>当相机捕捉事务 CameraCaptureSession 他自己本身的状态发生变化时，会回调这个类中的相应方法。其中 onConfigured 和 onConfigureFailed 两个方法是抽象的（必须重写），其余均有空实现</p>
+<table>
+  <thead>
+      <tr>
+          <th>方法名</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>onConfigureFailed</td>
+          <td>该会话无法按照相应的配置发起请求时回调</td>
+      </tr>
+      <tr>
+          <td>onConfigured</td>
+          <td>相机设备完成配置，并开始处理捕捉请求时回调</td>
+      </tr>
+      <tr>
+          <td>onActive</td>
+          <td>在 onConfigured 后执行，即开始真的处理捕捉请求了</td>
+      </tr>
+      <tr>
+          <td>onReady</td>
+          <td>每当没有捕捉请求处理时都会回调该方法，即该方法会回调多次</td>
+      </tr>
+      <tr>
+          <td>onCaptureQueueEmpty</td>
+          <td>当相机设备的输入捕捉队列为空时回调</td>
+      </tr>
+      <tr>
+          <td>onClosed</td>
+          <td>当事务关闭时回调</td>
+      </tr>
+  </tbody>
+</table>
+<p>**内部类：**CameraCaptureSession.CaptureCallback</p>
+<p>当一个 capture 请求发送给相机设备时，可以使用这个类来跟踪各进度</p>
+<p>所有方法均有默认的空实现，根据需求重写相应的方法即可</p>
+<table>
+  <thead>
+      <tr>
+          <th>方法名</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>onCaptureStarted</td>
+          <td>当相机设备开始为请求捕捉输出图时</td>
+      </tr>
+      <tr>
+          <td>onCaptureProgressed</td>
+          <td>当图像捕获部分进行时就会回调该方法，此时一些(但不是全部)结果是可用的</td>
+      </tr>
+      <tr>
+          <td>onCaptureCompleted</td>
+          <td>当图像捕捉完全完成时，并且结果已经可用时回调该方法</td>
+      </tr>
+      <tr>
+          <td>onCaptureFailed</td>
+          <td>对应 onCaptureCompleted 方法，当相机设备产生 TotalCaptureResult 失败时就回调该方法</td>
+      </tr>
+      <tr>
+          <td>onCaptureSequenceCompleted</td>
+          <td>当一个捕捉段完成时并且所有 CaptureResult 或者 captureFailure 都通过该监听器返回时被回调，这个方法独立于 CaptureCallback 的其他方法</td>
+      </tr>
+      <tr>
+          <td>onCaptureSequenceAborted</td>
+          <td>当 CaptureResult 或者 captureFailure 没有通过该监听器被返回而被中断时被回调，这个方法同样独立于 CaptureCallback 的其他方法</td>
+      </tr>
+      <tr>
+          <td>onCaptureBufferLost</td>
+          <td>当捕捉的缓冲没有被送到目标 surface 时被回调</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>主要职责</strong>：</p>
+<ol>
+<li>
+<p>获取该 CameraCaptureSession 创建对应的 CameraDevice 对象</p>
+<p>CameraDevice getDevice()</p>
+</li>
+<li>
+<p>请求 capture 单张图片，常用于拍照场景</p>
+<p>int capture(captureRequest, captureCallback, handler)</p>
+</li>
+<li>
+<p>不断重复请求 capture 画面，常用于预览或者连拍场景</p>
+<p>int setRepeatingRequest(captureRequest, captureCallback, handler)</p>
+</li>
+<li>
+<p>停止正常进行的所有的重复请求</p>
+<p>void stopRepeating()</p>
+</li>
+<li>
+<p>取消当前队列中或正在处理中的所有请求</p>
+<p>void abortCaptures()</p>
+</li>
+<li>
+<p>关闭 capture session，在相机释放的步骤中也要对 capture session 关闭操作</p>
+<p>void close() 异步</p>
+</li>
+</ol>
+<p>使用举例：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Creates a new {@link CameraCaptureSession} for camera preview.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">createCameraPreviewSession</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">SurfaceTexture</span><span class="w"> </span><span class="n">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mTextureView</span><span class="p">.</span><span class="na">getSurfaceTexture</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Surface</span><span class="w"> </span><span class="n">surface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Surface</span><span class="p">(</span><span class="n">texture</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// create CaptureRequest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mPreviewRequestBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mCameraDevice</span><span class="p">.</span><span class="na">createCaptureRequest</span><span class="p">(</span><span class="n">CameraDevice</span><span class="p">.</span><span class="na">TEMPLATE_PREVIEW</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mPreviewRequestBuilder</span><span class="p">.</span><span class="na">addTarget</span><span class="p">(</span><span class="n">surface</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// createCameraCaptureSession for camera preview</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">mCameraDevice</span><span class="p">.</span><span class="na">createCaptureSession</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span><span class="w"> </span><span class="n">mImageReader</span><span class="p">.</span><span class="na">getSurface</span><span class="p">()),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="k">new</span><span class="w"> </span><span class="n">CameraCaptureSession</span><span class="p">.</span><span class="na">StateCallback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onConfigured</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraCaptureSession</span><span class="w"> </span><span class="n">cameraCaptureSession</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                      </span><span class="n">mCaptureSession</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cameraCaptureSession</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                      </span><span class="n">mPreviewRequest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mPreviewRequestBuilder</span><span class="p">.</span><span class="na">build</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                      </span><span class="c1">// send capture request</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                      </span><span class="n">mCaptureSession</span><span class="p">.</span><span class="na">setRepeatingRequest</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                     </span><span class="n">mPreviewRequest</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                     </span><span class="n">mCaptureCallback</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                                     </span><span class="n">mBackgroundHandler</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onConfigureFailed</span><span class="p">(</span><span class="nd">@NonNull</span><span class="w"> </span><span class="n">CameraCaptureSession</span><span class="w"> </span><span class="n">cameraCaptureSession</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="p">},</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="kc">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">CameraAccessException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>CameraCharacteristics</p>
+<p>CameraCharacteristics 是一个只读的相机信息提供者，其内部携带大量的相机信息，如果你对 Camera1 比较熟悉，那么 CameraCharacteristics 有点像 Camera1 的 Camera.CameraInfo 或者 Camera.Parameters，比如</p>
+<ol>
+<li>代表相机朝向的 LENS_FACIN</li>
+<li>判断闪光灯是否可用的 FLASH_INFO_AVAILABLE</li>
+<li>获取所有可用 AE 模式的 CONTROL_AE_AVAILABLE_MODES 等等</li>
+</ol>
+</li>
+<li>
+<p>CaptureRequest</p>
+<p>CaptureRequest 是向 CameraCaptureSession 提交 Capture 请求时的信息载体，其内部包括了本次 Capture 的参数配置和接收图像数据的 Surface。CaptureRequest 可以配置的信息非常多，包括图像格式、图像分辨率、传感器控制、闪光灯控制、3A 控制等等，可以说绝大部分的相机参数都是通过 CaptureRequest 配置的</p>
+<p>值得注意的是每一个 CaptureRequest 表示一帧画面的操作，这意味着你可以精确控制每一帧的 Capture 操作</p>
+<p><strong>举例：创建 CaptureRequest</strong></p>
+<p>详细的创建代码在 CameraDevice 的使用说明里面，在 CameraDevice.StateCallback 的 onOpened 回调中执行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">mPreviewRequestBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mCameraDevice</span><span class="p">.</span><span class="na">createCaptureRequest</span><span class="p">(</span><span class="n">CameraDevice</span><span class="p">.</span><span class="na">TEMPLATE_PREVIEW</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mPreviewRequestBuilder</span><span class="p">.</span><span class="na">addTarget</span><span class="p">(</span><span class="n">surface</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><p>onprev</p>
+<p>通过 CameraDevice.createCaptureRequest() 创建 CaptureRequest.Builder 对象，传入一个 templateType 参数，templateType 用于指定使用何种模板创建CaptureRequest.Builder 对象</p>
+<ul>
+<li>Template_preview</li>
+<li>TEMPLATE_PREVIEW：预览模式</li>
+<li>TEMPLATE_STILL_CAPTURE：拍照模式</li>
+<li>TEMPLATE_RECORD：视频录制模式</li>
+<li>TEMPLATE_VIDEO_SNAPSHOT：视频截图模式</li>
+<li>TEMPLATE_MANUAL：手动配置参数模式</li>
+</ul>
+<p>除了模式的配置，CaptureRequest还可以配置很多其他信息，例如图像格式、图像分辨率、传感器控制、闪光灯控制、3A(自动对焦-AF、自动曝光-AE和自动白平衡-AWB)控制等。在createCaptureSession 的回调中可以进行设置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Auto focus should be continuous for camera preview.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mPreviewRequestBuilder</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">CaptureRequest</span><span class="p">.</span><span class="na">CONTROL_AF_MODE</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">CaptureRequest</span><span class="p">.</span><span class="na">CONTROL_AF_MODE_CONTINUOUS_PICTURE</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Flash is automatically enabled when necessary.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">setAutoFlash</span><span class="p">(</span><span class="n">mPreviewRequestBuilder</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Finally, we start displaying the camera preview.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mPreviewRequest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mPreviewRequestBuilder</span><span class="p">.</span><span class="na">build</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 代码中设置了AF为设置未图片模式下的连续对焦，并设置自动闪光灯</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 最后通过build()方法生成CaptureRequest对象。</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>CaptureResult</p>
+<p>CaptureResult 是每一次 Capture 操作的结果，里面包括了很多状态信息，包括闪光灯状态、对焦状态、时间戳等等。例如你可以在拍照完成的时候，通过 CaptureResult 获取本次拍照时的对焦状态和时间戳</p>
+<p>需要注意的是，CaptureResult 并不包含任何图像数据，前面我们在介绍 Surface 的时候说了，图像数据都是从 Surface 获取的</p>
+</li>
+</ul>
+<h3 id="used-in-msrtc">Used in MSRTC</h3>
+<ul>
+<li>android.content.Context</li>
+<li>android.graphics.Matrix</li>
+<li>android.graphics.Rect</li>
+<li>android.graphics.SurfaceTexture</li>
+<li>android.hardware.camera2.CameraAccessException</li>
+<li>android.hardware.camera2.CameraCaptureSession</li>
+<li>android.hardware.camera2.CameraDevice</li>
+<li>android.hardware.camera2.CaptureRequest</li>
+<li>android.hardware.camera2.CaptureResult</li>
+<li>android.hardware.camera2.TotalCaptureResult</li>
+<li>android.hardware.camera2.params.Face</li>
+<li>android.media.Image</li>
+<li>android.media.ImageReader</li>
+<li>android.os.Handler</li>
+<li>android.os.Looper</li>
+<li>android.util.Range</li>
+<li>android.view.Surface</li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/ffmpeg/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/video-compression/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#source-code">Source code</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#api">API</a></li>
+        <li><a href="#used-in-msrtc">Used in MSRTC</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

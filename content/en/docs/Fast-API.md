@@ -1,6 +1,7 @@
 ---
 title: Fast API
 slug: Fast-API
+lastmod: 2025-07-01T00:00:00+00:00
 ---
 
 # Fast API

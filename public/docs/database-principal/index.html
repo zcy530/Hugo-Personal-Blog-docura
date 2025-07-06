@@ -1,0 +1,3690 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Database Principal · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/database-principal/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Database Principal</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="database-principles">Database Principles</h1>
+<h3 id="2-relation-schema">2 Relation Schema</h3>
+<ul>
+<li>
+<p>关系型数据库的结构</p>
+<p><strong>关系</strong>(relation)：表</p>
+<p><strong>元组</strong>(tuple)：行</p>
+<p><strong>属性</strong>(attribute)：列</p>
+<p><strong>域</strong>(domin)：对于关系的每个属性，都存在一个允许取值的集合</p>
+<p>关系的所有属性的域都是原子的，被看作是不可再分的单元</p>
+<p><strong>关系模式</strong>(relation schema)：对于关系结构的抽象描述，由属性序列和各属性对应域组成</p>
+<p><strong>关系实例</strong>(relation instance)：一个关系的特定实例</p>
+</li>
+<li>
+<p>关系型数据库码(key)的分类</p>
+<p>一个关系中没有两个元组在所有属性值上都相等</p>
+<p><strong>超码</strong>(super key)：一个或多个属性的集合，可以唯一标识一个元组</p>
+<p><strong>候选码</strong>(candidate key) ：最小超码，不包括无关紧要的属性</p>
+<p><strong>主码</strong>(primary key)：用来在一个关系中区分不同元组的候选码</p>
+<p><strong>外码</strong>(primay key)：一个关系模式 r1 可能在它的属性中包括另一个关系模式 r2 的主码，r1 称为外码依赖的参照关系，r2 称为外码依赖的被参照关系</p>
+<p><strong>参照性关系</strong>(referential integrity constraint)：要求在参照关系中任意元组在特定属性上的取值必然等于被参照关系中某个元素在特定属性上的取值</p>
+</li>
+<li>
+<p>关系查询语言</p>
+<p><strong>过程性语言</strong>：用户指导系统对数据库执行一系列操作以计算出结果，例如<strong>关系代数</strong></p>
+<p><strong>非过程性语言</strong>：只需描述信息不用给出获取信息的具体方法，例如关系演算TRC、域关系演算DRC、<strong>SQL</strong></p>
+</li>
+<li>
+<p>关系代数运算的基本操作</p>
+<ul>
+<li>
+<p><strong>选择(select)</strong> $\sigma$</p>
+<p>查询满足给定条件的元组（从行的角度）</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203247041.png" alt=""></p>
+</li>
+<li>
+<p><strong>投影(project)</strong> $\Pi$</p>
+<p>选出若干属性列组成新的关系（从列的角度）</p>
+<p>投影之后会取消重复的行</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203309795.png" alt=""></p>
+</li>
+<li>
+<p><strong>并(union)</strong> $\cup$</p>
+<p>先并再去重</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202449131.png" alt=""></p>
+</li>
+<li>
+<p><strong>交(set intersection)</strong> $\cap$</p>
+<p>两个表都有的元组</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202504184.png" alt=""></p>
+</li>
+<li>
+<p><strong>差(set difference)</strong> -</p>
+<p>R 有但 S 没有的关系元组</p>
+<p><img src="Untitled.png" alt="Untitled"></p>
+</li>
+<li>
+<p><strong>笛卡尔积(Cartesian product)</strong> ×</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202543677.png" alt=""></p>
+</li>
+<li>
+<p><strong>自然连接(natural join)</strong> $\bowtie$</p>
+<p>从两个关系的笛卡尔积中，基于两个关系模式中都出现的属性上的相等性进行选择，最后去掉重复的列</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202851972.png" alt=""></p>
+</li>
+<li>
+<p><strong>除(division)</strong> ÷</p>
+<p>保留R中满足S的，而且R中列要去掉S的列</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202907933.png" alt=""></p>
+</li>
+<li>
+<p><strong>改名(rename)</strong> $\rho$</p>
+<p>$\rho _{x(A1,A2,&hellip;An)}(E)$</p>
+<p>返回表达式E的结果，并赋给它名字x，同时将各属性更名为A1,A2,&hellip;An</p>
+<p>例子：找出大学里的最高工资</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203335581.png" alt=""></p>
+</li>
+<li>
+<p><strong>赋值(assignment)</strong> ←</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203415119.png" alt=""></p>
+<p>对于关系代数查询而言，赋值必须是赋给一个临时关系变量，对永久关系的赋值形成了对数据库的修改。</p>
+<p>注意：赋值运算不能增强关系代数的表达能力，但是可以使复杂查询的表达变得简单</p>
+</li>
+</ul>
+<ol>
+<li><strong>扩展的关系运算</strong></li>
+</ol>
+<ul>
+<li>
+<p><strong>广义投影</strong> (Generalized Projection)</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203741577.png" alt=""></p>
+</li>
+<li>
+<p><strong>聚集</strong> (Aggregate Functions) $\mathcal{G}$</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203652275.png" alt=""></p>
+</li>
+<li>
+<p><strong>内连接/外连接</strong></p>
+<p>内连接(Inner Join)：两个关系做自然连接时，连接的结果时满足条件的元组保留下来，不满足条件的元组被舍弃了</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202925573.png" alt=""></p>
+<p>外连接(Outer Join)：如果把舍弃的元组也保留再结果关系中，而在其他属性上填null，叫做外连接</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202947149.png" alt=""></p>
+<p>外连接分为左外连接和右外连接</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203004612.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203018908.png" alt=""></p>
+</li>
+</ul>
+<ol>
+<li><strong>课堂例题</strong></li>
+</ol>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/IMG_6097%20-%20%E5%89%AF%E6%9C%AC.PNG" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203811287.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/IMG_6097.PNG" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203820939.png" alt=""></p>
+</li>
+<li>
+<p>关系代数运算的扩展操作</p>
+<ul>
+<li>
+<p><strong>广义投影</strong> (Generalized Projection)</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203741577.png" alt=""></p>
+</li>
+<li>
+<p><strong>聚集</strong> (Aggregate Functions) $\mathcal{G}$</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203652275.png" alt=""></p>
+</li>
+<li>
+<p><strong>内连接/外连接</strong></p>
+<p>内连接(Inner Join)：两个关系做自然连接时，连接的结果时满足条件的元组保留下来，不满足条件的元组被舍弃了</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202925573.png" alt=""></p>
+<p>外连接(Outer Join)：如果把舍弃的元组也保留再结果关系中，而在其他属性上填null，叫做外连接</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609202947149.png" alt=""></p>
+<p>外连接分为左外连接和右外连接</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203004612.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203018908.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>关系代数练习</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/IMG_6097%20-%20%E5%89%AF%E6%9C%AC.PNG" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203811287.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/IMG_6097.PNG" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210609203820939.png" alt=""></p>
+</li>
+<li>
+<p>数据库的 schema 是指什么</p>
+<p>schema 是元数据的一个抽象集合，包含一套 schema component: 主要是元素与属性的声明、复杂与简单数据类型的定义</p>
+<p>数据库 schema 就是 ：表，列，数据类型，视图，存储过程，关系，主键，外键等</p>
+</li>
+<li>
+<p>课后简答题</p>
+<ol>
+<li>
+<p>设计数据库的步骤</p>
+<p><img src="Untitled%201.png" alt="Untitled"></p>
+</li>
+<li>
+<p>List four significant differences between a file-processing system and a DBMS(database management system)</p>
+<ul>
+<li>这两个系统都包含一个数据集合和一组访问该数据的程序。数据库管理系统同时协调对数据的物理和逻辑访问，而文件处理系统只协调物理访问</li>
+<li>数据库管理系统通过确保物理数据适合所有被授权访问它的程序来减少重复数据量，而文件处理系统中由一个程序写入的数据可能不会被另一个程序读取</li>
+<li>数据库管理系统设计为允许灵活访问数据(即查询)，而文件处理系统设计为允许对数据的预定义访问(即编译程序)</li>
+<li>一个数据库管理系统被设计用于协调多个用户同时访问同一数据。文件处理系统通常被设计为允许一个或多个程序同时访问不同的数据文件。在文件处理系统中，只有当两个程序都可以只读访问该文件时，两个程序才能同时访问一个文件</li>
+</ul>
+<p><img src="Untitled%202.png" alt="Untitled"></p>
+<p><img src="Untitled%203.png" alt="Untitled"></p>
+<p><img src="Untitled%204.png" alt="Untitled"></p>
+</li>
+<li>
+<p>List three major disadvantages</p>
+<p><img src="Untitled%205.png" alt="Untitled"></p>
+</li>
+<li>
+<p>DML 和 DDL 的区别</p>
+<p><img src="Untitled%206.png" alt="Untitled"></p>
+</li>
+<li>
+<p>物理数据独立性</p>
+<p>物理数据独立性使物理模式可以在应用程序丝毫不受影响的情况下被修改</p>
+<p>这些修改包括将无阻塞记录存储更改为阻塞记录存储，或将顺序访问更改为随机访问</p>
+<p>物理数据独立是指:应用程序不依赖于物理模式。如果修改了物理模式，能够保持 逻辑模式和应用程序不受影响，也就是说应用程序不受影响。保证了数据与程序的 物理独立性，简称数据的物理独立性。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="3-sql-basic">3 SQL Basic</h3>
+<p><a href="https://www.w3school.com.cn/sql/index.asp" target="_blank">https://www.w3school.com.cn/sql/index.asp</a></p>
+<p>SQL：结构化查询语言，是用于访问和处理数据库的标准的计算机语言</p>
+<ul>
+<li>
+<p><em>DML &amp; DDL</em></p>
+<p>SQL 是用于执行查询的语法，SQL 语言也包含用于更新、插入和删除记录的语法。可以把 SQL 分为两个部分：数据操作语言 DML 和数据定义语言 DDL</p>
+<p><strong>Data Manipulation Language</strong>：查询和更新指令构成了 SQL 的 DML 部分</p>
+<ul>
+<li>SELECT - 从数据库表中获取数据</li>
+<li>UPDATE - 更新数据库表中的数据</li>
+<li>DELETE - 从数据库表中删除数据</li>
+<li>INSERT INTO - 向数据库表中插入数据</li>
+</ul>
+<p><strong>Data Definition Language</strong>：SQL 的 DDL 部分使我们有能力创建或删除表格。我们也可以定义索引（键），规定表之间的链接，以及施加表间的约束。SQL 中最重要的 DDL 语句:</p>
+<ul>
+<li>CREATE DATABASE - 创建新数据库</li>
+<li>ALTER DATABASE - 修改数据库</li>
+<li>CREATE TABLE - 创建新表</li>
+<li>ALTER TABLE - 变更（改变）数据库表</li>
+<li>DROP TABLE - 删除表</li>
+<li>CREATE INDEX - 创建索引（搜索键）</li>
+<li>DROP INDEX - 删除索引</li>
+</ul>
+</li>
+<li>
+<p>基本数据类型</p>
+<ul>
+<li>char(n) 固定长度字符串</li>
+<li>varchar(n) 可变长度字符串</li>
+<li>int 整数</li>
+<li>smallint 小整数</li>
+<li>numberic(p,d) 定点数，p位数字，其中d位在小数点右边</li>
+<li>real, double, precision：浮点数与双精度浮点数</li>
+<li>float(n) 精度至少为n的浮点数</li>
+</ul>
+</li>
+<li>
+<p>创建表格 <em>create table</em></p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名称</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="err">列名称</span><span class="mi">1</span><span class="w"> </span><span class="err">数据类型</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="err">列名称</span><span class="mi">2</span><span class="w"> </span><span class="err">数据类型</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="err">列名称</span><span class="mi">3</span><span class="w"> </span><span class="err">数据类型</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>数据类型（data_type）规定了列可容纳何种数据类型，下面的表格包含了SQL中最常用的数据类型：</p>
+<table>
+  <thead>
+      <tr>
+          <th>数据类型</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>integer(size)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>int(size)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>smallint(size)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>tinyint(size)</td>
+          <td>仅容纳整数</td>
+      </tr>
+      <tr>
+          <td>在括号内规定数字的最大位数</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>decimal(size,d)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>numeric(size,d)</td>
+          <td>容纳带有小数的数字</td>
+      </tr>
+      <tr>
+          <td>&ldquo;size&rdquo; 规定数字的最大位数</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>&ldquo;d&rdquo; 规定小数点右侧的最大位数</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>char(size)</td>
+          <td>容纳<strong>固定长度</strong>的字符串</td>
+      </tr>
+      <tr>
+          <td>(可容纳字母、数字以及特殊字符)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>在括号中规定字符串的长度</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>varchar(size)</td>
+          <td>容纳<strong>可变长度</strong>的字符串</td>
+      </tr>
+      <tr>
+          <td>(可容纳字母、数字以及特殊的字符)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>在括号中规定字符串的最大长度</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>date(yyyymmdd)</td>
+          <td>容纳日期</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>举例：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Id_P</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">LastName</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">FirstName</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Address</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">City</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">UNIQUE</span><span class="w"> </span><span class="p">(</span><span class="n">Id_P</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">Id_P</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">Id_P</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">Id_P</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>创建视图 <em>create view</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">view</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="o">&lt;</span><span class="n">query</span><span class="w"> </span><span class="n">expression</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>操作表格的列 <em>alert table</em></p>
+<p>ALTER TABLE 语句用于在已有的表中添加、修改或删除列</p>
+<p>添加列：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ADD</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="n">datatype</span><span class="w">
+</span></span></span></code></pre></div><p>改变数据类型：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="n">datatype</span><span class="w">
+</span></span></span></code></pre></div><p>删除列：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DROP</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="k">column_name</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>表格属性的约束类型</p>
+<p>约束用于限制加入表的数据的类型</p>
+<p>可以在创建表时规定约束（通过 CREATE TABLE 语句），或者在表创建之后也可以（通过 ALTER TABLE 语句）我们将主要探讨以下几种约束：</p>
+<ul>
+<li><strong>NOT NULL</strong>：约束强制列不接受 NULL 值</li>
+<li><strong>UNIQUE</strong>：约束唯一标识数据库表中的每条记录，UNIQUE 和 PRIMARY KEY 约束均为列或列集合提供了唯一性的保证</li>
+<li><strong>PRIMARY KEY</strong>：约束唯一标识数据库表中的每条记录。主键必须包含唯一的值，主键列不能包含 NULL 值。每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束</li>
+<li><strong>FOREIGN KEY</strong>: 一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY</li>
+<li><strong>CHECK</strong>:约束用于限制列中的值的范围，如果对单个列定义 CHECK 约束，那么该列只允许特定的值。如果对一个表定义 CHECK 约束，那么此约束会在特定的列中对值进行限制</li>
+<li><strong>DEFAULT</strong>:</li>
+</ul>
+</li>
+<li>
+<p>数据操作 <em>update, insert, delete</em></p>
+<p><strong>INSERT</strong></p>
+<p>用于向表格中插入新的行</p>
+<p><strong>语法</strong>：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="n">value1</span><span class="p">,</span><span class="w"> </span><span class="n">value2</span><span class="p">,....)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="err">列</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="err">列</span><span class="mi">2</span><span class="p">,...)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="n">value1</span><span class="p">,</span><span class="w"> </span><span class="n">value2</span><span class="p">,....)</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>加入新的行，INSERT INTO Persons VALUES (&lsquo;Gates&rsquo;, &lsquo;Bill&rsquo;, &lsquo;Xuanwumen 10&rsquo;, &lsquo;Beijing&rsquo;)：
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>在指定的列中插入数据，INSERT INTO Persons (LastName, Address) VALUES (&lsquo;Wilson&rsquo;, &lsquo;Champs-Elysees&rsquo;)
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Wilson</td>
+          <td></td>
+          <td>Champs-Elysees</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ol>
+<p><strong>UPDATE</strong></p>
+<p>语句用于修改表中的数据</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">UPDATE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">新值</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">某值</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Wilson</td>
+          <td></td>
+          <td>Champs-Elysees</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>为 lastname 是 &ldquo;Wilson&rdquo; 的人添加 firstname，UPDATE Person SET FirstName = &lsquo;Fred&rsquo; WHERE LastName = &lsquo;Wilson&rsquo;：
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Wilson</td>
+          <td>Fred</td>
+          <td>Champs-Elysees</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>更新某一行中的若干列，我们会修改地址，并添加城市名称，UPDATE Person SET Address = &lsquo;Zhongshan 23&rsquo;, City = &lsquo;Nanjing&rsquo; WHERE LastName = &lsquo;Wilson&rsquo;：
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Wilson</td>
+          <td>Fred</td>
+          <td>Zhongshan 23</td>
+          <td>Nanjing</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ol>
+<p><strong>DELETE</strong></p>
+<p>DELETE 语句用于删除表中的行</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table_nale</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">某值</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">   </span><span class="o">//</span><span class="w"> </span><span class="err">不删除表的情况下删除所有的行</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DELETE</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="err">不删除表的情况下删除所有的行</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>Wilson</td>
+          <td>Fred</td>
+          <td>Zhongshan 23</td>
+          <td>Nanjing</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>&ldquo;Fred Wilson&rdquo; 会被删除，DELETE FROM Person WHERE LastName = &lsquo;Wilson&rsquo;：
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>删除所有的行，DELETE FROM person</li>
+</ol>
+</li>
+<li>
+<p>创建索引和删除 <em>create index, drop index/table/database</em></p>
+<p><strong>1.CREATE INDEX</strong></p>
+<p>在表中创建索引，以便更加快速高效地查询数据。用户无法看到索引，它们只能被用来加速搜索/查询</p>
+<p>注意事项：更新一个包含索引的表需要比更新一个没有索引的表更多的时间，这是由于索引本身也需要更新。因此，理想的做法是仅仅在常常被搜索的列（以及表）上面创建索引</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">//</span><span class="w"> </span><span class="err">在表上创建一个简单的索引，允许使用重复的值</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">index_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">//</span><span class="w"> </span><span class="err">如果希望以降序索引某个列中的值，在列名称之后添加保留字</span><span class="w"> </span><span class="k">DESC</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">Index_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="k">column_name</span><span class="w"> </span><span class="k">DESC</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">//</span><span class="w"> </span><span class="err">多个索引列</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">index_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">//</span><span class="w"> </span><span class="err">创建一个唯一的索引，意味着两个行不能拥有相同的索引值</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">index_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p><strong>2.DROP INDEX</strong></p>
+<p>我们可以使用 DROP INDEX 命令删除表格中的索引</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">DROP</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">index_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名称</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DROP</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="err">数据库名称</span><span class="w">
+</span></span></span></code></pre></div><p>如果我们仅仅需要除去表内的数据，但并不删除表本身，那么我们该如何做呢？请使用 TRUNCATE TABLE 命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">TRUNCATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名称</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>单个关系表查询 <em>select, where, distinct</em></p>
+<ol>
+<li><strong>SELECT</strong></li>
+</ol>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="err">列名称</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="err">表名称</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="err">表名称</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>针对下列表格</p>
+<table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>执行 SELECT LastName,FirstName FROM Persons，获取名为 &ldquo;LastName&rdquo; 和 &ldquo;FirstName&rdquo; 的列的内容：</p>
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+      </tr>
+      <tr>
+          <td>Bush</td>
+          <td>George</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>执行 SELECT * FROM Persons，获取表中选取所有的列：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p><strong>WHERE</strong></p>
+</li>
+</ol>
+<p>如需有条件地从表中选取数据，可将 WHERE 子句添加到 SELECT 语句</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="err">列名</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="err">列</span><span class="w"> </span><span class="err">运算符</span><span class="w"> </span><span class="err">值</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>操作符</th>
+          <th>描述</th>
+          <th>操作符</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>=</td>
+          <td>等于</td>
+          <td>&gt;=</td>
+          <td>大于等于</td>
+      </tr>
+      <tr>
+          <td>&lt;&gt; 或者 ! =</td>
+          <td>不等于</td>
+          <td>&lt;=</td>
+          <td>小于等于</td>
+      </tr>
+      <tr>
+          <td>&gt;</td>
+          <td>大于</td>
+          <td>BETWEEN</td>
+          <td>在某个范围内</td>
+      </tr>
+      <tr>
+          <td>&lt;</td>
+          <td>小于</td>
+          <td>LIKE</td>
+          <td>搜索某种模式</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Year</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+          <td>1970</td>
+      </tr>
+      <tr>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+          <td>1975</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+          <td>1980</td>
+      </tr>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+          <td>1985</td>
+      </tr>
+  </tbody>
+</table>
+<p>执行 SELECT * FROM Persons WHERE City=&lsquo;Beijing&rsquo;</p>
+<table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Year</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+          <td>1980</td>
+      </tr>
+      <tr>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+          <td>1985</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li><strong>DISTINCT</strong></li>
+</ol>
+<p>关键词 DISTINCT 用于返回唯一不同的值</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="err">列名称</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="err">表名称</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>OrderNumber</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IBM</td>
+          <td>3532</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>2356</td>
+      </tr>
+      <tr>
+          <td>Apple</td>
+          <td>4698</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>6953</td>
+      </tr>
+  </tbody>
+</table>
+<p>在 company 中，W3School 被列出了两次，如需从 Company 列中仅选取唯一不同的值，执行 SELECT DISTINCT Company FROM Orders：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IBM</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+      </tr>
+      <tr>
+          <td>Apple</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p><em>where</em> 中的限定符 <em>in, between, like</em></p>
+<ol>
+<li><strong>IN</strong></li>
+</ol>
+<p>IN 操作符允许我们在 WHERE 子句中规定多个值</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="n">value1</span><span class="p">,</span><span class="n">value2</span><span class="p">,...)</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+<p>从上表中选取姓氏为 Adams 和 Carter 的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">LastName</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Adams&#39;</span><span class="p">,</span><span class="s1">&#39;Carter&#39;</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li><strong>BETWEEN</strong></li>
+</ol>
+<p>操作符 BETWEEN &hellip; AND 会选取介于两个值之间的数据范围。这些值可以是数值、文本或者日期</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">BETWEEN</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">value2</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>以字母顺序显示介于 &ldquo;Adams&rdquo;（包括）和 &ldquo;Carter&rdquo;（不包括）之间的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">LastName</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;Adams&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;Carter&#39;</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>如需使用上面的例子显示范围之外的人，请使用 NOT 操作符</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">LastName</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">NOT</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;Adams&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;Carter&#39;</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Gates</td>
+          <td>Bill</td>
+          <td>Xuanwumen 10</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p><strong>LIKE</strong></p>
+</li>
+</ol>
+<p>like 操作符用于在 WHERE 子句中搜索列中的指定模式</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="n">pattern</span><span class="w">
+</span></span></span></code></pre></div><p>在搜索数据库中的数据时，SQL 通配符可以替代一个或多个字符。SQL 通配符必须与 LIKE 运算符一起使用。在 SQL 中，可使用以下通配符：</p>
+<table>
+  <thead>
+      <tr>
+          <th>通配符</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>%</td>
+          <td>代表零个或多个字符</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td>仅替代一个字符</td>
+      </tr>
+      <tr>
+          <td>[charlist]</td>
+          <td>字符列中的任何单一字符</td>
+      </tr>
+      <tr>
+          <td>[^charlist] or [!charlist]</td>
+          <td>不在字符列中的任何单一字符</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>举例：</strong></p>
+<ol>
+<li>
+<p>我们希望从上面的 &ldquo;Persons&rdquo; 表中选取居住在以 &ldquo;N&rdquo; 开始的城市里的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">City</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;N%&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>我们希望从 &ldquo;Persons&rdquo; 表中选取居住在以 &ldquo;g&rdquo; 结尾的城市里的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">City</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%g&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>我们希望从 &ldquo;Persons&rdquo; 表中选取居住在包含 &ldquo;lon&rdquo; 的城市里的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">City</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%lon%&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>通过使用 NOT 关键字，我们可以从 &ldquo;Persons&rdquo; 表中选取居住在不包含 &ldquo;lon&rdquo; 的城市里的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">City</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%lon%&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>我们希望从上面的 &ldquo;Persons&rdquo; 表中选取名字的第一个字符之后是 &ldquo;eorge&rdquo; 的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">FirstName</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;_eorge&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>我们希望从 &ldquo;Persons&rdquo; 表中选取的这条记录的姓氏以 &ldquo;C&rdquo; 开头，然后是一个任意字符，然后是 &ldquo;r&rdquo;，然后是一个任意字符，然后是 &ldquo;er”</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">LastName</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;C_r_er&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>们希望从上面的 &ldquo;Persons&rdquo; 表中选取居住的城市以 &ldquo;A&rdquo; 或 &ldquo;L&rdquo; 或 &ldquo;N&rdquo; 开头的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">City</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;[ALN]%&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>我们希望从上面的 &ldquo;Persons&rdquo; 表中选取居住的城市不以
+ &ldquo;A&rdquo; 或 &ldquo;L&rdquo; 或 &ldquo;N&rdquo; 开头的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">City</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;[!ALN]%
+</span></span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>多个关系表查询 <em>cross join, natural join</em></p>
+<p><strong>FROM 后面接两个表表示笛卡尔积</strong></p>
+<p><img src="Untitled%207.png" alt="Untitled"></p>
+<ol>
+<li>
+<p>找出所有教师的名字，以及他们所在系的名称和系所在的建筑</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">instructor</span><span class="p">.</span><span class="n">dept_name</span><span class="p">,</span><span class="w"> </span><span class="n">building</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="p">,</span><span class="w"> </span><span class="n">department</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">instructor</span><span class="p">.</span><span class="n">dept_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">department</span><span class="p">.</span><span class="n">dept_name</span><span class="w">
+</span></span></span></code></pre></div><p><img src="Untitled%208.png" alt="Untitled"></p>
+</li>
+<li>
+<p>找出计算机系的教师名和课程标识</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="p">,</span><span class="w"> </span><span class="n">teaches</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">instructor</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teachrs</span><span class="p">.</span><span class="n">id</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="k">and</span><span class="w"> </span><span class="n">instructor</span><span class="p">.</span><span class="n">dept_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Comp. Sci&#39;</span><span class="w"> 
+</span></span></span></code></pre></div><p><img src="Untitled%209.png" alt="Untitled"></p>
+</li>
+</ol>
+<p><strong>Natural Join 表示自然连接</strong></p>
+<p>自然连接(natural join)不同于两个关系上的笛卡儿积將第一个关系的每个元组与第二个关系的所有元组都进行连接。自然连接只考虑那些在两个关系模式中都出现的属性上取值相同的元组对。因此，回到 instructor 和 reaches 关系的例子上，instnuctor 和 teaches 的自然连接计算中只考虑这样的元组对：来自instructor 的元组和来自 teaches 的元组在共同属性 id 上的取值相同</p>
+<ol>
+<li>
+<p>找出所有教师的名字，以及他们所在系的名称和系所在的建筑，上面这道题的答案，可以简化改成</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">teaches</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>列出教师的名字和他们所讲授的课程的名称</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">teaches</span><span class="p">,</span><span class="w"> </span><span class="n">course</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">teaches</span><span class="p">.</span><span class="n">course_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">course</span><span class="p">.</span><span class="n">course_id</span><span class="w">
+</span></span></span></code></pre></div><p>这里不能用连续的自然连接：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">teaches</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">course</span><span class="w">
+</span></span></span></code></pre></div><p>因为注意 instructor 和 teaches 的自然连接包括属性</p>
+<p>(ID, name, dept_name, salary, course_id, sec_id)</p>
+<p>而 course 关系包含的属性是</p>
+<p>(course_id, title, dept_rame, credits）</p>
+<p>作为这二者自然连接的结果，需要来自这两个输人的元组既要在属性 dept_name 上取值相同，还要在 course_id 上取值相同。该查询将忽略所有这样的(教师姓名，课程名称)对：其中教师所讲授的课程不是他所在系的课程，而前一个查询会正确输出这样的对</p>
+<p>所以，为了发扬自然连接的优点，同时避免不必要的相等属性带来的危险，SQL 提供了一种自然连接的 using 构造形式，允许用户来指定需要哪些列相等</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="n">instructor</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">teaches</span><span class="p">)</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">course</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">course_id</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>自然连接 <em>join, inner, left, right, full</em></p>
+<p>Join 用于根据两个或多个表中的列之间的关系，从这些表中查询数据。为了得到完整的结果，我们需要从两个或更多的表中获取结果。我们就需要执行 Join</p>
+<p>下面是可以使用的 join 类型，以及它们之间的差异：</p>
+<ul>
+<li><strong>JOIN = INNER JOIN</strong>: 在表中存在至少一个匹配时，返回行</li>
+<li><strong>LEFT JOIN</strong>: 会从左表那里返回所有的行，即使右表中没有匹配，也从左表返回所有的行</li>
+<li><strong>RIGHT JOIN</strong>: 会从右表那里返回所有的行，即使左表中没有匹配，也从右表返回所有的行</li>
+<li><strong>FULL JOIN</strong>: 只要其中一个表中存在匹配，就返回行</li>
+</ul>
+<p><strong>1.JOIN</strong></p>
+<p>在表中存在至少一个匹配时，返回行</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="k">column_name</span><span class="o">=</span><span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>Persons 表：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Id_P</th>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>Address</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Adams</td>
+          <td>John</td>
+          <td>Oxford Street</td>
+          <td>London</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Bush</td>
+          <td>George</td>
+          <td>Fifth Avenue</td>
+          <td>New York</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>Changan Street</td>
+          <td>Beijing</td>
+      </tr>
+  </tbody>
+</table>
+<p>Orders 表：Orders 表中的 Id_P 列用于引用 Persons 表中的人，而无需使用他们的确切姓名</p>
+<table>
+  <thead>
+      <tr>
+          <th>Id_O</th>
+          <th>OrderNo</th>
+          <th>Id_P</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>77895</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>44678</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>22456</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>24562</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>34764</td>
+          <td>65</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>我们可以通过引用两个表的方式，从两个表中获取数据，从而知道谁订购了产品，并且他们订购了什么产品</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="p">,</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">FirstName</span><span class="p">,</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">OrderNo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="p">,</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">Id_P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">Id_P</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>除了上面的方法，我们也可以使用关键词 JOIN 来从两个表中获取数据</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="p">,</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">FirstName</span><span class="p">,</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">OrderNo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Orders</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">Id_P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">Id_P</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>OrderNo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>22456</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>24562</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>77895</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>44678</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ol>
+<p><strong>2.LEFT JOIN</strong></p>
+<p>会从左表那里返回所有的行，即使右表中没有匹配，也从左表返回所有的行</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="k">column_name</span><span class="o">=</span><span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>还是上面的 person，order 表格，现在，我们希望列出所有的人，以及他们的定购——如果有的话</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="p">,</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">FirstName</span><span class="p">,</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">OrderNo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">Id_P</span><span class="o">=</span><span class="n">Orders</span><span class="p">.</span><span class="n">Id_P</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>OrderNo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>22456</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>24562</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>77895</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>44678</td>
+      </tr>
+      <tr>
+          <td>Bush</td>
+          <td>George</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>LEFT JOIN 关键字会从左表 (Persons) 那里返回所有的行，即使在右表 (Orders) 中没有匹配的行</p>
+<p><strong>3.RIGHT JOIN</strong></p>
+<p>会从右表那里返回所有的行，即使左表中没有匹配，也从右表返回所有的行</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">RIGHT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="k">column_name</span><span class="o">=</span><span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>还是上面的 person，order 表格，我们希望列出所有的定单，以及定购它们的人——如果有的话</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="p">,</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">FirstName</span><span class="p">,</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">OrderNo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">RIGHT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">Id_P</span><span class="o">=</span><span class="n">Orders</span><span class="p">.</span><span class="n">Id_P</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>OrderNo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>22456</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>24562</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>77895</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>44678</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>34764</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>4.FULL JOIN</strong></p>
+<p>只要其中一个表中存在匹配，就返回行</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">table1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FULL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">table2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">table1</span><span class="p">.</span><span class="k">column_name</span><span class="o">=</span><span class="n">table2</span><span class="p">.</span><span class="k">column_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>还是上面的 person，order 表格，我们希望列出所有的人，以及他们的定单，以及所有的定单，以及定购它们的人</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="p">,</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">FirstName</span><span class="p">,</span><span class="w"> </span><span class="n">Orders</span><span class="p">.</span><span class="n">OrderNo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Persons</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FULL</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">Id_P</span><span class="o">=</span><span class="n">Orders</span><span class="p">.</span><span class="n">Id_P</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Persons</span><span class="p">.</span><span class="n">LastName</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>LastName</th>
+          <th>FirstName</th>
+          <th>OrderNo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>22456</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+          <td>John</td>
+          <td>24562</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>77895</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>Thomas</td>
+          <td>44678</td>
+      </tr>
+      <tr>
+          <td>Bush</td>
+          <td>George</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>34764</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>附加的基本运算 <em>as, upper, lower, trim, %</em></p>
+<ol>
+<li><strong>更名运算 as</strong></li>
+</ol>
+<p>对大学中所有讲授的课程的教师，找出他们的姓名以及所讲述的所有课程标识</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">S</span><span class="p">.</span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">teaches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">S</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">.</span><span class="n">id</span><span class="w">
+</span></span></span></code></pre></div><ol>
+<li><strong>字符串运算</strong></li>
+</ol>
+<p>全部转换大小写</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">upper</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="err">全部转换为大写</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">lower</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="err">全部转换为小写</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">trim</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="err">去掉字符串后面的空格</span><span class="w">
+</span></span></span></code></pre></div><p>字符串模式匹配</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="err">百分号</span><span class="w"> </span><span class="o">%</span><span class="err">：匹配任意子串</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">下划线</span><span class="w"> </span><span class="n">_</span><span class="err">：匹配任意一个字符</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">**</span><span class="err">下面是例子说明</span><span class="o">**</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="s1">&#39;Intro%&#39;</span><span class="err">：匹配任何以</span><span class="w"> </span><span class="n">Intro</span><span class="w"> </span><span class="err">开头的字符串</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="s1">&#39;%Comp%&#39;</span><span class="err">：匹配任何包含</span><span class="w"> </span><span class="n">Comp</span><span class="w"> </span><span class="err">的字符串</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="s1">&#39;___&#39;</span><span class="err">：匹配只含三个字符的字符串</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="s1">&#39;___%&#39;</span><span class="err">：匹配至少含三个字符的字符串</span><span class="w">
+</span></span></span></code></pre></div><p>在sql语句中用 like 来表达模式匹配</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">department</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">building</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;%Watson%&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>在sql语句中用 escape 来表达转义字符</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">like</span><span class="w"> </span><span class="s1">&#39;ab\%cd%&#39;</span><span class="w"> </span><span class="k">escape</span><span class="w"> </span><span class="s1">&#39;\&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">表示匹配所有以</span><span class="w"> </span><span class="n">ab</span><span class="o">%</span><span class="n">cd</span><span class="w"> </span><span class="err">开头的字符串</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>分组查询 <em>order by,</em> <em>group by, having</em></p>
+<ol>
+<li><strong>ORDER BY</strong></li>
+</ol>
+<p><em>order by</em> 语句用于根据指定的列对结果集进行排序。<em>order by</em> 语句默认按照升序对记录进行排序。如果希望按照降序对记录进行排序，可以使用 DESC 关键字</p>
+<p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>OrderNumber</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IBM</td>
+          <td>3532</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>2356</td>
+      </tr>
+      <tr>
+          <td>Apple</td>
+          <td>4698</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>6953</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>以字母顺序显示公司名称，SELECT Company, OrderNumber FROM Orders ORDER BY Company (ASC by default) ：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>OrderNumber</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Apple</td>
+          <td>4698</td>
+      </tr>
+      <tr>
+          <td>IBM</td>
+          <td>3532</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>6953</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>2356</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>以字母顺序显示公司名称，如果有重复的公司名称，以数字从小到大的顺序显示，SELECT Company, OrderNumber FROM Orders ORDER BY Company, OrderNumber</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>OrderNumber</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Apple</td>
+          <td>4698</td>
+      </tr>
+      <tr>
+          <td>IBM</td>
+          <td>3532</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>2356</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>6953</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>以逆字母顺序显示公司名称，如果有重复的公司名称，以数字从小到大的顺序显示，SELECT Company, OrderNumber FROM Orders ORDER BY Company DESC, OrderNumber ASC</p>
+<table>
+  <thead>
+      <tr>
+          <th>Company</th>
+          <th>OrderNumber</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>W3School</td>
+          <td>2356</td>
+      </tr>
+      <tr>
+          <td>W3School</td>
+          <td>6953</td>
+      </tr>
+      <tr>
+          <td>IBM</td>
+          <td>3532</td>
+      </tr>
+      <tr>
+          <td>Apple</td>
+          <td>4698</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p><strong>GROUP BY</strong></p>
+</li>
+</ol>
+<p>用于结合合计函数(比如 SUM)，根据一个或多个列对结果集进行分组，在 group by 后面子句中的所有属性上取值相同的元组被分在一个组中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">,</span><span class="w"> </span><span class="err">合计函数</span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="err">操作符</span><span class="w"> </span><span class="err">某值</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">column_name</span><span class="w">
+</span></span></span></code></pre></div><p>举例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>O_Id</th>
+          <th>OrderPrice</th>
+          <th>Customer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>1000</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>1600</td>
+          <td>Carter</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>700</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>300</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>2000</td>
+          <td>Adams</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>100</td>
+          <td>Carter</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>我们希望查找每个客户的总金额</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Customer</span><span class="p">,</span><span class="k">SUM</span><span class="p">(</span><span class="n">OrderPrice</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Customer</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Customer</th>
+          <th>SUM(OrderPrice)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bush</td>
+          <td>2000</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>1700</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+          <td>2000</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>看看如果省略 GROUP BY 会出现什么情况</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Customer</span><span class="p">,</span><span class="k">SUM</span><span class="p">(</span><span class="n">OrderPrice</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Customer</th>
+          <th>SUM(OrderPrice)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bush</td>
+          <td>5700</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>5700</td>
+      </tr>
+      <tr>
+          <td>Bush</td>
+          <td>5700</td>
+      </tr>
+      <tr>
+          <td>Bush</td>
+          <td>5700</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+          <td>5700</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+          <td>5700</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>找出每个系的平均工资</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept_name</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_salary</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept_name</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>找出每个系在2010年春季学期讲授一门课程的教师人数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept_name</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span><span class="w"> </span><span class="n">ID</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">instr_count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">teaches</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept_name</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+<p><strong>3.Having</strong></p>
+<p>用于对 group by 之后的分组限定条件，而不是对单个的元组限定条件。注意区别一下 having 跟 where 用法的区别！</p>
+<ol>
+<li>
+<p>查找出教师平均工资超过 42000 美元的系</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept_name</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_salary</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">having</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">42000</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>对于在2009年讲授的每个课程段，如果该课程段至少有2名学生选课，找出选修该课程段的所有学生的总学分的平均值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="p">,</span><span class="w"> </span><span class="n">semester</span><span class="p">,</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="n">sec_id</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">tot_cred</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">takes</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">student</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">course_id</span><span class="p">,</span><span class="w"> </span><span class="n">semester</span><span class="p">,</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="n">sec_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">having</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">2</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>集合运算 <em>union, union all, intersect, intersect all, except, except all</em></p>
+<p>集合运算用于合并不同表格的相同列</p>
+<p><strong>1.UNION</strong></p>
+<p>UNION 操作符用于合并两个或多个 SELECT 语句的结果集</p>
+<p>请注意，UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同</p>
+<p>UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table_name1</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">UNION</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">table_name2</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>Employees_China 表：</p>
+<table>
+  <thead>
+      <tr>
+          <th>E_ID</th>
+          <th>E_Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>01</td>
+          <td>Zhang, Hua</td>
+      </tr>
+      <tr>
+          <td>02</td>
+          <td>Wang, Wei</td>
+      </tr>
+      <tr>
+          <td>03</td>
+          <td>Carter, Thomas</td>
+      </tr>
+      <tr>
+          <td>04</td>
+          <td>Yang, Ming</td>
+      </tr>
+  </tbody>
+</table>
+<p>Employees_USA:</p>
+<table>
+  <thead>
+      <tr>
+          <th>E_ID</th>
+          <th>E_Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>01</td>
+          <td>Adams, John</td>
+      </tr>
+      <tr>
+          <td>02</td>
+          <td>Bush, George</td>
+      </tr>
+      <tr>
+          <td>03</td>
+          <td>Carter, Thomas</td>
+      </tr>
+      <tr>
+          <td>04</td>
+          <td>Gates, Bill</td>
+      </tr>
+  </tbody>
+</table>
+<p>列出所有在中国和美国的不同的雇员名</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">E_Name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Employees_China</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">UNION</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">E_Name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Employees_USA</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>E_Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Zhang, Hua</td>
+      </tr>
+      <tr>
+          <td>Wang, Wei</td>
+      </tr>
+      <tr>
+          <td>Carter, Thomas</td>
+      </tr>
+      <tr>
+          <td>Yang, Ming</td>
+      </tr>
+      <tr>
+          <td>Adams, John</td>
+      </tr>
+      <tr>
+          <td>Bush, George</td>
+      </tr>
+      <tr>
+          <td>Gates, Bill</td>
+      </tr>
+  </tbody>
+</table>
+<p>注意：这个命令无法列出在中国和美国的所有雇员。在上面的例子中，我们有两个名字相同的雇员 Carter, Thomas ，他们当中只有一个人被列出来了。UNION 命令只会选取不同的值</p>
+<p><strong>2.UNION ALL</strong></p>
+<p>还是上面的两个表格，列出在中国和美国的所有的雇员：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">E_Name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Employees_China</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">E_Name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Employees_USA</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>E_Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Zhang, Hua</td>
+      </tr>
+      <tr>
+          <td>Wang, Wei</td>
+      </tr>
+      <tr>
+          <td>Carter, Thomas</td>
+      </tr>
+      <tr>
+          <td>Yang, Ming</td>
+      </tr>
+      <tr>
+          <td>Adams, John</td>
+      </tr>
+      <tr>
+          <td>Bush, George</td>
+      </tr>
+      <tr>
+          <td>Carter, Thomas</td>
+      </tr>
+      <tr>
+          <td>Gates, Bill</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>3.Intersect</strong></p>
+<p>简介：交运算，自动去除重复的</p>
+<p>例子：找出在2009年秋季和2010年春季同时开课的所有课程的合集</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fall&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2009</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">intersect</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p><strong>4.Intersect All</strong></p>
+<p>简介：交运算，会保留重复的</p>
+<p>例子：找出在2009年秋季和2010年春季同时开课的所有课程的合集</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fall&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2009</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">intersect</span><span class="w"> </span><span class="k">all</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p><strong>5.except</strong></p>
+<p>简介：差运算，自动去除重复的</p>
+<p>例子：找出在2009年秋季学期开课，但不再2010年春季学期开课的所有课程</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fall&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2009</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">except</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p><strong>6.except all</strong></p>
+<p>简介：差运算，不去除重复的</p>
+<p>例子：找出在2009年秋季学期开课，但不再2010年春季学期开课的所有课程</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fall&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2009</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">except</span><span class="w"> </span><span class="k">all</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">course_id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w"> </span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>聚集函数 <em>avg, count, sum, max, min</em></p>
+<p><strong>1.AVG()</strong></p>
+<p>AVG 函数返回数值列的平均值，NULL 值不包括在计算中</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="o">*</span><span class="k">column_name</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">*</span><span class="k">table_name</span><span class="o">*</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>O_Id</th>
+          <th>OrderPrice</th>
+          <th>Customer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>1000</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>1600</td>
+          <td>Carter</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>700</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>300</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>2000</td>
+          <td>Adams</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>100</td>
+          <td>Carter</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>我们希望计算 &ldquo;OrderPrice&rdquo; 字段的平均值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">OrderPrice</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">OrderAverage</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>OrderAverage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>950</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>我们希望找到 OrderPrice 值高于 OrderPrice 平均值的客户</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">Customer</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">OrderPrice</span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">OrderPrice</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Customer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>Carter</td>
+      </tr>
+      <tr>
+          <td>Adams</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>找出计算机系教师的平均工资</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_salary</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">dept_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Comp.Sci&#39;</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+<p><strong>2. COUNT()</strong></p>
+<p>COUNT(<em>column_name</em>) 函数返回指定列的值的数目（NULL 不计入）</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>O_Id</th>
+          <th>OrderPrice</th>
+          <th>Customer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>1000</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>1600</td>
+          <td>Carter</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>700</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>300</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>2000</td>
+          <td>Adams</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>100</td>
+          <td>Carter</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>希望计算客户 &ldquo;Carter&rdquo; 的订单数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">Customer</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">CustomerNilsen</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">Customer</span><span class="o">=</span><span class="s1">&#39;Carter&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>以上 SQL 语句的结果是 2，因为客户 Carter 共有 2 个订单</p>
+<table>
+  <thead>
+      <tr>
+          <th>CustomerNilsen</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>如果我们省略 WHERE 子句</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">NumberOfOrders</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span></code></pre></div><p>结果为 6，这是表中的总行数</p>
+<table>
+  <thead>
+      <tr>
+          <th>NumberOfOrders</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>6</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>我们希望计算 &ldquo;Orders&rdquo; 表中不同客户的数目</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">Customer</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">NumberOfCustomers</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span></code></pre></div><p>结果为 3，这是 &ldquo;Orders&rdquo; 表中不同客户（Bush, Carter 和 Adams）的数目</p>
+<table>
+  <thead>
+      <tr>
+          <th>NumberOfCustomers</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>3</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>找出在2010年春季学期讲授一门课程的教师总数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span><span class="w"> </span><span class="n">ID</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">teaches</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>找出每个系在2010年春季学期讲授一门课程的教师人数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept_name</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span><span class="w"> </span><span class="n">ID</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">instr_count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">teaches</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="n">semester</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Spring&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2010</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept_name</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+<p><strong>3.MAX()</strong></p>
+<p>MAX 函数返回一列中的最大值。NULL 值不包括在计算中</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>O_Id</th>
+          <th>OrderDate</th>
+          <th>OrderPrice</th>
+          <th>Customer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>2008/12/29</td>
+          <td>1000</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>2008/11/23</td>
+          <td>1600</td>
+          <td>Carter</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>2008/10/05</td>
+          <td>700</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>2008/09/28</td>
+          <td>300</td>
+          <td>Bush</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>2008/08/06</td>
+          <td>2000</td>
+          <td>Adams</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>2008/07/21</td>
+          <td>100</td>
+          <td>Carter</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>
+<p>我们希望查找 &ldquo;OrderPrice&rdquo; 列的最大值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="n">OrderPrice</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">LargestOrderPrice</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>LargestOrderPrice</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2000</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ol>
+<p><strong>4.SUM()</strong></p>
+<p>SUM 函数返回数值列的总数（总额）</p>
+<p><strong>语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w">
+</span></span></span></code></pre></div><p><strong>举例：</strong></p>
+<p>我们希望查找 &ldquo;OrderPrice&rdquo; 字段的总数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">OrderPrice</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">OrderTotal</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Orders</span><span class="w">
+</span></span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>OrderTotal</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>5700</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h3 id="6-database-design-and-er-modal">6 Database Design and ER modal</h3>
+<ul>
+<li>
+<p>E-R模型的三个要素</p>
+<p>实体集、联系集、属性</p>
+<ul>
+<li><strong>实体</strong>(entity)：在现实世界中存在并且区别于其他对象的事物或对象</li>
+<li><strong>实体集</strong>(entity set)：相同类型即具有相同性质的实体集合，例如大学所有教师的集合instructor</li>
+<li><strong>联系</strong>(relationship)：指多个实体间相互关联</li>
+<li><strong>联系集</strong>(relationship set)：相同类型联系的集合</li>
+<li><strong>多元联系集</strong>：相同的实体集可能会参与到多个联系集中</li>
+<li><strong>实体属性</strong>：实体集中每个成员所拥有的描述性性质</li>
+<li><strong>描述性属性</strong>：例如考虑instructor和student之间的联系集advisor，可以将属性date与该联系关联</li>
+</ul>
+</li>
+<li>
+<p>弱实体集的表示 week entity set</p>
+<p><strong>弱实体集</strong>(week entity set)：实体集的所有属性都不足以形成主码</p>
+<p><strong>强实体集</strong>(strong entity set)：具有主码的实体集</p>
+<p><strong>标识性联系</strong>(identifying)：弱实体集必须与另一个称作<strong>标识</strong>或<strong>属主实体集</strong>的实体集关联才能有意义</p>
+<p>注意：强实体与弱实体的标识性联系联系只能是1：1或1：N，弱实体参与联系时应该是<strong>全部参与</strong></p>
+<p><strong>分辨符</strong>(discriminator)：区分弱实体集中的实体的方法</p>
+<p>弱实体集的主码由标识实体集的主码加上该弱实体集的分辨符构成</p>
+</li>
+<li>
+<p>联系集的表示 relationship set</p>
+<p><strong>多对多</strong>的二元联系：该联系集属性自成一个关系，主码是参与实体集的主码的并集</p>
+<p><strong>一对多</strong>的二元联系：联系集的属性归到多的一方，少的一方的主码也要加到多的一方</p>
+<p><strong>一对一</strong>的二元联系：联系集的属性归到任意一方，另一方的主码也要加进去</p>
+</li>
+<li>
+<p>例题一看就懂</p>
+<p><img src="Untitled%2010.png" alt="Untitled"></p>
+<p><img src="Untitled%2011.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="7-database-design-refinement">7 D<strong>atabase Design Refinement</strong></h3>
+<ul>
+<li>
+<p>为什么要引入数据库范式</p>
+<p>存储信息时避免不必要的冗余，并且可以让我们方便的获取信息</p>
+</li>
+<li>
+<p>数据库四范式 ⭐</p>
+<p><a href="https://www.bilibili.com/video/BV1LW411a7wB/?spm_id_from=333.999.0.0&amp;vd_source=a314bfb0589f50a82d60a44b2d833d8a" target="_blank">https://www.bilibili.com/video/BV1LW411a7wB/?spm_id_from=333.999.0.0&amp;vd_source=a314bfb0589f50a82d60a44b2d833d8a</a></p>
+<p><strong>第一范式（1NF）</strong></p>
+<p>原子性，不可分割。确保每一列的原子性，如果每一列都是不可再分的最小数据单元</p>
+<p><img src="Untitled%2012.png" alt="Untitled"></p>
+<p><img src="Untitled%2013.png" alt="Untitled"></p>
+<p><strong>第二范式（2NF）</strong></p>
+<p>不存在非主属性对码的部分函数依赖</p>
+<p><strong>第三范式（3NF）</strong></p>
+<p>不存在非主属性对码的传递函数依赖，全码一定是3NF</p>
+<p><strong>BCNF 范式</strong></p>
+<p>主属性和非主属性都不存在对码的部分函数依赖和传递函数依赖。BCNF 消除了所有基于函数依赖能够发现的冗余，具有函数依赖集F的关系模式 R 属于 BCNF 的条件是，对 F+ 中所有形如 $\alpha \rightarrow \beta$ 的函数依赖下面至少有一项成立：$\alpha \rightarrow \beta$ 是平凡的函数依赖，或 $\alpha$ 是模式 R 的一个超码</p>
+<p><strong>第四范式（4NF）</strong></p>
+<p>关系模式 R 属于第三范式，且消除了非主属性对候选键以外属性的多值依赖</p>
+<p><strong>范式判断：</strong></p>
+<ol>
+<li>
+<p>求候选键，和主属性/非主属性</p>
+</li>
+<li>
+<p>非键属性是否<strong>部分依赖</strong>于候选键</p>
+<p>部份依赖是指如果候选码是 AB，C 是非主属性，如果在 F 中找到 A→C 或者 B→C，就说明 C 直接依赖于 A 或者 B，也就是说 C 部分依赖于 AB</p>
+<p>如果是：1NF</p>
+<p>如果否：往下走</p>
+</li>
+<li>
+<p>非键属性是否<strong>传递依赖</strong>于候选键</p>
+<p>传递依赖有两个条件，一个是传递，B→A，A→C，其中 B 是候选键，C 是非主属性，二是不可逆，A!→B，A 不能推出 B</p>
+<p>如果是：2NF</p>
+<p>如果否：往下走</p>
+</li>
+<li>
+<p>所有依赖项的左边是否全为候选键</p>
+<p>如果是：BCNF</p>
+<p>如果不是：3NF</p>
+</li>
+</ol>
+</li>
+<li>
+<p>如何判断满足哪些范式</p>
+<ol>
+<li>
+<p>求候选键，和主属性/非主属性</p>
+</li>
+<li>
+<p>非键属性是否<strong>部分依赖</strong>于候选键</p>
+<p>部份依赖是指如果候选码是AB，非键C，如果在F中找到A→C或者B→C，就是部分依赖</p>
+<p>如果是：1NF</p>
+<p>如果否：往下走</p>
+</li>
+<li>
+<p>非键属性是否<strong>传递依赖</strong>于候选键</p>
+<p>如果是：2NF</p>
+<p>如果否：往下走</p>
+</li>
+<li>
+<p>所有依赖项的左边是否全为候选键</p>
+<p>如果是：BCNF</p>
+<p>如果不是：3NF</p>
+</li>
+</ol>
+</li>
+<li>
+<p>各种码的概念</p>
+<p><strong>超码</strong> (super key)：能推出所有属性的属性集，唯一能够标识整条元组的属性集。R 的子集 K 是 r(R) 的超码的条件是：在关系 r(R) 的任意合法实例中，对于 r 的实例中的所有元组对 t1 和 t2 总满足，若 t1 != t2，则 t1[K] != t2[K]</p>
+<p><strong>候选码</strong>：可以推出所有的属性，但是他的任意一个真子集无法推出所有的属性，候选码是最小的超码</p>
+<p><strong>主码</strong>：从候选码中任意挑一个作为主码</p>
+<p><strong>主属性</strong>：包含在任意一个候选码中的属性</p>
+<p><strong>非主属性</strong>：不包含在任意一个候选码中的属性</p>
+<p><strong>码</strong>：把主码、候选码简称为码</p>
+<p><strong>全码</strong>：如果所有属性都是码，成为全码</p>
+</li>
+<li>
+<p>求候选码的步骤 ⭐</p>
+<p>step1：只出现在左边的一定是候选码</p>
+<p>step2：只出现在右边的一定不是候选码</p>
+<p>step3：左右都出现的不一定</p>
+<p>step4：左右都不出现的一定是候选码</p>
+<p>step5：求确定的候选码的闭包（closure，指由他可以推出来的所有属性），如果可以推出全部，那么当前确定的就是候选码。否则就把每个可能的码，放进当前确定的候选码里面进行求闭包</p>
+<p><img src="Untitled%2014.png" alt="Untitled"></p>
+</li>
+<li>
+<p>函数依赖的概念</p>
+</li>
+<li>
+<p>函数依赖的闭包</p>
+</li>
+<li>
+<p>函数依赖的 Armstrong 公理</p>
+<p><img src="Untitled%2015.png" alt="Untitled"></p>
+</li>
+<li>
+<p>求最小函数依赖集的步骤 ⭐</p>
+<p><strong>最小函数依赖集</strong>：即 F 中的每个依赖，都不可以被其他依赖推出</p>
+<ol>
+<li>把左边的元素拆分成单个的</li>
+<li>除去当前关系模式，求它的闭包，把集合里面所有关系一一排查</li>
+<li>左边最小化（通过遮住元素来看能不能推出其他元素），比如BCD，遮住B看能不能推出B，再遮住C和D</li>
+</ol>
+<p><img src="Untitled%2016.png" alt="Untitled"></p>
+</li>
+<li>
+<p>判断是否保持函数依赖的步骤</p>
+<ul>
+<li>无损连接性：具有无损连接性的分解不一定能够保持函数依赖</li>
+<li>保持函数依赖：保持函数依赖的分解不一定具有无损连接性</li>
+</ul>
+<p>对于关系模式 R(U,F)，设 R1(U1, F1), R2(U1,F2), … Rn(Un, Fn) 是 R 的分解，若 F 的闭包等于 $F1\cup F2\cup …\cup Fn$ 的闭包，则称该分解是保持函数依赖</p>
+<p><img src="Untitled%2017.png" alt="Untitled"></p>
+</li>
+<li>
+<p>无损分解的概念 lossless decomposition</p>
+<p>如果 R 分解为 R1 和 R2 之后，没有信息的损失，也就是说 R1 和 R2 通过自然连接之后还是等于 R，这就是一个无损分解</p>
+<p>模式分解具有无损连接性的充分必要条件是：把一个关系模式分解为两个关系模式时，分解具有无损连接性，当且仅当两个关系模式的公共属性，是其中一个模式的键</p>
+<p>$R1 \cap R2 \rightarrow  R1 \in F \ or \ R1 \cap R2 \rightarrow  R2 \in F$</p>
+<p>其中 F 是 R 上的函数依赖集</p>
+</li>
+<li>
+<p>判断是否为无损分解的步骤 ⭐</p>
+<p>两个分解的关系判断无损分解：</p>
+<p><img src="Untitled%2018.png" alt="Untitled"></p>
+<p>多个分解的关系判断：二叉树法</p>
+<p><img src="Untitled%2019.png" alt="Untitled"></p>
+<p><img src="Untitled%2020.png" alt="Untitled"></p>
+</li>
+<li>
+<p>求 3NF 分解的步骤</p>
+<ol>
+<li>求候选码</li>
+<li>求最小函数依赖集</li>
+<li>把最小函数依赖集箭头前后的元素写在一起</li>
+</ol>
+</li>
+<li>
+<p>求 BCNF 分解的步骤</p>
+<ol>
+<li>求候选码</li>
+<li>若所有关系模式都是 BCNF，直接转到步骤 5</li>
+<li>找出第一个不是 BCNF 的关系模式，也就是箭头左侧的属性不是候选码</li>
+<li>把这个关系模式从 F 中抽出来，作为一个新的关系 Ri，比如 BC → D，作为 R1(BCD)。然后把含有 Ri 中箭头这个右边的字母 D 的所有关系模式从 F 中抽出来扔掉，再从原来的关系里减去这个字母 D，作为新的关系 R(i+1)，剩下的 F 里面的关系模式继续执行，转到步骤3</li>
+<li>分解结束</li>
+</ol>
+<p><img src="Untitled%2021.png" alt="Untitled"></p>
+<p><img src="Untitled%2022.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="13-storage">13 <strong>storage</strong></h3>
+<ul>
+<li>
+<p>数据库管理系统的结构</p>
+<ol>
+<li>Query processing</li>
+<li>Storage manager</li>
+</ol>
+</li>
+<li>
+<p>数据存储介质</p>
+<ul>
+<li>高速缓存存储器 cache：最快最昂贵的，很小</li>
+<li>主存储器 main memory：存放可处理的数据的存储介质，还是比较小，发生电源故障或者系统崩溃，内容容易丢失</li>
+<li>快闪存储器 flash memory：在电源关闭的时候可以保存下来，有NAND和NOR快闪</li>
+<li>磁盘存储器 magnetic disk storage：长期联机数据存储的主要介质，系统将数据从磁盘易到主存储器，在完成操作后修改过的数据必须写会磁盘</li>
+<li>光学存储器 optical storage：光盘 compact disk，容纳 700MB 的数据</li>
+<li>磁带存储器：比磁盘便宜，但访问也比磁盘慢很多，磁带是顺序访问，磁盘是直接访问的</li>
+</ul>
+<p>比较：</p>
+<p><img src="Untitled%2023.png" alt="Untitled"></p>
+</li>
+<li>
+<p>数据存储介质分类</p>
+<p><strong>按照属性分：</strong></p>
+<ol>
+<li>volatile storage 易失性存储：cache, main maemory</li>
+<li>non-volatile storage 非易失性存储</li>
+</ol>
+<p><strong>按照应用分：</strong></p>
+<ol>
+<li>基本存储</li>
+<li>辅助存储，联机存储</li>
+<li>三级存储，脱机存储</li>
+</ol>
+</li>
+<li>
+<p>磁盘存储的特点 magnetic disk storage</p>
+<p><img src="Untitled%2024.png" alt="Untitled"></p>
+<p>盘面 platter：信息记录在盘面上</p>
+<p>磁道 track：盘片表面一圈一圈的叫磁道，外侧的磁道比内侧的磁道拥有更多的扇区</p>
+<p>扇区 sector：每个磁道划分为很多扇区，扇区是从磁盘读出和写入信息的最小单位，一般是512字节</p>
+<p>读写头 read-write head：将信息磁化存储到扇区中</p>
+<p>柱面 cylinder：所有盘片的第i条磁道合在一起成为第i歌柱面</p>
+</li>
+<li>
+<p>磁盘存储性能的度量</p>
+<ul>
+<li>容量 space</li>
+<li>访问时间 access time：从发出读写请求到数据开始传输之间的时间，磁盘臂移动到正确的磁道，旋转到指定的扇区，是寻道时间+旋转等待时间的总和</li>
+<li>寻道时间 seek time：磁盘臂重定位的时间</li>
+<li>平均寻道时间：寻道时间的平均值，假设所有磁道包含相同的扇区数，大约是最长寻道时间的二分之一</li>
+<li>旋转等待时间 rotation latency time：读写头找到磁道之后，等待旋转道访问的扇区的时间</li>
+<li>数据传输率 data-transfer rate：从磁盘获得数据或者存储数据的速率，差不多25-100MB/s的最大传输率</li>
+<li>平均故障时间 Mean time to faillur：我们可以期望系统无故障连续运行的时间量</li>
+</ul>
+<p><img src="Untitled%2025.png" alt="Untitled"></p>
+<p><img src="Untitled%2026.png" alt="Untitled"></p>
+</li>
+<li>
+<p>磁盘访问的优化方法</p>
+<ul>
+<li>缓存 buffer</li>
+<li>预读 read ahead</li>
+<li>调度 scheduling：磁盘臂调度，电梯算法</li>
+<li>文件组织</li>
+<li>非易失性写缓冲区</li>
+<li>日记磁盘</li>
+</ul>
+</li>
+<li>
+<p>独立磁盘冗余阵列 RAID</p>
+<p>作用：通过冗余提高可靠性（奇偶校验），通过并行提高性能</p>
+<p>磁盘阵列简称RAID(Redundant Array of Independent Disks)。磁盘阵列是由很多便宜、容量较小、稳定性较高、速度较慢磁盘，组合成一个大型的磁盘组，利用个别磁盘提供数据所产生的加成效果来提升整个磁盘系统的效能。同时，在储存数据时，利用这项技术，将数据切割成许多区段，分别存放在各个硬盘上。磁盘阵列还能利用同位检查(Parity Check)的观念，在数组中任一颗硬盘故障时，仍可读出数据，在数据重构时，将故障硬盘内的数据，经计算后重新置入新硬盘中。而磁盘阵列柜就是装配了众多硬盘的外置的RAID 。</p>
+</li>
+<li>
+<p>文件组织 file organization</p>
+<p>什么是文件：数据存储在文件上，文件由很多个record构成，record由fields构成</p>
+<p>文件组织定义：数据组织称记录、块、和访问结构的方式，包括把记录和块存储在磁盘上的方式，和记录和块之间相互联系的方式</p>
+</li>
+<li>
+<p>可变长和不可变长记录 arable lenth record</p>
+</li>
+<li>
+<p>文件记录组织 file records organization</p>
+<ul>
+<li>堆文件组织 heap file：无序的，插入在尾部，删除在当下，然后加个删除标记</li>
+<li>顺序文件组织 sequential file：按照属性的顺序插入，检索效率高，更新效率低</li>
+<li>散列文件组织 hashing file：依据一个散列函数来计算存放的位置，检索效率和更新效率都提高</li>
+<li>聚集文件组织 clustering file：将具有相似属性值的记录存放于连续的磁盘块中</li>
+</ul>
+</li>
+<li>
+<p>数据库缓冲区管理 data buffer</p>
+<p>原因：当buffer的空闲区不够，不能容下新读入的块，需要将buffer中原有的块覆盖</p>
+<p>方法：</p>
+<ul>
+<li>最近最少使用 LRU</li>
+<li>最近最常使用 MRU</li>
+</ul>
+</li>
+</ul>
+<h3 id="14-index-and-hash">14 <strong>index and hash</strong></h3>
+<ul>
+<li>
+<p>索引的概念</p>
+</li>
+<li>
+<p>MySQL 索引类型</p>
+<p>1.普通索引：是最基本的索引，它没有任何限制。</p>
+<pre tabindex="0"><code>CREATE INDEX index_name ON table(column(length))
+ALTER TABLE table_name ADD INDEX index_name ( column )
+DROP INDEX index_name ON table
+</code></pre><p>2.唯一索引：与前面的普通索引类似，不同的就是：索引列的值必须唯一，但允许有空值。如果是组合索引，则列值的组合必须唯一</p>
+<pre tabindex="0"><code>CREATE UNIQUE INDEX indexName ON table(column(length))
+ALTER TABLE table_name ADD UNIQUE ( column )
+</code></pre><p>3.主键索引：是一种特殊的唯一索引，一个表只能有一个主键，不允许有空值。一般是在建表的时候同时创建主键索引</p>
+<pre tabindex="0"><code>CREATE TABLE `table` 
+(
+`id` int(11) NOT NULL AUTO_INCREMENT ,   
+`title` char(255) NOT NULL ,   
+PRIMARY KEY (`id`) 
+);
+ALTER TABLE table_name ADD PRIMARY KEY ( column )
+</code></pre><p>4.组合索引：指多个字段上创建的索引，只有在查询条件中使用了创建索引时的第一个字段，索引才会被使用。使用组合索引时遵循最左前缀集合</p>
+<pre tabindex="0"><code>ALTER TABLE table_name ADD INDEX index_name ( column1, column2, column3 )
+</code></pre><p>5.全文索引：主要用来查找文本中的关键字，而不是直接与索引中的值相比较。fulltext索引跟其它索引大不相同，它更像是一个搜索引擎，而不是简单的where语句的参数匹配。fulltext索引配合match against操作使用，而不是一般的where语句加like。它可以在create table，alter table ，create index使用，不过目前只有char、varchar，text 列上可以创建全文索引。值得一提的是，在数据量较大时候，现将数据放入一个没有全局索引的表中，然后再用CREATE index创建fulltext索引，要比先为一张表建立fulltext然后再将数据写入的速度快很多</p>
+<pre tabindex="0"><code>// 1 修改表结构添加全文索引
+ALTER TABLE table_name ADD FULLTEXT ( column)
+
+// 2 创建表的适合添加全文索引
+CREATE TABLE `table` 
+(    
+`id` int(11) NOT NULL AUTO_INCREMENT ,    
+`title` char(255) CHARACTER NOT NULL ,    
+`content` text CHARACTER NULL ,    
+`time` int(10) NULL DEFAULT NULL ,    
+PRIMARY KEY (`id`),    
+FULLTEXT (content) 
+);
+
+// 3 直接创建索引
+</code></pre></li>
+<li>
+<p>顺序索引和散列索引</p>
+<p>顺序索引：基于值的顺序排序的</p>
+<p>散列索引：基于将值平均分布道若干散列桶中</p>
+</li>
+<li>
+<p>稠密索引和稀疏索引</p>
+<p>稠密索引 Dense Index：对于主文件中每一个记录，都有一个对应的索引项</p>
+<p><img src="Untitled%2027.png" alt="Untitled"></p>
+<p>稀疏索引 Sparse Index：对于主文件中部分记录，有对应的索引项，只有索引是聚集索引（当关系按照搜索码排列顺序存储时）才能使用稀疏索引</p>
+<p><img src="Untitled%2028.png" alt="Untitled"></p>
+</li>
+<li>
+<p>聚集索引和非聚集索引</p>
+<p><strong>聚集索引 clustering index</strong>：包含记录的文件按照某个搜索码指定的顺序排序，该搜索码对应的索引成为聚集索引，也成为主索引，可以建立在主码和任何搜索吗上，主索引是稀疏索引，一个文件只可以创建一个聚集索引</p>
+<p><strong>非聚集索引 nonclustering index</strong>：搜索码指定的顺序与文件中记录的物理顺序不同的索引成为非聚集索引，也叫辅助索引，辅助索引是稠密索引</p>
+<p>总结：</p>
+<p>索引在搜索记录时提供了很大的好处。有序索引:密集索引;稀疏索引。辅助索引必须是密集的。使用主索引的顺序扫描是高效的。但是使用二级索引的顺序扫描开销很大。每个记录访问可能从磁盘获取一个新的块。当一个文件被修改时，文件上的每个索引都必须更新;更新索引会增加数据库修改的开销。</p>
+</li>
+<li>
+<p>为什么要用 B+ 树索引</p>
+<p><strong>索引顺序文件的缺点：</strong></p>
+<p>性能随着文件的增长而下降，因为创建了许多溢出块。需要对整个索引文件进行定期重组。而B+树索引是索引顺序文件的另一种选择。</p>
+<p><strong>B+树索引文件的优点：</strong></p>
+<p>在面对插入和删除时，通过小的、局部的更改自动地重新组织自己。为了保持性能，不需要重组整个文件</p>
+<p><strong>B+树的缺点：</strong></p>
+<ol>
+<li>额外的插入和删除开销，2. 空间开销，B+树的优点大于缺点，它们被广泛使用</li>
+</ol>
+<p><strong>常见的索引类型：hash、b树、b+树</strong></p>
+<p>hash：底层就是 hash 表。进行查找时，根据 key 调用hash 函数获得对应的 hashcode，根据 hashcode 找到对应的数据行地址，根据地址拿到对应的数据。</p>
+<p>B树：B树是一种多路搜索树，n 路搜索树代表每个节点最多有 n 个子节点。每个节点存储 key + 指向下一层节点的指针+ 指向 key 数据记录的地址。查找时，从根结点向下进行查找，直到找到对应的key。</p>
+<p>B+树：B+树是b树的变种，主要区别在于：B+树的非叶子节点只存储 key + 指向下一层节点的指针。另外，B+树的叶子节点之间通过指针来连接，构成一个有序链表，因此对整棵树的遍历只需要一次线性遍历叶子结点即可</p>
+<p><strong>为什么MySQL数据库要用B+树存储索引？而不用红黑树、Hash、B树？</strong></p>
+<ul>
+<li>红黑树：如果在内存中，红黑树的查找效率比B树更高，但是涉及到磁盘操作，B树就更优了。因为红黑树是二叉树，数据量大时树的层数很高，从树的根结点向下寻找的过程，每读1个节点，都相当于一次IO操作，因此红黑树的I/O操作会比B树多的多。</li>
+<li>hash 索引：如果只查询单个值的话，hash 索引的效率非常高。但是 hash 索引有几个问题：1）不支持范围查询；2）不支持索引值的排序操作；3）不支持联合索引的最左匹配规则。</li>
+<li>B树索引：B树索相比于B+树，在进行范围查询时，需要做局部的中序遍历，可能要跨层访问，跨层访问代表着要进行额外的磁盘I/O操作；另外，B树的非叶子节点存放了数据记录的地址，会导致存放的节点更少，树的层数变高。</li>
+</ul>
+</li>
+<li>
+<p>B+ 树的简介和特点</p>
+<p>**简介：**B+ 树索引是一种多级索引，在数据插入和删除的情况下仍能保持其执行效率</p>
+<p><img src="Untitled%2029.png" alt="Untitled"></p>
+<p>**特点：**B+树是一棵满足以下性质的有 root tree</p>
+<ul>
+<li>从根到叶的所有路径都具有相同的长度，是平衡树</li>
+<li>每个既不是根的非叶节点的节点具有⌈n/2⌉～n的子节点</li>
+<li>一个叶节点的值在⌈(n−1)/2⌉~n-1之间</li>
+<li>特殊情况：如果根节点不是叶节点，则至少有2个子节点。如果根是叶节点，则它的值可以在 0～(n−1) 之间。</li>
+</ul>
+<p><img src="Untitled%2030.png" alt="Untitled"></p>
+</li>
+<li>
+<p>B+ 树的合成</p>
+<p>就是从第一个节点加入到最后一个节点的过程，例题可以见下面的添加元素</p>
+</li>
+<li>
+<p>B+ 树的查询</p>
+<p>复杂度：查询的节点不超过 ⌈log_⌈n/2⌉(M)⌉ 个</p>
+<p>例子：使用100万个搜索键值并且 n=100，从根到叶的查找最多访问log_50(1,000,000)≈4 个节点</p>
+</li>
+<li>
+<p>B+ 树添加元素</p>
+<ol>
+<li>确认一个节点有几个格子</li>
+<li>如果添加的格子没有满，直接添加</li>
+<li>如果格子满了，需要进行分裂，分裂之后每个节点的格子都空一格，比如说一个节点有四个格子，分裂之后每个格子都只有三个</li>
+</ol>
+<p><strong>例题：Construct a B+-tree for the following set of key values</strong>
+(1, 2, 5, 6, 8, 10, 18, 27, 32, 39, 41, 45, 52, 58, 73, 80, 91, 99)
+Assume that the tree is initially empty and values are added in ascending order. The number of pointers that will fit in one node is 5.</p>
+<p><a href="https://www.notion.so" target="_blank">https://www.notion.so</a></p>
+</li>
+<li>
+<p>B+ 树删除元素</p>
+<ol>
+<li>如果格子里面元素&gt;2，直接删除</li>
+<li>如果格子里面元素=2，删除之后要进行合并</li>
+<li>合并之后的node数字的填写小诀窍：就填右边箭头指向的这个格子的第一个数字就行</li>
+</ol>
+</li>
+<li>
+<p>索引的原理</p>
+<p>索引的存储原理大致可以概括为一句话：<strong>以空间换时间</strong>。</p>
+<p>一般来说索引本身也很大，不可能全部存储在内存中，因此<strong>索引往往是存储在磁盘上的文件中的</strong>（可能存储在单独的索引文件中，也可能和数据一起存储在数据文件中）。</p>
+<p>数据库在未添加索引进行查询的时候默认是进行全文搜索，也就是说有多少数据就进行多少次查询，然后找到相应的数据就把它们放到结果集中，直到全文扫描完毕</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>大大提高数据查询速度。</li>
+<li>可以提高数据检索的效率，降低数据库的IO成本，类似于书的目录。</li>
+<li>通过索引列对数据进行排序，降低数据的排序成本降低了CPU的消耗。</li>
+<li>被索引的列会自动进行排序，包括【单例索引】和【组合索引】，只是组合索引的排序需要复杂一些。</li>
+<li>如果按照索引列的顺序进行排序，对order 不用语句来说，效率就会提高很多。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>索引会占据磁盘空间。</li>
+<li>索引虽然会提高查询效率，但是会降低更新表的效率。比如每次对表进行增删改查操作，MySQL不仅要保存数据，还有保存或者更新对应的索引文件。</li>
+<li>维护索引需要消耗数据库资源。</li>
+</ul>
+</li>
+<li>
+<p>哪种情况不适合用索引</p>
+<p>查询很少使用的情况不适合建立索引</p>
+<p>经常增、删、改的字段不适合建立索引</p>
+<p>当数据过少的时候不适合建立索引</p>
+<p>定义为text, image和bit数据类型的列不适合建立索引</p>
+</li>
+</ul>
+<h3 id="15-query-processing">15 <strong>query processing</strong></h3>
+<p>要考 代价 寻到时间和存储时间的计算</p>
+<ul>
+<li>
+<p>代价</p>
+<p>代价取决于两个因素：执行的算法、数据库目录中的统计信息估计成本</p>
+<p>查询处理的代价包括：磁盘存取，执行一个查询所需要的CPU时间，在并行/分布式数据库系统中的通信代价</p>
+<p>用传送磁盘块数以及搜索磁盘次数来度量查询计划的代价：</p>
+<p>假设瓷盘子系统传输一个块的数据平均消耗t_T秒，磁盘平均访问时间（磁盘搜索时间+旋转延迟）为t_S秒，则一次传输b个块，以及执行S次磁盘搜索的操作将消耗（b<em>t_T+S</em>t_S）秒。</p>
+<p>其中t_T和t_S必须针对所使用的磁盘系统来计算</p>
+<p>通果把读磁盘块和写磁盘块区分开，可以进一步细化磁盘存取代价的估算。</p>
+<p>本书给出的代价没有包括将操作最终写回磁盘的代价，当需要时需要单独考虑。</p>
+<ul>
+<li>本书所考虑的算法代价依赖于主存中缓冲区的大小</li>
+<li>最好的情形是所有的数据都可以读入到缓冲区中，不必再访问磁盘</li>
+<li>最坏的情形是假定缓冲区只能容纳数目不多的块——大约每隔关系一块</li>
+<li>在代价估算时，通常假定最坏的情形</li>
+</ul>
+</li>
+<li>
+<p>选择运算</p>
+<p>表格有点问题： a3 a5要加一个传输 寻道时间</p>
+<p>在b+树去做index，查到叶子节点，就是树的高度</p>
+<p>后面算法的比较不过多涉及</p>
+<p>复合查询有一些概念就好</p>
+<p><img src="Untitled%2031.png" alt="Untitled"></p>
+</li>
+<li>
+<p>cost of hash join</p>
+<p><img src="Untitled%2032.png" alt="Untitled"></p>
+<p><img src="Untitled%2033.png" alt="Untitled"></p>
+<p><img src="Untitled%2034.png" alt="Untitled"></p>
+</li>
+<li>
+<p>课后例子</p>
+<p><img src="Untitled%2035.png" alt="Untitled"></p>
+</li>
+</ul>
+<h3 id="16-query-optimization">16 <strong>Query Optimization</strong></h3>
+<h3 id="17-transaction"><strong>17 transaction</strong></h3>
+<p>基本概念 选择判断题 什么是及联回滚 什么是全欺负</p>
+<ul>
+<li>
+<p>事务的定义 transaction</p>
+<p>定义：构成单一逻辑工作单元的操作集合称作事务，事务是数据库的操作序列，这些操作要么全做，要么全不做，是不可分割的工作单位，一个事务可以是一个sql语句，一组sql语句，或者整个程序。事务是恢复的基本单位，也是并发控制的基本单位</p>
+</li>
+<li>
+<p>事务的生命周期</p>
+<ul>
+<li>活动的 active：初始状态</li>
+<li>部分提交的 partially committed：最后一条语句执行后</li>
+<li>失败的 failed：发现正常的执行不能继续后</li>
+<li>中止的 aborted：事务回滚并且数据库已恢复到事务开始执行前的状态后</li>
+<li>提交的 committed：成功完成后</li>
+</ul>
+</li>
+<li>
+<p>事务的ACID原则：原子性、一致性、隔离性、持久性</p>
+<p>事务 transaction：执行单个逻辑功能的一组指令或操作称为事务。它是一个操作序列，这些操作要么都执行，要么都不执行，它是一个不可分割的工作单位</p>
+<p>原子性 Atomicity：事务是一个不可再分割的工作单元</p>
+<p>一致性 Consistency：数据库事务不能破坏关系数据的完整性以及业务逻辑上的一致性</p>
+<p>隔离性 Isolation：多个事务并发访问时，事务之间是隔离的，一个事务不应该影响其它事务运行效果</p>
+<p>持久性 Durability：该事务所对数据库所作的更改便持久的保存在数据库之中，并不会被回滚</p>
+</li>
+<li>
+<p>事务的四大隔离级别</p>
+<p>主要用于解决脏读、不可重复读、幻读的问题</p>
+<ul>
+<li>脏读：一个事务读取到另一个事务还未提交的数据</li>
+<li>不可重复读：在一个事务中多次读取同一个数据时，结果出现不一致</li>
+<li>幻读：在一个事务中使用相同的 SQL 两次读取，第二次读取到了其他事务新插入的行</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>隔离级别</th>
+          <th>脏读</th>
+          <th>不可重复读</th>
+          <th>幻读</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>读未提交（Read Uncommitted）</td>
+          <td>有</td>
+          <td>有</td>
+          <td>有</td>
+      </tr>
+      <tr>
+          <td>读已提交（Read Committed）</td>
+          <td>无</td>
+          <td>有</td>
+          <td>有</td>
+      </tr>
+      <tr>
+          <td>可重复读（Repeatable Read）</td>
+          <td>无</td>
+          <td>无</td>
+          <td>有</td>
+      </tr>
+      <tr>
+          <td>串行化（Serializable）</td>
+          <td>无</td>
+          <td>无</td>
+          <td>无</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>可串行化和冲突可串行化</p>
+<p><strong>串行调度</strong> serial schedule：n个并行事务有n！种可选择的串行调度</p>
+<p><strong>可串行化调度</strong> serializability：多个事务并发执行的结果= 这些事务按照某种次序串行执行的结果</p>
+<p><strong>冲突</strong> conflict：如果顺序交换，那么涉及的事务中至少有一个事务的行为会改变。同一个事务的任何两个操作都是冲突的，不同事务对同一元素的写操作是冲突的，不同事务对同一元素的一读一写操作是冲突的</p>
+<p><strong>冲突等价</strong> conflict equivalent：如果调度S可以经过一系列非冲突指令交换转换成S‘，我们称S与S’是冲突等价的</p>
+<p><strong>冲突可串行化</strong> conflict serializability：一个调度如果通过相邻两个无冲突的操作能够转化到某一个串行调度（重冲突等价），则称此调度为冲突可串行化调度</p>
+<p>**注意：**满足冲突可串行性，一定满足可串行性，反之不然</p>
+<p><img src="Untitled%2036.png" alt="Untitled"></p>
+<p><img src="Untitled%2037.png" alt="Untitled"></p>
+</li>
+<li>
+<p>优先图 precedence graph ⭐</p>
+<p>**简介：**是一个冲突可串行的判别算法</p>
+<p>**使用：**每个事务是一个节点，每个有冲突的操作是一条边，如果没有环就是冲突可串行化的。如果T1的一个操作跟T2冲突，且T1在T2之前执行，绘制一条从T1指向T2的箭头，如果该图没有环，表示它是冲突可串行化的</p>
+<p>例题1:下图画出来是一个拓扑排序，所以是冲突可串行化的</p>
+<p><img src="Untitled%2038.png" alt="Untitled"></p>
+<p>例题2:下图展示了两个不同的</p>
+<p><img src="Untitled%2039.png" alt="Untitled"></p>
+</li>
+<li>
+<p>级联回滚 cascading rollback</p>
+<p>级联回滚 cascading rollback：一个事务的失效导致一系列并发执行的事务回滚的现象。级联回滚导致撤销大量事务的工作，因此需要加以限制，避免这种现象的发生。因此调度应为无级联调度。</p>
+</li>
+<li>
+<p>事务的大题例题</p>
+<p><strong>第一道题：判断执行是否正确</strong></p>
+<ol>
+<li>计算并行的结果：A = 30， B = 100</li>
+</ol>
+<p><img src="Untitled%2040.png" alt="Untitled"></p>
+<ol>
+<li>计算先 T1 后 T2 的串行结果：A = 30， B = 200</li>
+</ol>
+<p><img src="Untitled%2041.png" alt="Untitled"></p>
+<ol>
+<li>计算先 T2 后 T1 的串行结果：A = 110， B = 100</li>
+</ol>
+<p><img src="Untitled%2042.png" alt="Untitled"></p>
+<ol>
+<li>因为三个结果都不一样，说明执行结果是错误的</li>
+</ol>
+<p><strong>第二道题：通过加锁使得结果正确</strong></p>
+<p><img src="Untitled%2043.png" alt="Untitled"></p>
+<p><img src="Untitled%2044.png" alt="Untitled"></p>
+</li>
+<li>
+<p><em>SQL</em> 事务控制语句</p>
+<ul>
+<li>BEGIN 或 START TRANSACTION：显式地开启一个事务</li>
+<li>COMMIT 或 COMMIT WORK，二者是等价的：COMMIT 会提交事务，并使已对数据库进行的所有修改成为永久性的</li>
+<li>ROLLBACK 或 ROLLBACK WORK，二者是等价的：回滚会结束用户的事务，并撤销正在进行的所有未提交的修改；</li>
+<li>SAVEPOINT identifier：SAVEPOINT 允许在事务中创建一个保存点，一个事务中可以有多个 SAVEPOINT</li>
+<li>RELEASE SAVEPOINT identifier：删除一个事务的保存点，当没有指定的保存点时，执行该语句会抛出一个异常</li>
+<li>ROLLBACK TO identifier：把事务回滚到标记点</li>
+<li>SET TRANSACTION 用来设置事务的隔离级别：InnoDB 存储引擎提供事务的隔离级别有 READ UNCOMMITTED、READ COMMITTED、REPEATABLE READ 和 SERIALIZABLE</li>
+</ul>
+</li>
+<li>
+<p><em>MySql</em> 事务处理两种方法</p>
+<ol>
+<li>用 BEGIN, ROLLBACK, COMMIT来实现</li>
+</ol>
+<ul>
+<li>BEGIN 开始一个事务</li>
+<li>ROLLBACK 事务回滚</li>
+<li>COMMIT 事务确认</li>
+</ul>
+<p>2、直接用 SET 来改变 MySQL 的自动提交模式:</p>
+<ul>
+<li>SET AUTOCOMMIT = 0 禁止自动提交</li>
+<li>SET AUTOCOMMIT = 1 开启自动提交</li>
+</ul>
+<p>事务测试：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="n">RUNOOB</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">Database</span><span class="w"> </span><span class="n">changed</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="p">(</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="n">engine</span><span class="o">=</span><span class="n">innodb</span><span class="p">;</span><span class="w">  </span><span class="o">#</span><span class="w"> </span><span class="err">创建数据表</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">04</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Empty</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">begin</span><span class="p">;</span><span class="w">  </span><span class="o">#</span><span class="w"> </span><span class="err">开始事务</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">commit</span><span class="p">;</span><span class="w"> </span><span class="o">#</span><span class="w"> </span><span class="err">提交事务</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w">  </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">+</span><span class="c1">------+
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w">   </span><span class="o">|</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">+</span><span class="c1">------+
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="mi">5</span><span class="w">    </span><span class="o">|</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">|</span><span class="w"> </span><span class="mi">6</span><span class="w">    </span><span class="o">|</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">+</span><span class="c1">------+
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mi">2</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">begin</span><span class="p">;</span><span class="w">    </span><span class="o">#</span><span class="w"> </span><span class="err">开始事务</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w">  </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="w"> </span><span class="k">values</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">rollback</span><span class="p">;</span><span class="w">   </span><span class="o">#</span><span class="w"> </span><span class="err">回滚</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w">   </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">runoob_transaction_test</span><span class="p">;</span><span class="w">   </span><span class="o">#</span><span class="w"> </span><span class="err">因为回滚所以数据没有插入</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">+</span><span class="c1">------+
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w">   </span><span class="o">|</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">+</span><span class="c1">------+
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">|</span><span class="w"> </span><span class="mi">5</span><span class="w">    </span><span class="o">|</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">|</span><span class="w"> </span><span class="mi">6</span><span class="w">    </span><span class="o">|</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">+</span><span class="c1">------+
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mi">2</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">mysql</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ul>
+<h3 id="18-并发控制">18 并发控制</h3>
+<ul>
+<li>
+<p>封锁的类型</p>
+<ul>
+<li>X锁：写锁，排他锁，某事务对数据对象上锁后，可读取和修改该数据对象。其它事务不可再对它添加锁</li>
+<li>S锁：读锁，共享锁，某事务对数据对象上锁后，可读取但不可修改该数据对象。其它事务可以再对它添加S锁，但不能添加X锁</li>
+<li>表示方法：上锁Slock()，解锁Unlock()</li>
+<li>共享锁可以升级为排他锁，排他锁可以降级为共享锁</li>
+</ul>
+<p><img src="Untitled%2045.png" alt="Untitled"></p>
+</li>
+<li>
+<p>三种封锁协议</p>
+<ul>
+<li><strong>封锁协议</strong>：规定事务何时对数据项们进行加锁、解锁，限制了可能的调度数目</li>
+<li>**一级封锁协议：**写前加排他锁，事务结束后释放锁</li>
+<li>**二级封锁协议：**写前加写锁，读前加读锁，读完释放读锁，事务结束释放写锁，可防止丢失修改和读脏数据</li>
+<li><strong>三级封锁协议：<strong>写前加写锁，读前加读锁，事务结束释放各个锁，可防止丢失修改、读脏数据和不可重复读，但是因为隔离级别高，事务无法交叉并行，都是</strong>可串性化调度</strong></li>
+</ul>
+</li>
+<li>
+<p>两阶段封锁协议 2PL ⭐</p>
+<p>**两阶段封锁协议 two-phase locking protocol：**事务在对任何数据进行读写之前，需要获得对该数据的封锁，而当事务释放任何一个封锁后，不可再获得任何其它的封锁。事务遵循两段封锁协议是可串化的充分条件，保证了冲突可串行化，遵循两段协议是可能发生死锁的</p>
+<p><strong>两阶段封锁协议的两个过程：</strong></p>
+<p>每个事务分成两个阶段提出加锁和解锁的申请</p>
+<ul>
+<li>增长阶段 growing phase 事务可以获得锁，不能释放锁</li>
+<li>缩减阶段 shrinking pahse 事务可以释放锁，不能获得新锁</li>
+</ul>
+<p><strong>进阶两阶段封锁协议：</strong></p>
+<ul>
+<li>严格两阶段封锁协议：要求事务提交之前不得释放排他锁</li>
+<li>强两阶段封锁协议：要求事务提交之前不得释放任何锁</li>
+</ul>
+</li>
+<li>
+<p>活锁和死锁</p>
+<p><img src="Untitled%2046.png" alt="Untitled"></p>
+</li>
+<li>
+<p>脏读、不可重复读、幻读</p>
+<p>脏读：一个事务读取到另一个事务还未提交的数据。</p>
+<p>不可重复读：在一个事务中多次读取同一个数据时，结果出现不一致。</p>
+<p>幻读：在一个事务中使用相同的 SQL 两次读取，第二次读取到了其他事务新插入的行。</p>
+<p>不可重复读注重于数据的修改，而幻读注重于数据的插入。</p>
+</li>
+<li>
+<p>基于图的加锁协议</p>
+</li>
+<li>
+<p>死锁处理</p>
+</li>
+</ul>
+<h3 id="19-故障恢复">19 故障恢复</h3>
+<p>基于日志的恢复</p>
+<p>checkpoint</p>
+<ul>
+<li>
+<p>数据库的故障类型</p>
+<ul>
+<li>事务故障：两种错误导致事务故障，逻辑错误和系统错误，其中逻辑错误就是程序逻辑写错了，系统错误指DBMS本身原因导致的错误，如死锁等</li>
+<li>系统崩溃：软硬件故障导致的系统中止，主存中的信息丢失。例如掉电、软件漏洞等</li>
+<li>磁盘故障：磁盘设备故障，如读写头、磁盘本身写数据问题等</li>
+</ul>
+</li>
+<li>
+<p>存储器分类</p>
+<ul>
+<li>易失性存储：当系统故障时，其中的数据丢失，例如主存、cache等都属于易失性存储</li>
+<li>非易失性存储：系统故障时，其中的数据不会丢失，例如磁盘、磁带、flash以及有电源支撑的RAM</li>
+<li>稳定存储：是一种理想的存储器，可以在任何故障情况下不损坏数据，通常用异地保存多个副本的方式来实现，如两地三备份</li>
+</ul>
+</li>
+<li>
+<p>什么是日志</p>
+<p><img src="Untitled%2047.png" alt="Untitled"></p>
+</li>
+<li>
+<p>缓冲区的处理策略</p>
+<p>最常用的是 Steal 和 No force</p>
+<p>Force：内存中的数据最晚在commit的时候写入磁盘</p>
+<p>No steal：不允许在事务commmit之前把内存中的数据写入磁盘</p>
+<p>No force：内存中的数据可以一直保留，在commit之后过一段时间在再写入磁盘，此时在系统崩溃的时候，可能还没写入到磁盘，需要redo</p>
+<p>Steal：允许在事务commit之前把内存中的数据写入磁盘，此时若系统在commit之前崩溃时，已经有数据写入到磁盘了，要恢复到崩溃前的状态，需要undo</p>
+<p><img src="Untitled%2048.png" alt="Untitled"></p>
+</li>
+<li>
+<p>日志的记录方式</p>
+<p><img src="Untitled%2049.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Undo型日志</p>
+<p>将事务改变的所有数据写到磁盘之前不能提交该事务</p>
+<p><img src="Untitled%2050.png" alt="Untitled"></p>
+<p><img src="Untitled%2051.png" alt="Untitled"></p>
+</li>
+<li>
+<p>利用Undo型日志进行恢复</p>
+<p><img src="Untitled%2052.png" alt="Untitled"></p>
+<p><img src="Untitled%2053.png" alt="Untitled"></p>
+</li>
+<li>
+<p>检查点 checkpoint</p>
+<p><img src="Untitled%2054.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Redo型日志</p>
+<ol>
+<li>是先commit后再output</li>
+<li>&lt;T,a,b&gt;里的这个b是记录新的值不是老的值</li>
+</ol>
+<p><img src="Untitled%2055.png" alt="Untitled"></p>
+<p><img src="Untitled%2056.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Undo/Redo结核性</p>
+<p>如果故障发生在提交之前，从后往前按反序，把更新前的值机记录 undo</p>
+<p>如果故障发生在提交之前，从前往后按正序，把更新后的值机写会去 redo</p>
+</li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/operating-system/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/software-testing/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#2-relation-schema">2 Relation Schema</a></li>
+        <li><a href="#3-sql-basic">3 SQL Basic</a></li>
+        <li><a href="#6-database-design-and-er-modal">6 Database Design and ER modal</a></li>
+        <li><a href="#7-database-design-refinement">7 D<strong>atabase Design Refinement</strong></a></li>
+        <li><a href="#13-storage">13 <strong>storage</strong></a></li>
+        <li><a href="#14-index-and-hash">14 <strong>index and hash</strong></a></li>
+        <li><a href="#15-query-processing">15 <strong>query processing</strong></a></li>
+        <li><a href="#16-query-optimization">16 <strong>Query Optimization</strong></a></li>
+        <li><a href="#17-transaction"><strong>17 transaction</strong></a></li>
+        <li><a href="#18-并发控制">18 并发控制</a></li>
+        <li><a href="#19-故障恢复">19 故障恢复</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

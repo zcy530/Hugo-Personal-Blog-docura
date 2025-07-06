@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>React Native · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/react-native/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>React Native</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <p><a href="https://www.reactnative.cn/docs/textinput" target="_blank">https://www.reactnative.cn/docs</a></p>
+<h3 id="一环境搭建">一、环境搭建</h3>
+<ul>
+<li>
+<p>React Native 简介</p>
+<p><strong>简介：</strong></p>
+<p>React native 是 react 的一个原声扩展，允许我们通过 react 的语法，来开发 ios 和 android 原生应用</p>
+<p>中文网：https://www.reactnative.cn/</p>
+<p><strong>React Native</strong> <strong>的优势：</strong></p>
+<ol>
+<li>开发体验好：用统一的代码规范开发移动端程序，不用关注移动端的差异</li>
+<li>开发成本低：开发一次，可以生成 Android 和 iOS 两个系统上的 App</li>
+<li>学习成本低：只要掌握 JavaScript 和 react，就可以进行移动端开发了，否则，Android 这边我们还要学习 kotlin 和 java，ios 这边我们还要学习 swift 和 objective-C</li>
+</ol>
+<p><strong>React Native</strong> <strong>的不足：</strong></p>
+<ol>
+<li>不成熟：项目版本和api更新频繁，学习成本高。有些问题较少解决方案，试错成本高</li>
+<li>性能差：整体性能仍然不如原生</li>
+<li>兼容性差：涉及底层的功能，需要针对 Android 和 iOS 双端单独开发</li>
+</ol>
+<p><strong>移动端 app 的开发模式：</strong></p>
+<p><img src="Untitled.png" alt="Untitled"></p>
+<p><img src="Untitled%201.png" alt="Untitled"></p>
+<p><strong>跨平台框架的比较：</strong></p>
+<p><img src="Untitled%202.png" alt="Untitled"></p>
+</li>
+<li>
+<p>基础环境的搭建</p>
+<ol>
+<li>
+<p>安装 node.js，版本应该大于 12</p>
+<p>安装完之后可以配置国内的镜像，这样以后运行会快一些</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">config</span> <span class="nx">set</span> <span class="nx">registry</span> <span class="nx">https</span><span class="o">:</span><span class="c1">//registry.npm.taobao.org
+</span></span></span></code></pre></div></li>
+<li>
+<p>安装 yarn</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">yarn</span>
+</span></span></code></pre></div></li>
+<li>
+<p>安装 react native 脚手架</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">cli</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>搭建 Android 环境</p>
+<p>首先了解安卓开发需要的工具</p>
+<p><img src="https://img-blog.csdnimg.cn/20200516095553968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3MTQ5MDYy,size_16,color_FFFFFF,t_70" alt=""></p>
+<h3 id="一安装-jdk">一、<strong>安装 JDK</strong></h3>
+<ol>
+<li>
+<p>搜索jdk，进入Oracle官网</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521121334351.png" alt=""></p>
+</li>
+<li>
+<p>点击JDK download</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521121518531.png" alt=""></p>
+</li>
+<li>
+<p>选择合适的版本和位数，此处以JDK11，win10，x64为例</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521122000743.png" alt=""></p>
+</li>
+<li>
+<p>下载完成后打开exe</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521124037196.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521124157539.png" alt=""></p>
+</li>
+<li>
+<p>打开cmd，输入java -version查看是否安装成功</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521124326205.png" alt=""></p>
+</li>
+<li>
+<p>这是安装好的场景，如果没有，可能需要配置环境变量</p>
+<p>此电脑–&gt;属性-&gt;高级系统设置-&gt;环境变量-&gt;编辑</p>
+<p>添加好jdk的bin目录之后，一路点确认</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521124637474.png" alt=""></p>
+</li>
+</ol>
+<h3 id="二安装-android-studio"><strong>二、安装 Android Studio</strong></h3>
+<ol>
+<li>
+<p>进入Android官网<a href="https://developer.android.google.cn/studio/" target="_blank">https://developer.android.google.cn/studio/</a>选择适合的版本进行download</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521122142964.png" alt=""></p>
+</li>
+<li>
+<p>双击下载的文件，进入安装界面，点击“next”进入下一步</p>
+<p><img src="https://pic1.zhimg.com/80/v2-0ae70036f6812b7bacc433e7efc0b59c_1440w.jpg" alt=""></p>
+</li>
+<li>
+<p>一直点next直到安装成功，finish</p>
+<p><img src="https://pic4.zhimg.com/80/v2-881b97e059c9ae45f94926850b58d1b7_1440w.jpg" alt=""></p>
+</li>
+<li>
+<p>在第一次运行时，若出现Unable to access Android SDK add-on list，表示Android Studio找不到Sdk，点击cancel 即可，没有什么大碍，等装好SDK后，自然就好了，下一步将会介绍如何安装SDK</p>
+<p>如果非常介意这个窗口，可以在 Android Studio 安装目录 bin/idea.properties 文件最后追加一句disable.android.first.run=true</p>
+</li>
+</ol>
+<h3 id="三安装-android-sdk"><strong>三、安装 Android SDK</strong></h3>
+<ol>
+<li>
+<p>在欢迎页点击 Configure -&gt; SDK Manager</p>
+<p>或者在新建项目打开File -&gt; Settings -&gt; Appearance&amp;Behavior -&gt; System Settings -&gt; Android SDK</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521122913585.png" alt=""></p>
+</li>
+<li>
+<p>点击SDK Update sites勾选Force https://..</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521123035164.png" alt=""></p>
+</li>
+<li>
+<p>点击SDK Platforms，勾选Android10.0(Q)，和 Android sdk platform 29，点Apply，等待自动安装完成</p>
+<p><img src="Untitled%203.png" alt="Untitled"></p>
+</li>
+</ol>
+<h3 id="四配置环境变量">四、配置环境变量</h3>
+<ol>
+<li>
+<p>Tools → SDK manager → 找到位置</p>
+<p><img src="Untitled%204.png" alt="Untitled"></p>
+</li>
+<li>
+<p>配置环境变量</p>
+<p><img src="Untitled%205.png" alt="Untitled"></p>
+<p><img src="Untitled%206.png" alt="Untitled"></p>
+</li>
+<li>
+<p>添加跟 ANDROID_HOME 相关的环境变量</p>
+<p><img src="Untitled%207.png" alt="Untitled"></p>
+</li>
+</ol>
+<h3 id="五avd配置虚拟机">五**、AVD配置（虚拟机）**</h3>
+<ol>
+<li>
+<p>在欢迎页点击Configure -&gt; AVD Manager，或者项目打开后点击 tools -&gt; AVD Manager</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521122913585.png" alt=""></p>
+</li>
+<li>
+<p>选择普通电脑比较带的动的pixel2或者nexus S</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521125919662.png" alt=""></p>
+</li>
+<li>
+<p>点击第一个download，等待安装</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521130007996.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521130104241.png" alt=""></p>
+</li>
+<li>
+<p>安装完成之后，点击上方的运行按钮，然后就可以运行你的第一个项目啦</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210521130625812.png" alt=""></p>
+</li>
+</ol>
+</li>
+<li>
+<p>搭建 iOS 环境</p>
+</li>
+<li>
+<p>初始化项目</p>
+<p>在命令行输入</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">react</span><span class="o">-</span><span class="kr">native</span> <span class="nx">init</span> <span class="nx">myproject</span>
+</span></span></code></pre></div><p>但是，在 init 中途出现了这样的错误，导致工程创建失败，里面仅有 node_modules，没有 Android、IOS 等文件</p>
+<p><img src="Untitled%208.png" alt="Untitled"></p>
+<p>产生这个问题的原因是：使用这种方式创建工程，在react-native 版本是0.69 版本上不适用。各位可以检查下自己安装的React-native的版本</p>
+<p>为了解决这个错误，我们要做的就是降级我们最新的 0.69 版本的 react native。要使用较旧的项目降级我们的项目，您必须执行以下命令</p>
+<p>可以将之前输入的命令改成：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npx</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span> <span class="nx">init</span> <span class="nx">chapter2</span> <span class="o">--</span><span class="nx">version</span> <span class="mf">0.68.2</span>
+</span></span></code></pre></div><p><strong>创建成功！</strong></p>
+<p><img src="Untitled%209.png" alt="Untitled"></p>
+<p><strong>文件目录结构</strong></p>
+<p><img src="Untitled%2010.png" alt="Untitled"></p>
+<p><img src="Untitled%2011.png" alt="Untitled"></p>
+</li>
+<li>
+<p>运行安卓模拟器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">android</span>
+</span></span></code></pre></div><p>中间遇到的几个问题：</p>
+<ol>
+<li>ERROR: JAVA_HOME is set to an invalid directory: C:\Program Files\Java\jdk1.8.0_ 73\bin
+解决方法：修改 JAVA_HOME，把最后的 \bin 去掉
+<a href="https://blog.csdn.net/u013933720/article/details/78363509" target="_blank">https://blog.csdn.net/u013933720/article/details/78363509</a></li>
+<li>Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8.
+解决方法：把 jdk 版本升级到 11
+<a href="https://blog.csdn.net/technologyleader/article/details/127913029" target="_blank">https://blog.csdn.net/technologyleader/article/details/127913029</a></li>
+<li>Failed to launch emulator. Reason: Emulator exited before boot en React Native when react-native run-android
+解决方法：现在 AVD manager 里面使用 cool boot
+<a href="https://stackoverflow.com/questions/59495022/failed-to-launch-emulator-reason-emulator-exited-before-boot-en-react-native-w" target="_blank">https://stackoverflow.com/questions/59495022/failed-to-launch-emulator-reason-emulator-exited-before-boot-en-react-native-w</a></li>
+</ol>
+<p>经过两天的折腾，终于成功了！</p>
+<p><img src="Untitled%2012.png" alt="Untitled"></p>
+</li>
+<li>
+<p>下载便捷的 vscode 插件</p>
+<p><strong>ES7+ React/Redux/React-Native snippets</strong></p>
+<p>可以提供一些快速的代码编辑</p>
+<p><img src="Untitled%2013.png" alt="Untitled"></p>
+<p>rnc：react native clas</p>
+<p><img src="Untitled%2014.png" alt="Untitled"></p>
+<p>rnf：react native function</p>
+<p><img src="Untitled%2015.png" alt="Untitled"></p>
+</li>
+<li>
+<p>调试工具</p>
+<ol>
+<li>
+<p>真机调试：打开 use 调试模式，通过 usb 线将电脑和手机连接起来</p>
+</li>
+<li>
+<p>模拟器调试：安装在电脑上的虚拟的手机界面，一般跟随 Android studio 或者 xcode 一起安装，启动应用时模拟器会一起启动</p>
+<p>方法：键入 ctrl+m，选择 debug，自动跳转到浏览器</p>
+<p><img src="Untitled%2016.png" alt="Untitled"></p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="二基础知识">二、基础知识</h3>
+<ul>
+<li>
+<p>项目的基础文件</p>
+<ol>
+<li>
+<p>index.js 入口文件</p>
+<p><img src="Untitled%2017.png" alt="Untitled"></p>
+<p>AppRegistry 是用来注册 app 的，有两个参数，第二个是回调函数</p>
+</li>
+<li>
+<p>App.js 里面是我们在模拟器上看到的页面</p>
+<p><img src="Untitled%2018.png" alt="Untitled"></p>
+<p>这些都是不用的，所以我们可以全部删掉，改成我们想要的页面，从 src 里面引入 Index 页面，然后 index 里面放置真正要写的页面样式，注意这个 Index 一定要大写，否则会报错！</p>
+<p><img src="Untitled%2019.png" alt="Untitled"></p>
+</li>
+<li>
+<p>package.json 配置文件</p>
+<p><img src="Untitled%2020.png" alt="Untitled"></p>
+</li>
+<li>
+<p>app.json 跟项目有关的信息</p>
+<p><img src="Untitled%2021.png" alt="Untitled"></p>
+</li>
+<li>
+<p>创建的 src 文件夹，存放真正的页面样式的文件</p>
+<p><img src="Untitled%2022.png" alt="Untitled"></p>
+</li>
+</ol>
+</li>
+<li>
+<p>插值表达式</p>
+</li>
+<li>
+<p>类组件与函数式组件</p>
+<p><strong>介绍：</strong></p>
+<p>你可以在 React 中使用函数式组件或 Class 组件。最开始只有 Class 组件能够使用 state ，但自从有了 React Hooks API, 就可以为函数组件添加 state 和很多其它的功能。Hooks API 是 React Native 0.59 提供的新特性, Hooks 是一种面向未来的编写 React 组件的方式，因此我们在本文档中优先使用函数组件，你也可以点击“Class 组件”切换到 Class 组件代码</p>
+<p><strong>类组件：</strong></p>
+<p>适合复杂的场景，有 state，有生命周期</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Text</span><span class="p">,</span> <span class="nx">View</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">HelloWorldApp</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">alignItems</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Text</span><span class="p">&gt;</span><span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">HelloWorldApp</span><span class="p">;</span>
+</span></span></code></pre></div><p><strong>函数式组件：</strong></p>
+<p>适合简单的场景，没有 state，没有生命周期(但是通过 hook 可以有)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Text</span><span class="p">,</span> <span class="nx">View</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HelloWorldApp</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">justifyContent</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alignItems</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">Text</span><span class="p">&gt;{</span><span class="nx">num</span><span class="p">}&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">HelloWorldApp</span><span class="p">;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>状态 state</p>
+</li>
+<li>
+<p>属性 props</p>
+</li>
+<li>
+<p>事件和 this 的指向</p>
+</li>
+<li>
+<p>生命周期</p>
+</li>
+</ul>
+<h3 id="三组件和api">三、组件和API</h3>
+<ul>
+<li>
+<p>StyleSheet</p>
+<p>stylesheet 是 RN 中声明样式的 API</p>
+<p><strong>与 css 一些不同：</strong></p>
+<ol>
+<li>没有继承性，RN 当中的继承只发生在 text 组件上</li>
+<li>样式名采用小驼峰命名 fontSize vs font-size</li>
+<li>所有尺寸都是没有单位 width:100</li>
+<li>有些特殊的样式名：marginHorizontal(水平外边距)，marginVertical(垂直外边距)</li>
+</ol>
+<p><strong>RN 样式的声明方式：</strong></p>
+<ol>
+<li>
+<p>通过 style 属性直接声明</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">fontSize</span><span class="o">:</span> <span class="mi">30</span><span class="p">}}&gt;</span><span class="nx">content</span><span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{[{</span><span class="nx">fontSize</span><span class="o">:</span> <span class="mi">30</span><span class="p">},{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">},{</span><span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">}]}&gt;</span><span class="nx">content</span><span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>在 style 属性中调用 StyleSheet 声明的样式</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">引入</span><span class="err">：</span> <span class="kr">import</span> <span class="p">{</span><span class="nx">StyleSheet</span><span class="p">,</span> <span class="nx">View</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">声明</span><span class="err">：</span> <span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="nx">StyleSheet</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> 
+</span></span><span class="line"><span class="cl">                        <span class="nx">redColor</span><span class="o">:</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#e33&#39;</span><span class="p">},</span> 
+</span></span><span class="line"><span class="cl">                        <span class="nx">fontLarge</span><span class="o">:</span> <span class="p">{</span><span class="nx">fontSize</span><span class="o">:</span> <span class="mi">40</span><span class="p">}</span> 
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nx">使用</span><span class="err">：</span> <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{[</span><span class="nx">styles</span><span class="p">.</span><span class="nx">redColor</span><span class="p">,</span> <span class="nx">styles</span><span class="p">.</span><span class="nx">fontLarge</span><span class="p">]}&gt;</span> <span class="nx">content</span> <span class="p">&lt;/</span><span class="nt">view</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+</ol>
+<p><strong>举例1</strong></p>
+<p><img src="Untitled%2023.png" alt="Untitled"></p>
+<p><strong>举例2</strong></p>
+<p><img src="Untitled%2024.png" alt="Untitled"></p>
+</li>
+<li>
+<p>StyleSheet 常用的样式属性</p>
+<p><strong>块级样式</strong></p>
+<p>paddingBottom</p>
+<p>paddingLeft</p>
+<p>paddingVertical</p>
+<p>marginBottom</p>
+<p>marginLeft</p>
+<p>marginTop</p>
+<p>borderRadius</p>
+<p>width</p>
+<p>height</p>
+<p><strong>布局相关：</strong></p>
+<p>alignItems</p>
+<p>justifyContent</p>
+<p><strong>字体相关：</strong></p>
+<p>fontSize</p>
+<p>fontWeight</p>
+<p>color</p>
+</li>
+<li>
+<p>Flexbox 弹性布局</p>
+<p><strong>Flexbox 的术语了解：</strong></p>
+<ol>
+<li>container：采用 flex 布局的元素，成为 flex container</li>
+<li>item：容器 container 中的所有子元素，成为 flex item</li>
+<li>main axis：主轴</li>
+<li>cross axis：交叉轴</li>
+</ol>
+<p><strong>弹性布局的模型</strong></p>
+<p>web 开发当中的 flexbox</p>
+<p><img src="Untitled%2025.png" alt="Untitled"></p>
+<p>RN 开发当中的 flexbox，轴的方向发生了变化</p>
+<p><img src="Untitled%2026.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Flexbox 的五种属性</p>
+<p><strong>Flexbox 的属性：</strong></p>
+<ul>
+<li>flexDirection：声明主轴方向，row 是 web 默认，column 是 RN 默认</li>
+<li>justifyContent：声明 item 在主轴上的对齐方式</li>
+<li>alignItems：声明 item 在交叉轴上的对齐方式</li>
+<li>flex：声明 item 在主轴上的尺寸比例</li>
+<li>flexWrap：是否自动换行，wrap | noWrap | wrap-reverse</li>
+</ul>
+<p><strong>flexDirection：主轴方向</strong></p>
+<p>可选项有 column(默认) | column-reverse | row | row-reverse</p>
+<p><img src="Untitled%2027.png" alt="Untitled"></p>
+<p><img src="Untitled%2028.png" alt="Untitled"></p>
+<p><img src="Untitled%2029.png" alt="Untitled"></p>
+<p><img src="Untitled%2030.png" alt="Untitled"></p>
+<p><strong>justifyContent：主轴对齐方式</strong></p>
+<p>可选项：flex-start(默认) | center | flex-end | space-around 空格环绕 | space-evenly 空格平均分布 | space-between 两端对齐</p>
+<p><img src="Untitled%2031.png" alt="Untitled"></p>
+<p><img src="Untitled%2032.png" alt="Untitled"></p>
+<p><strong>alignItems：交叉轴对齐方式</strong></p>
+<p>可选项：flex-start(默认) | center | flex-end |stretch | baseline 机械对齐</p>
+<p><img src="Untitled%2033.png" alt="Untitled"></p>
+<p><img src="Untitled%2034.png" alt="Untitled"></p>
+<p><strong>flex：尺寸比例</strong></p>
+<p><img src="Untitled%2035.png" alt="Untitled"></p>
+</li>
+<li>
+<p>响应式布局 flexbox + Dimensions</p>
+<p>因为现在的手机尺寸五花八门，我们没有必要根据每一种尺寸做定制化的开发，所以响应式布局非常有必要。响应式布局要用到的：flexbox，Dimensions</p>
+<p>flexbox 的主要作用是弹性布局</p>
+<p>Dimensions 的主要作用是获取屏幕的尺寸，就是高度和宽度</p>
+<p><strong>Dimensions 的使用</strong></p>
+<p>引入模块</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Dimensions</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span>
+</span></span></code></pre></div><p>获取屏幕尺寸</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">windowWidth</span> <span class="o">=</span> <span class="nx">Dimensions</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;window&#39;</span><span class="p">).</span><span class="nx">width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">windowHeight</span> <span class="o">=</span> <span class="nx">Dimensions</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;window&#39;</span><span class="p">).</span><span class="nx">height</span><span class="p">;</span>
+</span></span></code></pre></div><p><strong>实践演示：</strong></p>
+<p>引入 Dimensions</p>
+<p><img src="Untitled%2036.png" alt="Untitled"></p>
+<p>最重要的是这里的除以三，想要几列就除以几就行</p>
+<p><img src="Untitled%2037.png" alt="Untitled"></p>
+</li>
+<li>
+<p>组件和 API 简介</p>
+<p><strong>核心组件简介</strong></p>
+<p>RN 中的核心组件，是对原生组件的封装</p>
+<p>原生组件：Android 或者 iOS 内的组件</p>
+<p>核心组件：RN 中最常用的，相当于 html 的标签，来自 react-native 的组件。有很多类型划分，比如基础组件、交互组件、列表视图、iOS 独有组件、Android 独有组件、其他</p>
+<p><img src="Untitled%2038.png" alt="Untitled"></p>
+<p><img src="Untitled%2039.png" alt="Untitled"></p>
+<p><img src="Untitled%2040.png" alt="Untitled"></p>
+<p><strong>核心组件</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>View</th>
+          <th>视图组件</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Text</td>
+          <td>文本组件</td>
+      </tr>
+      <tr>
+          <td>Alert</td>
+          <td>警告框组件</td>
+      </tr>
+      <tr>
+          <td>Button</td>
+          <td>按钮组件</td>
+      </tr>
+      <tr>
+          <td>Switch</td>
+          <td>checkbox组件</td>
+      </tr>
+      <tr>
+          <td>StatusBar</td>
+          <td>状态栏组件</td>
+      </tr>
+      <tr>
+          <td>ActivityIndicator</td>
+          <td>加载提示器组件</td>
+      </tr>
+      <tr>
+          <td>Image</td>
+          <td>图片组件</td>
+      </tr>
+      <tr>
+          <td>TextInput</td>
+          <td>输入框组件</td>
+      </tr>
+      <tr>
+          <td>Touchable</td>
+          <td>触碰组件</td>
+      </tr>
+      <tr>
+          <td>ScrollView</td>
+          <td>滚动视图组件</td>
+      </tr>
+      <tr>
+          <td>SectionList</td>
+          <td>分组列表组件</td>
+      </tr>
+      <tr>
+          <td>FlatList</td>
+          <td>高性能组件</td>
+      </tr>
+      <tr>
+          <td>Animated</td>
+          <td>动画组件</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>Button 和 Alert</p>
+<p><strong>Button 属性的值</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>属性</th>
+          <th>含义</th>
+          <th>内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>title</td>
+          <td>按钮上面的文字</td>
+          <td>字符串</td>
+      </tr>
+      <tr>
+          <td>onPress</td>
+          <td>单击事件</td>
+          <td>回调函数</td>
+      </tr>
+      <tr>
+          <td>color</td>
+          <td>按钮的颜色</td>
+          <td>{‘red’}</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Button 使用的示例</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kr">class</span> <span class="nx">index</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">createTwoButtonAlert</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Alert</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;My Title&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;My Content&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">text</span><span class="o">:</span> <span class="s2">&#34;Cancel!&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onPress</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;cancel&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">style</span><span class="o">:</span> <span class="s1">&#39;cancel&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">text</span><span class="o">:</span> <span class="s2">&#34;Yes!&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onPress</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;OK&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">style</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">createThreeButtonAlert</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Alert</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;更新提示&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;发现新版本，是否现在更新&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">text</span><span class="o">:</span> <span class="s2">&#34;稍后再试&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onPress</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;later&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">style</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">text</span><span class="o">:</span> <span class="s2">&#34;取消&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onPress</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;cancel&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">style</span><span class="o">:</span> <span class="s1">&#39;cancel&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">text</span><span class="o">:</span> <span class="s2">&#34;确认&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onPress</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;OK&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">style</span><span class="o">:</span> <span class="s1">&#39;default&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{[</span><span class="nx">styles</span><span class="p">.</span><span class="nx">container</span><span class="p">]}&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Button</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">title</span><span class="o">=</span><span class="s">&#34;alert1&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">onPress</span><span class="o">=</span><span class="p">{()=&gt;{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;直接调用alert函数&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Button</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">title</span><span class="o">=</span><span class="s">&#34;alert2&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">onPress</span><span class="o">=</span><span class="p">{()=&gt;{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">Alert</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;调用Alert组件&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">          <span class="na">color</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Button</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">title</span><span class="o">=</span><span class="s">&#34;两个button&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">createTwoButtonAlert</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="na">color</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;green&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Button</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">title</span><span class="o">=</span><span class="s">&#34;三个button&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">createThreeButtonAlert</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="na">color</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;green&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><img src="Untitled%2041.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Modal</p>
+<p>**作用：**原生有 Dialog，Toast 之类的弹窗控件，React-Native 虽然也有 Dialog，但是并不好用，所幸有 Modal 这个组件，使用起来简单，而且还比较好用</p>
+<p><strong>常用属性：</strong></p>
+<p>| animationType</p>
+<table>
+  <thead>
+      <tr>
+          <th>设置Modal的出现方式，有3个参数</th>
+          <th>slide ：从底部弹出、fade ： 淡入视野、none： 出现没有动画</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>onRequestClose</td>
+          <td>Modal关闭时调用此方法</td>
+          <td>onRequestClose={() =&gt; console.log(&lsquo;onRequestClose&hellip;&rsquo;)}</td>
+      </tr>
+      <tr>
+          <td>onShow</td>
+          <td>当modal显示时，可以传递一个函数用来调用</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>transparent</td>
+          <td>使Modal的背景色透明</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>visible</td>
+          <td>用来控制Modal是否可见 ture / false</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>StatuBar</p>
+<p><strong>StatuBar 对应的组件</strong></p>
+<p>是手机最顶部的状态栏，显示时间、消息、网络情况等</p>
+<p><img src="Untitled%2042.png" alt="Untitled"></p>
+<p><strong>StatuBar 的属性</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>属性</th>
+          <th>含义</th>
+          <th>值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>hidden</td>
+          <td>是否隐藏</td>
+          <td>={false} ={true}</td>
+      </tr>
+      <tr>
+          <td>backgroundColor</td>
+          <td>背景颜色</td>
+          <td>=”red”</td>
+      </tr>
+      <tr>
+          <td>barStyle</td>
+          <td>样式</td>
+          <td>={’dark-content’}</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>Switch</p>
+<p><strong>Switch 对应的组件</strong></p>
+<p>这种小型的开关，相当于 checkbox</p>
+<p><img src="Untitled%2043.png" alt="Untitled"></p>
+<p><strong>Switch 的属性</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>属性</th>
+          <th>含义</th>
+          <th>值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>trackColor</td>
+          <td>背景的颜色</td>
+          <td>={{false:’red,true:’green’}}</td>
+      </tr>
+      <tr>
+          <td>thumbColor</td>
+          <td>按钮的颜色</td>
+          <td>={’blue’}</td>
+      </tr>
+      <tr>
+          <td>value</td>
+          <td>控制的值</td>
+          <td>={this.state.name}</td>
+      </tr>
+      <tr>
+          <td>onValueChange</td>
+          <td>控制值的变化函数</td>
+          <td>={this.toggleStatusBar}</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>举例：</strong></p>
+<p>通过 switch 按钮来操作 statusBar 的显示/隐藏</p>
+<p><img src="Untitled%2044.png" alt="Untitled"></p>
+<p><img src="Untitled%2045.png" alt="Untitled"></p>
+</li>
+<li>
+<p>ActivityIndicator</p>
+<p><strong>ActivityIndicator 的作用：</strong></p>
+<p>展示等待的状态，在安卓和ios上的显示是不一样的</p>
+<p><img src="Untitled%2046.png" alt="Untitled"></p>
+<p><strong>ActivityIndicator 的使用</strong>：</p>
+<p>引入</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">ActivityIndicator</span> <span class="o">****</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span>
+</span></span></code></pre></div><p>使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ActivityIndicator</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;blue&#34;</span> <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;large&#39;</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ActivityIndicator</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;green&#34;</span> <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;small&#39;</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 数字指定大小，旨在 android 应用下有效
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">&lt;</span><span class="nt">ActivityIndicator</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;#00d0ff&#34;</span> <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">70</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ActivityIndicator</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;red&#34;</span> <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">100</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span></code></pre></div><p>常用属性</p>
+<table>
+  <thead>
+      <tr>
+          <th>color</th>
+          <th>颜色</th>
+          <th>=“blue”</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>size</td>
+          <td>大小</td>
+          <td>={’large’} ={70}</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>Platform</p>
+<p>作用：Platform 可以判断当前用户使用的手机的系统</p>
+<p>引入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Platform</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span>
+</span></span></code></pre></div><p>使用：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="o">**</span><span class="nx">Platform</span><span class="p">.</span><span class="nx">OS</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="nx">Platform</span><span class="p">.</span><span class="nx">OS</span> <span class="o">===</span> <span class="s1">&#39;android&#39;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;android&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">Platform</span><span class="p">.</span><span class="nx">OS</span> <span class="o">===</span> <span class="s1">&#39;ios&#39;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;iosw&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Image</p>
+<p><strong>作用</strong>：加载图片</p>
+<p><strong>加载方式</strong>：本地路径、图片的 URI 地址、图片的 Base64 字符串</p>
+<p><strong>常用属性</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>style</th>
+          <th>样式</th>
+          <th>={[styles.ItemImage]}</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>source</td>
+          <td>图片的路径</td>
+          <td>={require(’/images/01.png’)}</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>使用举例：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Image</span>
+</span></span><span class="line"><span class="cl">  <span class="na">source</span><span class="o">=</span><span class="p">{{</span><span class="nx">uri</span><span class="o">:</span> <span class="s1">&#39;https://reactnative.dev/docs/assets/p_cat2.png&#39;</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Image</span>
+</span></span><span class="line"><span class="cl">  <span class="na">source</span><span class="o">=</span><span class="p">{</span><span class="nx">require</span><span class="p">(</span><span class="err">’</span><span class="o">/</span><span class="nx">images</span><span class="o">/</span><span class="mf">01.</span><span class="nx">png</span><span class="err">’</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="p">{[</span><span class="nx">styles</span><span class="p">.</span><span class="nx">itemImage</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span></code></pre></div><p><img src="Untitled%2047.png" alt="Untitled"></p>
+</li>
+<li>
+<p>TextInput</p>
+<p><strong>作用：</strong></p>
+<p>TextInput 是一个允许用户在应用中通过键盘输入文本的基本组件。本组件的属性提供了多种特性的配置，譬如自动完成、自动大小写、占位文字，以及多种不同的键盘类型（如纯数字键盘）等等</p>
+<p><strong>使用方法：</strong></p>
+<p>最简单的用法就是丢一个 TextInput 到应用里，然后订阅它的 onChangeText事件来读取用户的输入。注意，从 TextInput 里取值这就是目前唯一的做法！也就是使用在 onChangeText 中用 setState 用户的输入写入到 state 中，然后在需要取值的地方从 this.state 中取出值。它还有一些其它的事件，譬如 onSubmitEditing 和 onFocus</p>
+<p><strong>组件的属性：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>style</th>
+          <th>样式</th>
+          <th>={[styles.input]}</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>placeholder</td>
+          <td>默认的值</td>
+          <td>=“please input”</td>
+      </tr>
+      <tr>
+          <td>placeholderTextColor</td>
+          <td>默认字体颜色</td>
+          <td>=&ldquo;rgba(173, 186, 204, 1)”</td>
+      </tr>
+      <tr>
+          <td>defaultValue</td>
+          <td>默认的值</td>
+          <td>=&ldquo;You can type in me”</td>
+      </tr>
+      <tr>
+          <td>style</td>
+          <td>样式文件</td>
+          <td>={styles.habitInput}</td>
+      </tr>
+      <tr>
+          <td>onChangeText</td>
+          <td>当文本框内容变化时调用此回调函数</td>
+          <td>={(val)⇒{</td>
+      </tr>
+      <tr>
+          <td>this.setState({</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>username:val</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>})</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>}}</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>secureTextEntry</td>
+          <td>是否为密码框</td>
+          <td>={true}</td>
+      </tr>
+      <tr>
+          <td>keyboardType</td>
+          <td>键盘类型</td>
+          <td>=”number-pad”</td>
+      </tr>
+      <tr>
+          <td>inlineImageLeft</td>
+          <td>指定一个图片放置在左侧</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>autoFocus</td>
+          <td>自动对焦</td>
+          <td>={true}</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>使用示例：</strong></p>
+<p><img src="Untitled%2048.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Touchable</p>
+<p><strong>Touchable 的作用</strong>：封装视图，使其可以正确响应触摸操作。</p>
+<p><strong>TouchableHighlight</strong>：触碰后，高亮显示</p>
+<p><img src="Untitled%2049.png" alt="Untitled"></p>
+<p><strong>TouchableOpacity</strong>：触碰后，透明度降低(模糊显示)</p>
+<p><img src="Untitled%2050.png" alt="Untitled"></p>
+<p><strong>TouchableWithoutFeedback</strong>：触碰后，没有任何相应</p>
+<p><img src="Untitled%2051.png" alt="Untitled"></p>
+</li>
+<li>
+<p>ScrollView</p>
+<p>**作用：**滚动视图，显示超出可视区域的内容</p>
+<p><strong>属性：</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>contentContainerStyle</th>
+          <th>样式会应用到内容容器</th>
+          <th>={styles.contentContainer}</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>showsVerticalScrollIndicator</td>
+          <td>是否显示垂直方向的滚动条</td>
+          <td>={true}</td>
+      </tr>
+      <tr>
+          <td>showsHorizontalScrollIndicator</td>
+          <td>是否显示水平方向的滚动条</td>
+          <td>={true}</td>
+      </tr>
+      <tr>
+          <td>horizontal</td>
+          <td>所有的子视图会在水平方向上排成一行</td>
+          <td>默认 ={false}</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>使用的示例：</strong></p>
+<p><img src="Untitled%2052.png" alt="Untitled"></p>
+<p><img src="Untitled%2053.png" alt="Untitled"></p>
+<p><strong>一个 ScrollView 的 bug 解决方案：</strong></p>
+<p>如何解决 Android 开发时 ScrollView 滚动不到底的问题</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ScrollView</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">View</span><span class="p">&gt;</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">height</span><span class="o">:</span> <span class="nx">Platform</span><span class="p">.</span><span class="nx">OS</span> <span class="o">===</span> <span class="s1">&#39;ios&#39;</span> <span class="o">?</span> <span class="mi">0</span> <span class="o">:</span> <span class="mi">100</span><span class="p">}}&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ScrollView</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>SafeAreaView</p>
+<p>作用：自动避开刘海屏，所以以后开发建议使用 SafeAreaView</p>
+<p><img src="Untitled%2054.png" alt="Untitled"></p>
+</li>
+<li>
+<p>SectionList</p>
+<p>作用：高性能的分组列表组件，支持单独的头部组件，支持单独的尾部组件，支持分组的头部组件，支持分组的分隔线，支持自定义行间分隔线，支持下拉刷新，支持上拉加载</p>
+</li>
+<li>
+<p>FlatLit</p>
+<p>作用：也是用来展示一个列表，跟 SectionList 不同，它不能进行分组</p>
+</li>
+<li>
+<p>Animated</p>
+<p><strong>定义：</strong></p>
+<p>动画组件，RN 中可以直接使用的动画组件</p>
+<ul>
+<li>Animated.View</li>
+<li>Animated.Text</li>
+<li>Animated.ScrollView</li>
+<li>Animated.Image</li>
+</ul>
+<p><strong>如何创建动画：</strong></p>
+<ol>
+<li>
+<p>创建初始值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">Animated</span><span class="p">.</span><span class="nx">Value</span><span class="p">()</span> <span class="nx">单个值</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Animated</span><span class="p">.</span><span class="nx">ValueXY</span><span class="p">()</span> <span class="nx">向量值</span>
+</span></span></code></pre></div></li>
+<li>
+<p>将初始值绑定在动画组件上，一般将其绑定到某个样式属性上，例如：opacity，translate</p>
+</li>
+<li>
+<p>通过动画类型 api，一帧一帧的更改初始值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">Animated</span><span class="p">.</span><span class="nx">decay</span><span class="p">()</span> <span class="nx">加速效果</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Animated</span><span class="p">.</span><span class="nx">spring</span><span class="p">()</span> <span class="nx">弹跳效果</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">()</span> <span class="nx">时间渐变效果</span>
+</span></span></code></pre></div></li>
+</ol>
+<p><strong>例子：</strong></p>
+<p>用5秒的时间，把一个图像的透明度从0变成1</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Animated</span><span class="p">,</span> <span class="nx">Text</span><span class="p">,</span> <span class="nx">View</span><span class="p">,</span> <span class="nx">StyleSheet</span><span class="p">,</span> <span class="nx">Button</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 设置初始值为0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">fadeAnim</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="k">new</span> <span class="nx">Animated</span><span class="p">.</span><span class="nx">Value</span><span class="p">(</span><span class="mi">0</span><span class="p">)).</span><span class="nx">current</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">fadeIn</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Will change fadeAnim value to 1 in 5 seconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">fadeAnim</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">toValue</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// 目标值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">duration</span><span class="o">:</span> <span class="mi">5000</span><span class="p">,</span>  <span class="c1">// 动画执行时间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nx">useNativeDriver</span><span class="o">:</span> <span class="kc">true</span> <span class="c1">// 启用原生方式渲染动画
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}).</span><span class="nx">start</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">fadeOut</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Will change fadeAnim value to 0 in 5 seconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">fadeAnim</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">toValue</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">duration</span><span class="o">:</span> <span class="mi">5000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="nx">useNativeDriver</span><span class="o">:</span> <span class="kc">true</span> <span class="c1">// 启用原生方式渲染动画
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}).</span><span class="nx">start</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;done&#34;</span><span class="p">)</span> <span class="c1">// 动画执行结束之后的回调函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>         <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">container</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">Animated.View</span>
+</span></span><span class="line"><span class="cl">        <span class="na">style</span><span class="o">=</span><span class="p">{[</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">styles</span><span class="p">.</span><span class="nx">fadingContainer</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">opacity</span><span class="o">:</span> <span class="nx">fadeAnim</span> <span class="c1">// Bind opacity to animated value
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">fadingText</span><span class="p">}&gt;</span><span class="nx">Fading</span> <span class="nx">View</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">Animated.View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">buttonRow</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Button</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Fade In&#34;</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">fadeIn</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Button</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Fade Out&#34;</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">fadeOut</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="nx">StyleSheet</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">container</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alignItems</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fadingContainer</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">paddingVertical</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">paddingHorizontal</span><span class="o">:</span> <span class="mi">16</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;powderblue&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fadingText</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">28</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">textAlign</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">margin</span><span class="o">:</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">buttonRow</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;row&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>NativeModules</p>
+<p>作用：在用 React Native 开发 App 时会用到一些原生模块，比如：在做社会化分享、第三方登录、扫描、通信录，日历等等，关于在React Native中使用原生模块，在这里引用React Native官方文档的一段话：</p>
+<blockquote>
+<p>有时候App需要访问平台API，但在React Native可能还没有相应的模块。或者你需要复用一些Java代码，而不想用JavaScript再重新实现一遍；又或者你需要实现某些高性能的、多线程的代码，譬如图片处理、数据库、或者一些高级扩展等等。</p>
+<p>我们把React Native设计为可以在其基础上编写真正的原生代码，并且可以访问平台所有的能力。这是一个相对高级的特性，我们并不期望它应当在日常开发的过程中经常出现，但它确实必不可少，而且是存在的。如果React Native还不支持某个你需要的原生特性，你应当可以自己实现对该特性的封装。</p></blockquote>
+<p>访问状态栏的属性：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span><span class="nx">StatusBarManager</span><span class="p">}</span> <span class="o">=</span> <span class="nx">NativeModules</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">StatusBarManager</span><span class="p">.</span><span class="nx">HEIGHT</span>
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="四外部组件库">四、外部组件库</h3>
+<ul>
+<li>
+<p>LinearGradient</p>
+<p>**作用：**渐变组件</p>
+<p><strong>引入：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">i</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">linear</span><span class="o">-</span><span class="nx">gradient</span>
+</span></span></code></pre></div><p>**从上到下的渐变：**默认的，属性是 color</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">LinearGradient</span> 
+</span></span><span class="line"><span class="cl">    <span class="na">colors</span><span class="o">=</span><span class="p">{[</span><span class="s1">&#39;#63B8FF&#39;</span><span class="p">,</span> <span class="s1">&#39;#1C86EE&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000EE&#39;</span><span class="p">,]}</span> 
+</span></span><span class="line"><span class="cl">    <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">height</span><span class="o">:</span> <span class="mi">150</span><span class="p">}}/&gt;</span>
+</span></span></code></pre></div><p><strong>从左到右的渐变</strong>：start/end</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">start</span><span class="o">:</span><span class="p">{</span> <span class="nx">x</span><span class="o">:</span> <span class="nx">number</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="nx">number</span> <span class="p">}</span> <span class="nx">start</span> <span class="nx">就是渐变开始的位置</span><span class="err">，</span><span class="nx">x</span><span class="err">、</span><span class="nx">y</span> <span class="nx">范围是</span> <span class="mi">0</span> <span class="o">~</span> <span class="mi">1</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">end</span><span class="o">:</span><span class="p">{</span> <span class="nx">x</span><span class="o">:</span> <span class="nx">number</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="nx">number</span> <span class="p">}</span> <span class="nx">end</span> <span class="nx">同上</span><span class="err">，</span><span class="nx">就是渐变结束的位置</span>
+</span></span></code></pre></div><p>**设定颜色的比例：**location</p>
+<p>如果想指定每种渐变颜色的范围，比如红色占20%， 绿色占70%，黑色占10%，也是可以设置的，就用到了另外一个属性：locations。locations 对应的是 colors</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">locations</span><span class="o">=</span><span class="p">{[</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">1.0</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">colors</span><span class="o">=</span><span class="p">{[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">以上代码的含义如下</span><span class="err">：</span>
+</span></span><span class="line"><span class="cl"><span class="nx">red</span> <span class="nx">范围就是</span> <span class="mf">0.0</span> <span class="o">-</span> <span class="mf">0.2</span><span class="err">；</span>
+</span></span><span class="line"><span class="cl"><span class="nx">green</span> <span class="nx">范围就是</span> <span class="mf">0.2</span> <span class="o">-</span> <span class="mf">0.7</span><span class="err">；</span>
+</span></span><span class="line"><span class="cl"><span class="nx">black</span> <span class="nx">范围就是</span> <span class="mf">0.7</span> <span class="o">-</span> <span class="mf">1.0</span><span class="err">；</span>
+</span></span></code></pre></div><p>**示例：**斜角渐变</p>
+<p>start: { x: 0.25, y: 0.4 } 渐变是从左侧25%，上部40%开始</p>
+<p>end: { x: 0.7, y: 0.8 } 渐变是从左侧70%，上部80%结束</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">LinearGradient</span>
+</span></span><span class="line"><span class="cl">    <span class="na">start</span><span class="o">=</span><span class="p">{{</span><span class="nx">x</span><span class="o">:</span> <span class="mf">0.25</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="mf">0.25</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">end</span><span class="o">=</span><span class="p">{{</span><span class="nx">x</span><span class="o">:</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="mf">0.75</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">colors</span><span class="o">=</span><span class="p">{[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">height</span><span class="o">:</span> <span class="mi">150</span><span class="p">,</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">}}/&gt;</span>
+</span></span></code></pre></div><p>**示例：**从左到右渐变</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">LinearGradient</span>
+</span></span><span class="line"><span class="cl">    <span class="na">start</span><span class="o">=</span><span class="p">{{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="mi">0</span><span class="p">}}</span> 
+</span></span><span class="line"><span class="cl">    <span class="na">end</span><span class="o">=</span><span class="p">{{</span><span class="nx">x</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="mi">0</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">colors</span><span class="o">=</span><span class="p">{[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">height</span><span class="o">:</span> <span class="mi">150</span><span class="p">,</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">}}/&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>ScaledSheet, verticalScale</p>
+<p><strong>react-native-size-matters:</strong> 一个轻量级的、零依赖性的React-Native实用工具带，用于在不同大小的设备上扩展应用程序 UI 的大小。当使用 react-native 开发时，你需要手动调整你的应用程序，使其在各种不同的屏幕尺寸上看起来都很棒。那是一份乏味的工作。react-native-size-matters 提供了一些简单的工具，使您的扩展更加容易。其想法是在标准的 5 英寸屏幕移动设备上开发一次，然后简单地应用提供的 util</p>
+<p><strong>安装：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">save</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">size</span><span class="o">-</span><span class="nx">matters</span>
+</span></span></code></pre></div><p><strong>使用方法：</strong></p>
+<ul>
+<li>scale(size: number)将根据设备的屏幕宽度返回所提供大小的线性缩放结果</li>
+<li>verticalScale(size: number)将根据设备的屏幕高度返回所提供大小的线性缩放结果</li>
+<li>moderateScale(size: number, factor?: number)有时候你不想以线性的方式来扩展每件事，这就是适度比例的由来。很酷的一点是，您可以控制调整大小因子（默认值为0.5）。如果“正常比例”将使您的大小增加2倍，则“中等比例”仅将其增加2倍，例如：比例（10）=20，中等比例（10）=15，中等比例（10，0.1）=11</li>
+<li>moderateVerticalScale(size: number, factor?: number)与中等比例相同，但使用垂直比例而不是比例。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">scale</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">verticalScale</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">moderateScale</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">moderateVerticalScale</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native-size-matters&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">或者</span> <span class="kr">import</span> <span class="p">{</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">vs</span><span class="p">,</span> <span class="nx">ms</span><span class="p">,</span> <span class="nx">mvs</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native-size-matters&#39;</span><span class="p">;</span> <span class="err">（</span><span class="nx">速记的方法</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Component</span> <span class="o">=</span> <span class="nx">props</span> <span class="p">=&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">width</span><span class="o">:</span> <span class="nx">scale</span><span class="p">(</span><span class="mi">30</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">height</span><span class="o">:</span> <span class="nx">verticalScale</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">padding</span><span class="o">:</span> <span class="nx">moderateScale</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}}/&gt;;</span>
+</span></span></code></pre></div><p><strong>ScaledSheet</strong>
+ScaledSheet将采用与常规样式表相同的样式对象，外加一个特殊（可选）注释，该注释将自动为您应用缩放函数</p>
+<ul>
+<li>@s将scale函数应用于size。</li>
+<li>@vs将verticalScale函数应用于size。</li>
+<li>@ms将在size上应用大小因子为0.5的moderateScale函数。</li>
+<li>@mvs将在size上应用大小因子为0.5的moderateVerticalScale函数。</li>
+<li>@ms<factor>将应用moderateScale函数，其大小调整因子为factor。</li>
+<li>@mvs<factor>将应用moderateVerticalScale函数，其大小调整因子为factor。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">ScaledSheet</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native-size-matters&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="nx">ScaledSheet</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">container</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;100@s&#39;</span><span class="p">,</span> <span class="c1">// = scale(100)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;200@vs&#39;</span><span class="p">,</span> <span class="c1">// = verticalScale(200)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">padding</span><span class="o">:</span> <span class="s1">&#39;2@msr&#39;</span><span class="p">,</span> <span class="c1">// = Math.round(moderateScale(2))
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">margin</span><span class="o">:</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">row</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">padding</span><span class="o">:</span> <span class="s1">&#39;10@ms0.3&#39;</span><span class="p">,</span> <span class="c1">// = moderateScale(10, 0.3)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;50@ms&#39;</span><span class="p">,</span> <span class="c1">// = moderateScale(50)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;30@mvs0.3&#39;</span> <span class="c1">// = moderateVerticalScale(30, 0.3)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div></li>
+<li>
+<p>DateTimePicker</p>
+<p>虽然之前的 react-native-datepicker 很好用，但是我们如果现在使用话，会给出警告信息，告诉我们现在推出了新版本的，集成了 IOS 和 Android 的新插件，datepicker 未来将会不可用。所以要及时了解其替代品 @react-native-community/datetimepicker</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="err">@</span><span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">community</span><span class="o">/</span><span class="nx">datetimepicker</span> <span class="o">--</span><span class="nx">save</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="err">@</span><span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">community</span><span class="o">/</span><span class="nx">datetimepicker</span>
+</span></span></code></pre></div><p>使用：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">DateTimePicker</span> <span class="nx">from</span> <span class="s2">&#34;@react-native-community/datetimepicker&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">DateTimePicker</span>
+</span></span><span class="line"><span class="cl">  <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">date</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">mode</span><span class="o">=</span><span class="s">&#34;date&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">minimumDate</span><span class="o">=</span><span class="p">{</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">1950</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">maximumDate</span><span class="o">=</span><span class="p">{</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">is24Hour</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">display</span><span class="o">=</span><span class="s">&#34;spinner&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">onChangeTime</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">/&gt;</span>
+</span></span></code></pre></div><p>常用的属性：</p>
+<table>
+  <thead>
+      <tr>
+          <th>value</th>
+          <th>value 值必填，且必须是 Date 日期对象类型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>mode</td>
+          <td>“date&rdquo; 默认、“time”、“datetime” (iOS only)、“countdown” (iOS only)</td>
+      </tr>
+      <tr>
+          <td>is24Hour</td>
+          <td>={true}</td>
+      </tr>
+      <tr>
+          <td>display</td>
+          <td>是显示的样式，有四种</td>
+      </tr>
+      <tr>
+          <td>“default”、“spinner”、“calendar” (only for date mode)、“clock” (only for time mode)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>minimumDate、maximumDate</td>
+          <td>分别是可选择的最大日期和最小日期，注意也是Date类型的</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>DragSortableView</p>
+<p>安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">drag</span><span class="o">-</span><span class="nx">sort</span>
+</span></span></code></pre></div><p>导入</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">DragSortableView</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native-drag-sort&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><p>使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">{</span><span class="cm">/* 拖拽组件 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">DragSortableView</span>
+</span></span><span class="line"><span class="cl">    <span class="na">dataSource</span><span class="o">=</span><span class="p">{</span><span class="nx">myCategorys</span><span class="p">}</span><span class="err">//</span><span class="na">数据源</span>
+</span></span><span class="line"><span class="cl">    <span class="na">fixedItems</span><span class="o">=</span><span class="p">{[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]}</span><span class="err">//</span><span class="na">指定下标不可拖拽</span>
+</span></span><span class="line"><span class="cl">    <span class="na">renderItem</span><span class="o">=</span><span class="p">{(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="c1">//item样式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//注意：item不能再次包裹触摸事件，他已经包裹了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// &lt;Touchable key={item.id} onPress={() =&gt; this.onItemClick(item, index, true)}&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">&lt;</span><span class="nt">ItemView</span>
+</span></span><span class="line"><span class="cl">                <span class="na">isEdit</span><span class="o">=</span><span class="p">{</span><span class="nx">isEdit</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">selected</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">disabled</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// &lt;/Touchable&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">sortable</span><span class="o">=</span><span class="p">{</span><span class="nx">isEdit</span><span class="p">}</span><span class="err">//</span><span class="na">什么时候可以拖拽</span>
+</span></span><span class="line"><span class="cl">    <span class="na">keyExtractor</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onDataChange</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">onDataChange</span><span class="p">}</span><span class="err">//</span><span class="na">拖拽排序</span>
+</span></span><span class="line"><span class="cl">    <span class="na">parentWidth</span><span class="o">=</span><span class="p">{</span><span class="nx">parentWidth</span><span class="p">}</span><span class="err">//</span><span class="na">拖拽区域的宽度</span>
+</span></span><span class="line"><span class="cl">    <span class="na">childrenWidth</span><span class="o">=</span><span class="p">{</span><span class="nx">itemWidth</span><span class="p">}</span><span class="err">//</span><span class="na">item的宽度</span>
+</span></span><span class="line"><span class="cl">    <span class="na">childrenHeight</span><span class="o">=</span><span class="p">{</span><span class="nx">itemHeight</span><span class="p">}</span><span class="err">//</span><span class="na">item的高度</span>
+</span></span><span class="line"><span class="cl">    <span class="na">marginChildrenTop</span><span class="o">=</span><span class="p">{</span><span class="nx">marginTop</span><span class="p">}</span><span class="err">//</span><span class="na">item的上边距</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onClickItem</span><span class="o">=</span><span class="p">{(</span><span class="nx">data</span><span class="o">:</span> <span class="nx">CategoryType</span><span class="p">[],</span> <span class="nx">item</span><span class="o">:</span> <span class="nx">CategoryType</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//item的点击事件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">this</span><span class="p">.</span><span class="nx">onItemClick</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">item</span><span class="p">),</span> <span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//拖拽排序
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">onDataChange</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="o">:</span> <span class="nx">CategoryType</span><span class="p">[])</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">myCategorys</span><span class="o">:</span> <span class="p">[...</span><span class="nx">data</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Icon</p>
+<p>**定义：**react-native-vector-icons 是 rn 项目采用 iconfont 的工具库。那么问题来了，iconfont 是什么？简单说，就是我们平时用的字体，不再是我们传统认知上的“文字”，而是一个个的图标。关于 rn 项目如何添加 react-native-vector-icons，不进行说明，请参照 <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Foblador%2Freact-native-vector-icons" target="_blank">react-native-vector-icons</a></p>
+<p>**意义：**不知道什么时候开始， iconfont 成为了 App 开发的利器，不仅因为它是矢量图标，可以轻松解决图标适配和颜色问题，而且它是以字体文件的形式存在项目中，比起常规图片更能节省 App 的体积，而 react-native-vector-icons 是在 GitHub 上最火的 React Native 的 iconfont 图标库，也是这博客的主角。</p>
+<p><strong>引入：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">save</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">vector</span><span class="o">-</span><span class="nx">icons</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 或者
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">yarn</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">vector</span><span class="o">-</span><span class="nx">icons</span>
+</span></span></code></pre></div><p><strong>Android 平台上的配置</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">// 自动配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span> <span class="nx">link</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">vector</span><span class="o">-</span><span class="nx">icons</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="c1">// 或者
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="nx">npm</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">g</span> <span class="nx">rnpm</span>
+</span></span><span class="line"><span class="cl"> <span class="nx">rnpm</span> <span class="nx">link</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">vector</span><span class="o">-</span><span class="nx">icons</span>
+</span></span></code></pre></div><p>这个脚本命令可以帮你自动配置好，如果是运行成功的情况下，可惜往往都是失败的。如果这步成功了，而且能够正常运行，下面这些就可以忽略了</p>
+<p><strong>使用方法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Icon</span> <span class="nx">from</span> <span class="s1">&#39;react-native-vector-icons/FontAwesome&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Ionicons</span> <span class="nx">from</span> <span class="s1">&#39;react-native-vector-icons/Ionicons&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">AntDesign</span> <span class="nx">from</span> <span class="s1">&#39;react-native-vector-icons/AntDesign&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">MaterialCommunityIcons</span> <span class="nx">from</span> <span class="s1">&#39;react-native-vector-icons/MaterialCommunityIcons&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Octicons</span> <span class="nx">from</span> <span class="s1">&#39;react-native-vector-icons/Octicons&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Icon</span> 
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;rocket&#34;</span> 
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">30</span><span class="p">}</span> 
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;#900&#34;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Ionicons</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;close&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">16</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(173, 186, 204, 1)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Ionicons</span>
+</span></span><span class="line"><span class="cl">    <span class="na">name</span><span class="o">=</span><span class="s">&#34;caret-down-circle&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">18</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(173, 186, 204, 1)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">AntDesign</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;clockcircle&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">16</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(19, 57, 102, 1)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">AntDesign</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;pausecircleo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">22</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;red&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">MaterialCommunityIcons</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;drag&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">32</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(196, 196, 196, 1)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">MaterialCommunityIcons</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;drag&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">32</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(196, 196, 196, 1)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Octicons</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;arrow-switch&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">15</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(173, 186, 204, 1)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">switchIcon</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Octicons</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;arrow-switch&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">size</span><span class="o">=</span><span class="p">{</span><span class="mi">15</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">=</span><span class="s">&#34;rgba(173, 186, 204, 1)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">style</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">switchIcon</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Video</p>
+</li>
+</ul>
+<h3 id="五路由与导航-react-navigation">五、路由与导航 React-Navigation</h3>
+<ul>
+<li>
+<p>安装下载</p>
+<p>安装包</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="err">@</span><span class="nx">react</span><span class="o">-</span><span class="nx">navigation</span><span class="o">/</span><span class="kr">native</span>
+</span></span></code></pre></div><p>安装必要的依赖</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">renimated</span> <span class="p">(</span><span class="nx">动画增强</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">gesture</span><span class="o">-</span><span class="nx">handler</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">screens</span> <span class="p">(</span><span class="nx">屏幕处理</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">safe</span><span class="o">-</span><span class="nx">area</span><span class="o">-</span><span class="nx">context</span> <span class="p">(</span><span class="nx">处理安全区域</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="err">@</span><span class="nx">react</span><span class="o">-</span><span class="kr">native</span><span class="o">-</span><span class="nx">community</span><span class="o">/</span><span class="nx">masked</span><span class="o">-</span><span class="nx">view</span>
+</span></span></code></pre></div><p>链接：RN 0.6 之后安卓环境自动链接路由，Android 无需任何操作，iOS 下需要手动链接路由</p>
+</li>
+<li>
+<p>NavigationContainer</p>
+<p>添加头部组件，放到应用的头部(index.js/App.js)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;react-native-gesture-handler&#39;</span>
+</span></span></code></pre></div><p>添加导航容器，我们需要在入口文件中，把整个应用包裹在导航容器NavigationContainer 中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;react-native-gesture-handler&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">NavigationContainer</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/native&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">NavigationContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="cm">/* 具体应用的代码 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">NavigationContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>StackNavigation</p>
+<p><strong>简介</strong></p>
+<p>RN 中默认没有类似浏览器 history 对象，在 RN 中跳转之前，要先将路由声明在 Stack 中，才能实现跳转</p>
+<p><strong>安装</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="err">@</span><span class="nx">react</span><span class="o">-</span><span class="nx">navigation</span><span class="o">/</span><span class="nx">stack</span>
+</span></span></code></pre></div><p>使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createStackNavigator</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/stack&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Stack</span> <span class="o">=</span> <span class="nx">createStackNavigator</span><span class="p">();</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Stack.Navigation</th>
+          <th>作用于整个导航，包含多个屏幕</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>initialRouteName</td>
+          <td>初始化路由，默认加载的路由</td>
+      </tr>
+      <tr>
+          <td>headerMode</td>
+          <td>声明头部显示的信息</td>
+      </tr>
+      <tr>
+          <td>screenOptions</td>
+          <td>也可以声明一些属性</td>
+      </tr>
+      <tr>
+          <td>Stack.Screen</td>
+          <td>仅仅作用于当前屏幕</td>
+      </tr>
+      <tr>
+          <td>name</td>
+          <td>路由的名称</td>
+      </tr>
+      <tr>
+          <td>component</td>
+          <td>路由对应的组件的内容</td>
+      </tr>
+      <tr>
+          <td>title</td>
+          <td>标题</td>
+      </tr>
+      <tr>
+          <td>headerTitleStyle</td>
+          <td>头部的风格</td>
+      </tr>
+      <tr>
+          <td>headerLeft</td>
+          <td>头部左边</td>
+      </tr>
+      <tr>
+          <td>headerRight</td>
+          <td>头部右边</td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">NavigationContainer</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createStackNavigator</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/native-stack&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">HomeScreen</span><span class="p">({</span> <span class="nx">prop</span> <span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(&lt;</span><span class="nt">Button</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">prop</span><span class="p">.</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;details&#39;</span><span class="p">)}</span> <span class="p">/&gt;)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">DetailsScreen</span><span class="p">({</span> <span class="nx">prop</span> <span class="p">})</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(&lt;</span><span class="nt">Button</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">prop</span><span class="p">.</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;home&#39;</span><span class="p">)}</span> <span class="p">/&gt;)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Stack</span> <span class="o">=</span> <span class="nx">createStackNavigator</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">NavigationContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Stack.Navigator</span>
+</span></span><span class="line"><span class="cl">          <span class="na">initialRouteName</span><span class="o">=</span><span class="s">&#39;home&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">screenOptions</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">headerShown</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">navigationBarHidden</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">            <span class="nx">navigationBarColor</span><span class="o">:</span> <span class="s1">&#39;rgba(0,0,0,0)&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">           <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">Stack.Screen</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;home&#34;</span> <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">HomeScreen</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">Stack.Screen</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;details&#34;</span> <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">DetailsScreen</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">Stack.Navigator</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">NavigationContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>BottomTabNavigation</p>
+<p>简介：底部选项卡的导航效果</p>
+<p>安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="err">@</span><span class="nx">react</span><span class="o">-</span><span class="nx">navigation</span><span class="o">/</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">tabs</span>
+</span></span></code></pre></div><p>使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createBottomTabNavigator</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/bottom-tabs&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Tab</span> <span class="o">=</span> <span class="nx">createBottomTabNavigator</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">NavigationContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Tab.Navigator</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">Tab.Screen</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;Home&#34;</span> <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">HomeScreen</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Tab.Screen</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;Settings&#34;</span> <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">SettingsScreen</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">Tab.Navigator</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">NavigationContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>具体</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">ParamListBase</span><span class="p">,</span> <span class="nx">RouteProp</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createBottomTabNavigator</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@react-navigation/bottom-tabs&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Text</span><span class="p">,</span> <span class="nx">TouchableWithoutFeedback</span><span class="p">,</span> <span class="nx">View</span><span class="p">,</span> <span class="nx">Image</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HomeNavigationTab</span> <span class="o">=</span> <span class="nx">createBottomTabNavigator</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="cm">/* 以下是定义每一页的内容 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">HomeScreen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">           <span class="p">&lt;</span><span class="nt">Home</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">EaseScreen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">HabitTemplatePage</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">ExploreScreen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">justifyContent</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">alignItems</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">28</span> <span class="p">}}&gt;</span><span class="nx">Explore</span> <span class="nx">Page</span><span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">MeScreen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">justifyContent</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">alignItems</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">28</span> <span class="p">}}&gt;</span><span class="nx">Me</span> <span class="nx">Page</span><span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="cm">/* 以下是定义导航栏的路由 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HomeIndex</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">HomeNavigationTab.Navigator</span>
+</span></span><span class="line"><span class="cl">            <span class="na">screenOptions</span><span class="o">=</span><span class="p">{({</span> <span class="nx">route</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">tabBarActiveTintColor</span><span class="o">:</span> <span class="s1">&#39;rgba(61, 148, 255, 1)&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">tabBarInactiveTintColor</span><span class="o">:</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">headerShown</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">tabBarStyle</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">height</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">borderTopWidth</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">})}&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">HomeNavigationTab.Screen</span>
+</span></span><span class="line"><span class="cl">                <span class="na">name</span><span class="o">=</span><span class="s">&#34;day&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">HomeScreen</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">options</span><span class="o">=</span><span class="p">{(</span><span class="nx">navigation</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarLabel</span><span class="o">:</span> <span class="s1">&#39;今日&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarIcon</span><span class="o">:</span> <span class="p">({</span> <span class="nx">focused</span><span class="p">,</span> <span class="nx">size</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">HomeNavigationTabItem</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">navigation</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigation</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">route</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">route</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">foucs</span><span class="o">=</span><span class="p">{</span><span class="nx">focused</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">HomeNavigationTab.Screen</span>
+</span></span><span class="line"><span class="cl">                <span class="na">name</span><span class="o">=</span><span class="s">&#34;ease&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">EaseScreen</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">options</span><span class="o">=</span><span class="p">{(</span><span class="nx">navigation</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarLabel</span><span class="o">:</span> <span class="s1">&#39;平和&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarIcon</span><span class="o">:</span> <span class="p">({</span> <span class="nx">focused</span><span class="p">,</span> <span class="nx">size</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">HomeNavigationTabItem</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">navigation</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigation</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">route</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">route</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">foucs</span><span class="o">=</span><span class="p">{</span><span class="nx">focused</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">HomeNavigationTab.Screen</span>
+</span></span><span class="line"><span class="cl">                <span class="na">name</span><span class="o">=</span><span class="s">&#34;explore&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">ExploreScreen</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">options</span><span class="o">=</span><span class="p">{(</span><span class="nx">navigation</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarLabel</span><span class="o">:</span> <span class="s1">&#39;探索&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarIcon</span><span class="o">:</span> <span class="p">({</span> <span class="nx">focused</span><span class="p">,</span> <span class="nx">size</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">HomeNavigationTabItem</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">navigation</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigation</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">route</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">route</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">foucs</span><span class="o">=</span><span class="p">{</span><span class="nx">focused</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">HomeNavigationTab.Screen</span>
+</span></span><span class="line"><span class="cl">                <span class="na">name</span><span class="o">=</span><span class="s">&#34;me&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">MeScreen</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="na">options</span><span class="o">=</span><span class="p">{(</span><span class="nx">navigation</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarLabel</span><span class="o">:</span> <span class="s1">&#39;我的&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">tabBarIcon</span><span class="o">:</span> <span class="p">({</span> <span class="nx">focused</span><span class="p">,</span> <span class="nx">size</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">HomeNavigationTabItem</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">navigation</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigation</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">route</span><span class="o">=</span><span class="p">{</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">route</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="na">foucs</span><span class="o">=</span><span class="p">{</span><span class="nx">focused</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">HomeNavigationTab.Navigator</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="cm">/* 以下是定义底部导航栏的按钮和图标样式 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HomeNavigationTabItem</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">route</span><span class="o">:</span> <span class="nx">RouteProp</span><span class="p">&lt;</span><span class="nt">ParamListBase</span><span class="err">,</span> <span class="na">string</span><span class="p">&gt;;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">navigation</span><span class="o">:</span> <span class="nx">any</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">foucs</span><span class="o">:</span> <span class="kr">boolean</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">switch</span> <span class="p">(</span><span class="nx">props</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="s1">&#39;day&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">TouchableWithoutFeedback</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">props</span><span class="p">.</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;day&#39;</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;column&#34;</span><span class="p">,</span> <span class="nx">paddingTop</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="nx">paddingBottom</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">Image</span> <span class="na">source</span><span class="o">=</span><span class="p">{</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">getValue</span><span class="p">(</span><span class="s1">&#39;$iconDaySun&#39;</span><span class="p">)}</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">width</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span> <span class="nx">height</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="p">}}&gt;&lt;/</span><span class="nt">Image</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">TouchableWithoutFeedback</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="s1">&#39;ease&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">TouchableWithoutFeedback</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">props</span><span class="p">.</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;ease&#39;</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;column&#34;</span><span class="p">,</span> <span class="nx">paddingTop</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="nx">paddingBottom</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">Image</span> <span class="na">source</span><span class="o">=</span><span class="p">{</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">getValue</span><span class="p">(</span><span class="s1">&#39;$iconEaseHeart&#39;</span><span class="p">)}</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">width</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span> <span class="nx">height</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="p">}}&gt;&lt;/</span><span class="nt">Image</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">TouchableWithoutFeedback</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="s1">&#39;explore&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">TouchableWithoutFeedback</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">props</span><span class="p">.</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;explore&#39;</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;column&#34;</span><span class="p">,</span> <span class="nx">paddingTop</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="nx">paddingBottom</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">Image</span> <span class="na">source</span><span class="o">=</span><span class="p">{</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">getValue</span><span class="p">(</span><span class="s1">&#39;$iconExploreSafari&#39;</span><span class="p">)}</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">width</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span> <span class="nx">height</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="p">}}&gt;&lt;/</span><span class="nt">Image</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">TouchableWithoutFeedback</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="s1">&#39;me&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">TouchableWithoutFeedback</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">props</span><span class="p">.</span><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;me&#39;</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;column&#34;</span><span class="p">,</span> <span class="nx">paddingTop</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span> <span class="nx">paddingBottom</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">Image</span> <span class="na">source</span><span class="o">=</span><span class="p">{</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">getValue</span><span class="p">(</span><span class="s1">&#39;$iconMeHuman&#39;</span><span class="p">)}</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">width</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span> <span class="nx">height</span><span class="o">:</span> <span class="nx">rpx</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="p">}}&gt;&lt;/</span><span class="nt">Image</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">TouchableWithoutFeedback</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">(&lt;</span><span class="nt">View</span><span class="p">&gt;&lt;/</span><span class="nt">View</span><span class="p">&gt;)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">HomeIndex</span><span class="p">;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>路由嵌套</p>
+<p>简介：在一个导航的内部，可以渲染另一个导航</p>
+<p><img src="Untitled%2055.png" alt="Untitled"></p>
+</li>
+<li>
+<p>路由传参</p>
+<p><strong>传递参数</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">navigation</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,{</span><span class="nx">key</span><span class="o">:</span><span class="mi">123</span><span class="p">})</span>
+</span></span></code></pre></div><p><strong>接收参数</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">类组件</span>
+</span></span><span class="line"><span class="cl"><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">KEY</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">函数式组件</span>
+</span></span><span class="line"><span class="cl"><span class="nx">route</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">KEY</span>
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="六状态管理-mobx">六、状态管理 mobx</h3>
+<ul>
+<li>
+<p>mobx 简介</p>
+<p>mobx 是 react 中的全局数据管理库，可以简单的实现数据的跨组件共享，类似于 vue 中的 vuex，与Redux 相比，mobx 是极其简单的，他没有复杂的工作流程</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li>无模版代码，非常简洁；</li>
+<li>数据是响应式的，可以直接修改数据(Proxy)；</li>
+<li>可以直接处理异步；</li>
+<li>适合简单、规模不大的应用</li>
+</ul>
+<p><strong>版本说明：</strong></p>
+<ul>
+<li>Mobx4可以运行在任何支持ES5语法的浏览器；</li>
+<li>Mobx5版本运行在任何支持ES6语法的浏览器；</li>
+<li>Mobx4和Mobx5具有相同的api，都需要使用装饰器语法；</li>
+<li>Mobx6是目前最新的版本，为了兼顾与标准JavaScript的最大兼容性，默认情况下放弃了装饰器语法。</li>
+</ul>
+<p><strong>mobx 和 redux 的区别：</strong></p>
+<p>工作流程：</p>
+<ul>
+<li>Redux 要求必须严格遵守它的工作流程，例如通过 dispatch 触发 action，由 store 接收到 action，然后交给 reducer 去处理 action</li>
+<li>MobX 没有过多的流程要求，直接调用定义的 action 方法修改状态，直接访问 Store 中的状态</li>
+</ul>
+<p>应用场景：</p>
+<ul>
+<li>项目团队：开发者的风格不同，如果团队中开发者比较多，推荐使用 Redux，因为 Redux 有严格的工作流程以及样板代码，从而可以约束每个人的代码风格。Redux 在多人或多个项目中共享状态比较方便</li>
+<li>个人开发：个人负责的项目或人数交少的，推荐使用 MobX，因为 MobX 代码简约无样板代码，相比 Redux 开发效率会高一些</li>
+</ul>
+</li>
+<li>
+<p>安装步骤</p>
+<ol>
+<li>
+<p>安装依赖</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">mobx</span> <span class="nx">mobx</span><span class="o">-</span><span class="nx">react</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="err">@</span><span class="nx">babel</span><span class="o">/</span><span class="nx">plugin</span><span class="o">-</span><span class="nx">proposal</span><span class="o">-</span><span class="nx">decorators</span>
+</span></span></code></pre></div><p>@babel/plugin-proposal-decorators 使得 rn 项目支持 es7 的装饰器语法的库</p>
+</li>
+<li>
+<p>在 babel.config.js 添加配置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">plugins</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;@babel/plugin-proposal-decorators&#34;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;legacy&#39;</span><span class="o">:</span> <span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span></code></pre></div></li>
+<li></li>
+</ol>
+</li>
+<li>
+<p>工作流程和原理</p>
+<p><img src="Untitled%2056.png" alt="Untitled"></p>
+<p>action：将一个方法标记为可修改 state 的 action</p>
+<p>observable state：定义一个存储 state 的可追踪字段（Proxy）</p>
+<p>computed value：标记一个可以由state派生出新值并且缓存其输出的计算属性</p>
+<p><img src="Untitled%2057.png" alt="Untitled"></p>
+<ul>
+<li>在视图中通过事件 event 触发 Action 方法</li>
+<li>Action 方法用于更新（update）状态（Observable State）</li>
+<li>当状态（Observable State）发生变化，就会通知（notify）计算值（Computed Values）</li>
+<li>当计算值（Computed Values）同步完成完，就会触发（trigger）副作用（Side-effects），例如 render 更新视图</li>
+</ul>
+</li>
+<li>
+<p>在类组件中使用</p>
+<ol>
+<li>
+<p>创建 store 来存放全局数据
+使用 @observable 和 @action 装饰器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">observable</span><span class="p">,</span> <span class="nx">action</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;mobx&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">RootStore</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@</span><span class="nx">observable</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@</span><span class="nx">action</span><span class="p">.</span><span class="nx">bound</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">changeName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="k">new</span> <span class="nx">RootStore</span><span class="p">();</span>
+</span></span></code></pre></div></li>
+<li>
+<p>在根组件 index 中来挂载
+<provider rootStore={rootStore}> </provider> 标签包裹</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">View</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">rootStore</span> <span class="nx">from</span> <span class="s2">&#34;./mobx&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Provider</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;mobx-react&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Index</span> <span class="nx">extend</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">render</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">Provider</span> <span class="na">rootStore</span><span class="o">=</span><span class="p">{</span><span class="nx">rootStore</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">Sub1</span><span class="p">&gt;&lt;/</span><span class="nt">Sub1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;/</span><span class="nt">Provider</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>在子组件中使用，监测数据变化
+@inject 和 @observer 装饰器挂在
+this.props.rootStore.name 来使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">View</span><span class="p">,</span> <span class="nx">Text</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-native&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">inject</span><span class="p">,</span> <span class="nx">observer</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;mobx-react&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">@</span><span class="nx">inject</span><span class="p">(</span><span class="s2">&#34;rootStore&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="err">@</span><span class="nx">observer</span>
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Sub1</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">changeName</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">rootStore</span><span class="p">.</span><span class="nx">changeName</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">render</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                                <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">changeName</span><span class="p">}&gt;{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">rootStore</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>在函数式组件中使用</p>
+<ol>
+<li>
+<p>创建 store 来存放全局数据
+使用 makeObservable() 和 action.bound</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">makeObservable</span><span class="p">,</span> <span class="nx">action</span><span class="p">,</span> <span class="nx">observable</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;mobx&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">CounterStore</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">makeObservable</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">count</span><span class="o">:</span> <span class="nx">observable</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">increment</span><span class="o">:</span> <span class="nx">action</span><span class="p">.</span><span class="nx">bound</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">decrement</span><span class="o">:</span> <span class="nx">action</span><span class="p">.</span><span class="nx">bound</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="nx">reset</span><span class="o">:</span> <span class="nx">action</span><span class="p">,</span>    <span class="c1">// 如果要改数据，那么这个方法一定要标为action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kr">double</span><span class="o">:</span> <span class="nx">computed</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">increment</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">decrement</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">const</span> <span class="nx">CounterStoreContext</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createContext</span><span class="p">(</span> <span class="k">new</span> <span class="nx">CounterStore</span><span class="p">());</span>
+</span></span></code></pre></div></li>
+<li>
+<p>在其他子组件中使用，监测数据的变化</p>
+<ul>
+<li>import observer 高阶组件函数</li>
+<li>使用 observer() 高阶组件函数包裹需要使用 store 的组件</li>
+<li>import store 对象</li>
+<li>使用 store 对象的属性和方法即可</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useObserver</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;mobx-react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">CounterStore</span> <span class="nx">from</span> <span class="s1">&#39;./Counter.Store.js&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">TestComponent</span> <span class="o">=</span> <span class="nx">observer</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// use observable data
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;{</span><span class="nx">CounterStore</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>action 和 action.bound 的区别</p>
+<p>默认 class 中的方法不会绑定 this，this 指向取决于如何调用</p>
+<p><strong>示例一：action</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">makeObservable</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">count</span><span class="o">:</span> <span class="nx">observable</span><span class="p">,</span>  <span class="c1">// 属性是observable的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">increment</span><span class="o">:</span> <span class="nx">action</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">decrement</span><span class="o">:</span> <span class="nx">action</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">reset</span><span class="o">:</span> <span class="nx">action</span>    <span class="c1">// 如果要改数据，那么这个方法一定要标为action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">counter</span><span class="p">.</span><span class="nx">increment</span><span class="p">()}&gt;</span><span class="nx">加1</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="c1">// 正确
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">counter</span><span class="p">.</span><span class="nx">increment</span><span class="o">&gt;</span><span class="nx">加1</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="c1">// 错误
+</span></span></span></code></pre></div><p><strong>示例二：action.bound</strong></p>
+<p>在使用makeObservable时可以通过action.bound绑定this指向</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">makeObservable</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">count</span><span class="o">:</span> <span class="nx">observable</span><span class="p">,</span>  <span class="c1">// 属性是observable的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">increment</span><span class="o">:</span> <span class="nx">action</span><span class="p">.</span><span class="nx">bound</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">decrement</span><span class="o">:</span> <span class="nx">action</span><span class="p">.</span><span class="nx">bound</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">reset</span><span class="o">:</span> <span class="nx">action</span>    <span class="c1">// 如果要改数据，那么这个方法一定要标为action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">counter</span><span class="p">.</span><span class="nx">increment</span><span class="p">}&gt;</span><span class="nx">加1</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>计算属性的使用 computed</p>
+<p>computed 可以用来从其他可观察对象中派生信息。</p>
+<ul>
+<li>计算值采用惰性求值，会缓存其输出，并且只有当其依赖的可观察对象被改变时才会重新计算。</li>
+<li>计算属性是一个方法，且方法前面必须使用get进行修饰</li>
+<li>计算属性还需要通过 makeObservable 方法指定</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">get</span> <span class="kr">double</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></div></li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/react-js/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/mern-e-commerce/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一环境搭建">一、环境搭建</a></li>
+        <li><a href="#一安装-jdk">一、<strong>安装 JDK</strong></a></li>
+        <li><a href="#二安装-android-studio"><strong>二、安装 Android Studio</strong></a></li>
+        <li><a href="#三安装-android-sdk"><strong>三、安装 Android SDK</strong></a></li>
+        <li><a href="#四配置环境变量">四、配置环境变量</a></li>
+        <li><a href="#五avd配置虚拟机">五**、AVD配置（虚拟机）**</a></li>
+        <li><a href="#二基础知识">二、基础知识</a></li>
+        <li><a href="#三组件和api">三、组件和API</a></li>
+        <li><a href="#四外部组件库">四、外部组件库</a></li>
+        <li><a href="#五路由与导航-react-navigation">五、路由与导航 React-Navigation</a></li>
+        <li><a href="#六状态管理-mobx">六、状态管理 mobx</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 ---
 title: Python Basic
 slug: Python-Basic
+lastmod: 2025-07-01T00:00:00+00:00
 ---
 
 # Python

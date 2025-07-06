@@ -1,6 +1,7 @@
 ---
 title: Java Basic
 slug: Java-Basic
+lastmod: 2025-07-01T00:00:00+00:00
 ---
 
 

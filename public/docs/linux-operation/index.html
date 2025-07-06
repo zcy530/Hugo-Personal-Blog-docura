@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Linux Operation · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/linux-operation/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Linux Operation</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h2 id="简单">简单</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 管理员权限操作</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 进入某个文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span>
+</span></span><span class="line"><span class="cl"><span class="c"># 进入上层目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="p">..</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 查看当路径</span>
+</span></span><span class="line"><span class="cl"><span class="nb">pwd
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span>
+</span></span><span class="line"><span class="cl"><span class="c"># ip address</span>
+</span></span><span class="line"><span class="cl"><span class="n">ifconfig</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 列出文件夹里的所有文件</span>
+</span></span><span class="line"><span class="cl"><span class="nb">ls </span>   <span class="n">不包括隐藏文件</span>
+</span></span><span class="line"><span class="cl"><span class="nb">ls </span><span class="n">-a</span>  <span class="n">包括隐藏文件</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">把某个文件移动到某个文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="nb">mv </span><span class="n">filename</span> <span class="p">/</span><span class="n">usr</span><span class="p">/</span><span class="n">java</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 创建文件或文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="n">mkdir</span> <span class="n">music</span>    <span class="n">在当前目录创建目录music</span>
+</span></span><span class="line"><span class="cl"><span class="n">touch</span> <span class="n">test</span><span class="p">.</span><span class="py">txt</span> <span class="n">将test</span><span class="p">.</span><span class="py">txt</span> <span class="n">的时间改为当前时间</span><span class="err">，</span><span class="n">文件不存在则新建</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 删除文件或文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="nb">rm </span><span class="n">filename</span> <span class="n">删除文件</span>
+</span></span><span class="line"><span class="cl"><span class="nb">rm </span><span class="n">-d</span> <span class="n">dirname</span> <span class="n">删除空文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="nb">rm </span><span class="n">-r</span> <span class="n">dirname</span> <span class="n">删除非空文件夹</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># java版本</span>
+</span></span><span class="line"><span class="cl"><span class="n">java</span> <span class="n">-version</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># vim 查看文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">vim</span> <span class="p">/</span><span class="n">path</span><span class="p">/</span><span class="n">file</span>
+</span></span><span class="line"><span class="cl"><span class="n">编辑退出编辑</span><span class="err">：</span><span class="n">i</span> <span class="p">-&gt;</span> <span class="n">esc</span>
+</span></span><span class="line"><span class="cl"><span class="n">退出</span><span class="err">：:</span><span class="n">q</span>
+</span></span><span class="line"><span class="cl"><span class="n">退出保存</span><span class="err">：:</span><span class="n">wq</span>
+</span></span><span class="line"><span class="cl"><span class="n">退出不保存</span><span class="err">：:</span><span class="n">q</span><span class="p">!</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 退出</span>
+</span></span><span class="line"><span class="cl"><span class="n">ctrl</span><span class="p">+</span><span class="n">c</span> <span class="n">向当前进程发送</span> <span class="n">SIGINT</span> <span class="n">信号</span><span class="err">，</span><span class="n">用于终止一个进程</span>
+</span></span><span class="line"><span class="cl"><span class="n">ctrl</span><span class="p">+</span><span class="n">z</span> <span class="n">向当前进程发送</span> <span class="n">SIGSTOP</span> <span class="n">信号</span><span class="err">，</span><span class="n">用于挂起一个进程</span>
+</span></span></code></pre></div><h2 id="复杂">复杂</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># 授予执行权限，授予之后会变绿色</span>
+</span></span><span class="line"><span class="cl"><span class="n">chmod</span> <span class="p">+</span><span class="n">x</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 切换 java 版本</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="nb">update-alternatives</span> <span class="p">-</span><span class="n">-config</span> <span class="n">java</span>
+</span></span><span class="line"><span class="cl"><span class="n">java</span> <span class="p">-</span><span class="n">-version</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 添加环境变量</span>
+</span></span><span class="line"><span class="cl"><span class="n">export</span> <span class="n">PATH</span><span class="p">=</span><span class="nv">$PATH</span><span class="err">:</span><span class="p">/</span><span class="n">home</span><span class="p">/</span><span class="n">caiyizhang</span>
+</span></span><span class="line"><span class="cl"><span class="n">export</span> <span class="n">PATH</span><span class="p">=/</span><span class="n">home</span><span class="p">/</span><span class="n">caiyizhang</span><span class="err">:</span><span class="nv">$PATH</span>
+</span></span><span class="line"><span class="cl"><span class="n">export</span> <span class="n">PATH</span><span class="p">=`</span><span class="n">pwd</span><span class="p">`</span><span class="err">:</span><span class="nv">$PATH</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 查看环境变量</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo </span><span class="nv">$PATH</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Linux 下文件颜色的含义</span>
+</span></span><span class="line"><span class="cl"><span class="n">蓝色目录</span><span class="err">，</span><span class="n">绿色可执行文件</span><span class="err">，</span><span class="n">红色压缩文件</span><span class="err">，</span><span class="n">浅蓝色链接文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">灰色其它文件</span><span class="err">，</span><span class="n">红色闪烁链接的文件有问题</span><span class="err">，</span><span class="n">黄色设备文件</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># CURL 用来与服务器之间传输数据的工具</span>
+</span></span><span class="line"><span class="cl"><span class="n">GET请求</span><span class="err">：</span><span class="nb">curl </span><span class="n">URL</span><span class="k">?</span><span class="n">a</span><span class="p">=</span><span class="mf">1</span><span class="p">&amp;</span><span class="n">b</span><span class="p">=</span><span class="n">nihao</span> 
+</span></span><span class="line"><span class="cl"><span class="n">POST请求</span><span class="err">：</span><span class="nb">curl </span><span class="n">-H</span> <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="n">-X</span> <span class="n">POST</span> <span class="n">-d</span> <span class="s1">&#39;{&#34;abc&#34;:123,&#34;bcd&#34;:&#34;nihao&#34;}&#39;</span> <span class="n">URL</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># grep 查找文件里符合条件的字符串或正则表达式</span>
+</span></span><span class="line"><span class="cl"><span class="n">grep</span> <span class="n">hello</span> <span class="n">file</span><span class="p">.</span><span class="py">txt</span>  <span class="n">在文件</span> <span class="n">file</span><span class="p">.</span><span class="py">txt</span> <span class="n">中查找字符串</span> <span class="s2">&#34;hello&#34;</span><span class="err">，</span><span class="n">并打印匹配的行</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 查找文件 </span>
+</span></span><span class="line"><span class="cl"><span class="n">find</span> <span class="n">-name</span> <span class="s2">&#34;build.xml&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># apt Ubuntu 中的 Shell 前端软件包管理器</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>  <span class="n">列出所有可更新的软件</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">upgrade</span> <span class="n">升级软件包</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="p">&lt;</span><span class="n">package_name</span><span class="p">&gt;</span>  <span class="n">安装指定的软件</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">remove</span> <span class="p">&lt;</span><span class="n">package_name</span><span class="p">&gt;</span>  <span class="n">移除指定的软件</span>
+</span></span></code></pre></div>
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/compiler-principles/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/ffmpeg/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#简单">简单</a></li>
+    <li><a href="#复杂">复杂</a></li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

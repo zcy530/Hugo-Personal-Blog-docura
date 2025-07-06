@@ -5,14 +5,44 @@
 - title: Languages
   pages:
     - title: Java Basic
+    - title: Java Advance
+    - title: Java Data Structure
+    - title: Java Input-Output
     - title: Python Basic
+    - title: Java Native Interface
+    - title: C plus plus
+    - title: JavaScript
 
 - title: Computer Science
   pages:
+    - title: Github Usage
     - title: Computer Network
     - title: Operating System
-
+    - title: Database Principal
+    - title: Software Testing
+    - title: Functional Programing
+    - title: Object-Oriented Design
+    - title: Compiler Principles
+    - title: Linux Operation
+    
+- title: Video Develop
+  pages:
+    - title: FFMpeg
+    - title: Android Camera 2
+    - title: Video Compression
+    - title: Video Knowledge
+    - title: Andriod Development
+  
 - title: Backend Develop
   pages:
     - title: Express
     - title: Fast API
+
+- title: Frontend Develop
+  pages:
+    - title: HTML5
+    - title: CSS3
+    - title: Vue js
+    - title: React js
+    - title: React Native
+    - title: MERN E-Commerce

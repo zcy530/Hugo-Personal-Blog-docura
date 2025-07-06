@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>FFMpeg · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/ffmpeg/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/c-plus-plus/">
+            
+              C plus plus
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/javascript/">
+            
+              JavaScript
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/functional-programing/">
+            
+              Functional Programing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/object-oriented-design/">
+            
+              Object-Oriented Design
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/compiler-principles/">
+            
+              Compiler Principles
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/linux-operation/">
+            
+              Linux Operation
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link current" href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/andriod-development/">
+            
+              Andriod Development
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-js/">
+            
+              React js
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/react-native/">
+            
+              React Native
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/mern-e-commerce/">
+            
+              MERN E-Commerce
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>FFMpeg</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="ffmpeg">FFMpeg</h1>
+<p>FFmpeg 是一个强大的多媒体处理工具，支持音视频格式转换、编辑、录制和流媒体处理</p>
+<h2 id="download">Download</h2>
+<p><a href="https://ffmpeg.org/download.html" target="_blank">https://ffmpeg.org/download.html</a>，下载 <strong>&ldquo;Full&rdquo;</strong> 版本的 ZIP 文件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">cd</span> <span class="nl">C</span><span class="p">:</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">caiyizhang</span><span class="o">/</span><span class="n">Downloads</span><span class="o">/</span><span class="n">ffmpeg</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">version</span>
+</span></span></code></pre></div><h2 id="command">Command</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">ffmpeg</span> <span class="p">[</span><span class="err">输入选项</span><span class="p">]</span> <span class="o">-</span><span class="n">i</span> <span class="p">[</span><span class="err">输入文件</span><span class="p">]</span> <span class="p">[</span><span class="err">输出选项</span><span class="p">]</span> <span class="p">[</span><span class="err">输出文件</span><span class="p">]</span>
+</span></span></code></pre></div><h2 id="example">Example</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// 将 MP4 转换为 AVI
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="n">output</span><span class="p">.</span><span class="n">avi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将 MKV 转换为 MP4
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mkv</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 改变帧率
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="o">-</span><span class="n">r</span> <span class="mi">30</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 无损转换
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如果不指定编解码器，FFmpeg 会默认重新编码，可能会损失质量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mkv</span> <span class="o">-</span><span class="n">c</span> <span class="n">copy</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 压缩视频
+</span></span></span><span class="line"><span class="cl"><span class="c1">// libx265 使用 H.265 编码，-crf 28 控制质量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="o">-</span><span class="nl">c</span><span class="p">:</span><span class="n">v</span> <span class="n">libx265</span> <span class="o">-</span><span class="n">crf</span> <span class="mi">28</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 调整分辨率到 1280x720
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="o">-</span><span class="n">vf</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1280</span><span class="o">:</span><span class="mi">720</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 裁剪 640x480 居中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="o">-</span><span class="n">vf</span> <span class="s">&#34;crop=640:480:100:50&#34;</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 顺时针旋转 90 度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="o">-</span><span class="n">vf</span> <span class="s">&#34;transpose=1&#34;</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 剪辑视频
+</span></span></span><span class="line"><span class="cl"><span class="c1">// -ss 开始时间，-to 结束时间，-c copy 直接剪辑不重新编码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">input</span><span class="p">.</span><span class="n">mp4</span> <span class="o">-</span><span class="n">ss</span> <span class="mo">00</span><span class="o">:</span><span class="mo">00</span><span class="o">:</span><span class="mi">30</span> <span class="o">-</span><span class="n">to</span> <span class="mo">00</span><span class="o">:</span><span class="mo">01</span><span class="o">:</span><span class="mo">00</span> <span class="o">-</span><span class="n">c</span> <span class="n">copy</span> <span class="n">output</span><span class="p">.</span><span class="n">mp4</span>
+</span></span></code></pre></div><h2 id="parameter">Parameter</h2>
+<p>FFmpeg 中的 output 参数非常多，但常用的主要涉及 编码器、比特率、分辨率、帧率、音视频流 等方面。以下是常见的 output 选项</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>类别</strong></th>
+          <th><strong>参数</strong></th>
+          <th><strong>用途</strong></th>
+          <th><strong>示例</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>帧率</strong></td>
+          <td><code>-r 30</code></td>
+          <td>设置帧率为 30 FPS</td>
+          <td><code>ffmpeg -i input.mp4 -r 30 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-r 60</code></td>
+          <td>设置帧率为 60 FPS</td>
+          <td><code>ffmpeg -i input.mp4 -r 60 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>比特率</strong></td>
+          <td><code>-b:v 2M</code></td>
+          <td>视频比特率 2 Mbps</td>
+          <td><code>ffmpeg -i input.mp4 -b:v 2M output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-b:a 192k</code></td>
+          <td>音频比特率 192 kbps</td>
+          <td><code>ffmpeg -i input.mp4 -b:a 192k output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>分辨率</strong></td>
+          <td><code>-vf scale=1280:720</code></td>
+          <td>调整视频分辨率到 720p</td>
+          <td><code>ffmpeg -i input.mp4 -vf scale=1280:720 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-vf scale=-1:1080</code></td>
+          <td>宽度自适应，高度固定 1080p</td>
+          <td><code>ffmpeg -i input.mp4 -vf scale=-1:1080 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>视频编码</strong></td>
+          <td><code>-c:v libx264</code></td>
+          <td>使用 H.264 编码（常见）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v libx264 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:v libx265</code></td>
+          <td>使用 H.265 编码（更高压缩比）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v libx265 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:v vp9</code></td>
+          <td>使用 VP9 编码（适用于 WebM）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v vp9 output.webm</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:v copy</code></td>
+          <td>不重新编码（最快、无损）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v copy output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>硬件加速</strong></td>
+          <td><code>-c:v h264_nvenc</code></td>
+          <td>使用 NVIDIA GPU 硬件加速（H.264）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v h264_nvenc output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:v h264_qsv</code></td>
+          <td>使用 Intel Quick Sync 硬件加速</td>
+          <td><code>ffmpeg -i input.mp4 -c:v h264_qsv output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:v h264_amf</code></td>
+          <td>使用 AMD GPU 硬件加速</td>
+          <td><code>ffmpeg -i input.mp4 -c:v h264_amf output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>音频编码</strong></td>
+          <td><code>-c:a aac</code></td>
+          <td>使用 AAC 音频编码（MP4 常见）</td>
+          <td><code>ffmpeg -i input.mp4 -c:a aac output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:a mp3</code></td>
+          <td>使用 MP3 编码</td>
+          <td><code>ffmpeg -i input.mp4 -c:a mp3 output.mp3</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-c:a copy</code></td>
+          <td>不重新编码（最快、无损）</td>
+          <td><code>ffmpeg -i input.mp4 -c:a copy output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>恒定质量因子</strong></td>
+          <td><code>-crf 23</code></td>
+          <td>控制 H.264 质量（0-51，值越小质量越高）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v libx264 -crf 23 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-crf 28</code></td>
+          <td>控制 H.265 质量（推荐 22-30）</td>
+          <td><code>ffmpeg -i input.mp4 -c:v libx265 -crf 28 output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>音视频流</strong></td>
+          <td><code>-an</code></td>
+          <td>去掉音频，仅保留视频</td>
+          <td><code>ffmpeg -i input.mp4 -an output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-vn</code></td>
+          <td>去掉视频，仅保留音频</td>
+          <td><code>ffmpeg -i input.mp4 -vn output.mp3</code></td>
+      </tr>
+      <tr>
+          <td><strong>剪辑</strong></td>
+          <td><code>-ss 00:00:30 -to 00:01:00</code></td>
+          <td>截取 00:30-01:00 片段</td>
+          <td><code>ffmpeg -i input.mp4 -ss 00:00:30 -to 00:01:00 -c copy output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>旋转</strong></td>
+          <td><code>-vf &quot;transpose=1&quot;</code></td>
+          <td>顺时针旋转 90°</td>
+          <td><code>ffmpeg -i input.mp4 -vf &quot;transpose=1&quot; output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-vf &quot;transpose=2&quot;</code></td>
+          <td>逆时针旋转 90°</td>
+          <td><code>ffmpeg -i input.mp4 -vf &quot;transpose=2&quot; output.mp4</code></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>-vf &quot;transpose=1,transpose=1&quot;</code></td>
+          <td>旋转 180°</td>
+          <td><code>ffmpeg -i input.mp4 -vf &quot;transpose=1,transpose=1&quot; output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>裁剪</strong></td>
+          <td><code>-vf &quot;crop=640:480:100:50&quot;</code></td>
+          <td>裁剪 640x480，起点 (100,50)</td>
+          <td><code>ffmpeg -i input.mp4 -vf &quot;crop=640:480:100:50&quot; output.mp4</code></td>
+      </tr>
+      <tr>
+          <td><strong>合并</strong></td>
+          <td><code>-f concat -safe 0 -i file_list.txt -c copy</code></td>
+          <td>合并多个相同编码的视频</td>
+          <td><code>ffmpeg -f concat -safe 0 -i file_list.txt -c copy output.mp4</code></td>
+      </tr>
+  </tbody>
+</table>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2025-07-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-07-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/linux-operation/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/android-camera-2/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#command">Command</a></li>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#parameter">Parameter</a></li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

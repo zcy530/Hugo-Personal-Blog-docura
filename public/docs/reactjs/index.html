@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title> · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/reactjs/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.9390b7213675db392df1ca91ad070b85c2f814f6862d6aec947696c397c6347f.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-advance/">
+            
+              Java Advance
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-data-structure/">
+            
+              Java Data Structure
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-input-output/">
+            
+              Java Input-Output
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/java-native-interface/">
+            
+              Java Native Interface
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/database-principal/">
+            
+              Database Principal
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/software-testing/">
+            
+              Software Testing
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/github-usage/">
+            
+              Github Usage
+            
+          </a>
+
+        <strong class="sidebar-section">Video Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/ffmpeg/">
+            
+              FFMpeg
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/android-camera-2/">
+            
+              Android Camera 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-compression/">
+            
+              Video Compression
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/video-knowledge/">
+            
+              Video Knowledge
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        <strong class="sidebar-section">Frontend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/html5/">
+            
+              HTML5
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/css3/">
+            
+              CSS3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/vue-js/">
+            
+              Vue js
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1></h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="react">React</h1>
+<p><a href="https://github.com/adrianhajdin/portfolio_website" target="_blank">https://github.com/adrianhajdin/portfolio_website</a></p>
+<p><a href="https://www.nowcoder.com/issue/tutorial?tutorialId=96&amp;uuid=1678a0fd35cd4db486af18589e34e4d4" target="_blank">【前端工程师面试宝典】学习说明_互联网校招面试真题面经汇总_牛客网 (nowcoder.com)</a></p>
+<h3 id="面试常考题目总结">面试常考题目总结</h3>
+<ul>
+<li>
+<p>react 生命周期</p>
+<p>React 组件的生命周期有三个不同的阶段：</p>
+<ol>
+<li>初始渲染阶段：*这是组件即将开始其生命之旅并进入 DOM 的阶段。</li>
+<li>更新阶段：*一旦组件被添加到 DOM，它只有在 prop 或状态发生变化时才可能更新和重新渲染。这些只发生在这个阶段。</li>
+<li>卸载阶段：*这是组件生命周期的最后阶段，组件被销毁并从 DOM 中删除</li>
+</ol>
+<p><em><strong>componentWillMount</strong></em>() – 在渲染之前执行，在客户端和服务器端都会执行</p>
+<p><em><strong>componentDidMount</strong></em>() – 仅在第一次渲染后在客户端执行。</p>
+<p><em><strong>componentWillReceiveProps</strong></em>**()** – 当从父类接收到 props 并且在调用另一个渲染器之前调用。</p>
+<p><em><strong>shouldComponentUpdate</strong></em>**()** – 根据特定条件返回 true 或 false。如果你希望更新组件，请返回<strong>true</strong> 否则返回 <strong>false</strong>。默认情况下，它返回 false。</p>
+<p><em><strong>componentWillUpdate</strong></em>**()** – 在 DOM 中进行渲染之前调用。</p>
+<p><em><strong>componentDidUpdate</strong></em>**()** – 在渲染发生后立即调用。</p>
+<p><em><strong>componentWillUnmount</strong></em>**()** – 从 DOM 卸载组件后调用。用于清理内存空间。</p>
+</li>
+<li>
+<p>react 的优缺点</p>
+<p>React的一些主要优点是：</p>
+<ol>
+<li>采用组件化模式，声明式编码，提高开发效率和组件复用率</li>
+<li>使用虚拟 dom 和优秀的 diffing 算法，尽量减少与真实 dom 的交互</li>
+<li>使用范围广，可以开发 web 应用，也可以用 react navie 进行移动端开发，还可以用 react 360 进行 VR 开发</li>
+<li>由于 JSX，代码的可读性很好</li>
+<li>使用 React，编写UI测试用例变得非常容易</li>
+</ol>
+<p>React的限制如下：</p>
+<ol>
+<li>React 只是一个 JS 库，而不是一个完整的框架</li>
+<li>它的库非常庞大，需要时间来理解</li>
+<li>新手程序员可能很难理解</li>
+<li>编码变得复杂，因为它使用内联模板和 JSX</li>
+</ol>
+</li>
+<li>
+<p>react 和 vue 的对比</p>
+</li>
+<li>
+<p>real dom 和 vitual dom</p>
+<p><strong>什么是 dom？</strong></p>
+<p>DOM是用一颗逻辑树来表示一个文档，树的每个分支的终点都是一个节点，可以用特定的方式（编写JS、CSS、HTML）来改变这个树的结构，从而改变文档结构、样式或内容</p>
+<p><strong>什么是虚拟DOM？</strong>
+虚拟DOM就是一个JS对象，通过对象的方式来表示DOM结构，通过事务处理机制，<strong>将多次DOM修改的结果一次性更新到页面上</strong>，减少DOM操作的次数，从而有效的减少页面渲染次数，减少修改DOM重绘重排的时间，提高渲染性能</p>
+<p>React在内存中维护一个跟真实DOM一样的虚拟DOM树，再改动完组件后，会再生成一个新的虚拟DOM，React会将新的虚拟DOM和原来的虚拟DOM进行对比，找出两个DOM树的不同的地方（diff），然后在真实DOM上更新diff，提高渲染速度</p>
+<p><img src="Untitled.png" alt="Untitled"></p>
+</li>
+<li>
+<p>类式组件 和 函数式组件</p>
+<ul>
+<li>类组件有生命周期，函数组件没有</li>
+<li>类组件需要继承 Class，函数组件不需要</li>
+<li>类组件可以获取实例化的 this，并且基于 this 做各种操作，函数组件不行</li>
+<li>类组件内部可以定义并维护 state， 函数组件为无状态组件（可以通过hooks实现）</li>
+<li>函数式组件配合 hooks 使用</li>
+</ul>
+</li>
+<li>
+<p>类式组件中的 this 的指向问题</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">App</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">handleClick() {</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span><span class="c1">// undefined 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">render() {</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span> <span class="p">&gt;</span><span class="err">点我</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>在 react中，事件处理函数中的 this 很容易丢失，我们有如下4种解决方案</p>
+<ol>
+<li>箭头函数</li>
+<li>构造函数中的 <code>bind</code></li>
+<li>事件绑定时的 <code>bind</code></li>
+<li>事件绑定时的匿名函数+箭头函数</li>
+</ol>
+<p><a href="https://blog.csdn.net/u013176440/article/details/122675897?spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-122675897-blog-124859641.pc_relevant_multi_platform_whitelistv3&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-122675897-blog-124859641.pc_relevant_multi_platform_whitelistv3&amp;utm_relevant_index=1" target="_blank">(181条消息) 一文详解React事件中this指向，面试必备_爱笑的眼睛11的博客-CSDN博客_react 事件this</a></p>
+</li>
+<li>
+<p>受控组件 和 非受控组件</p>
+<p><img src="Untitled%201.png" alt="Untitled"></p>
+</li>
+<li>
+<p>React redux</p>
+<p><strong>什么是 Redux</strong></p>
+<p>专门针对 react 所设计的状态管理工具，顶层套一个 provider，底层的组件都可以使用顶层的数据</p>
+<p><img src="Untitled%202.png" alt="Untitled"></p>
+<p><strong>数据如何通过 Redux 流动？</strong></p>
+<ol>
+<li>首先，用户（通过View）发出 Action，发出方式就用到了 dispatch 方法。\</li>
+<li>然后，Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action，Reducer 会返回新的 State</li>
+<li>State 一旦有变化，Store 就会调用监听函数，来更新 View</li>
+</ol>
+<p><strong>Redux 遵循的三个原则是什么？</strong></p>
+<ol>
+<li>单一事实来源：整个应用的状态存储在单个 store 中的对象/状态树里。单一状态树可以更容易地跟踪随时间的变化，并调试或检查应用程序</li>
+<li>状态是只读的：改变状态的唯一方法是去触发一个动作。动作是描述变化的普通 JS 对象。就像 state 是数据的最小表示一样，该操作是对数据更改的最小表示</li>
+<li>使用纯函数进行更改：为了指定状态树如何通过操作进行转换，你需要纯函数。纯函数是那些返回值仅取决于其参数值的函数</li>
+</ol>
+<p><strong>你对“单一事实来源”有什么理解？</strong></p>
+<p>Redux 使用 “Store” 将程序的整个状态存储在同一个地方。因此所有组件的状态都存储在 Store 中，并且它们从 Store 本身接收更新。单一状态树可以更容易地跟踪随时间的变化，并调试或检查程序。</p>
+<p><strong>Redux 由以下组件组成</strong></p>
+<ol>
+<li><strong>Action</strong> – 这是一个用来描述发生了什么事情的对象，是把数据从应用传到store的载体，它是store数据的唯一来源，一般来说，我们可以通过 store.dispatch() 将 action 传递给 store</li>
+<li><strong>Reducer</strong> – 这是一个确定状态将如何变化的地方，本质就是一个函数，它用来响应发送过来的actions，然后经过处理，把state发送给store</li>
+<li><strong>Store</strong> – Store就是把action与reducer联系到一起的对象，整个程序的状态/对象树保存在Store中。</li>
+<li><strong>View</strong> – 只显示 Store 提供的数据</li>
+</ol>
+<p><img src="Untitled%203.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Redux middleware</p>
+<p><a href="https://blog.csdn.net/Donspeng/article/details/83032832" target="_blank">(189条消息) Redux中间件原理详解_daysRoc的博客-CSDN博客_redux中间件的原理</a></p>
+<p>作用就是改造dispatch函数，当你应用了中间件，在触发一个action操作的时候，action操作就会经过先经过中间件，最终再形成dispatch(action)</p>
+<p>常见的中间件：</p>
+<ul>
+<li>Redux-actions帮助我们简化了action代码和reducer代码</li>
+<li>redux-logger 记录所有action及其发送前后的state的日志，我们可以了解到代码实际运行时到底发生了什么</li>
+<li>redux-thunk：处理异步action</li>
+</ul>
+<p>常规使用：createStore + applyMiddleWare，定义 myMiddleware中间件，放在applyMiddleware 方法之中，传入createStore方法，就完成了store.dispatch()的功能增强。即可以在reducer中进行一些异步的操作</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">applyMiddleware</span><span class="p">,</span> <span class="nx">createStore</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;redux&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">thunk</span> <span class="nx">from</span> <span class="s1">&#39;redux-thunk&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">createLogger</span> <span class="nx">from</span> <span class="s1">&#39;redux-logger&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">logger</span> <span class="o">=</span> <span class="nx">createLogger</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">createStore</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">reducers</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="nx">applyMiddleware</span><span class="p">(</span><span class="nx">thunk</span><span class="p">,</span> <span class="nx">logger</span><span class="p">)</span> <span class="c1">//会按顺序执行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">);</span>
+</span></span></code></pre></div><p><img src="Untitled%204.png" alt="Untitled"></p>
+<p>下面是createStore + applyMiddleWare的源码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">createStore</span><span class="p">(</span><span class="nx">reducer</span><span class="p">,</span> <span class="nx">preloadedState</span><span class="p">,</span> <span class="nx">enchancer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 如果没有中间件，正常触发一个action；
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如果有中间件的时候 creatStore内部的执行逻辑是这样的
+</span></span></span><span class="line"><span class="cl"><span class="c1">// enchancer 就是你应用的中间件，调用applyMiddleware得到的组合中间件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">applyMiddleware</span><span class="p">(...</span><span class="nx">middlewares</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">createStore</span> <span class="p">=&gt;</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 该创建的store还是要创建的,只传入了两个参数，没有中间件，得到的是正常的store
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">createStore</span><span class="p">(...</span><span class="nx">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">dispatch</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="sb">`Dispatching while constructing your middleware is not allowed. `</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">          <span class="sb">`Other middleware would not be applied to this dispatch.`</span>
+</span></span><span class="line"><span class="cl">      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 把getState、dispatch传给中间件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">middlewareAPI</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">getState</span><span class="o">:</span> <span class="nx">store</span><span class="p">.</span><span class="nx">getState</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">dispatch</span><span class="o">:</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">dispatch</span><span class="p">(...</span><span class="nx">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 下面方法返回来了一个函数数组，中间件被剥离到
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// next =&gt; {}
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">chain</span> <span class="o">=</span> <span class="nx">middlewares</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">middleware</span> <span class="p">=&gt;</span> <span class="nx">middleware</span><span class="p">(</span><span class="nx">middlewareAPI</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 再执行下面的，中间件就被剥离到
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// action =&gt; {}
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">dispatch</span> <span class="o">=</span> <span class="nx">compose</span><span class="p">(...</span><span class="nx">chain</span><span class="p">)(</span><span class="nx">store</span><span class="p">.</span><span class="nx">dispatch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="p">...</span><span class="nx">store</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">dispatch</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 下面得到的结果是 
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 假设中间件为 a b
+</span></span></span><span class="line"><span class="cl"><span class="c1">// a(b(store.dispatch))
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">return</span> <span class="nx">enchancer</span><span class="p">(</span><span class="nx">createStore</span><span class="p">)(</span><span class="nx">reducer</span><span class="p">,</span> <span class="nx">preloadedState</span><span class="p">)</span><span class="err">；</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 结合上面thunk的源码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">（</span><span class="p">{</span> <span class="nx">dispatch</span><span class="p">,</span> <span class="nx">getState</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="nx">next</span> <span class="p">=&gt;</span> <span class="nx">action</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">action</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">action</span><span class="p">(</span><span class="nx">dispatch</span><span class="p">,</span> <span class="nx">getState</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">next</span><span class="p">(</span><span class="nx">action</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span></code></pre></div><p><img src="Untitled%205.png" alt="Untitled"></p>
+</li>
+<li>
+<p>React hook</p>
+<p>React Hooks 是从 React 16.8 版本推出的新特性，目的是解决 React 的状态共享以及组件生命周期管理混乱的问题。React Hooks 的出现标志着，React 不会再存在无状态组件的情况，React 将只有类组件和函数组件的概念</p>
+<p>hooks 为函数组件提供了状态，也支持在函数组件中进行数据获取、订阅事件解绑事件等等</p>
+<ul>
+<li>useState：通过 useState 为组件提供状态。useState 的参数是 state 的初始值，他只有在组件第一次渲染的时候会生效，他的返回值是一个数组，第一个是 state，第二个是设置state的函数。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>useEffect：通常在useEffect中进行ajax请求，事件的绑定与解绑，设置定时器与清除等等</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="c1">// useEffect第一个参数是一个回调函数，在里面进行业务逻辑代码的书写
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// 第二个参数是依赖项数组，如果数组中的依赖发生变化，那么该副作用就会重新执行，
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// 如果不设置第二个参数，那么当该组件每渲染一次，副作用就会执行一次
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;useEffect副作用执行&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//用setTimeout模拟ajax请求
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setList</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">list</span><span class="p">]);</span>
+</span></span></code></pre></div><ul>
+<li>useCallback：用于缓存函数，第一个参数为要缓存的函数，第二个参数为依赖项数组，如果依赖发生了变化，那么就会生成一个新的函数；否则当组件重新渲染时，不会重新定义这个函数，而是会取缓存。</li>
+<li>useMemo：用于缓存函数的返回值，第一个参数为要缓存的函数（注意实际被缓存的是函数被执行过后的值），第二个参数为依赖项数组，如果依赖发生了变化，那么就会重新执行这个函数，得到新的返回值；否则当组件重新渲染时，不会重新执行这个函数，而是直接取被缓存的该函数的返回值。</li>
+</ul>
+</li>
+<li>
+<p>React router</p>
+<ol>
+<li>
+<p>什么是React 路由？</p>
+<p>React router是一个构建在 React 之上的强大的路由库，它有助于向应用程序添加新的屏幕和流。这使 URL 与网页上显示的数据保持同步。它负责维护标准化的结构和行为，并用于开发单页 Web 应用。 React 路由有一个简单的API</p>
+<pre tabindex="0"><code>&lt;switch&gt;
+    &lt;route exact=&#34;&#34; path=&#34;’/’&#34; component=&#34;{Home}/&#34;&gt;
+    &lt;route path=&#34;’/posts/:id’&#34; component=&#34;{Newpost}/&#34;&gt;
+    &lt;route path=&#34;’/posts’&#34; component=&#34;{Post}/&#34;&gt;
+&lt;/route&gt;&lt;/route&gt;&lt;/route&gt;&lt;/switch&gt;
+</code></pre></li>
+<li>
+<p>为什么需要 React 中的路由？</p>
+<p>Router 用于定义多个路由，当用户定义特定的 URL 时，如果此 URL 与 Router 内定义的任何 “路由” 的路径匹配，则用户将重定向到该特定路由。所以基本上我们需要在自己的应用中添加一个 Router 库，允许创建多个路由，每个路由都会向我们提供一个独特的视图</p>
+</li>
+<li>
+<p>为什么React Router v4中使用 switch 关键字 ？</p>
+<p>虽然<div>用于封装 Router 中的多个路由，当你想要仅显示要在多个定义的路线中呈现的单个路线时，可以使用 “switch” 关键字。使用时，<switch>标记会按顺序将已定义的 URL 与已定义的路由进行匹配。找到第一个匹配项后，它将渲染指定的路径。从而绕过其它路线。</p>
+</li>
+<li>
+<p>列出 React Router 的优点</p>
+<p>4.1 就像 React 基于组件一样，在 React Router v4 中，API 是 &lsquo;All About Components&rsquo;。可以将 Router 可视化为单个根组件（），其中我们将特定的子路由（）包起来。</p>
+<p>4.2 无需手动设置历史值：在 React Router v4 中，我们要做的就是将路由包装在 组件中。</p>
+<p>4.3 包是分开的：共有三个包，分别用于 Web、Native 和 Core。这使我们应用更加紧凑。基于类似的编码风格很容易进行切换</p>
+</li>
+</ol>
+</li>
+<li>
+<p>React router v6 的新特性</p>
+<p>有哪些新hooks，如何传递路由参数？</p>
+<p><a href="https://www.jianshu.com/p/15614a18a86e" target="_blank">react-router v6新特性 - 简书 (jianshu.com)</a></p>
+<p>现在一般都是用的 React router v6</p>
+<ol>
+<li><Switch>重命名为<Routes></li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="cm">/* v5 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Switch</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">exact</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;/&#34;</span> <span class="na">component</span><span class="o">=</span><span class="p">{</span><span class="nx">Home</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;/user/:id&#34;</span> <span class="na">render</span><span class="o">=</span><span class="p">{(</span><span class="nx">routeProps</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nt">User</span> <span class="na">id</span><span class="o">=</span><span class="p">{</span><span class="nx">routeProps</span><span class="p">.</span><span class="nx">match</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">Switch</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* V6 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;/&#34;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;user/:id&#34;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">User</span> <span class="na">id</span><span class="o">=</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span></code></pre></div><ol>
+<li>
+<p><Route>的新特性变更:</p>
+<p>1.废弃exact
+2.component/render被element替代
+3.routeProps可以在element中直接获取
+4.简化的路径匹配，仅支持动态:id样式参数和*通配符，不再支持RegExp</p>
+</li>
+<li>
+<p>嵌套路由</p>
+<p>1.支持相对路径
+2.<Route> 标签支持嵌套，可以在一个文件内配置嵌套路由，便于统一管理路由
+3.结合新API Outlet实现嵌套路由</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">HashRouter</span> <span class="kr">as</span> <span class="nx">Router</span><span class="p">,</span> <span class="nx">Routes</span><span class="p">,</span> <span class="nx">Route</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;react-router-dom&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Home</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/Home&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Foo</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/Foo&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Bar</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/Bar&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">BarDetail</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/BarDetail&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;@/assets/style/App.css&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App() {</span>
+</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">Router</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;/&#34;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;foo&#34;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Foo</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">{</span><span class="cm">/* 嵌套路由场景：需要在Bar（父路由的组件）声明Outlet组件，用于渲染子路由 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;bar&#34;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Bar</span> <span class="p">/&gt;}&gt;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#34;:id&#34;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">BarDetail</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;/</span><span class="nt">Route</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;/</span><span class="nt">Router</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
+</span></span></code></pre></div><ol>
+<li>新API：Outlet</li>
+</ol>
+<p>注意：嵌套路由场景，需要在父路由的组件（Bar）使用Outlet组件，用于渲染子路由，类似于vue的router-view</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Outlet</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;react-router-dom&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Bar() {</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Bar</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span><span class="cm">/* 有嵌套路由的场景需要使用 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">Outlet</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">Bar</span>
+</span></span></code></pre></div><ol>
+<li>嵌套路由可配置化：useRoutes代替react-router-config</li>
+</ol>
+<p>同理，配置化使用嵌套路由，Outlet 也是必要的</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useRoutes</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;react-router-dom&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Home</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/Home&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Foo</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/Foo&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Bar</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/Bar&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">BarDetail</span> <span class="kr">from</span> <span class="s1">&#39;@/pages/demo/BarDetail&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;@/assets/style/App.css&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App() {</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">element</span> <span class="o">=</span> <span class="nx">useRoutes</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">element</span><span class="o">:</span> <span class="p">&lt;</span><span class="nt">Home</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">element</span><span class="o">:</span> <span class="p">&lt;</span><span class="nt">Foo</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">element</span><span class="o">:</span> <span class="p">&lt;</span><span class="nt">Bar</span> <span class="p">/&gt;,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">children</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;:id&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">element</span><span class="o">:</span> <span class="p">&lt;</span><span class="nt">BarDetail</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">])</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">element</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
+</span></span></code></pre></div><p>**注意：**入口文件需要添加Router包裹App组件，否则会报错
+（可以理解为，useRoutes返回的相当于Routes标签下的内容）</p>
+<p><code>import React from 'react' import ReactDOM from 'react-dom' import { HashRouter as Router } from 'react-router-dom' import App from '@/App' import '@/assets/style/index.css' ReactDOM.render( &lt;React.StrictMode&gt; &lt;Router&gt; &lt;App /&gt; &lt;/Router&gt; &lt;/React.StrictMode&gt;, document.getElementById('root') )</code></p>
+<ol>
+<li>用useNavigate代替useHistory</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="cm">/* v5 */</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">history</span> <span class="o">=</span> <span class="nx">useHistory</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">history</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">history</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">history</span><span class="p">.</span><span class="nx">goBack</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">history</span><span class="p">.</span><span class="nx">goForward</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">history</span><span class="p">.</span><span class="nx">go</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* V6 */</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">navigate</span> <span class="o">=</span> <span class="nx">useNavigate</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">replace</span>: <span class="kt">true</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nx">navigate</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">navigate</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">navigate</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div></li>
+<li>
+<p>React router 中两种路由模式的区别？</p>
+</li>
+<li>
+<p>React 16 有哪些新特性</p>
+</li>
+<li>
+<p>location 和 history 的使用</p>
+<p>在 react 组件的 componentDidMount 方法中打印一下 this.props，在浏览器控制台中查看输出如下，其中页面的 url 信息全都包含在 match 字段中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">localhost</span><span class="o">:</span><span class="mi">3000</span><span class="o">/</span><span class="nx">app</span><span class="o">/</span><span class="nx">knowledgeManagement</span><span class="o">/</span><span class="nx">modify</span>
+</span></span><span class="line"><span class="cl"><span class="err">/STY20171011124209535/3/1507701970070/0/?s=1&amp;f=7</span>
+</span></span></code></pre></div><p><img src="Untitled%206.png" alt="Untitled"></p>
+<p><img src="Untitled%207.png" alt="Untitled"></p>
+<ul>
+<li>**match：**包含了具体的 url 信息，在 params 字段中可以获取到各个路由参数的值</li>
+<li>**history：**包含了组件可以使用的各种路由系统的方法，常用的有 push 和 replace，两者都是跳转页面，但是 replace 不会引起页面的刷新，仅仅是改变 url</li>
+<li>**location：**相当于 URL 的对象形式表示，通过 search 字段可以获取到 url 中的 query 信息，所以location.search 是获取 url 参数的方法
+这里 state 的含义与 HTML5 history.pushState API 中的 state 对象一样。每个 URL 都会对应一个 state 对象，你可以在对象里存储数据，但这个数据却不会出现在 URL 中。实际上，数据被存在了 sessionStorage 中</li>
+</ul>
+</li>
+<li>
+<p>diff 算法</p>
+<p>diff算法探讨的就是虚拟DOM树发生变化后，生成DOM树更新补丁的方式、它通过对比新旧两颗虚拟DOM树的变更差异，将更新补丁作用于真实DOM，以最小的成本完成试图更新</p>
+</li>
+<li>
+<p>JSX 语法</p>
+<p>JSX 是 JavaScript XML 的简写。是 React 使用的一种文件，它利用 JavaScript 的表现力和类似 HTML 的模板语法。这使得 HTML 文件非常容易理解。此文件能使应用非常可靠，并能够提高其性能</p>
+<p>浏览器只能处理 JavaScript 对象，而不能读取常规 JavaScript 对象中的 JSX。所以为了使浏览器能够读取 JSX，首先，需要用像 Babel 这样的 JSX 转换器将 JSX 文件转换为 JavaScript 对象，然后再将其传给浏览器。</p>
+</li>
+<li>
+<p><strong>学习资源</strong></p>
+<p>Youtube Traversy Media</p>
+<p>Udemy <a href="https://www.udemy.com/user/brad-traversy/" target="_blank">**Brad Traversy</a>**  <strong>MERN eCommerce From Scratch</strong></p>
+<p>Udemy <a href="https://www.udemy.com/user/brad-traversy/">**Brad Traversy</a>  <a href="https://www.bilibili.com/video/BV1Av411s74b?spm_id_from=333.337.search-card.all.click" target="_blank">MERN Stack Front To Back: Full Stack React, Redux &amp; Node.js</a>**</p>
+<p>Udemy <a href="https://www.udemy.com/user/janis-smilga-3/" target="_blank">**John Smilga</a>    MERN Stack Course 2022 - MongoDB, Express, React and NodeJS**</p>
+</li>
+</ul>
+<h3 id="react-介绍"><strong>React 介绍</strong></h3>
+<p><strong>用于构建用户界面的JavaScript库</strong></p>
+<h3 id="react-basic"><strong>React Basic</strong></h3>
+<ul>
+<li>
+<p>1 Create React App</p>
+<p>以前：下载 create-react-app</p>
+<pre tabindex="0"><code>npm install -g create-react-app
+create-react-app myapp
+
+cd myapp
+npm start
+</code></pre><p>现在：直接 npx create-react-app</p>
+<p>npx是直接安装这个包所需的文件，并且立即执行，然后从磁盘上删除，不用占用内存</p>
+<pre tabindex="0"><code>npx create-react-app myapp
+
+cd myapp
+npm start
+</code></pre><p>运行结果：<a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220716233445.png" alt=""></p>
+<p>(optional) run ceate-app online</p>
+<p><a href="https://codesandbox.io/s/new" target="_blank">https://codesandbox.io/s/new</a></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220716182102.png" alt=""></p>
+</li>
+<li>
+<p>2 项目结构</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220716233011.png" alt=""></p>
+<ul>
+<li>
+<p><strong>package.json</strong></p>
+<p>这个文件管理项目的依赖，相当于maven里的pom.xml文件，但是它里面还有一些命名。总之，跟Vue是一样的</p>
+<p>build脚本：创建一个最优化的低内存版本，用于打包托管服务器</p>
+<p>test脚本：确保一个文件里的代码做了期望的事情</p>
+</li>
+<li>
+<p><strong>index.html</strong></p>
+<p>manifest.json 指定了开始页面 index.html，一切的开始都从这里开始，所以这个是代码执行的源头。其中的<div id="root"></div>是项目的总容器，我们把这个 div 称为根 DOM 节点，在此 div 下的所有内容都由 React DOM 来管理</p>
+<pre tabindex="0"><code>  &lt;body&gt;
+    &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+    &lt;div id=&#34;root&#34;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+</code></pre></li>
+<li>
+<p><strong>index.js</strong></p>
+<p>src 文件存放的是项目的核心内容，也是我们主要的工作区域</p>
+<p>index.js 是和 index.html 文件关联的唯一接口，属于项目入口的文件，所有的起点都在这里，统一做一些初始化工作，例如加载各种依赖、加载状态管理库等等</p>
+<pre tabindex="0"><code>import React from &#39;react&#39;;
+import ReactDOM from &#39;react-dom/client&#39;;
+import &#39;./index.css&#39;;
+import App from &#39;./App&#39;;
+import reportWebVitals from &#39;./reportWebVitals&#39;;
+
+const root = ReactDOM.createRoot(document.getElementById(&#39;root&#39;));
+root.render(
+  &lt;React.StrictMode&gt;
+    &lt;App /&gt;
+  &lt;/React.StrictMode&gt;
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+</code></pre></li>
+<li>
+<p><strong>App.js</strong></p>
+<p>react 基本上是用function来return html</p>
+<pre tabindex="0"><code>import logo from &#39;./logo.svg&#39;;
+import &#39;./App.css&#39;;
+
+function App() {
+  return (
+    &lt;div className=&#34;App&#34;&gt;
+      &lt;header className=&#34;App-header&#34;&gt;
+        &lt;img src={logo} className=&#34;App-logo&#34; alt=&#34;logo&#34; /&gt;
+        &lt;p&gt;
+          Edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.
+        &lt;/p&gt;
+        &lt;a
+          className=&#34;App-link&#34;
+          href=&#34;https://reactjs.org&#34;
+          target=&#34;_blank&#34;
+          rel=&#34;noopener noreferrer&#34;
+        &gt;
+          Learn React
+        &lt;/a&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre></li>
+</ul>
+<p>可维护的 React 程序之项目结构梳理：</p>
+<p><a href="https://zhuanlan.zhihu.com/p/39799393" target="_blank">https://zhuanlan.zhihu.com/p/39799393</a></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220716234326.png" alt=""></p>
+<p>Class vs Hook</p>
+<p>Hook：编写组件的一个新方法</p>
+<p>Class：是传统的常用的方法，更多人在用</p>
+<p>学习路线 class -&gt; hook</p>
+</li>
+<li>
+<p>4 JSX 语法规则</p>
+<ol>
+<li>
+<p>文件名可以是 jsx 也可以是 js，不影响</p>
+</li>
+<li>
+<p>return 里面必须是闭合的，要有一个根元素</p>
+</li>
+<li>
+<p>组件名称必须大写 <code>&lt;App /&gt;</code>，不能用 <code>&lt;app /&gt;</code></p>
+</li>
+<li>
+<p>js 中想写 html 用圆括号，html 中想写 js 用花括号</p>
+</li>
+<li>
+<p>类名要用 <code>&lt;div className = &quot;&quot;&gt; &lt;/div&gt;</code></p>
+</li>
+<li>
+<p>如果要直接在标签里写 css，要用驼峰命名法，不能用横杠</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">h3</span> <span class="n">style</span><span class="o">=</span><span class="p">{{</span><span class="n">marginBottom</span><span class="p">:</span><span class="s1">&#39;30px&#39;</span><span class="p">,}}</span><span class="o">&gt;</span><span class="n">Input</span> <span class="n">Your</span> <span class="n">Information</span><span class="o">&lt;/</span><span class="n">h3</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="p">{{</span><span class="n">backgroundColor</span><span class="p">:</span><span class="s1">&#39;skyblue&#39;</span><span class="p">}}</span><span class="o">&gt;</span> <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>注释用 <code>{/* */}</code></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723172811.png" alt=""></p>
+</li>
+</ol>
+</li>
+<li>
+<p>5 JSX Mapping Arrays</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717231126.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717231639.png" alt=""></p>
+<p><strong>keys to mapping:</strong></p>
+<p>可以确定一个唯一的id</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220718001035.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220718000940.png" alt=""></p>
+<p><strong>NOTE:</strong></p>
+<p>react 中的列表循环有且只有 map 可以使用，不能用 forEach 和 for</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723173458.png" alt=""></p>
+<p>可以简写成一行</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723173904.png" alt=""></p>
+</li>
+</ul>
+<h3 id="react-组件">React 组件</h3>
+<ul>
+<li>
+<p>1 函数组件和类组件</p>
+<p>组件化开发：function 组件和 class 组件</p>
+<h3 id="class-component-14---16"><strong>Class Component (1.4 - 1.6)</strong></h3>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717212118.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717212036.png" alt=""></p>
+<h3 id="function-component-17---110"><strong>Function Component (1.7 - 1.10)</strong></h3>
+<ul>
+<li>函数式组件没有生命周期</li>
+<li>函数式组件没有 this</li>
+<li>函数式组件没有 state 状态</li>
+<li>配合 hooks 使用</li>
+</ul>
+<p>函数式组件写法一：</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717221612.png" alt=""></p>
+<p>写法二：使用箭头函数</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723205804.png" alt=""></p>
+</li>
+<li>
+<p>2 类组件中方法的 this 指向</p>
+</li>
+<li>
+<p>2 组件之间通讯的三种方式</p>
+<p>父子组件之间的调用</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723220451.png" alt=""></p>
+<h3 id="father-to-son"><strong>Father to Son</strong></h3>
+<p>父子组件之间的传参（父传子）</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723220640.png" alt=""></p>
+<h3 id="son-to-father"><strong>Son to Father</strong></h3>
+<p>父子组件之间的传参（子传父）</p>
+<p>注意：无论是react还是vue，所谓子传父，真实在干活的都是父组件</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723220930.png" alt=""></p>
+<p>如果想要<strong>在子组件里面修改变量</strong>：</p>
+<ol>
+<li>在父组件里面定义 state hook 和 <code>setNum</code> 的函数</li>
+<li>在传递给子组件的 props 里面加入 <code>setNum = { setNum }</code></li>
+<li>子组件可以用 <code>porps.setNum( 789 )</code> 来调用</li>
+</ol>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723222054.png" alt=""></p>
+<h3 id="grandfather-to-son"><strong>Grandfather to Son</strong></h3>
+<p>就是跨级组件传值的意思，一般使用上下文空间 context</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723222439.png" alt=""></p>
+<ol>
+<li>创建上下文空间：</li>
+</ol>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723222933.png" alt=""></p>
+<ol>
+<li>用 <code>&lt;NumContext.Provider&gt;</code> 和 <code>&lt;NumContext.Consumer&gt;</code> 分别包裹爷孙组件</li>
+<li>不管是使用还是读取，如果传参是两个以上，都用花括号</li>
+</ol>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723223143.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723223228.png" alt=""></p>
+<ol>
+<li>可以用 useContext 这个 hook，来简化代码</li>
+</ol>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723223720.png" alt=""></p>
+</li>
+<li>
+<p>3 受控组件和不受控组件</p>
+<p>受控组件和不受控组件只存在于表单元素，所谓的受控组件就是表单元素的value需要通过state来定义</p>
+<p>input 里面要有绑定的 value 和对应的 onchange 函数</p>
+<p><img src="Untitled%208.png" alt="Untitled"></p>
+<p>不受控组件意味着表单元素的value无法通过state获取， 只能使用 ref useRef</p>
+<p><img src="Untitled%209.png" alt="Untitled"></p>
+</li>
+<li>
+<p>4 Props 的使用</p>
+</li>
+<li>
+<p>2 React State 和 setState</p>
+<p>只有 class component 有state</p>
+<h3 id="use-of-state"><strong>Use of State</strong></h3>
+<p><strong>背景</strong>：当所有的东西都是 hardcoded，意味着代码里面没有动态的东西，而我们需要动态呈现</p>
+<p><strong>作用</strong>：local state，也可以简称 state，可以让我们在 html 中直接使用和利用 JavaScript 变量，每当这些变量发生变化时，react 会重新渲染我们看到的这个 html</p>
+<p><strong>位置</strong>：写在构造器 constructor 里面。我们可以实际访问和生成 state 的方式是通过constructor()，constructor() 方法是一个对 class component 都可用的方法，super() 对我们 react 组件代码的作用并不重要，调用 super() 只是调用任何其他 extend 的类的底层构造方法</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717221444.png" alt=""></p>
+<h3 id="set-state"><strong>Set State</strong></h3>
+<p><strong>作用</strong>：每当这些变量发生变化时，React 会 rerendering 我们的 html 页面</p>
+<p><strong>注意</strong>：你的 component 当 state 是一个完全不同的 object 在内存中时，才会重新渲染</p>
+<p>下面理解一下react里面的对象、指针问题</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717223342.png" alt=""></p>
+<p>所以下面这种方法没有作用</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717224015.png" alt=""></p>
+<p>⭐️ 采用 setState() 的方法才有用</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717223811.png" alt=""></p>
+<p><strong>Callback：</strong></p>
+<p>二次 callback的作用是，希望 console.log(this.state) 可以显示更新后的值，所以第二个 () =&gt; {} 写的这个函数就是回调，一旦代码完成了，就执行这个回调，这将在 state 完全更新后运行</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717230154.png" alt=""></p>
+<p><strong>NOTE：</strong></p>
+<p>setState 的调用是一个非同步(non synchronous)的调用，这是一个异步调用 (asynchronous)</p>
+<p><strong>THREE WAYS To setState():</strong></p>
+<p>按钮二和按钮三都是独立定义了 onClick 函数，但是会有 &ldquo;this&rdquo; undefine 的问题</p>
+<ul>
+<li>按钮二是通过 <code>.bind(this)</code> 来解决的</li>
+<li>按钮三是通过箭头函数来规避了这个问题，但是后面要加上括号</li>
+</ul>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723181431.png" alt=""></p>
+<p>如果想要<strong>函数传参</strong>的话：</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723204549.png" alt=""></p>
+<h3 id="shallow-merge"><strong>Shallow Merge</strong></h3>
+<p>当你传递一个对象给它时，它将寻找存在于当前 state object 的任何 key，然后把它更新为新的 key，其他的 key 保持不变。所以 shallow merge 的意思就是它只更新被传递给它的 key and value，其他的东西都会以同样的方式保留</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220717224927.png" alt=""></p>
+</li>
+<li>
+<p>7 React Hooks</p>
+<p>定义：hook 就是钩子，生命周期函数，只能用在函数组件的最顶层</p>
+<h3 id="usestate-hook"><strong>useState hook</strong></h3>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723212028.png" alt=""></p>
+<p>log出来可以发现 <code>useState()</code> 定义的是一个数组，前一个数是变量，后一个是函数</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723211258.png" alt=""></p>
+<p>于是可以把定义的变量拆解为数组  <code>[ verb, setVerb ]</code></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723211019.png" alt=""></p>
+<h3 id="useeffect-hook"><strong>useEffect hook</strong></h3>
+<p>可以模拟 mounted updated beforeDestory (数据请求 检测数据更新 垃圾回收) 三个生命周期</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723212101.png" alt=""></p>
+<ul>
+<li>
+<p>模拟 mounted</p>
+<p>当页面第一次加载完成时运行，一般用来写 ajax</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723212624.png" alt=""></p>
+</li>
+<li>
+<p>模拟 updated</p>
+<p>检测哪个数据更新了，第一个参数是 function，第二个参数是想要检测的变量们的数组</p>
+<p>如果所有的变量都想检测，可以直接删掉数组不填</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723212542.png" alt=""></p>
+</li>
+<li>
+<p>模拟 beforeDestory</p>
+<p>一般在这个阶段处理脏数据或者垃圾回收</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723220011.png" alt=""></p>
+</li>
+</ul>
+<h3 id="usecontext-hook"><strong>useContext hook</strong></h3>
+<p>用于跨域组件的传值</p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723223808.png" alt=""></p>
+<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/20220723223831.png" alt=""></p>
+</li>
+<li>
+<p>8 虚拟 DOM 和 diff 算法</p>
+</li>
+</ul>
+<h3 id="react-hooks">React Hooks</h3>
+<h3 id="react-redux">React Redux</h3>
+<ul>
+<li>
+<p>1 Intro</p>
+<p><strong>简介</strong></p>
+<p>专门针对 react 所设计的状态管理工具，可以理解为把需要多个组件共享的变量全部存储在一个对象里面。顶层套一个 provider，底层的组件都可以使用顶层的数据</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">npm</span> <span class="n">i</span> <span class="n">redux</span> <span class="n">react</span><span class="o">-</span><span class="n">redux</span>
+</span></span></code></pre></div><p><strong>数据如何通过 Redux 流动？</strong></p>
+<ol>
+<li>首先，用户（通过View）发出 Action，发出方式就用到了 dispatch 方法</li>
+<li>然后，Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action，Reducer 会返回新的 State</li>
+<li>State 一旦有变化，Store 就会调用监听函数，来更新 View</li>
+</ol>
+<p><img src="Untitled%2010.png" alt="Untitled"></p>
+<p><strong>Redux 遵循的三个原则是什么？</strong></p>
+<ol>
+<li>单一事实来源：Redux 使用 “Store” 将程序的整个状态存储在同一个地方。因此所有组件的状态都存储在 Store 中，并且它们从 Store 本身接收更新。单一状态树可以更容易地跟踪随时间的变化，并调试或检查程序。</li>
+<li>状态是只读的：改变状态的唯一方法是去触发一个动作。动作是描述变化的普通 JS 对象。就像 state 是数据的最小表示一样，该操作是对数据更改的最小表示</li>
+<li>使用纯函数进行更改：为了指定状态树如何通过操作进行转换，你需要纯函数。纯函数是那些返回值仅取决于其参数值的函数</li>
+</ol>
+<p><strong>使用情景：</strong></p>
+<ul>
+<li>大型开发，多个界面间的共享问题</li>
+<li>比如用户的登录状态、拿到和保存 token、用户名称、头像、地理位置信息等等</li>
+<li>比如商品的收藏、购物车中的物品（在很多页面都有添加购物车的功能）</li>
+<li>这些状态信息，我们都可以放在统一的地方，对它进行保存和管理，而且它们还是响应式的</li>
+</ul>
+<p><strong>简单使用</strong></p>
+<p>需要在项目里新建文件夹 store，里面有</p>
+<ul>
+<li>左：index.js (仓库的入口文件)</li>
+<li>右：reduce.js (创建初始状态，并导出一个函数)</li>
+</ul>
+<p><img src="Untitled%2011.png" alt="Untitled"></p>
+<p>修改组件</p>
+<ul>
+<li>修改 src/index.js 添加 <strong>provider</strong></li>
+<li>修改 app componant，添加 <strong>connect</strong>，定义状态映射（将 reducer 中的 state 映射成 props，让开发者可以在组件中使用 props.num 去调用 state 中的 num），传入参数props</li>
+</ul>
+<p><img src="Untitled%2012.png" alt="Untitled"></p>
+</li>
+<li>
+<p>2 Redux 使用的简单 demo</p>
+<p><img src="Untitled%2013.png" alt="Untitled"></p>
+<p>创建 action 文件夹(因为在真实开发中可能会发送很多个 action)</p>
+<p>写一个简单 action 构建函数</p>
+<p><img src="Untitled%2014.png" alt="Untitled"></p>
+<p>创建 reducers 文件夹，写一个简单 reducer</p>
+<p><img src="Untitled%2015.png" alt="Untitled"></p>
+<p>创建 store 文件夹，构建 store</p>
+<p><img src="Untitled%2016.png" alt="Untitled"></p>
+<p>在home使用上面的 store</p>
+<p><img src="Untitled%2017.png" alt="Untitled"></p>
+<p>效果：</p>
+<p><img src="Untitled%2018.png" alt="Untitled"></p>
+</li>
+<li>
+<p>2 Redux 四大组件</p>
+<p><strong>Redux 由以下组件组成</strong></p>
+<ol>
+<li>
+<p><strong>Action</strong></p>
+<ul>
+<li>这是一个用来描述发生了什么事情的 JavaScript 对象，是把数据从应用传到 store 的载体，它是 store 数据的唯一来源，只是描述了有事情要发生，并没有描述如何去更新</li>
+<li>我们可以通过 store.dispatch() 将 action 传递给 store</li>
+<li>Action 是个动作对象，对象内部必须要有 type 和 data 属性，type 通常是字符串，表示动作执行的类型，data 表示跟本次动作执行相关的数据。我们在项目中更喜欢用 action creator 函数</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 1. action</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="n">string</span><span class="err">&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">info</span><span class="p">:</span><span class="w"> </span><span class="p">{...},</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">isLoading</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 2. action creator function</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">function</span><span class="w"> </span><span class="nf">addAction</span><span class="p">(</span><span class="n">params</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 返回一个 action 对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="n">string</span><span class="err">&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">info</span><span class="p">:</span><span class="w"> </span><span class="p">{...},</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">isLoading</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Reducer</strong></p>
+<ul>
+<li>这是一个确定状态将如何变化的地方，本质就是一个函数，它用来响应和处理发送过来的 old state + actions，然后经过处理，把 new state 发送给 store，reducer 是真正做事的人
+<ul>
+<li>Reducer 函数接受两个参数：old state，action</li>
+</ul>
+</li>
+<li>在 Reducer 函数中，一定要 return 返回值，就是 new state 的，这样 store 才能接收到</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">const</span><span class="w"> </span><span class="n">initState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">rootReducer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initState</span><span class="p">,</span><span class="w"> </span><span class="n">action</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="p">{...</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">{...}};</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Store</strong></p>
+<p>Store 就是把 action 与 reducer 联系到一起的对象，整个程序的状态/对象树保存在Store 中，主要职责：</p>
+<ul>
+<li>维持应用的 state</li>
+<li>提供 getState() 获取 state</li>
+<li>提供 dispatch() 发送 action</li>
+<li>通过 subscribe() 来注册监听</li>
+<li>通过 subscribe() 返回值来注销监听</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="err">{</span><span class="nn">createStore</span><span class="p">}</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="s">&#34;redux&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">const</span><span class="w"> </span><span class="n">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">createStore</span><span class="p">(</span><span class="n">reducer</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>View</strong></p>
+<p>通过 getstate() 来显示 Store 提供的数据</p>
+</li>
+</ol>
+<p><img src="Untitled%2010.png" alt="Untitled"></p>
+</li>
+<li>
+<p>3 mapState vs mapDispatch</p>
+<p><strong>mapState</strong>：状态映射，将 reducer 中的 state 映射成 props，让开发者可以在组件中使用 props.num 去调用 state 中的 num</p>
+<p><strong>mapDispatch</strong>：事件派发映射，将 reducer 中的事件映射成 props，让开发者可以在组件中使用 props.add() 去实现 num 的累加</p>
+<p><img src="Untitled%2019.png" alt="Untitled"></p>
+<p>注意：左图的reduce.js文件里面，比起 if 判断，一般还是常用 switch</p>
+</li>
+</ul>
+<h3 id="react-router">React Router</h3>
+<ul>
+<li>
+<p>0 SPA 单页面应用程序简介</p>
+<p>单页面应用程序 single page application，整个应用只有一个完整的 html 页面，但有多个组件，点击页面的链接不会刷新页面，只会做页面的局部更新，数据都需要通过 ajax 请求获取，并在前端异步展现</p>
+</li>
+<li>
+<p>1 安装使用 react-router-dom</p>
+<p>react-router-dom 是 react 的一个插件库，目前最新的是 v6 版本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">react</span><span class="o">-</span><span class="nx">router</span><span class="o">-</span><span class="nx">dom</span><span class="kd">@6</span>
+</span></span><span class="line"><span class="cl"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">react</span><span class="o">-</span><span class="nx">router</span><span class="o">-</span><span class="nx">dom</span><span class="kd">@6</span> 
+</span></span></code></pre></div></li>
+<li>
+<p>2 路由配置 History Hash</p>
+<p>react-router-dom 中有两种模式：</p>
+<ul>
+<li><strong>History 模式</strong>：BrowserRouter，使用 h5 的 history.pushState API 来实现</li>
+<li><strong>Hash 模式</strong>：HashRouter，使用 URL 的哈希值来实现，url 里面会带有井号 #，直接打包就可以放到线上</li>
+</ul>
+<p><strong>History 模式</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">BrowserRouter</span><span class="p">,</span> <span class="nx">Routes</span><span class="p">,</span> <span class="nx">Route</span><span class="p">,</span> <span class="nx">Link</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-router-dom&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Home</span> <span class="nx">from</span> <span class="s1">&#39;./pages/home&#39;</span> 
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">About</span> <span class="nx">from</span> <span class="s1">&#39;./pages/about&#39;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">BrowserRouter</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="cm">/* 点击跳转 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Link</span> <span class="na">to</span><span class="o">=</span><span class="s">&#39;/&#39;</span><span class="p">&gt;</span><span class="nx">home</span><span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Link</span> <span class="na">to</span><span class="o">=</span><span class="s">&#39;/about&#39;</span><span class="p">&gt;</span><span class="nx">about</span><span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="cm">/* 路由出口位置 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#39;/&#39;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#39;/&#39;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">BrowserRouter</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span> 
+</span></span></code></pre></div><p><strong>HashRouter 模式</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">HashRouter</span><span class="p">,</span> <span class="nx">Routes</span><span class="p">,</span> <span class="nx">Route</span><span class="p">,</span> <span class="nx">Link</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-router-dom&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Home</span> <span class="nx">from</span> <span class="s1">&#39;./pages/home&#39;</span> 
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">About</span> <span class="nx">from</span> <span class="s1">&#39;./pages/about&#39;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">HashRouter</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="cm">/* 点击跳转 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Link</span> <span class="na">to</span><span class="o">=</span><span class="s">&#39;/&#39;</span><span class="p">&gt;</span><span class="nx">home</span><span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Link</span> <span class="na">to</span><span class="o">=</span><span class="s">&#39;/about&#39;</span><span class="p">&gt;</span><span class="nx">about</span><span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="cm">/* 路由出口位置 */</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#39;/&#39;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#39;/about&#39;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">About</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">Routes</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">HashRouter</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span> 
+</span></span></code></pre></div></li>
+<li>
+<p>3 核心组件介绍 Link Routes Route</p>
+<p><strong>Link</strong></p>
+<p><strong>作用</strong>：用于指定导航链接，完成路由跳转</p>
+<p>**语法说明：**组件通过 to 属性指定路由地址，最终会渲染为 a 链接元素</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">Link</span><span class="w"> </span><span class="n">to</span><span class="o">=</span><span class="sc">&#39;/&#39;</span><span class="o">&gt;</span><span class="n">home</span><span class="o">&lt;/</span><span class="n">Link</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Routes</strong></p>
+<p>**作用：**提供一个路由出口，满足条件的路由组件会渲染到组件内部</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">Routes</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">Route</span><span class="o">/&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">Route</span><span class="o">/&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="n">Routes</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Route</strong></p>
+<p>**作用：**用于指定导航链接，完成路由匹配</p>
+<p>**语法说明：**path 属性指定匹配的路径地址，element 属性指定要渲染的组件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">Route</span><span class="w"> </span><span class="n">path</span><span class="o">=</span><span class="sc">&#39;/&#39;</span><span class="w"> </span><span class="n">element</span><span class="o">=</span><span class="p">{</span><span class="o">&lt;</span><span class="n">Home</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>4 事件跳转 useNavigate</p>
+<p>作用：通过 js 编程的方式进行路由跳转，比如从登录页面跳到关于页</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useNavigate</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-router-dom&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Login</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">navigate</span> <span class="o">=</span> <span class="nx">useNavigate</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">goAbout</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;/about&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">login</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">goAbout</span><span class="p">}&gt;</span> <span class="nx">jump</span> <span class="nx">to</span> <span class="nx">about</span> <span class="nx">page</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>注意：如果在跳转时不想加历史记录，就是点左上角返回的时候不会再回去，可以添加额外参数 replace:true</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;/about&#39;</span><span class="p">,{</span><span class="nx">replace</span><span class="o">:</span> <span class="kc">true</span><span class="p">})</span>
+</span></span></code></pre></div></li>
+<li>
+<p>5 跳转携带参数 useSearchParams useParams</p>
+<p><strong>useSearchParams</strong></p>
+<p>params是一个对象，对象里面有一个 get 的方法，用来获取对应的参数，把参数的名称作为 get 方法是参数传过来</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">// 传参 Login.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;/about?id=1001&amp;&amp;name=mike&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 取参 About.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">useSearchParams</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react-router-dom&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="p">[</span><span class="nx">params</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useSearchParams</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">id</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>useParams</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">// 先在 App.js 配置占位路由
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">&lt;</span><span class="nt">Route</span> <span class="na">path</span><span class="o">=</span><span class="s">&#39;/about/:id&#39;</span> <span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">About</span> <span class="p">/&gt;}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 传参 Login.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">navigate</span><span class="p">(</span><span class="s1">&#39;/about/1001&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 取参 About.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">params</span> <span class="o">=</span> <span class="nx">useParams</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">id</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">id</span>
+</span></span></code></pre></div></li>
+</ul>
+<ol>
+<li>发起签到的时候报错</li>
+<li>人脸识别签到，没有传照片退出的时候，要显示签到失败</li>
+<li>学生签到之后要查看到记录</li>
+</ol>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="0001-01-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 0001-01-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/vue-js/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#面试常考题目总结">面试常考题目总结</a></li>
+        <li><a href="#react-介绍"><strong>React 介绍</strong></a></li>
+        <li><a href="#react-basic"><strong>React Basic</strong></a></li>
+        <li><a href="#react-组件">React 组件</a></li>
+        <li><a href="#class-component-14---16"><strong>Class Component (1.4 - 1.6)</strong></a></li>
+        <li><a href="#function-component-17---110"><strong>Function Component (1.7 - 1.10)</strong></a></li>
+        <li><a href="#father-to-son"><strong>Father to Son</strong></a></li>
+        <li><a href="#son-to-father"><strong>Son to Father</strong></a></li>
+        <li><a href="#grandfather-to-son"><strong>Grandfather to Son</strong></a></li>
+        <li><a href="#use-of-state"><strong>Use of State</strong></a></li>
+        <li><a href="#set-state"><strong>Set State</strong></a></li>
+        <li><a href="#shallow-merge"><strong>Shallow Merge</strong></a></li>
+        <li><a href="#usestate-hook"><strong>useState hook</strong></a></li>
+        <li><a href="#useeffect-hook"><strong>useEffect hook</strong></a></li>
+        <li><a href="#usecontext-hook"><strong>useContext hook</strong></a></li>
+        <li><a href="#react-hooks">React Hooks</a></li>
+        <li><a href="#react-redux">React Redux</a></li>
+        <li><a href="#react-router">React Router</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://zcy530.github.io/" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>
