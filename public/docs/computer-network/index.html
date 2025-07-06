@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Computer Network · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/computer-network/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.d45bca32e79fc977f1fcd9f6eaf09a10551daab06cecd5f3057dea214ae08642.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link current" href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Computer Network</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="计算机网络引言">计算机网络引言</h1>
+<ul>
+<li>
+<p>OSI 七层模型</p>
+<p>OSI参考模型的三个主要概念：服务、协议、接口</p>
+<p>OSI七层模型（Open System Interconnection）参考模型，是国际标准化组织（ISO）制定的一个用于计算机或通信系统间互联的标准体系。它是一个七层的、抽象的模型体，不仅包括一系列抽象的术语或概念，也包括具体的协议</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled.png" alt="Untitled"></p>
+<p>七层模型传输数据过程：</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%201.png" alt="Untitled"></p>
+</li>
+<li>
+<p>TCP/IP 四层模型</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%202.png" alt="Untitled"></p>
+<ol>
+<li><strong>物理层</strong></li>
+</ol>
+<p>物理层规定:为传输数据所需要的物理链路创建、维持、拆除，而提供具有机械的，电子的，功能的和规范的特性，确保原始的数据可在各种物理媒体上传输，为设备之间的数据通信提供传输媒体及互连设备，为数据传输提供可靠的环境。</p>
+<ol>
+<li><strong>数据链路层</strong></li>
+</ol>
+<ul>
+<li>链路控制（同步，异步，二进制，HDLC）</li>
+<li>差错控制（重发机制）</li>
+<li>流量控制（窗口机制）</li>
+</ul>
+<ol>
+<li><strong>网络层</strong></li>
+</ol>
+<p>提供阻塞控制，路由选择（静态路由，动态路由）等</p>
+<ul>
+<li>IP：网际协议。IP协议提供不可靠、无连接的传送服务。IP协议的主要功能有：无连接数据报传输、数据报路由选择和差错控制。IP地址是重要概念</li>
+<li>ARP：地址解析协议。基本功能就是通过目标设备的IP地址，查询目标设备的MAC地址，以保证通信的顺利进行。以太网中的数据帧从一个主机到达网内的另一台主机是根据48位的以太网地址（硬件地址）来确定接口的，而不是根据32位的IP地址。内核必须知道目的端的硬件地址才能发送数据。P2P的连接是不需要ARP的</li>
+<li>RARP：反向地址转换协议。允许局域网的物理机器从网关服务器的 ARP 表或者缓存上请求其 IP 地址。局域网网关路由器中存有一个表以映射MAC和与其对应的 IP 地址。当设置一台新的机器时，其 RARP 客户机程序需要向路由器上的 RARP 服务器请求相应的 IP 地址。假设在路由表中已经设置了一个记录，RARP 服务器将会返回 IP 地址给机器。</li>
+<li>IGMP：组播协议包括组成员管理协议和组播路由协议。组成员管理协议用于管理组播组成员的加入和离开，组播路由协议负责在路由器之间交互信息来建立组播树。IGMP属于前者，是组播路由器用来维护组播组成员信息的协议，运行于主机和和组播路由器之间。IGMP 信息封装在IP报文中，其IP的协议号为2</li>
+<li>ICMP：Internet控制报文协议。用于在IP主机、路由器之间传递控制消息。控制消息是指网络通不通、主机是否可达、路由是否可用等网络本身的消息。这些控制消息虽然并不传输用户数据，但是对于用户数据的传递起着重要的作用。</li>
+<li>BGP: 边界网关协议。处理像因特网大小的网络和不相关路由域间的多路连接。</li>
+<li>RIP：路由信息协议。是一种分布式的基于距离矢量的路由选择协议。</li>
+</ul>
+<ol>
+<li><strong>传输层</strong></li>
+</ol>
+<p>提供分割与重组数据，按端口号寻址，连接管理差错控制和流量控制,纠错的功能。传输层要向会话层提供通信服务的可靠性，避免报文的出错、丢失、延迟时间紊乱、重复、乱序等差错。</p>
+<ul>
+<li>TCP: 一种面向连接的、可靠的、基于字节流的传输层通信协议。</li>
+<li>UDP: 用户数据报协议，一种无连接的传输层协议，提供面向事务的简单不可靠信息传送服务。</li>
+</ul>
+<ol>
+<li><strong>应用层</strong></li>
+</ol>
+<ul>
+<li>HTTP：超文本传输协议，基于TCP，是用于从WWW服务器传输超文本到本地浏览器的传输协议。它可以使浏览器更加高效，使网络传输减少</li>
+<li>SMTP：简单邮件传输协议,是一组用于由源地址到目的地址传送邮件的规则，由它来控制信件的中转方式</li>
+<li>SNMP：简单网络管理协议，由一组网络管理的标准组成，包含一个应用层协议、数据库模型和一组资源对象。</li>
+<li>FTP：文件传输协议，用于Internet上的控制文件的双向传输。同时也是一个应用程序。</li>
+<li>Telnet：是Internet远程登陆服务的标准协议和主要方式。为用户提供了在本地计算机上完成远程主机工作的能力。在终端使用者的电脑上使用telnet程序，用它连接到服务器</li>
+<li>SSH：安全外壳协议，为建立在应用层和传输层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议</li>
+<li>NFS：网络文件系统，是FreeBSD支持的文件系统中的一种，允许网络中的计算机之间通过TCP/IP网络共享资源。</li>
+</ul>
+</li>
+<li>
+<p>五层结构</p>
+<p><strong>应用层</strong>：为用户的应用进程提供网络通信服务，例如，HTTP协议提供了Web文档的请求和传送，SMTP（邮件传送协议）提供了电子邮件的传送，还有DNS（域名解析协议）将http://202.108.22.5转换为对人友好的www.baidu.com。功能包括提供各种不同的应用协议以满足应用进程的需求，识别并证实目的通信方的可用性，使协同工作的应用进程之间进行同步，为通信过程申请资源</p>
+<p><strong>传输层</strong>：为相互通信的应用进程提供了逻辑通信，提供端到端的服务，即主机到主机。负责将应用层的报文向目的地传送，还要确保传输差错控制和流量控制。在因特网中，有两个传输协议，即TCP和UDP，可提供端到端的、可靠的或者不可靠的传输</p>
+<p><strong>网络层</strong>：分组选择合适的路由，把分组从从一台主机移动到另一台主机，具体功能包括寻址、路由选择、连接建立、保持和终止等</p>
+<p><strong>数据链路层</strong>：将在网络层交下来的数据报组装成帧（frame)，两个相邻结点间的链路实现帧的传输，传输到下一个节点的目的主机的数据链路层又将数据报上传给网络层。功能包括：物理地址寻址、数据的成帧、流量控制、数据的检错、重发等</p>
+<p><strong>物理层</strong>：在物理媒介上正确地、透明地传输比特流，在物理层中的协议与链路相关，并且需要确保原始的数据可在各种物理媒体上传输。比如以太网的许多物理层协议有和双绞铜线、同轴电缆、光纤，等等相关</p>
+</li>
+</ul>
+<h1 id="第五层-应用层">第五层 应用层</h1>
+<ul>
+<li>
+<p>HTTP 协议定义</p>
+<p><strong>定义：</strong></p>
+<p>HTTP 协议，又称超文本传输协议(HyperText Transfer Protocol)，它是基于 TCP 协议的应用层传输协议，简单来说就是客户端(Web 浏览器)和服务端(网站服务器)进行数据传输的一种规则，是一种发布和接收 HTML 页面的方法。客户端给服务端发送 request，服务端返回 response</p>
+<p><strong>HTTP 协议的特征：</strong></p>
+<ul>
+<li>HTTP是一种无状态协议, HTTP 协议本身不会对发送过的请求和相应的通信状态进行持久化处理。这样做的目的是为了保持 HTTP 协议的简单性，从而能够快速处理大量的事务, 提高效率</li>
+<li>HTTP 协议以明文方式发送内容，不提供任何方式的数据加密，如果攻击者截取了Web 浏览器和网站服务器之间的传输报文，就可以直接读懂其中的信息，因此，HTTP协议不适合传输一些敏感信息，比如：信用卡号、密码等支付信息</li>
+<li>HTTP 默认工作在 TCP 协议 80 端口，用户访问网站 <strong>http://</strong> 打头的都是标准 HTTP 服务</li>
+</ul>
+</li>
+<li>
+<p>HTTPS 协议定义</p>
+<p>HTTPS（Hypertext Transfer Protocol Secure）是超文本传输安全协议，是由 HTTP+SSL 协议构建的可进行加密传输、身份认证的网络传输协议，数据传输过程是加密的，安全性较好，可以保护交换数据的隐私与完整性。HTTPS 经由 HTTP 进行通信，但利用 SSL/TLS 来加密数据包</p>
+<p><strong>HTTPS 默认工作在 TCP 协议443端口，它的工作流程一般如以下方式：</strong></p>
+<ul>
+<li>1、TCP 三次同步握手</li>
+<li>2、客户端验证服务器数字证书</li>
+<li>3、DH 算法协商对称加密算法的密钥、hash 算法的密钥</li>
+<li>4、SSL 安全加密隧道协商完成</li>
+<li>5、网页以加密的方式传输，用协商的对称加密算法和密钥加密，保证数据机密性；用协商的hash算法进行数据完整性保护，保证数据不被篡改</li>
+</ul>
+</li>
+<li>
+<p>HTTP 和 HTTPS 的区别</p>
+<ul>
+<li>HTTP 是超文本传输协议，信息是明文传输，数据传输过程是未加密的，安全性较差。HTTPS是超文本传输安全协议，是由 HTTP+SSL 协议构建的可进行加密传输、身份认证的网络传输协议，数据传输过程是加密的，安全性较好</li>
+<li>使用 HTTPS 协议需要到 CA（Certificate Authority，数字证书认证机构）申请证书，一般免费证书较少，因而需要一定费用。证书颁发机构如：Symantec、Comodo、GoDaddy 和 GlobalSign 等。</li>
+<li>HTTP 页面响应速度比 HTTPS 快，主要是因为 HTTP 使用 TCP 三次握手建立连接，客户端和服务器需要交换3个包。而 HTTPS 除了 TCP 的三个包，还要加上 SSL 握手需要的9个包，所以一共是12个包。</li>
+<li>HTTP 和 HTTPS 使用的是完全不同的连接方式，用的端口也不一样，前者是 80，后者是 443</li>
+</ul>
+</li>
+<li>
+<p>SSL 握手的过程</p>
+<p>我们知道 TCP 的三次握手建立 TCP 连接，那SSL 握手是用于建立 SSL（Security Socket Layer）层的连接。SSL握手的场景很多，比如最常见的 HTTPS，访问 <a href="https://www.baidu.com/" target="_blank">https:// www.baidu.com</a> 时，在进行 HTTPS 的应用数据传递之前，需要建立SSL的连接</p>
+<p><strong>SSL 握手的步骤？</strong></p>
+<ol>
+<li>
+<p>Client Hello</p>
+<p>客户端发起会话，里面有以下两个信息最为重要</p>
+<ol>
+<li>客户端随机数，用于生成主密钥</li>
+<li>客户端支持的加密算法套件列表，协商ssl/tls协议版本等</li>
+</ol>
+</li>
+<li>
+<p>Server Hello</p>
+<p>服务端产生第一次应答，里面同样有两个信息很重要</p>
+<ol>
+<li>服务端随机数，用于生成主密钥</li>
+<li>确定密码套件</li>
+</ol>
+</li>
+<li>
+<p>Certificate</p>
+<p>服务端向客户端发送自己的证书，证书更多的是验证身份，其中包含了公钥，可用于RSA密钥交换算法的加密</p>
+</li>
+<li>
+<p>Server Key Exchange</p>
+<p>此处开始涉及到密钥交换算法，RSA不需要这步，而DH算法需要通过这步传递服务器公钥，并在客户端生成一个新的密钥对</p>
+</li>
+<li>
+<p>Server Hello Done</p>
+<p>一个空的指令，仅表示结束</p>
+</li>
+<li>
+<p>Client Key Exchange</p>
+<p>在#4中获得了服务端的公钥，会根据DH算法生成一个新的密钥对。客户端同样通过这个命令将密钥对里的客户端公钥发给服务端，仅限DH算法</p>
+</li>
+<li>
+<p>客户端发送 Change Cipher Spec</p>
+<p>这步是一个提示，相当于客户端告诉服务端，改为加密的传输方式。这里隐含了一个操作，就是主密钥生成了！主密钥需要客户端随机数（#1），服务端随机数（#2），前主密钥（由#4获取的服务端公钥和客户端用其生成的密钥对中的的私钥生成），这三者共同生成，计算的方式可能和确定的密码套件有关</p>
+</li>
+<li>
+<p>客户端发送 Encrypted Handshake Message</p>
+<p>此步直译就是加密的握手信息，即从上一步开始，信息全部是加密的了，之前为明文。所以这步也代表着客户端握手过程的结束。Encrypted Handshake Message 这个数据是显示不出来的，它是加密过的数据（预主秘钥），然后服务端拿到这个数据之后，要通过私钥解密才能拿到真正有用的东西。这就是 https 的握手过程，最后一条数据是加密的以此来保证整个传输的部分的内容是安全传输的，这样中间人拿不到，最后生成的密钥是两边知道但是中间人完全无法拿到和解析的，通过这种方式来保证最后的数据传输是真正的安全</p>
+</li>
+<li>
+<p>服务端发送 Change Cipher Spec</p>
+<p>服务端也通过生成的前主密钥（自己的私钥和#6发来的客户端的公钥）加客户端随机数加服务端随机数生成主密钥</p>
+</li>
+<li>
+<p>服务端发送 Encrypted Handshake Message</p>
+</li>
+</ol>
+</li>
+<li>
+<p>HTTP 请求头报文格式</p>
+<p>客户端发送一个HTTP请求到服务器的请求消息包括以下格式：请求行（request line）、请求头部（header）、空行和请求数据四个部分组成，请求报文的一般格式：</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%203.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">GET</span> <span class="o">/</span><span class="nx">hello</span><span class="p">.</span><span class="nx">txt</span> <span class="nx">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">User</span><span class="o">-</span><span class="nx">Agent</span><span class="o">:</span> <span class="nx">curl</span><span class="o">/</span><span class="mf">7.16.3</span> <span class="nx">libcurl</span><span class="o">/</span><span class="mf">7.16.3</span> <span class="nx">OpenSSL</span><span class="o">/</span><span class="mf">0.9.7</span><span class="nx">l</span> <span class="nx">zlib</span><span class="o">/</span><span class="mf">1.2.3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Host</span><span class="o">:</span> <span class="nx">www</span><span class="p">.</span><span class="nx">example</span><span class="p">.</span><span class="nx">com</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Accept</span><span class="o">-</span><span class="nx">Language</span><span class="o">:</span> <span class="nx">en</span><span class="p">,</span> <span class="nx">mi</span>
+</span></span></code></pre></div></li>
+<li>
+<p>请求头：常见请求方法</p>
+<ul>
+<li>Get 请求指定页面</li>
+<li>Head 用于获取报头，类似于get</li>
+<li>Post 向指定资源提交数据进行处理请求</li>
+<li>Put 修改资源</li>
+<li>Delete 删除资源</li>
+<li>Options 查看服务器性能</li>
+</ul>
+<p><a href="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%20e537d63dc8fe4aa190abae0899a7a30b.csv">Untitled</a></p>
+</li>
+<li>
+<p>请求头：常见请求报头信息</p>
+<table>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Function</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Host</td>
+          <td>接受请求的服务器地址，可以是IP或者是域名</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>User-Agent</td>
+          <td>向服务器发送浏览器的版本、系统、应用程序的信息</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Connection</td>
+          <td>指定与连接相关的属性</td>
+          <td>Keep_Alive</td>
+      </tr>
+      <tr>
+          <td>Accept</td>
+          <td>向服务器申明客户端（浏览器）可以接受的媒体类型（MIME）的资源</td>
+          <td>text/html, application/xhtml+xml, application/xml</td>
+      </tr>
+      <tr>
+          <td>Accept-Encoding</td>
+          <td>向服务器申明客户端（浏览器）接收的编码方法，通常为压缩方法</td>
+          <td>gzip, deflate, br</td>
+      </tr>
+      <tr>
+          <td>Cache-control</td>
+          <td>控制浏览器的缓存，常见值为private、no-cache、max-age、alidate，默认为 private，根据浏览器查看页面不同的方式来进行区别</td>
+          <td>max-age=0</td>
+      </tr>
+      <tr>
+          <td>Accept-Language</td>
+          <td>向服务器申明客户端（浏览器）接收的语言</td>
+          <td>en-US, en, zh-CN</td>
+      </tr>
+      <tr>
+          <td>Cookie</td>
+          <td>告诉服务器关于 Session 的信息，存储让服务器辨识用户身份的信息</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>请求头：辨析：GET 和 POST</p>
+<ol>
+<li>GET参数通过URL传递，POST放在Request body中</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上</li>
+<li>GET产生的URL地址可以被书签，而POST不可以</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留</li>
+<li>GET请求会被浏览器主动cache，而POST不会</li>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求</li>
+<li>GET产生一个TCP数据包；POST产生两个TCP数据包</li>
+<li>GET请求在URL中传送的参数是有长度限制的，而POST没有</li>
+</ol>
+</li>
+<li>
+<p>HTTP 响应头报文格式</p>
+<p>HTTP响应也由四个部分组成，分别是：状态行、消息报头、空行和响应正文</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">//状态行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">200</span> <span class="nx">OK</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//消息报头
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">Date</span><span class="o">:</span> <span class="nx">Mon</span><span class="p">,</span> <span class="mi">27</span> <span class="nx">Jul</span> <span class="mi">2009</span> <span class="mi">12</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">53</span> <span class="nx">GMT</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Server</span><span class="o">:</span> <span class="nx">Apache</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Last</span><span class="o">-</span><span class="nx">Modified</span><span class="o">:</span> <span class="nx">Wed</span><span class="p">,</span> <span class="mi">22</span> <span class="nx">Jul</span> <span class="mi">2009</span> <span class="mi">19</span><span class="o">:</span><span class="mi">15</span><span class="o">:</span><span class="mi">56</span> <span class="nx">GMT</span>
+</span></span><span class="line"><span class="cl"><span class="nx">ETag</span><span class="o">:</span> <span class="s2">&#34;34aa387-d-1568eb00&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Accept</span><span class="o">-</span><span class="nx">Ranges</span><span class="o">:</span> <span class="nx">bytes</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Content</span><span class="o">-</span><span class="nx">Length</span><span class="o">:</span> <span class="mi">51</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span> <span class="nx">text</span><span class="o">/</span><span class="nx">plain</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//空行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//响应正文
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="nx">This</span> <span class="nx">is</span> <span class="nx">homepage</span><span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>响应头：常见响应消息报头</p>
+<p>Server：服务器应用软件的名称和版本</p>
+<p>Content-Type：响应正文的类型，默认为text/plain</p>
+<p>Content-Length：响应正文的长度</p>
+<p>Content-Charset：响应正文所使用的编码</p>
+<p>Content-Encoding：响应正文使用的数据压缩格式</p>
+<p>Content-Language：响应正文使用的语言</p>
+<table>
+  <thead>
+      <tr>
+          <th>Allow</th>
+          <th>服务器支持哪些请求方法（如GET、POST等）。</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Date</td>
+          <td>当前的GMT时间。你可以用setDateHeader来设置这个头以避免转换时间格式的麻烦。</td>
+      </tr>
+      <tr>
+          <td>Expires</td>
+          <td>应该在什么时候认为文档已经过期，从而不再缓存它？</td>
+      </tr>
+      <tr>
+          <td>Content-Encoding</td>
+          <td>文档的编码（Encode）方法。只有在解码之后才可以得到Content-Type头指定的内容类型。利用gzip压缩文档能够显著地减少HTML文档的下载时间。Java的GZIPOutputStream可以很方便地进行gzip压缩，但只有Unix上的Netscape和Windows上的IE 4、IE 5才支持它。因此，Servlet应该通过查看Accept-Encoding头（即request.getHeader(&ldquo;Accept-Encoding&rdquo;)）检查浏览器是否支持gzip，为支持gzip的浏览器返回经gzip压缩的HTML页面，为其他浏览器返回普通页面。</td>
+      </tr>
+      <tr>
+          <td>Content-Length</td>
+          <td>表示内容长度。只有当浏览器使用持久HTTP连接时才需要这个数据。如果你想要利用持久连接的优势，可以把输出文档写入 ByteArrayOutputStream，完成后查看其大小，然后把该值放入Content-Length头，最后通过byteArrayStream.writeTo(response.getOutputStream()发送内容。</td>
+      </tr>
+      <tr>
+          <td>Content-Type</td>
+          <td>表示后面的文档属于什么MIME类型。Servlet默认为text/plain，但通常需要显式地指定为text/html。由于经常要设置Content-Type，因此HttpServletResponse提供了一个专用的方法setContentType。</td>
+      </tr>
+      <tr>
+          <td>Last-Modified</td>
+          <td>文档的最后改动时间。客户可以通过If-Modified-Since请求头提供一个日期，该请求将被视为一个条件GET，只有改动时间迟于指定时间的文档才会返回，否则返回一个304（Not Modified）状态。Last-Modified也可用setDateHeader方法来设置。</td>
+      </tr>
+      <tr>
+          <td>Location</td>
+          <td>表示客户应当到哪里去提取文档。Location通常不是直接设置的，而是通过HttpServletResponse的sendRedirect方法，该方法同时设置状态代码为302。</td>
+      </tr>
+      <tr>
+          <td>Refresh</td>
+          <td>表示浏览器应该在多少时间之后刷新文档，以秒计。除了刷新当前文档之外，你还可以通过setHeader(&ldquo;Refresh&rdquo;, &ldquo;5; URL=http://host/path&rdquo;)让浏览器读取指定的页面。注意这种功能通常是通过设置HTML页面HEAD区的＜META HTTP-EQUIV=&ldquo;Refresh&rdquo; CONTENT=&ldquo;5;URL=http://host/path&rdquo;＞实现，这是因为，自动刷新或重定向对于那些不能使用CGI或Servlet的HTML编写者十分重要。但是，对于Servlet来说，直接设置Refresh头更加方便。注意Refresh的意义是&quot;N秒之后刷新本页面或访问指定页面&quot;，而不是&quot;每隔N秒刷新本页面或访问指定页面&quot;。因此，连续刷新要求每次都发送一个Refresh头，而发送204状态代码则可以阻止浏览器继续刷新，不管是使用Refresh头还是＜META HTTP-EQUIV=&ldquo;Refresh&rdquo; &hellip;＞。注意Refresh头不属于HTTP 1.1正式规范的一部分，而是一个扩展，但Netscape和IE都支持它。</td>
+      </tr>
+      <tr>
+          <td>Server</td>
+          <td>服务器名字。Servlet一般不设置这个值，而是由Web服务器自己设置。</td>
+      </tr>
+      <tr>
+          <td>Set-Cookie</td>
+          <td>设置和页面关联的Cookie。Servlet不应使用response.setHeader(&ldquo;Set-Cookie&rdquo;, &hellip;)，而是应使用HttpServletResponse提供的专用方法addCookie。参见下文有关Cookie设置的讨论。</td>
+      </tr>
+      <tr>
+          <td>WWW-Authenticate</td>
+          <td>客户应该在Authorization头中提供什么类型的授权信息？在包含401（Unauthorized）状态行的应答中这个头是必需的。例如，response.setHeader(&ldquo;WWW-Authenticate&rdquo;, &ldquo;BASIC realm=＼&ldquo;executives＼&rdquo;&quot;)。注意Servlet一般不进行这方面的处理，而是让Web服务器的专门机制来控制受密码保护页面的访问（例如.htaccess）</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>响应头：响应头信息里的 content-type</p>
+<p>**Content-Type：**标头表示后面响应正文里的文档属于什么MIME类型。</p>
+<p>**MIME：**Multipurpose Internet Mail Extensions，是描述消息内容类型的标准，用来表示文档、文件或字节流的性质和格式。MIME 消息能包含文本、图像、音频、视频以及其他应用程序专用的数据。</p>
+<p>**意义：**浏览器通常使用 MIME 类型（而不是文件扩展名）来确定如何处理URL，因此 Web服务器在响应头中添加正确的 MIME 类型非常重要。如果配置不正确，浏览器可能会无法解析文件内容，网站将无法正常工作，并且下载的文件也会被错误处理</p>
+<p><strong>常见的 MIME 媒体格式类型如下：</strong></p>
+<ul>
+<li>text/html ： HTML格式</li>
+<li>text/plain ：纯文本格式</li>
+<li>text/xml ： XML格式</li>
+<li>image/gif ：gif图片格式</li>
+<li>image/jpeg ：jpg图片格式</li>
+<li>image/png：png图片格式</li>
+</ul>
+<p>以application开头的媒体格式类型：</p>
+<ul>
+<li>application/xhtml+xml ：XHTML格式</li>
+<li>application/xml： XML数据格式</li>
+<li>application/atom+xml ：Atom XML聚合格式</li>
+<li>application/json： JSON数据格式</li>
+<li>application/pdf：pdf格式</li>
+<li>application/msword ： Word文档格式</li>
+<li>application/octet-stream ： 二进制流数据（如常见的文件下载）</li>
+<li>application/x-www-form-urlencoded ： <form encType=””>中默认的encType，form表单数据被编码为key/value格式发送到服务器（表单默认的提交数据的格式）</li>
+</ul>
+<p>另外一种常见的媒体格式是上传文件之时使用的：</p>
+<ul>
+<li>multipart/form-data ： 需要在表单中进行文件上传时，就需要使用该格式</li>
+</ul>
+</li>
+<li>
+<p>响应头：完整状态码信息</p>
+<ul>
+<li>1xx 信息，服务器收到请求，需要请求者继续执行操作</li>
+<li>2xx 成功，操作被成功接收并处理</li>
+<li>3xx 重定向，需要进一步的操作以完成请求</li>
+<li>4xx 客户端错误，请求包含语法错误或无法完成请求</li>
+<li>5xx 服务器错误，服务器在处理请求的过程中发生了错误</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>code</th>
+          <th>状态码英文名称</th>
+          <th>中文描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>100</td>
+          <td>Continue</td>
+          <td>继续。客户端应继续其请求</td>
+      </tr>
+      <tr>
+          <td>101</td>
+          <td>Switching Protocols</td>
+          <td>切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</td>
+      </tr>
+      <tr>
+          <td>200</td>
+          <td>OK</td>
+          <td>请求成功。一般用于GET与POST请求</td>
+      </tr>
+      <tr>
+          <td>201</td>
+          <td>Created</td>
+          <td>已创建。成功请求并创建了新的资源</td>
+      </tr>
+      <tr>
+          <td>202</td>
+          <td>Accepted</td>
+          <td>已接受。已经接受请求，但未处理完成</td>
+      </tr>
+      <tr>
+          <td>203</td>
+          <td>Non-Authoritative Information</td>
+          <td>非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本</td>
+      </tr>
+      <tr>
+          <td>204</td>
+          <td>No Content</td>
+          <td>无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档</td>
+      </tr>
+      <tr>
+          <td>205</td>
+          <td>Reset Content</td>
+          <td>重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。可通过此返回码清除浏览器的表单域</td>
+      </tr>
+      <tr>
+          <td>206</td>
+          <td>Partial Content</td>
+          <td>部分内容。服务器成功处理了部分GET请求</td>
+      </tr>
+      <tr>
+          <td>300</td>
+          <td>Multiple Choices</td>
+          <td>多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择</td>
+      </tr>
+      <tr>
+          <td>301</td>
+          <td>Moved Permanently</td>
+          <td>永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替</td>
+      </tr>
+      <tr>
+          <td>302</td>
+          <td>Found</td>
+          <td>临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI</td>
+      </tr>
+      <tr>
+          <td>303</td>
+          <td>See Other</td>
+          <td>查看其它地址。与301类似。使用GET和POST请求查看</td>
+      </tr>
+      <tr>
+          <td>304</td>
+          <td>Not Modified</td>
+          <td>未修改。所请求的资源未修改，服务器返回此状态码时，不会返回任何资源。客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源</td>
+      </tr>
+      <tr>
+          <td>305</td>
+          <td>Use Proxy</td>
+          <td>使用代理。所请求的资源必须通过代理访问</td>
+      </tr>
+      <tr>
+          <td>306</td>
+          <td>Unused</td>
+          <td>已经被废弃的HTTP状态码</td>
+      </tr>
+      <tr>
+          <td>307</td>
+          <td>Temporary Redirect</td>
+          <td>临时重定向。与302类似。使用GET请求重定向</td>
+      </tr>
+      <tr>
+          <td>400</td>
+          <td>Bad Request</td>
+          <td>客户端请求的语法错误，服务器无法理解</td>
+      </tr>
+      <tr>
+          <td>401</td>
+          <td>Unauthorized</td>
+          <td>请求要求用户的身份认证</td>
+      </tr>
+      <tr>
+          <td>402</td>
+          <td>Payment Required</td>
+          <td>保留，将来使用</td>
+      </tr>
+      <tr>
+          <td>403</td>
+          <td>Forbidden</td>
+          <td>服务器理解请求客户端的请求，但是拒绝执行此请求</td>
+      </tr>
+      <tr>
+          <td>404</td>
+          <td>Not Found</td>
+          <td>服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置&quot;您所请求的资源无法找到&quot;的个性页面</td>
+      </tr>
+      <tr>
+          <td>405</td>
+          <td>Method Not Allowed</td>
+          <td>客户端请求中的方法被禁止</td>
+      </tr>
+      <tr>
+          <td>406</td>
+          <td>Not Acceptable</td>
+          <td>服务器无法根据客户端请求的内容特性完成请求</td>
+      </tr>
+      <tr>
+          <td>407</td>
+          <td>Proxy Authentication Required</td>
+          <td>请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</td>
+      </tr>
+      <tr>
+          <td>408</td>
+          <td>Request Time-out</td>
+          <td>服务器等待客户端发送的请求时间过长，超时</td>
+      </tr>
+      <tr>
+          <td>409</td>
+          <td>Conflict</td>
+          <td>服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突</td>
+      </tr>
+      <tr>
+          <td>410</td>
+          <td>Gone</td>
+          <td>客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td>
+      </tr>
+      <tr>
+          <td>411</td>
+          <td>Length Required</td>
+          <td>服务器无法处理客户端发送的不带Content-Length的请求信息</td>
+      </tr>
+      <tr>
+          <td>412</td>
+          <td>Precondition Failed</td>
+          <td>客户端请求信息的先决条件错误</td>
+      </tr>
+      <tr>
+          <td>413</td>
+          <td>Request Entity Too Large</td>
+          <td>由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息</td>
+      </tr>
+      <tr>
+          <td>414</td>
+          <td>Request-URI Too Large</td>
+          <td>请求的URI过长（URI通常为网址），服务器无法处理</td>
+      </tr>
+      <tr>
+          <td>415</td>
+          <td>Unsupported Media Type</td>
+          <td>服务器无法处理请求附带的媒体格式</td>
+      </tr>
+      <tr>
+          <td>416</td>
+          <td>Requested range not satisfiable</td>
+          <td>客户端请求的范围无效</td>
+      </tr>
+      <tr>
+          <td>417</td>
+          <td>Expectation Failed</td>
+          <td>服务器无法满足Expect的请求头信息</td>
+      </tr>
+      <tr>
+          <td>500</td>
+          <td>Internal Server Error</td>
+          <td>服务器内部错误，无法完成请求</td>
+      </tr>
+      <tr>
+          <td>501</td>
+          <td>Not Implemented</td>
+          <td>服务器不支持请求的功能，无法完成请求</td>
+      </tr>
+      <tr>
+          <td>502</td>
+          <td>Bad Gateway</td>
+          <td>作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应</td>
+      </tr>
+      <tr>
+          <td>503</td>
+          <td>Service Unavailable</td>
+          <td>由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td>
+      </tr>
+      <tr>
+          <td>504</td>
+          <td>Gateway Time-out</td>
+          <td>充当网关或代理的服务器，未及时从远端服务器获取请求</td>
+      </tr>
+      <tr>
+          <td>505</td>
+          <td>HTTP Version not supported</td>
+          <td>服务器不支持请求的HTTP协议的版本，无法完成处理</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>短连接和长连接 keep-alive</p>
+<p>**短连接：**在 HTTP/1.0 中，默认使用的是短连接。也就是说，浏览器和服务器每进行一次 HTTP 操作就建立一次连接，服务端发送完毕后会自动关闭连接。当浏览器每遇到这样一个Web资源，就会建立一个HTTP会话
+**长连接：**从 HTTP/1.1 起，默认使用长连接，可以使得客户端与服务端之间建立持续有效的连接，当出现后续请求时不必重新连接。使用长连接的HTTP协议，会在响应头有加入这行代码：Connection:keep-alive。在使用长连接的情况下，当一个网页打开完成后，客户端和服务器之间用于传输 HTTP 数据的 TCP 连接不会关闭，如果客户端再次访问这个服务器上的网页，会继续使用这一条已经建立的连接</p>
+<p>Keep-Alive 不会永久保持连接，它有一个保持时间，可以在不同的服务器软件（如Apache）中设定这个时间。实现长连接要客户端和服务端都支持长连接。</p>
+</li>
+<li>
+<p>有状态和无状态</p>
+<p><a href="https://blog.csdn.net/songxiao1124/article/details/120119388" target="_blank">(186条消息) 什么是Http协议无状态？怎么解决Http无状态_snobodyx的博客-CSDN博客_http无状态</a></p>
+<p>http协议是无状态的：</p>
+<p>关闭网页再次访问服务器，服务器不知道是你再次访问，即客户端进行用户名和密码认证登录，页面关闭后，下一次用户还得再发送一次请求来进行用户认证</p>
+</li>
+<li>
+<p>HTTP 缓存</p>
+<p><strong>定义和作用：</strong></p>
+<p>HTTP 缓存是一种保存请求资源的副本并在下次请求中直接使用该副本的技术。当客户端向服务器请求资源时，会先抵达浏览器缓存，如果浏览器有要请求的资源的副本，就可以直接从浏览器缓存中提取，而不是从原始服务器中提取这个资源。缓存能够节约网络资源，提升页面响应速度</p>
+<p><strong>HTTP 缓存策略分为两种：</strong></p>
+<ul>
+<li>强缓存：即强制直接使用缓存。强缓存不会向服务器发送请求，直接从缓存中读取资源，在 chrome 控制台的 network 选项中可以看到该请求返回 200 的状态码，并且 size 显示 from disk cache 或 from memory cache</li>
+<li>协商缓存：和服务器协商确认下这个缓存能不能用。协商缓存会先向服务器发送一个请求，服务器会根据这个请求的 request header 的一些参数来判断是否命中协商缓存，如果命中，则返回 304 状态码并带上新的 response header 通知浏览器从缓存中读取资源</li>
+</ul>
+<p><strong>请求缓存的过程：</strong></p>
+<ol>
+<li>第一次请求资源时，服务器返回资源，并在 response header 头中回传资源的缓存参数</li>
+<li>第二次请求时，浏览器判断这些请求参数
+<ul>
+<li>命中强缓存就直接从缓存中读取资源，返回 <strong>200</strong></li>
+<li>如果没有命中强缓存，就把请求参数加到 request header 头中传给服务器，根据请求头的 last-modified 和 etag 判断是否命中协商缓存，如果命中协商缓存则返回 <strong>304</strong>，直接从缓存获取资源</li>
+<li>如果强缓存和协商缓存都没有命中，则直接从服务端获取资源，返回 <strong>200</strong></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>控制 HTTP 缓存的响应头和请求头</p>
+<p><strong>CASE1 强缓存：</strong></p>
+<p>强缓存可以通过设置 Expires 和 Cache-Control 两种响应头实现，浏览器直接读本地缓存，不会再跟服务器端交互，状态码 200</p>
+<ul>
+<li>
+<p><strong>Expires 响应头</strong>：是 HTTP/1.0 的产物，代表该资源的过期时间，其值为一个绝对时间。它告诉浏览器在过期时间之前可以直接从浏览器缓存中存取数据。由于是个绝对时间，客户端与服务端的时间时差或误差等因素可能造成客户端与服务端的时间不一致，将导致缓存命中的误差。如果在 Cache-Control 响应头设置了 max-age 或者 s-max-age 指令，那么 Expires 会被忽略</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">Expires</span><span class="o">:</span> <span class="nx">Wed</span><span class="p">,</span> <span class="mi">21</span> <span class="nx">Oct</span> <span class="mi">2015</span> <span class="mi">07</span><span class="o">:</span><span class="mi">28</span><span class="o">:</span><span class="mi">00</span> <span class="nx">GMT</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Cache-Control 响应头</strong>：出现于 HTTP/1.1。可以通过指定多个指令来实现缓存机制。主要用来表示资源缓存的最大有效时间。在该时间段内，客户端可以直接使用缓存。而且其过期时间指令的值是相对时间，它解决了绝对时间的带来的问题。优先级高于 Expires</p>
+<pre tabindex="0"><code>Cache-Control: max-age=315360000
+
+// Cache-Control有很多属性，不同的属性代表的意义也不同
+
+//可缓存性
+public  表明响应可以被任何对象（包括：发送请求的客户端，代理服务器，等等）缓存。
+private 表明响应只能被单个用户缓存，不能作为共享缓存（即代理服务器不能缓存它）
+no-cache 不使用强缓存，需要与服务器验协商缓存验证。
+no-store 缓存不应存储有关客户端请求或服务器响应的任何内容，即不使用任何缓存
+
+//过期
+max-age=&lt;seconds&gt; 缓存存储的最大周期，超过这个周期被认为过期
+s-maxage=&lt;seconds&gt; 设置共享缓存。会覆盖max-age和expires,私有缓存会忽略它
+max-stale[=&lt;seconds&gt;] 客户端愿意接收一个已经过期的资源，可以设置一个可选的秒数，表示响应不能已经过时超过该给定的时间
+min-fresh=&lt;seconds&gt; 客户端希望在指定的时间内获取最新的响应
+
+//重新验证和重新加载
+must-revalidate 如页面过期，则去服务器进行获取。
+proxy-revalidate 与must-revalidate 作用相同，但是用于共享缓存。
+
+//其他
+only-if-cached 不进行网络请求，完全只使用缓存。
+no-transform 不得对资源进行转换和转变。例如，不得对图像格式进行转换。
+</code></pre></li>
+</ul>
+<p><strong>CASE2 协商缓存：</strong></p>
+<p>协商缓存由 Last-Modified/IfModified-Since，Etag/If-None-Match 实现，每次请求需要让服务器判断一下资源是否更新过，从而决定浏览器是否使用缓存，如果是，则返回 304，否则重新完整响应</p>
+<ul>
+<li><strong>Last-Modified/IfModified-Since</strong>：它们的值都是 GMT 格式的时间字符串，代表的是文件的最后修改时间。1. 在服务器在响应请求时，会通过 Last-Modified 告诉浏览器资源的最后修改时间。2. 浏览器再次请求服务器的时候，请求头会包含 Last-Modified 字段，后面跟着在缓存中获得的最后修改时间。 3. 服务端收到此请求头发现有 if-Modified-Since，则与被请求资源的最后修改时间进行对比，如果一致则返回 304 和响应报文头，浏览器只需要从缓存中获取信息即可。如果已经修改，那么开始传输响应一个整体，服务器返回：200 OK</li>
+<li><strong>Etag/If-None-Match</strong>：Etag 都是服务器为每份资源生成的唯一标识，就像一个指纹，资源变化都会导致 ETag 变化，跟最后修改时间没有关系，ETag 可以保证每一个资源是唯一的。在浏览器发起请求，浏览器的请求报文头会包含 If-None-Match 字段，其值为上次返回的 Etag 发送给服务器，服务器接收到次报文后发现 If-None-Match 则与被请求资源的唯一标识进行对比。如果相同说明资源没有修改，则响应返 304，浏览器直接从缓存中获取数据信息。如果不同则说明资源被改动过，则响应整个资源内容，返回状态码 200</li>
+<li>Etag 优先级高与 Last-Modified</li>
+</ul>
+</li>
+<li>
+<p>浏览器缓存</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%204.png" alt="Untitled"></p>
+</li>
+<li>
+<p>Cookie</p>
+<p><strong>什么是cookie？</strong></p>
+<p>HTTP协议本身是无状态的，即服务器无法判断用户身份。如果要实话客户端和服务器端的会话保持，那就需要其它机制来实现。Cookie 实际上是一小段文本信息，由 key-value 的格式组成。客户端向服务端发起请求时，如果服务器需要记录该用户状态，就使用 response 向客户端浏览器颁发一个 Cookie，客户端浏览器会把 Cookie 保存起来，当浏览器再请求该网站时，浏览器把请求的信息连同该 Cookie 一起提交给服务器，服务器检查该 Cookie，以此来辨认用户状态</p>
+<p>Cookie 名称和值可以由服务器端开发自己定义，这样服务器可以知道该用户是否合法用户以及是否需要重新登录等，服务器可以设置或读取 Cookie 中包含信息，借此维护用户跟服务器会话中的状态</p>
+<p><strong>第一次访问并登录一个网站时，Cookie的设置以及发送会经历4个步骤</strong></p>
+<ul>
+<li>客户端发送一个 HttpRequest 请求到服务器</li>
+<li>服务器发送一个 HttpResponse 响应到客户端，其中包含了 Set-Cookie 的头部</li>
+<li>客户端保存 Cookie 之后向服务器发送请求时，HttpRequest 请求包含一个Cookie 的头部</li>
+<li>服务器返回 HttpResponse 响应数据</li>
+</ul>
+<p><strong>Cookie 的特征：</strong></p>
+<ol>
+<li>cookie是在服务端创建，保存在浏览器这一端，每次请求会携带与当前服务相关的键值对数据</li>
+<li>cookie的生命周期可以通过 cookie.setMaxAge(2000)，如果不设置生命周期，cookie的生命周期当浏览器关闭时就消亡</li>
+<li>cookie可以被多个浏览器共享，一个web应用可以保存多个cookie，但保存在同一个cookie文本在客户端浏览器下</li>
+<li>cookie存放时候是以明文方式存放，因此安全性较低，数据存储在浏览器中容易被暴露，被获取，不能存储敏感数据。可以通过加密后存放。</li>
+</ol>
+</li>
+<li>
+<p>Cookie 字段的内容</p>
+<p>Cookie 由以下字段组成：</p>
+<ul>
+<li>Name：cookie 的名称</li>
+<li>Value：cookie 的值，对于认证 cookie，value 值包括 web 服务器所提供的访问令牌</li>
+<li>Size：cookie 的大小</li>
+<li>Path：可以访问此 cookie 的页面路径。比如 domain 是 abc.com，path是 /test，那么只有 /test 路径下的页面可以读取此 cookie。</li>
+<li>Secure：指定是否使用 HTTPS 安全协议发送 Cookie。使用 HTTPS 安全协议，可以保护 Cookie 在浏览器和 Web 服务器间的传输过程中不被窃取和篡改。该方法也可用于 Web 站点的身份鉴别，即在 HTTPS 的连接建立阶段，浏览器会检查 Web 网站的 SSL 证书的有效性。但是基于兼容性的原因（比如有些网站使用自签署的证书）在检测到 SSL 证书无效时，浏览器并不会立即终止用户的连接请求，而是显示安全风险信息，用户仍可以选择继续访问该站点</li>
+<li>Domain：可以访问该 cookie 的域名，Cookie 机制并未遵循严格的同源策略，允许一个子域可以设置或获取其父域的 Cookie。当需要实现单点登录方案时，Cookie 的上述特性非常有用，然而也增加了 Cookie 受攻击的危险，比如攻击者可以借此发动会话定置攻击。因而，浏览器禁止在 Domain 属性中设置 org.com 等通用顶级域名、以及在国家及地区顶级域下注册的二级域名，以减小攻击发生的范围</li>
+<li>HTTP：该字段包含 HTTPOnly 属性，该属性用来设置 cookie 能否通过脚本来访问，默认为空，即可以通过脚本访问。在客户端是不能通过 js 代码去设置一个httpOnly 类型的 cookie 的，这种类型的 cookie 只能通过服务端来设置。该属性用于防止客户端脚本通过 document.cookie 属性访问 Cookie，有助于保护 Cookie不被跨站脚本攻击窃取或篡改。但是，HTTPOnly的应用仍存在局限性，一些浏览器可以阻止客户端脚本对 Cookie 的读操作，但允许写操作。此外大多数浏览器仍允许通过 XMLHTTP 对象读取 HTTP 响应中的 Set-Cookie头</li>
+<li>Expires/Max-size：此 cookie 的超时时间。若设置其值为一个时间，那么当到达此时间后，此 cookie 失效。不设置的话默认值是 Session，意思是 cookie 会和 session 一起失效。当浏览器关闭(不是浏览器标签页，而是整个浏览器) 后，此 cookie 失效</li>
+</ul>
+</li>
+<li>
+<p>Session</p>
+<p><strong>什么是 Session？</strong></p>
+<p>跟 Cookie 一样，由于 HTTP 无状态的特性，如果要实话客户端和服务器端的会话保持，那就需要其它机制来实现。Session 是存放在服务器端，来存放用户数据的。</p>
+<p>当浏览器第一次发送请求时，服务器自动生成了一个 Session 和一个 Session ID 用来唯一标识这个 Session，并将其通过 HttpResponse 发送到浏览器</p>
+<p>当浏览器第二次发送请求，会将前一次服务器响应中的 Session ID 放在请求中一并发送到服务器上，服务器从请求中提取出 Session ID，并和保存的所有 Session ID 进行对比，找到这个用户对应的 Session</p>
+<p><strong>Session 的客户端实现形式</strong>(即Session ID的保存方法)？
+有三种方法，浏览器提供了两种方式来保存，第三种是程序员使用 html 隐藏域的方式自定义实现：</p>
+<ol>
+<li><strong>使用 Cookie 来保存</strong>。这是最常见的方法，网站上的 “记住我的登录状态” 功能的实现就是基于这种方式的。服务器通过设置 Cookie 的方式将 Session ID 发送到浏览器。如果我们不设置这个过期时间，那么这个 Cookie 将不存放在硬盘上，当浏览器关闭的时候，Cookie 就消失了，这个 Session ID 就丢失了。如果我们设置这个时间为若干天之后，那么这个 Cookie 会保存在客户端硬盘中，即使浏览器关闭，这个值仍然存在，下次访问相应网站时，同样会发送到服务器上</li>
+<li><strong>使用URL附加信息的方式</strong>。比如 /path?SESSIONID=1234，这种方式和前面不设置 Cookie 过期时间是一样的</li>
+<li><strong>在页面表单里面增加隐藏域</strong>。这种方式实际上和第二种方式一样，只不过前者通过GET方式发送数据，后者使用POST方式发送数据</li>
+</ol>
+</li>
+<li>
+<p>Token</p>
+<p><strong>产生背景：</strong></p>
+<p>Session 和 Cookie 机制来保持会话，会存在一个问题：客户端浏览器只要保存自己的 SessionID 即可，而服务器却要保存所有用户的 Session 信息，这对于服务器来说开销较大，而且不利用服务器的扩展，比如服务器集群时，Session 如何同步存储就是个问题。于是就有人思考，如果把 Session 信息让客户端来保管而且无法伪造或许就可以解决这个问题了，进而有了Token机制</p>
+<p><strong>什么是 Token：</strong></p>
+<p>Token 是服务端生成的一串字符串，以作客户端进行请求的一个令牌，当第一次登录后，服务器生成一个 Token 便将此 Token 返回给客户端，以后客户端只需带上这个 Token 前来请求数据即可，无需再次带上用户名和密码</p>
+<p><strong>作用机制：</strong></p>
+<p>服务器并不保存 Token，而是通过数据签名的方法，对数据用算法（如SHA-256）与私钥进行签名后作为 Token，当 Token 发送给服务器时，服务会通过相同的算法与密钥进行签名，如果和 Token 中的签名相同，服务器就知道用户已经登录过了，并且可以直接得到用户的 userID，相当于服务器用cpu的计算时间来换取了储存空间</p>
+</li>
+<li>
+<p>Cookie 和 Session 的合作运行机制</p>
+<ol>
+<li>第一次请求时，首先将用户名和密码发送给服务器，第一次请求不会带 Cookie，因为服务器还没有设置 Cookie</li>
+<li>服务器核对，如果确认密码正确则身份验证成功</li>
+<li>服务器创建 Session 对象，包含 Session ID(没有规律的字符串，随机产生)，会话过期时间(如果我们不设置这个过期时间，那么这个 Cookie 将不存放在硬盘上，当浏览器关闭的时候，Cookie 就消失了，这个 Session ID 就丢失了。如果我们设置这个时间为若干天之后，那么这个 Cookie 会保存在客户端硬盘中，即使浏览器关闭，这个值仍然存在，下次访问相应网站时，同样会发送到服务器上)，其他参数等等。这个创建的 session 对象保存在服务器，用于记录客户状态，比如保存客户的基本信息、权限等</li>
+<li>服务器通过设置 Cookie 的方式将 Session ID 发送到浏览器</li>
+<li>浏览器拿到 Cookie，并在 value 里面保存 Session 的 Session ID</li>
+<li>客户端每次访问该网站都要带上这个由 Session ID 组成的 Cookie</li>
+<li>服务器收到请求，首先拿到客户端的 Session ID，判断 Session ID 是否存在，进行验证。然后从服务器内存中查询它所代表的客户端 (用户名，用户组，有哪些权限等)</li>
+<li>在登出以及超过设置的会话时间时候，浏览器的 Cookie 就会被删除，需要重新登录</li>
+</ol>
+</li>
+<li>
+<p>Cookie 和 Seesion 的联系和区别</p>
+<p><strong>联系：</strong></p>
+<ol>
+<li>由于 http 协议是无状态的，服务器需要记录用户的状态，所以 cookie 和 session 都是用来保持状态的方案</li>
+<li>session 依赖 cookie，因为 session 的运行依赖 session id，而 session id 是存在 cookie 中的，也就是说，如果浏览器禁用了 cookie ，同时 session 也会失效，但是也可以通过其它方式实现，比如在 url 中传递 session_id</li>
+</ol>
+<p><strong>区别：</strong></p>
+<ol>
+<li>储存位置：cookie储存在浏览器，session储存在服务器</li>
+<li>安全性：session比cookie更加安全，cookie容易造成cookie欺骗，用户验证这种场合一般会用 session</li>
+<li>存储的数据类型不同：cookie只支持字符串数据，session是object类型</li>
+<li>有效期不同：cookie存活时间可设置较长时间，而session存活时间相对较短，服务端关闭等都会丢失session</li>
+<li>存储大小不同：单个cookie的数据不能超过4KB，session储存的数据内容可以更大，但是session过多会占用更多的服务器资源</li>
+</ol>
+</li>
+<li>
+<p>JWT (Jason Web Tooken) 身份认证</p>
+<p><a href="https://javaguide.cn/system-design/security/jwt-intro.html#%E4%BB%80%E4%B9%88%E6%98%AF-jwt" target="_blank">JWT 基础概念详解 | JavaGuide</a></p>
+<p><a href="https://blog.csdn.net/m0_54416083/article/details/125117962" target="_blank">(186条消息) Cookie、Session以及Token的区别 以及身份认证 保持登录状态_ADRIANWOH的博客-CSDN博客</a></p>
+<p>JWT（JSON Web Token），本质就是一个字符串，作用是用来在用户和服务器之间传递安全可靠的信息，在目前前后端分离的开发过程中，使用 token 鉴权机制用于身份验证是比较常见和安全的方案，<strong>总的流程是：</strong></p>
+<ol>
+<li>服务器当验证用户账号和密码正确的时候，给用户颁发一个令牌，这个令牌作为后续用户访问一些接口的凭证</li>
+<li>后续访问会根据这个令牌判断用户时候有权限进行访问</li>
+</ol>
+<p>主要在网络应用中传递一些小批量安全数据时使用,它是一个紧凑并且安全的token。</p>
+<p>和普通token比较</p>
+<p>相同点：都是可以访问资源的令牌，都可以记录用户信息，都只能在验证成功后获取信息。</p>
+<p>不同点：服务器验证时，普通token要在数据库进行数据的查询，而jwt验证token只用在服务端使用密钥验证</p>
+<p>Token，分成了三部分，头部（Header）、载荷（Payload）、签名（Signature），并以.进行拼接。其中头部和载荷都是以JSON格式存放数据，只是进行了编码</p>
+<p>由三部分组成,中间由点分开</p>
+<p>header:头部&mdash;&ndash;&gt;生成签名的算法</p>
+<p>payload:负载&mdash;&ndash;&gt;用户的信息</p>
+<p>signature:签名&mdash;&ndash;&gt;将header和payload通过base64编码后进行算法(header中声明的算法)运算得到签名信息</p>
+<p>认证机制：</p>
+<p>1.用户第一次登录网页 服务器生成一个jwt(服务器不保存) 服务器保存生成jwt的签名密文</p>
+<p>2.把jwt发送给浏览器(web应用通常使用cookie和local storage存储;app则使用app自己的存储机制存储)</p>
+<p>3.浏览器每次发送请求都带上这个jwt</p>
+<p>4.服务器通过hear中声明的算法结合hearder和payload进行算法运算得到签名信息与signature进行匹配认证</p>
+<p>用app自己的存储机制存储)</p>
+<p>3.浏览器每次发送请求都带上这个jwt</p>
+<p>4.服务器通过hear中声明的算法结合hearder和payload进行算法运算得到签名信息与signature进行匹配认证</p>
+<p><a href="https://blog.csdn.net/weixin_45070175/article/details/118559272" target="_blank">(187条消息) JWT详解_baobao555#的博客-CSDN博客_jwt</a></p>
+<p>JWT的本质就是一个字符串，它是将用户信息保存到一个Json字符串中，然后进行编码后得到一个JWT token，并且这个JWT token带有签名信息，接收后可以校验是否被篡改，所以可以用于在各方之间安全地将信息作为Json对象传输。JWT的认证流程如下：</p>
+<p>首先，前端通过Web表单将自己的用户名和密码发送到后端的接口，这个过程一般是一个POST请求。建议的方式是通过SSL加密的传输(HTTPS)，从而避免敏感信息被嗅探
+后端核对用户名和密码成功后，将包含用户信息的数据作为JWT的Payload，将其与JWT Header分别进行Base64编码拼接后签名，形成一个JWT Token，形成的JWT Token就是一个如同lll.zzz.xxx的字符串
+后端将JWT Token字符串作为登录成功的结果返回给前端。前端可以将返回的结果保存在浏览器中，退出登录时删除保存的JWT Token即可
+前端在每次请求时将JWT Token放入HTTP请求头中的Authorization属性中(解决XSS和XSRF问题)
+后端检查前端传过来的JWT Token，验证其有效性，比如检查签名是否正确、是否过期、token的接收方是否是自己等等
+验证通过后，后端解析出JWT Token中包含的用户信息，进行其他逻辑操作(一般是根据用户信息得到权限等)，返回结果</p>
+</li>
+<li>
+<p>Authentication 和 Authorization 的区别</p>
+<p>authentication 是身份鉴别，意思就是确认你的身份是你</p>
+<p>authorization 是授权，在确认你的身份之后对你进行授权，token，sso</p>
+</li>
+<li>
+<p>HTTP/1.x 和 HTTP/2.x 和 HTTP/3.0</p>
+<p><a href="https://juejin.cn/post/6844903489596833800#comment" target="_blank">HTTP1.0、HTTP1.1 和 HTTP2.0 的区别 - 掘金 (juejin.cn)</a></p>
+<p>http1.x 和http2.x主要有以下4个区别：</p>
+<ol>
+<li>
+<p>HTTP2使用的是二进制传送，HTTP1.X是文本（字符串）传送</p>
+<p>二进制传送的单位是帧和流，帧组成了流，同时流还有流ID标示</p>
+</li>
+<li>
+<p>HTTP2支持多路复用</p>
+<p>因为有流ID，所以通过同一个http请求实现多个http请求传输变成了可能，可以通过流ID来标示究竟是哪个流从而定位到是哪个http请求</p>
+</li>
+<li>
+<p>HTTP2头部压缩</p>
+<p>HTTP2通过gzip和compress压缩头部然后再发送，同时客户端和服务器端同时维护一张头信息表，所有字段都记录在这张表中，这样后面每次传输只需要传输表里面的索引Id就行，通过索引ID查询表头的值</p>
+</li>
+<li>
+<p>HTTP2支持服务器推送</p>
+<p>HTTP2支持在未经客户端许可的情况下，主动向客户端推送内容</p>
+</li>
+</ol>
+<p>http 3：</p>
+<p>QUIC (Quick UDP Internet Connections), 快速 UDP 互联网连接，QUIC是基于UDP协议的。</p>
+<ul>
+<li>
+<p>线头阻塞(HOL)问题的解决更为彻底：</p>
+<p>基于TCP的HTTP/2，尽管从逻辑上来说，不同的流之间相互独立，不会相互影响，但在实际传输方面，数据还是要一帧一帧的发送和接收，一旦某一个流的数据有丢包，则同样会阻塞在它之后传输的流数据传输。而基于UDP的QUIC协议则可以更为彻底地解决这样的问题，让不同的流之间真正的实现相互独立传输，互不干扰</p>
+</li>
+<li>
+<p>切换网络时的连接保持：</p>
+<p>当前移动端的应用环境，用户的网络可能会经常切换，比如从办公室或家里出门，WiFi断开，网络切换为3G或4G。基于TCP的协议，由于切换网络之后，IP会改变，因而之前的连接不可能继续保持。而基于UDP的QUIC协议，则可以内建与TCP中不同的连接标识方法，从而在网络完成切换之后，恢复之前与服务器的连接
+总结：基于UDP和应用层实现了TCP协议</p>
+</li>
+</ul>
+</li>
+<li>
+<p>HTTP 和 socket 的区别</p>
+<p>http 为短连接：客户端发送请求都需要服务器端回送响应，请求结束后主动释放链接。通常的做法是，不需要任何数据，也要保持每隔一段时间向服务器发送&quot;保持连接&quot;的请求。这样可以保证客户端在服务器端是&quot;上线&quot;状态。</p>
+<p>Socket为长连接：通常情况下 Socket 连接就是 TCP 连接，因此 Socket 连接一旦建立，通讯双方开始互发数据内容，直到双方断开连接。在实际应用中，由于网络节点过多，在传输过程中，会被节点断开连接，因此要通过轮询高速网络，该节点处于活跃状态</p>
+</li>
+<li>
+<p>URI = URL + URN</p>
+<p><strong>URI 是什么</strong></p>
+<p>URI 统一资源标识符，是 Uniform Resource Identifier 的缩写，是一个用于标识互联网资源名称的字符串，通过使用位置，名称或两者来标识Internet上的资源</p>
+<p>URL 和 URN 都是 URI 的子集，URI 属于 URL 更高层次的抽象，一种字符串文本标准。URI 的最常见的形式是 URL (统一资源定位符)，经常指定为非正式的网址。不常见的用法是 URN (统一资源名称)，其目的是通过提供一种途径，用于在特定的命名空间资源的标识，以补充网址</p>
+<p>URL 是什么</p>
+<p>URL 统一资源定位符，是 Uniform Resource Locator 的缩写，URI 表示请求服务器的路径，定义这么一个资源。而 URL 同时说明要如何访问这个资源</p>
+<p><strong>一个完整的 URL 分为4部分：</strong></p>
+<ol>
+<li>协议：例 Http、Https</li>
+<li>域名：例 <a href="https://link.jianshu.com/?t=http://www.baidu.com">www.baidu.com</a> 为网站名字，<a href="https://link.jianshu.com/?t=http://baidu.com" target="_blank">baidu.com</a> 为一级域名，www是服务</li>
+<li>端口：不填写的话默认走的是80端口号</li>
+<li>路径：<a href="https://link.jianshu.com/?t=http://www.baidu.com/" target="_blank">http://www.baidu.com/</a>path1/path2，其中 / 表示根目录</li>
+<li>查询参数：<a href="https://link.jianshu.com/?t=http://www.baidu.com/" target="_blank">http://www.baidu.com/</a>path1/path2?name=&ldquo;man&rdquo;(查询参数可有可无)</li>
+</ol>
+</li>
+<li>
+<p>当打开一个浏览器输入 URL 到请求道页面的整个过程 ⭐</p>
+<p><strong>简述：</strong></p>
+<ol>
+<li>DNS解析：将域名转化为 IP 地址</li>
+<li>TCP连接：与服务器建立连接</li>
+<li>发送HTTP请求</li>
+<li>服务器处理请求并返回 HTTP 报文</li>
+<li>浏览器解析渲染页面</li>
+<li>连接结束</li>
+</ol>
+<p><strong>详细：</strong></p>
+<ol>
+<li>输入地址，浏览器查找域名的 IP 地址</li>
+<li>在发送请求之前浏览器和服务器建立 TCP 的三次握手</li>
+<li>浏览器向该 IP 地址的 web 服务器发送一个 HTTP 请求</li>
+<li>判断是否是 HTTP 缓存，如果是强制缓存且在有效期内，不再向服务器发请求，如果是协商缓存向后端发送请求且和后端服务器对比，在有效期内，服务器返回304，直接从浏览器获取数据，如果不在有效期内服务器返回200，返回新数据。如果请求的参数有问题，服务器端返回404，如果服务器端挂了返回500</li>
+<li>如果数据一切正常，当浏览器拿到服务器的数据之后，开始渲染页面同时获取 HTML 页面中图片、音频、视频、CSS、JS的资源，在这期间如果获取到 JS 文件之后，会直接执行 JS 代码，阻塞浏览器渲染（因为渲染引擎和 JS 引擎互斥，不能同时工作，所以通常把 Script 标签放在 body 标签的底部）。渲染过程就是先将 HTML 转换成 dom 树，再将 CSS 样式转换成 stylesheet，根据 dom 树和 stylesheet 创建布局树，对布局树进行分层，为每个图层生成绘制列表，再将图层分成图块，紧接着光栅化将图块转换成位图，最后合成绘制生成页面</li>
+<li>连接结束</li>
+</ol>
+</li>
+<li>
+<p>DNS 协议以及概念</p>
+<p><strong>DNS</strong>（Domain Name Service）就是域名解析协议，是因特网中的一项核心服务，是用于实现域名和IP地址相互映射，使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，得到该主机名对应的IP地址的过程叫做域名解析。将域名映射成 IP 地址称为正向解析，将 IP 地址映射成域名称为反向解析</p>
+<p><strong>IP 地址</strong>：一长串能够唯一地标记网络上的计算机的数字，IP 地址具有不方便记忆并且不能显示地址组织的名称和性质等缺点，因此设计出了域名</p>
+<p><strong>域名</strong>：又称网域，是由一串用点分隔的名字组成的 Internet 上某一台计算机或计算机组的名称，用于在数据传输时对计算机的定位标识（有时也指地理位置）比如 www.baidu.com。域名结构是树状结构，树的最顶端代表根服务器，根的下一层从上到下依次为顶级域名(com)、二级域名(baidu)、三级域名(wwww)..</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%205.png" alt="Untitled"></p>
+<p>计算机中DNS记录在本地有两种缓存方式：</p>
+<ul>
+<li><strong>浏览器缓存</strong>：浏览器在获取网站域名的实际 IP 地址后会对其进行缓存，减少网络请求的损耗。每种浏览器都有一个固定的 DNS 缓存时间，如 Chrome 的过期时间是 1 分钟，在这个期限内不会重新请求 DNS</li>
+<li><strong>操作系统缓存</strong>：操作系统的缓存其实是用户自己配置的 hosts 文件。比如 Windows10 下的 hosts 文件存放在 C:\Windows\System32\drivers\etc\hosts</li>
+</ul>
+<p>具体 DNS 查询的方式有两种：</p>
+<ul>
+<li>
+<p>递归查询</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%206.png" alt="Untitled"></p>
+</li>
+<li>
+<p>迭代查询：所谓迭代就是，如果请求的接收者不知道所请求的内容，那么接收者将扮演请求者，发出有关请求，直到获得所需要的内容，然后将内容返回给最初的请求者。通俗点来说，在递归查询中，如果 A 请求 B，那么 B 作为请求的接收者一定要给 A 想要的答案。而迭代查询则是指，如果接收者 B 没有请求者 A 所需要的准确内容，接收者 B 将告诉请求者 A，如何去获得这个内容，但是自己并不去发出请求。一般来说，<strong>域名服务器之间的查询使用迭代查询方式，以免根域名服务器的压力过大</strong></p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%207.png" alt="Untitled"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>DNS 正向解析过程</p>
+<p>将域名服务器之间的 DNS 查询请求过程和域名缓存结合起来，就是一个完整的 DNS 协议进行域名解析的过程。以正向解析为例（域名解析成 IP 地址）：</p>
+<ol>
+<li>首先搜索<strong>浏览器的DNS缓存</strong>，缓存中维护一张域名与IP地址的对应表。若没有命中，则继续搜索<strong>操作系统的 DNS 缓存</strong></li>
+<li>若仍然没有命中，则操作系统将域名发送至<strong>本地域名服务器</strong>，本地域名服务器查询自己的 DNS 缓存，查找成功则返回结果（主机和本地域名服务器之间的查询方式是<strong>递归查询</strong>）</li>
+<li>若本地域名服务器的 DNS 缓存没有命中，则本地域名服务器向上级域名服务器进行查询，通过以下方式进行<strong>迭代查询</strong>（注意：本地域名服务器和其他域名服务器之间的查询方式是迭代查询，防止根域名服务器压力过大）：
+<ul>
+<li>首先本地域名服务器向<strong>根域名服务器</strong>发起请求，根域名服务器是最高层次的，它并不会直接指明这个域名对应的 IP 地址，而是返回顶级域名服务器的地址，也就是说给本地域名服务器指明一条道路，让他去这里寻找答案</li>
+<li>本地域名服务器拿到这个<strong>顶级域名服务器</strong>的地址后，就向其发起请求，获取<strong>权限域名服务器</strong>的地址</li>
+<li>本地域名服务器根据权限域名服务器的地址向其发起请求，最终得到该域名对应的 IP 地址</li>
+</ul>
+</li>
+<li>本地域名服务器将得到的 IP 地址返回给操作系统，同时自己将 IP 地址缓存起来</li>
+<li>操作系统将 IP 地址返回给浏览器，同时自己也将 IP 地址缓存起来</li>
+<li>至此，浏览器就得到了域名对应的 IP 地址，并将 IP 地址缓存起来</li>
+</ol>
+</li>
+<li>
+<p>DNS 资源记录类型</p>
+<table>
+  <thead>
+      <tr>
+          <th>记录名</th>
+          <th>中文名</th>
+          <th>作用</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A、AAAA</td>
+          <td>主机记录</td>
+          <td>说明一个域名对应的IP是多少，它是域名和IP地址的对应关系。Ipv4使用的是A记录，ipv6使用的是AAAA记录</td>
+      </tr>
+      <tr>
+          <td>NS</td>
+          <td>Name Server域名服务器记录</td>
+          <td>说明这个区域有哪些DNS服务器负责解析</td>
+      </tr>
+      <tr>
+          <td>SOA</td>
+          <td>Start of Authority 起始授权机构记录</td>
+          <td>说明负责解析的DNS服务器中哪一个是主服务器</td>
+      </tr>
+      <tr>
+          <td>MX</td>
+          <td>Mail Exchanger 邮件交换记录</td>
+          <td>主要用于邮件服务器DNS交互，帮助电子邮件正确到达邮件服务器</td>
+      </tr>
+      <tr>
+          <td>Cname</td>
+          <td>Canonical Name别名记录</td>
+          <td>用于为当前区域之外的资源提供别名</td>
+      </tr>
+      <tr>
+          <td>Pointer</td>
+          <td>指针记录</td>
+          <td>是A记录的逆向记录，作用是把IP地址解析为域名</td>
+      </tr>
+      <tr>
+          <td>SRV</td>
+          <td>Service服务器资源记录</td>
+          <td>说明一个服务器能够提供什么样的服务</td>
+      </tr>
+  </tbody>
+</table>
+<p>|</p>
+</li>
+<li>
+<p>DNS 劫持</p>
+<p>DNS（域名系统）劫持又叫域名劫持，指攻击者利用其他攻击手段，篡改了某个域名的解析结果，使得指向该域名的IP变成了另一个IP，导致对相应网址的访问被劫持到另一个不可达的或者假冒的网址，从而实现非法窃取用户信息或者破坏正常网络服务的目的</p>
+<p>DNS（域名系统）的作用是把网络地址（域名，以一个字符串的形式）对应到真实的计算机能够识别的网络地址（IP地址），以便计算机能够进一步通信，传递网址和内容等</p>
+<p><strong>怎么防止DNS劫持攻击？</strong></p>
+<p>1、建议使用复杂的密码重置路由器的默认密码。</p>
+<p>2、使用DNS注册器时使用双因素身份验证，并修补路由器中存在的所有漏洞以避免危害。</p>
+<p>3、最好远离不受信任的网站，避免下载任何免费的东西。</p>
+<p>4、如果您已被感染，建议删除HOSTS文件的内容并重置Hosts File。</p>
+<p>5、为防止DNS劫持，始终建议使用良好的安全软件和防病毒程序，并确保定期更新软件。</p>
+<p>6、安全专家建议使用公共DNS服务器。</p>
+<p>7、最好定期检查您的DNS设置是否已修改，并确保您的DNS服务器是安全的</p>
+</li>
+</ul>
+<h1 id="第四层-传输层">第四层 传输层</h1>
+<ul>
+<li>
+<p>TCP/IP 协议</p>
+<p>TCP/IP协议是一个面向连接的网络传输协议，对互联网中各部分进行通信的标准和方法进行了规定。TCP/IP传输协议的目的是，保证网络数据信息及时、完整传输</p>
+<p>TCP/IP 协议不仅仅指的是 TCP 和 IP 两个协议，而是指一个由 FTP、SMTP、TCP、UDP、IP 等协议构成的协议簇，TCP 协议和 IP 协议最具代表性，所以被称为 TCP/IP 协议，TCP/IP传输协议是严格来说是一个四层的体系结构，应用层、传输层、网络层和数据链路层都包含其中</p>
+<ul>
+<li><strong>应用层</strong>：主要协议有 Telnet、FTP、SMTP 等，是用来接收来自传输层的数据或者按不同应用要求与方式，将数据传输至传输层</li>
+<li><strong>传输层</strong>：主要协议有 UDP、TCP，是使用者使用平台和计算机信息网内部数据结合的通道，可以实现数据传输与数据共享</li>
+<li><strong>网络层</strong>：主要协议有 ICMP、IP、IGMP，主要负责网络中数据包的传送等</li>
+<li><strong>数据链路层</strong>：主要协议有ARP、RARP，主要功能是提供链路管理错误检测、对不同通信媒介有关信息细节问题进行有效处理等</li>
+</ul>
+</li>
+<li>
+<p>TCP 报文格式</p>
+<p>TCP 报文由<strong>首部和数据</strong>两部分组成。首部一般由 20-60 Byte 构成，长度可变。其中前 20B 格式固定，后 40B 是可选的</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%208.png" alt="Untitled"></p>
+<ol>
+<li><strong>源端口号</strong>（Source Port）：长度为16位，指明发送数据的进程</li>
+<li><strong>目的端口号</strong>（Destination Port）：长度为16位，指明目的主机接收数据的进程。</li>
+<li><strong>序列号</strong>（Sequence Number）：长度为32位，序号用来标识从TCP发送端向接入端发送的数据字节流进行编号，可以理解成对字节流的计数</li>
+<li><strong>确认号</strong>（Acknowledgement Number）：长度为 32 位，确认号包含发送确认的一端所期望收到的下一个序号。确认号只有在 ACK 标志为1时才有效</li>
+<li><strong>首部长度</strong>：长度为4位，用于表示TCP报文首部的长度。用4位（bit）表示，十进制值就是[0,15]，一个TCP报文前20个字节是必有的，后40个字节根据情况可能有可能没有。如果TCP报文首部是20个字节，则该位应是20/4=5</li>
+<li><strong>保留位</strong>（Reserved）：长度为 6 位，必须是 0，它是为将来定义新用途保留的</li>
+<li><strong>标志</strong>（Code Bits）：长度为 6 位，在 TCP 报文中不管是握手还是挥手还是传数据等，这 6 位标志都很重要。6 位从左到右依次为：
+<ul>
+<li>URG：紧急标志位，说明紧急指针有效</li>
+<li>ACK：确认标志位，多数情况下空，说明确认序号有效</li>
+<li>PSH：推标志位，置位时表示接收方应立即请求将报文交给应用层</li>
+<li>RST：复位标志，用于重建一个已经混乱的连接</li>
+<li>SYN：同步标志，该标志仅在三次握手建立TCP连接时有效</li>
+<li>FIN：结束标志，带该标志位的数据包用于结束一个TCP会话</li>
+</ul>
+</li>
+<li><strong>窗口大小</strong>（Window Size）：长度为 16 位，TCP 流量控制由连接的每一端通过声明的窗口大小来提供</li>
+<li><strong>检验和</strong>（Checksum）：长度为 16 位，该字段覆盖整个 TCP 报文端，是个强制性的字段，是由发送端计算和存储，到接收端后，由接收端进行验证</li>
+<li><strong>紧急指针</strong>（Urgent Pointer）长度为16位，指向数据中优先部分的最后一个字节，通知接收方紧急数据的长度，该字段在URG标志置位时有效</li>
+<li><strong>选项</strong>（Options）：长度为0-40B（字节），必须以4B为单位变化，必要时可以填充0。通常包含：最长报文大小（MaximumSegment Size，MSS）、窗口扩大选项、时间戳选项、选择性确认（Selective ACKnowlegement，SACK）等</li>
+<li>数据</li>
+</ol>
+</li>
+<li>
+<p>TCP 三次握手</p>
+<p>发生在客户端想要与服务端建立连接的时候，所谓三次握手，是指建立一个 TCP 连接时，需要客户端和服务器总共发送3个报文</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%209.png" alt="Untitled"></p>
+<p><strong>三次握手的过程：</strong></p>
+<ul>
+<li><strong>第一次握手</strong>：客户端将 TCP 报文标志位 SYN 置为1，随机产生一个序列号值 seq=J，保存在 TCP 首部的序列号字段里，并指明客户端打算连接的服务器的端口，并将该数据包发送给服务器端，发送完毕后，客户端进入 SYN_SENT 状态，等待服务器端确认</li>
+<li><strong>第二次握手</strong>：服务器端收到数据包后由标志位 SYN=1 可以知道客户端请求建立连接，服务器端将 TCP 报文标志位 SYN 和 ACK 都置为 1，把报文的确认位 ACK 设置为 J+1，随机产生一个序列号值 seq=K，并将该数据包发送给客户端以确认连接请求，服务器端进入SYN_RCVD状态</li>
+<li><strong>第三次握手</strong>：客户端收到确认后，检查确认位 ACK 是否为 J+1，标志位 ACK 是否为 1，如果正确则将确认位 ACK 置为 K+1，将标志位 ACK 置为 1，并将该数据包发送给服务器端</li>
+<li><strong>最后</strong>，服务器端检查确认位 ACK 是否为 K+1，标志位 ACK 是否为 1，如果正确则连接建立成功，客户端和服务器端进入 ESTABLISHED 状态，完成三次握手，随后客户端与服务器端之间可以开始传输数据了</li>
+</ul>
+<p><strong>三次握手的目的：</strong></p>
+<p>建立安全可靠的连接，对服务端而言，两次握手是不够的，三次之后两边都知到自己可以发送，又可以接收。防止已失效的连接请求报文段突然又传到了服务端，产生错误</p>
+<p><strong>为什么不是两次：</strong></p>
+<p>在服务端对客户端的请求进行回应(第二次握手)后，就会理所当然的认为连接已建立，而此时有可能客户端并没有收到服务端的回应。此时，客户端仍认为连接未建立，服务端会对已建立的连接保存必要的资源，如果大量的这种情况，服务端会崩溃。</p>
+</li>
+<li>
+<p>TCP 四次挥手</p>
+<p><strong>四次挥手的目的</strong></p>
+<p>TCP 是全双工模式，客户端请求关闭连接，不再发送数据了，但是可以接收服务端的数据。第一次挥手时，当服务端收到 FIN 报文时，很可能并不会立即关闭 SOCKET，所以只能先回复一个 ACK 报文，告诉客户端，“你发的 FIN 报文我收到了”，然后等到我服务端所有的报文都发送完了，我才发送 FIN 报文。故需要四次挥手。只有当服务端不再发送数据了，才算关闭，这样减小了丢失数据的风险</p>
+<p><strong>四次挥手的过程</strong></p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%2010.png" alt="Untitled"></p>
+<ul>
+<li><strong>第一次挥手</strong>：Client 端发起挥手请求，向 Server 端发送标志位是 FIN=1 的 TCP 报文段，设置序列号 seq=k，此时，Client 端进入 FIN_WAIT_1 状态，这表示 Client 端没有数据要发送给 Server 端了。</li>
+<li><strong>第二次分手</strong>：Server 端告诉 Client 端，我确认并同意你的关闭请求，过程是 Server 端收到了 Client 端发送的 FIN=1 报文段，向 Client 端返回一个标志位是 ACK=1 的报文段，确认位 ack 设为 seq=k+1，Client 端进入 FIN_WAIT_2 状态</li>
+<li><strong>第三次分手</strong>：Server 端向 Client 端发送标志位是 FIN=N 的报文段，请求关闭连接，同时 Client 端进入 LAST_ACK 状态。</li>
+<li>**第四次分手：**Client 端收到 Server 端发送的 FIN 报文段，向 Server 端发送标志位是 ACK=1 的报文段，然后 Client 端进入 TIME_WAIT 状态。Server 端收到 Client 端的 ACK=1 报文段以后，就关闭连接。此时，Client 端等待 2MSL ****的时间后依然没有收到回复，则证明 Server 端已正常关闭，那好，Client 端也可以关闭连接了(<strong>MSL</strong>：报文段最大生存时间，它是任何报文段被丢弃前在网络内的最长时间)</li>
+</ul>
+</li>
+<li>
+<p>TCP 协议为什么可靠</p>
+<ol>
+<li>确认和重传机制：建立连接时三次握手连接机制是确认重传流量控制的基础，传输过程中如果校验失败，丢包或延时，发送端重传</li>
+<li>数据排序：TCP有专门的序列号字段，可提供数据 reorder</li>
+<li>流量控制：TCP窗口会指明双方能够发送接收的最大数据量</li>
+<li>拥塞控制：TCP滑动窗口机制。TCP建立连接时，各端分配一个缓冲区用来存储接受的数据，并将缓冲区的尺寸发送给另一端，接收方发送的确认消息中包含了自己剩余的缓冲区尺寸，剩余缓冲区空间的数量叫做窗口，所谓滑动窗口，就是接收端可以根据自己的状况通告窗口大小，从而控制发送端的接收，进行流量控制.</li>
+</ol>
+</li>
+<li>
+<p>TCP 的滑动窗口机制</p>
+<p>TCP中窗口大小是指tcp协议一次传输多少个数据。因为TCP是一个面向连接的可靠的传输协议，既然是可靠的就需要传输的数据进行确认。TCP窗口机制有两种，一种是固定窗口大小，另一种是滑动窗口。数据在传输时，TCP会对所有数据进行编号，发送方在发送过程中始终保持着一个窗口，只有落在发送窗口内的数据帧才允许被发送；同时接收方也始终保持着一个接收窗口，只有落在窗口内的数据才会被接收。这样通过改变发送窗口和接收窗口的大小就可以实现流量控制</p>
+</li>
+<li>
+<p>基于 TCP 的应用层协议</p>
+<table>
+  <thead>
+      <tr>
+          <th>协议</th>
+          <th>全称</th>
+          <th>默认端口</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>HTTP</td>
+          <td>HyperText Transfer Protocol（超文本传输协议）</td>
+          <td>80</td>
+      </tr>
+      <tr>
+          <td>FTP</td>
+          <td>File Transfer Protocol (文件传输协议)</td>
+          <td>20用于传输数据，21用于传输控制信息</td>
+      </tr>
+      <tr>
+          <td>SMTP</td>
+          <td>Simple Mail Transfer Protocol (简单邮件传输协议)</td>
+          <td>25</td>
+      </tr>
+      <tr>
+          <td>TELNET</td>
+          <td>Teletype over the Network (网络电传)</td>
+          <td>23</td>
+      </tr>
+      <tr>
+          <td>SSH</td>
+          <td>Secure Shell</td>
+          <td>22</td>
+      </tr>
+  </tbody>
+</table>
+<p>这些协议都是基于（C/S client/server）模式的，需要保证其传输的可靠性，所以需要在客户端和服务器端建立可靠的TCP连接</p>
+</li>
+<li>
+<p>基于 UDP 的应用层协议</p>
+<table>
+  <thead>
+      <tr>
+          <th>协议</th>
+          <th>全称</th>
+          <th>默认端口</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>DNS</td>
+          <td>Domain Name Service (域名服务)</td>
+          <td>53</td>
+      </tr>
+      <tr>
+          <td>TFTP</td>
+          <td>Trivial File Transfer Protocol (简单文件传输协议)</td>
+          <td>69</td>
+      </tr>
+      <tr>
+          <td>SNMP</td>
+          <td>Simple Network Management Protocol (简单网络管理协议)</td>
+          <td>通过UDP端口161接收，只有Trap信息采用UDP端口162</td>
+      </tr>
+      <tr>
+          <td>NTP</td>
+          <td>Network Time Protocol (网络时间协议)</td>
+          <td>123</td>
+      </tr>
+  </tbody>
+</table>
+<p>都是需要即使通信的，关注实时性</p>
+</li>
+<li>
+<p>应用层的 DNS 使用的是 TCP 还是 UDP？</p>
+<p>DNS 协议可以使用 UDP 或者 TCP 进行传输，使用的端口号都为 53。但大多数情况下 DNS 都使用 <strong>UDP</strong> 进行传输。都用，但实际上是根据需要传输的 payload 大小来决定使用 udp 还是 tcp</p>
+<p>UDP报文的最大长度为512字节，而TCP则允许报文长度超过512字节。当DNS查询超过512字节时，协议的TC标志出现删除标志，这时则使用TCP发送。通常传统的UDP报文一般不会大于512字节</p>
+<p>DNS在区域传输的时候使用TCP协议，其他时候使用UDP协议</p>
+<p>一、DNS在区域传输的时候使用TCP协议：</p>
+<ol>
+<li>辅域名服务器会定时（一般3小时）向主域名服务器进行查询以便了解数据是否有变动。如有变动，会执行一次区域传送，进行数据同步。区域传送使用TCP而不是UDP，因为数据同步传送的数据量比一个请求应答的数据量要多得多。</li>
+<li>TCP是一种可靠连接，保证了数据的准确性</li>
+</ol>
+<p>二、域名解析时使用UDP协议：</p>
+<ol>
+<li>客户端向DNS服务器查询域名，一般返回的内容都不超过512字节，用UDP传输即可。不用经过三次握手，这样DNS服务器负载更低，响应更快。理论上说，客户端也可以指定向DNS服务器查询时用TCP，但事实上，很多DNS服务器进行配置的时候，仅支持UDP查询包</li>
+</ol>
+</li>
+<li>
+<p>辨析：TCP 和 UDP</p>
+<p><strong>区别如下：</strong></p>
+<ol>
+<li>TCP 面向连接（如打电话要先拨号建立连接），UDP 是无连接的，即发送数据之前不需要建立连接</li>
+<li>TCP 提供可靠的服务，UDP 不可靠。通过 TCP 连接传送的数据，无差错，不丢失，不重复，且按序到达，UDP尽最大努力交付，不保证可靠交付</li>
+<li>TCP 面向字节流，实际上是 TCP 把数据看成一连串无结构的字节流。UDP 是面向报文的，应用层交给 UDP 多长的报文，UDP 就照样发送，即一次发送一个报文</li>
+<li>TCP 协议有流量控制和拥塞控制，UDP 没有。因此 UDP 网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）</li>
+<li>TCP 连接只能是点到点的，UDP支持一对一，一对多，多对一和多对多的交互通信</li>
+<li>TCP 首部开销20字节，UDP的首部开销小，只有8个字节</li>
+<li>TCP 的逻辑通信信道是全双工的可靠信道，UDP 则是不可靠信道</li>
+</ol>
+<p>故 TCP 协议传输质量高，UDP 协议有较好的实时性</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%2011.png" alt="Untitled"></p>
+<p><strong>TCP 和 UDP 的应用：</strong></p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%2012.png" alt="Untitled"></p>
+</li>
+<li>
+<p>辨析：HTTP 和 TCP</p>
+<p>HTTP 协议是建立在请求/响应模型上的，第一步就是由客户建立一条与服务器的TCP链接，所以 HTTP 是基于 TCP 的</p>
+</li>
+<li>
+<p>介绍一下 websocket</p>
+<p>websocket 是一种网络通信协议，是HTML5 开始提供的一种在单个 TCP 连接上进行全双工通信的协议，这个对比着 http 协议来说，http 协议是一种无状态的、无连接的、单向的应用层协议，通信请求只能由客户端发起，服务端对请求做出应答处理。http 协议无法实现服务器主动向客户端发起消息，Websocket 连接允许客户端和服务器之间进行全双工通信，以便任一方都可以通过建立的连接将数据推送到另一端。WebSocket 只需要建立一次连接，就可以一直保持连接状态</p>
+</li>
+</ul>
+<h1 id="第三层-网络层">第三层 网络层</h1>
+<ul>
+<li>
+<p>网络层功能概述</p>
+<p>负责通过路由选择算法，为报文或分组通过通信子网选择最适当的路径</p>
+<p>该层控制数据链路层与传输层之间的信息转发，建立、维持和终止网络的连接。具体地说，数据链路层的数据在这一层被转换为数据包，然后通过路径选择、分段组合、顺序、进/出路由等控制，将信息从一个网络设备传送到另一个网络设备。</p>
+<p>一般地，数据链路层是解决同一网络内节点之间的通信，而网络层主要解决不同子网之间的通信。例如在广域网之间通信时，必然会遇到路由（即两节点间可能有多条路径）选择问题</p>
+</li>
+<li>
+<p>寻址算法</p>
+<p>数据链路层中使用的物理地址(如MAC地址)仅解决网络内部的寻址问题。在不同子网之间通信时，为了识别和找到网络中的设备，每一子网中的设备都会被分配一个唯一的地址。由于各子网使用的物理技术可能不同，因此这个地址应当是逻辑地址(如IP地址)</p>
+</li>
+<li>
+<p>IP 地址的 ABCD 类是怎么划分的</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%2013.png" alt="Untitled"></p>
+<p>A类地址的表示范围是：0.0.0.0-126.255.255.255，默认网络掩码为：255.0.0.0，A类地址分配给规模特别大的网络使用</p>
+<p>B类地址表示范围是：128.0.0.0-191.255.255.255，默认网络掩码为欸：255.255.0.0，B类地址分配给一般的中型网络</p>
+<p>C类地址的表示范围是192.0.0.0-223.255.255.255，默认网络掩码是：255.255.255.0，C类地址分配给小型网络，如局域网</p>
+<p>D类地址称为广播地址，共特殊协议向选定的节点发送信息使用</p>
+</li>
+<li>
+<p>ARP 协议 地址解析协议</p>
+<p>简单的说就是：根据IP地址获取物理地址，也就是MAC地址的一个TCP/IP协议</p>
+<p>在IP以太网中，当一个上层协议要发包时，有了该节点的IP地址，ARP就能提供该节点的MAC地址。OSI模式把网络工作分为七层，彼此不直接打交道，只通过接口(layre interface). IP地址在第三层（网络层）, MAC地址在第二层（数据链路层）。协议在发送数据包时，首先要封装第三层（IP地址）和第二层 （MAC地址）的报头, 但协议只知道目的节点的IP地址，不知道其物理地址，又不能跨第二、三层，所以得用ARP的服务拿到MAC地址</p>
+<p>原理：主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存</p>
+</li>
+<li>
+<p>如何判断有效的IP地址</p>
+</li>
+<li>
+<p>子网掩码</p>
+<p><strong>背景：</strong></p>
+<p>互联网是由许多小型网络构成的，每个网络上都有许多主机，这样便构成了一个有层次的结构。IP 地址在设计时就考虑到地址分配的层次特点，将每个 IP 地址都分割成网络号和主机号两部分，以便于 IP 地址的寻址操作。IP 地址的网络号和主机号各是多少位呢？如果不指定，就不知道哪些位是网络号、哪些是主机号，这就需要通过子网掩码来实现。</p>
+<p><strong>作用：</strong></p>
+<p>子网掩码的作用，总的来说，就是将某个 IP 地址划分成网络地址和主机地址两部分</p>
+<p>子网掩码是一个32位地址，与 IP 地址配合使用，用于屏蔽 IP 地址的一部分，可以看出有多少位是网络号，有多少位是主机号，从而区别网络标识和主机标识，并说明该 IP 地址是在局域网上，还是在远程网上，可以判断两个IP在不在一个局域网内部</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">192</span><span class="p">.</span><span class="na">168</span><span class="p">.</span><span class="na">0</span><span class="p">.</span><span class="na">19</span><span class="w">  </span><span class="n">子网掩码是</span><span class="err">：</span><span class="n">255</span><span class="p">.</span><span class="na">255</span><span class="p">.</span><span class="na">255</span><span class="p">.</span><span class="na">0</span><span class="w"> </span><span class="n">C类IP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">网络ID</span><span class="err">：</span><span class="n">192</span><span class="p">.</span><span class="na">168</span><span class="p">.</span><span class="na">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">主机ID</span><span class="err">：</span><span class="n">19</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">129</span><span class="p">.</span><span class="na">158</span><span class="p">.</span><span class="na">79</span><span class="p">.</span><span class="na">68</span><span class="w">  </span><span class="n">子网掩码是</span><span class="err">：</span><span class="n">255</span><span class="p">.</span><span class="na">255</span><span class="p">.</span><span class="na">0</span><span class="p">.</span><span class="na">0</span><span class="w">  </span><span class="n">B类IP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">网络ID</span><span class="err">：</span><span class="n">129</span><span class="p">.</span><span class="na">158</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">主机ID</span><span class="err">：</span><span class="n">79</span><span class="p">.</span><span class="na">68</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">18</span><span class="p">.</span><span class="na">129</span><span class="p">.</span><span class="na">12</span><span class="p">.</span><span class="na">185</span><span class="w">  </span><span class="n">子网掩码是</span><span class="err">：</span><span class="n">255</span><span class="p">.</span><span class="na">0</span><span class="p">.</span><span class="na">0</span><span class="p">.</span><span class="na">0</span><span class="w">    </span><span class="n">A类IP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">网络ID</span><span class="err">：</span><span class="n">18</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">主机ID</span><span class="err">：</span><span class="n">129</span><span class="p">.</span><span class="na">15</span><span class="p">.</span><span class="na">185</span><span class="w">
+</span></span></span></code></pre></div><p>对于A类地址来说，默认的子网掩码是 255.0.0.0</p>
+<p>对于B类地址来说，默认的子网掩码是 255.255.0.0</p>
+<p>对于C类地址来说，默认的子网掩码是 255.255.255.0</p>
+</li>
+<li>
+<p>路由算法</p>
+<p>路由算法：当源节点和目的节点之间存在多条路径时，本层可以根据路由算法，通过网络为数据分组选择最佳路径，并将信息从最合适的路径由发送端传送到接收端。</p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%2014.png" alt="Untitled"></p>
+<p><img src="Computer%20Network%20ffd4b703f34a46f3bdd48931e955b53a/Untitled%2015.png" alt="Untitled"></p>
+</li>
+</ul>
+<h1 id="第二层-数据链路层">第二层 数据链路层</h1>
+<ul>
+<li>
+<p>数据链路的基本概念</p>
+<p>链路：网络中两个节点之间的物理通道，链路的传输介质主要有双绞线、光纤和微波</p>
+<p>数据链路：网络中两个节点之间的逻辑通道，把实现控制数据传输协议的硬件和软件加到链路上就构成数据链路</p>
+<p>帧 frame：链路层的协议数据单元，封装网络层的数据报</p>
+</li>
+<li>
+<p>逻辑链路层DLC &amp; 介质访问控制层MAC</p>
+<p>数据链路层分为逻辑链路层(Data Link Control)，和介质访问控制层(Mutiple Access Control)两个子层</p>
+<ul>
+<li>DLC是上层，负责建立和维护网络连接，执行差错校验、流量控制和链路控制，还为帧分配序列并跟踪确认</li>
+<li>MAC是下层，解决共享型网络中多用户对信道竞争的问题，完成网络介质的访问控制</li>
+</ul>
+</li>
+<li>
+<p>三种差错控制方法</p>
+<p>差错的类型有：噪声、帧错、位错</p>
+<p>针对位错（1变成0，0变成1）的差错控制方法有：</p>
+<ul>
+<li>检错编码：奇偶校验码、循环冗余码CRC</li>
+<li>纠错编码：海明码</li>
+</ul>
+</li>
+<li>
+<p>三个基本链路层协议</p>
+<ol>
+<li>**停止等待协议：**每发送完一个分组就停止发送，等待对方确认，在收到确认后再发送下一个分组，可以防止丢包的问题。优点是简单，缺点是信道利用率太低。发送</li>
+<li><strong>滑动窗口协议1 后退N帧协议 GBN</strong>：</li>
+<li><strong>滑动窗口协议2 选择重传协议 SR</strong>：</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>发送窗口大小</th>
+          <th>接受窗口大小</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>停等</td>
+          <td>=1</td>
+          <td>=1</td>
+      </tr>
+      <tr>
+          <td>后退N帧</td>
+          <td>&gt;1</td>
+          <td>=1</td>
+      </tr>
+      <tr>
+          <td>选择重传</td>
+          <td>&gt;1</td>
+          <td>=1</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>两种介质访问控制方法</p>
+<ol>
+<li>争用型介质访问控制，又称随机型的介质访问控制协议，如 CSMA/CD</li>
+<li>确定型介质访问控制，又称有序的访问控制协议，如 Token</li>
+</ol>
+</li>
+<li>
+<p>划分信道的两种方法</p>
+<ol>
+<li><strong>静态划分信道</strong>：信道划分介质访问控制。频分多路复用FDM，时分多路复用TDM，波分多路复用WDM，码分多路复用CDM</li>
+<li><strong>动态分配信道</strong>：信道并非在用户通信时固定分配给用户</li>
+</ol>
+<ul>
+<li>轮询访问介质访问控制：令牌传递协议</li>
+<li>随机访问介质访问控制:
+<ul>
+<li>ALOHA协议：不监听信道，不按时间槽发送，随机重发</li>
+<li>CSMA协议</li>
+<li>CSMA/CD协议</li>
+<li>CSMA/CA协议</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MAC地址和IP地址</p>
+<p>一个是物理地址，一个是逻辑地址</p>
+<p>IP地址含有两个部分，一个是网络地址，一个是主机地址。因此，通过对方的IP地址，是可以判断出对方是否和本机在一个网络。假设两点在一个网络内，只需要MAC地址就可以了。</p>
+<p>如果不在一个网络内，本机的网络层就认为数据应该发送给网关。</p>
+<p>电脑缓存里有一张ARP表，该表主要有两列：一列是IP地址，另外一列是MAC地址。这张表是随着网卡收到网络中的各种通信数据，不断学习增加的。</p>
+<p>如果ARP表中有网关IP地址对应的MAC地址，则问题就转化为网内数据发送，上面已经讲的很清楚了。如果ARP表中没有网关IP地址对应的MAC地址，则启动ARP协议，即向网内广播，询问该IP地址的MAC地址。广播询问的结果是网关收到广播后，发现是问自己的MAC地址，所以就回复询问方自己的MAC地址。然后数据发给网关的问题，也转化为网内数据发送</p>
+</li>
+<li>
+<p>拥塞控制和流量控制</p>
+<p>拥塞控制：防止过多的数据冲垮网络，使路由器或链路不至于过载</p>
+<p>流量控制：为了不让发送端的速度超过接收端的接受速率，通过改变滑动窗口大小</p>
+</li>
+<li>
+<p>滑动窗口的原理</p>
+</li>
+</ul>
+<h1 id="第一层-物理层">第一层 物理层</h1>
+<ul>
+<li>
+<p>三种通信方式</p>
+<p>单工通信：只有一个方向的通信，仅需要一条信道</p>
+<p>半双工通信：通信的双方都可以发送和接受信息，但任何一方都不能同时发送和接受，需要两条信道</p>
+<p>全双工通信：通信的双方都可以发送和接受信息，需要两条信道</p>
+</li>
+<li>
+<p>数字信号&amp;模拟信号</p>
+<p>信号：数据的电气/电磁的表现，是数据在传输过程中的存在形式</p>
+<p>数字信号：代表消息的参数取值是离散的</p>
+<p>模拟信号：代表消息的参数取值是连续的</p>
+</li>
+<li>
+<p>奈氏准则和香农定理</p>
+</li>
+<li>
+<p>四种编码与调制方式</p>
+<ol>
+<li>
+<p>数字数据编码为数字信号</p>
+<ul>
+<li>非归零编码：高1低0</li>
+<li>曼彻斯特编码：前一个间隔为低电平后一个间隔为高电平表示1</li>
+<li>差分曼彻斯特编码：若前半个码元的电平与上一个码元的后半个码元的电平相同，则为1，反之则为0</li>
+<li>反向不归零编码：信号电平反转表示0，信号电平不反转表示1</li>
+<li>归零编码</li>
+</ul>
+</li>
+<li>
+<p>数字数据调制为模拟信号</p>
+<p>调幅、调频、调相</p>
+</li>
+<li>
+<p>模拟数据编码为数字信号</p>
+<p>抽样、量化、编码</p>
+</li>
+<li>
+<p>模拟数据调制为模拟信号</p>
+<p>频分复用技术</p>
+</li>
+</ol>
+</li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="0001-01-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 0001-01-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/python-basic/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/operating-system/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents"></nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://your.site" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

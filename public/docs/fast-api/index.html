@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Fast API · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/fast-api/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.d45bca32e79fc977f1fcd9f6eaf09a10551daab06cecd5f3057dea214ae08642.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Fast API</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h1 id="fast-api">Fast API</h1>
+<h1 id="配置项目的python环境">配置项目的python环境</h1>
+<p>可以 install python 所需的所有环境，不用一个一个的 pip install</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">pip</span> <span class="nx">freeze</span> <span class="o">&gt;</span> <span class="nx">piplist</span><span class="p">.</span><span class="nx">txt</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pip</span> <span class="nx">install</span> <span class="o">-</span><span class="nx">r</span> <span class="nx">piplist</span><span class="p">.</span><span class="nx">txt</span>
+</span></span></code></pre></div><h1 id="创建-fastapi">创建 fastapi</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">add_middleware</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CORSMiddleware</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">allow_origins</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;*&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">allow_credentials</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">allow_methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;*&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">allow_headers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span><span class="s1">&#39;application/xml&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.get</span><span class="p">(</span><span class="s2">&#34;/gettest&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">gettest</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="p">{</span><span class="s2">&#34;hello world&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app.post</span><span class="p">(</span><span class="s2">&#34;/posttest&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">posttest</span><span class="p">(</span><span class="n">json_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1"># 传进 JSON_DATA 注意 尾行不留空格</span>
+</span></span><span class="line"><span class="cl">		<span class="c1"># {</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#     &#34;investdate&#34;: &#34;2022-03-04&#34;,</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#     &#34;weights&#34;:[</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#         {</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#             &#34;id&#34;: &#34;AMD&#34;,</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#             &#34;weight&#34;: -0.344</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#         },</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#         {</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#             &#34;id&#34;: &#34;AMZN&#34;,</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#             &#34;weight&#34;: 0.699</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#         },</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#         {</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#             &#34;id&#34;: &#34;ZM&#34;,</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#             &#34;weight&#34;: 0.499</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#         }</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#     ]</span>
+</span></span><span class="line"><span class="cl">		<span class="c1"># }</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如何处理 json 数据</span>
+</span></span><span class="line"><span class="cl">		<span class="n">investdate</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;investdate&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">weight</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s1">&#39;weights&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如何把 json 数组转化成 dict</span>
+</span></span><span class="line"><span class="cl">    <span class="n">input_weght</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">weight</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">id</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">weight</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;weight&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">input_weght</span><span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=</span> <span class="n">weight</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 接口里定义的函数 逻辑部分</span>
+</span></span><span class="line"><span class="cl">		<span class="k">def</span> <span class="nf">inquirie_for_customer</span><span class="p">(</span><span class="n">investdate</span><span class="p">,</span> <span class="n">weight</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span><span class="err">：</span>
+</span></span><span class="line"><span class="cl">				<span class="k">return</span> <span class="n">return_json</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="c1"># 如何把结果传回去</span>
+</span></span><span class="line"><span class="cl">		<span class="n">result</span> <span class="o">=</span> <span class="n">inquirie_for_customer</span><span class="p">(</span><span class="n">investdate</span><span class="p">,</span><span class="n">input_weght</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">JSONResponse</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></div><h1 id="运行-fastapi">运行 fastapi</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">py</span> <span class="nx">fastapi_server</span><span class="p">.</span><span class="nx">py</span>
+</span></span></code></pre></div><p><img src="Fast%20API%201118a2a5f576468f9ad750757fd02a1b/Untitled.png" alt="Untitled"></p>
+<h1 id="调试-fastapi">调试 fastapi</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">http</span><span class="o">:</span><span class="c1">//127.0.0.1:8888/docs
+</span></span></span></code></pre></div><p>然后就可以输入 request body</p>
+<p><img src="Fast%20API%201118a2a5f576468f9ad750757fd02a1b/Untitled%201.png" alt="Untitled"></p>
+<h1 id="react-中调用-fastapi">React 中调用 fastapi</h1>
+<p>GET</p>
+<p><img src="Fast%20API%201118a2a5f576468f9ad750757fd02a1b/Untitled%202.png" alt="Untitled"></p>
+<h1 id="传图片-base64格式">传图片 base64格式</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nd">@app.post</span><span class="p">(</span><span class="s2">&#34;/main&#34;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">ResposeModel</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&#34;收到请求并返回图片数据(Base64格式)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">RequestModel</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;img&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;weight&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/weight.png&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;AMD&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/AMD.png&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;AMZN&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/AMZN.png&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;ZM&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/ZM.png&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;img_dl&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;weight&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/weight_dl.png&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;AMD&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/AMD_dl.png&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;AMZN&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/AMZN_dl.png&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;ZM&#34;</span><span class="p">:</span> <span class="n">convert2Base64</span><span class="p">(</span><span class="s2">&#34;./imgs/ZM_dl.png&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;data:image/Jpeg;base64,&#34;</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">imgUrl</span><span class="p">)}</span><span class="o">/</span>
+</span></span></code></pre></div><h1 id="报错">报错</h1>
+<p><strong>422 Unprocessable Entity</strong></p>
+<ol>
+<li>检查是不是都用的双引号</li>
+<li>行尾不能有多的逗号</li>
+<li>正确的写法如下</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;investdate&#34;</span><span class="o">:</span> <span class="s2">&#34;2022-03-04&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;weights&#34;</span><span class="o">:</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;AMD&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;weight&#34;</span><span class="o">:</span> <span class="o">-</span><span class="mf">0.344</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;AMZN&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;weight&#34;</span><span class="o">:</span> <span class="mf">0.699</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;ZM&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;weight&#34;</span><span class="o">:</span> <span class="mf">0.499</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="0001-01-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 0001-01-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/express/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents"></nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://your.site" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

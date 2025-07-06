@@ -5,7 +5,7 @@
 
   --background: #ffffff;
   --color: #410505; /* page title */
-  --color2: #5b1515; /* name title */
+  --color2: #1b0303; /* name title */
   --color3: #a11306; /* tab title */
 
   --color-anchor: #890e03;
@@ -113,8 +113,4 @@
   --chroma-base0D: #7587a6;
   --chroma-base0E: #9b859d;
   --chroma-base0F: #9b703f;
-}
-
-.icon:not(.icon-colored) {
-  filter: var(--icon-filter);
 }

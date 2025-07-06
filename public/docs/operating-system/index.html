@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I&rsquo;m a software engineer borned in 2000. Love my work and life.">
+<meta name="author" content="Caiyi Zhang">
+
+<title>Operating System · CaiyiZhang&rsquo;s Blog</title>
+
+<link rel="canonical" href="//localhost:1313/docs/operating-system/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.d45bca32e79fc977f1fcd9f6eaf09a10551daab06cecd5f3057dea214ae08642.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">CaiyiZhang&#39;s Blog</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Blogs</a></li>
+        
+          
+          <li><a href="/life" ><i class='icon icon-dark-mode'></i>Life</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/aboutme/">
+            
+              AboutMe
+            
+          </a>
+
+        <strong class="sidebar-section">Languages</strong>
+          
+          <a class="sidebar-link " href="/docs/java-basic/">
+            
+              Java Basic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/python-basic/">
+            
+              Python Basic
+            
+          </a>
+
+        <strong class="sidebar-section">Computer Science</strong>
+          
+          <a class="sidebar-link " href="/docs/computer-network/">
+            
+              Computer Network
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/operating-system/">
+            
+              Operating System
+            
+          </a>
+
+        <strong class="sidebar-section">Backend Develop</strong>
+          
+          <a class="sidebar-link " href="/docs/express/">
+            
+              Express
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/fast-api/">
+            
+              Fast API
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Operating System</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <p>用于记录大二的操作系统课程笔记</p>
+<h1 id="1-操作系统结构">1. 操作系统结构</h1>
+<ul>
+<li>
+<p>操作系统的概念</p>
+<p>操作系统是指控制和管理整个计算机系统的硬件和软件资源，并合理地组织调度计算机的工作和资源的分配，以提供给用户和其他软件方便的接口和环境，它是计算机系统中最基本的系统软件</p>
+</li>
+<li>
+<p>操作系统原子性</p>
+<p>所谓原子操作是指不会被线程调度机制打断的操作，这种操作一旦开始，就一直运行到结束，中间不会有任何线程切换</p>
+<p>原子操作可以是一个步骤，也可以是多个操作步骤，但是其顺序不可以被打乱，也不可以被切割而只执行其中的一部分，将整个操作视作一个整体是原子性的核心特征</p>
+</li>
+<li>
+<p>两种处理器状态：用户态和核心态</p>
+<p>**用户态：**用户进程执行所在的状态，运行在用户态下的程序不能直接访问操作系统内核数据结构和程序。内核态与用户态是操作系统的两种运行级别，当程序运行在3级特权级上时，就可以称之为运行在用户态，因为这是最低特权级，是普通的用户进程运行的特权级，大部分用户直接面对的程序都是运行在用户态，比如，应用程序、文件系统、设备驱动</p>
+<p>**内核态：**内核是计算机配置的底层软件，是操作系统最基本、最核心的部分。操作系统内核执行的状态是受保护的状态，当程序运行在0级特权级上时，就可以称之为运行在内核态。比如，时钟管理、中断处理、原语、进程通信、进程管理、存储器管理、cpu调度、设备管理</p>
+<p><strong>两种状态的主要区别？</strong></p>
+<p>处于用户态执行时，进程所能访问的内存空间和对象受到限制，其所处于占有的处理机是可被抢占的，运行在用户态下的程序不能直接访问操作系统内核数据结构和程序。而处于核心态执行中的进程，则能访问所有的内存空间和对象，且所占有的处理机是不允许被抢占的</p>
+<p><strong>为啥要区别？</strong></p>
+<p>是为了区别执行<strong>特权指令</strong>（启动I/O、内存清零、修改程序状态字、设置时钟、允许/禁止终端、停机）<strong>与非特权指令</strong>（普通的运算指令、控制转移、算数运算、取数指令、访管指令），在CPU的所有指令中，有一些指令是非常危险的，如果错用，将导致整个系统崩溃。比如：<strong>清内存、设置时钟</strong>等，如果所有的程序都能使用这些指令就会很危险。所以，CPU将指令分为特权指令和非特权指令，对于那些危险的指令，只允许操作系统及其相关模块使用，普通的应用程序只能使用那些不会造成灾难的指令</p>
+<p><strong>怎样区分处理器状态？</strong></p>
+<p>用程序状态字寄存器(PSW)中的某标志位来标识当前处理器处于什么状态，0为用户态，1为核心态</p>
+<p><strong>两者之间如何切换？</strong></p>
+<p>用户态到内核态：</p>
+<ol>
+<li>系统调用：这是用户态进程主动要求切换到内核态的一种方式，用户态进程通过系统调用申请使用操作系统提供的服务程序完成工作，比如fork()实际上就是执行了一个创建新进程的系统调用</li>
+<li>中断：当外围设备完成用户请求的操作后，会向CPU发出相应的中断信号，这时CPU会暂停执行下一条即将要执行的指令，转而去执行与中断信号对应的处理程序，如果先前执行的指令是用户态下的程序，那么这个转换的过程，自然也就发生了由用户态到内核态的切换。比如硬盘读写操作完成，系统会切换到硬盘读写的中断处理程序中执行后续操作等</li>
+<li>异常：当CPU在执行运行在用户态下的程序时，发生了某些事先不可知的异常，这时会触发由当前运行进程切换到处理此异常的内核相关程序中，也就转到了内核态，比如缺页异常</li>
+</ol>
+<p>核心态到用户态：</p>
+<p>通过执行一个特权指令，将程序状态字(PSW)的标志位设置为“用户态”</p>
+</li>
+<li>
+<p>系统调用 <em>system call</em></p>
+<p><strong>系统调用</strong></p>
+<p>系统调用是操作系统提供给应用程序的接口，应用程序可以发出系统调用请求来获得操作系统的服务。比如，系统中的各种共享资源都由操作系统统一掌管，因此在用户程序中，凡是与资源有关的操作，如存储分配、IO操作、文件管理等，都必须通过系统调用的方式向操作系统提出服务请求，由操作系统代为完成，这样可以保证系统的稳定性和安全性，防止用户进行非法操作</p>
+<p>系统调用会使处理器从用户态进入核心态，因为系统调用相关处理涉及到对系统资源的管理、对进程的控制，这些功能需要执行一些特权指令才能完成，因此系统调用的相关处理需要在核心态下进行</p>
+<p>系统调用按照功能分类：设备管理（请求/释放/启动）、文件管理（读/写/创建/删除）、进程控制(创建/撤销/阻塞/唤醒)、进程通信（消息传递/信号传递）、内存管理（分配/回收）</p>
+<p><strong>系统调用与库函数的区别：</strong></p>
+<p>系统调用是操作系统向上层提供的接口，有的库函数是对系统调用的进一步封装，当今编写的应用程序大多是通过高级语言提供的库函数间接的进行系统调用</p>
+</li>
+<li>
+<p>中断 <em>interrupt</em></p>
+<p>中断指计算机 CPU 获知某些事，暂停正在执行的程序，转而去执行处理该事件的程序，当这段程序执行完毕后再继续执行之前的程序。整个过程称为中断，分为内部中断和外部中断</p>
+<p><strong>内部中断(软中断，异常)</strong></p>
+<p>信号的来源是 CPU 的内部，与当前执行的指令有关</p>
+<ul>
+<li>**陷阱 trap：**是一种有意而为之的，预先安排的异常事件，一般是在编写程序时故意设下的陷阱指令，而后执行到陷阱指令后，CPU 将会调用特定程序进行相应的处理，处理结束后返回到陷阱指令的下一条指令，比如系统调用，程序调试功能等</li>
+<li><strong>故障 fault：<strong>故障是由错误条件引起的，在 “引起故障的指令” 被执行但还没有执行结束时发生，由 CPU 检测到的一类的意外事件</strong>。<strong>出错时交由故障处理程序处理，如果能处理修正这个错误，就将控制返回到引起故障的指令即 CPU 重新执这条指令，如果不能处理就报错。
+常见的故障为</strong>缺页</strong>，当 CPU 引用的虚拟地址对应的物理页不存在时就会发生故障。缺页异常是能够修正的，有着、专门的缺页处理程序，它会将缺失的物理页从磁盘中重新调进主存，而后再次执行引起故障的指令时便能够顺利执行了</li>
+<li>**终止：<strong>执行指令的过程中发生了致命错误，不可修复，程序无法继续运行，只能终止。通常会是一些硬件的错误</strong>。**终止处理程序不会将控制返回给原程序，而是直接终止原程序，比如整数除0</li>
+</ul>
+<p><strong>外部中断</strong></p>
+<p>信号的来源是 CPU 的外部，与当前执行的指令无关</p>
+<p><strong>1、可屏蔽中断</strong>：通过INTR线向CPU请求的中断，主要来自外部设备如硬盘，打印机，网卡等。此类中断并不会影响系统运行，可随时处理，甚至不处理，所以名为可屏蔽中断。</p>
+<p><strong>2、不可屏蔽中断</strong>：通过NMI线向CPU请求的中断，如电源掉电，硬件线路故障等。这里不可屏蔽的意思不是不可以屏蔽，不建议屏蔽，而是问题太大，屏蔽不了，不能屏蔽的意思。</p>
+<p>注：INTR和NMI都是CPU的引脚</p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/Untitled.png" alt="Untitled"></p>
+</li>
+</ul>
+<h1 id="2-进程">2. 进程</h1>
+<ul>
+<li>
+<p>进程和进程实体的概念</p>
+<p><strong>进程（Process）的概念</strong></p>
+<p>操作系统领域引入多道程序技术之后，为了方便操作系统管理，完成各程序并发执行，引入了进程、线程等概念</p>
+<ol>
+<li>狭义：进程是正在运行的程序的实例</li>
+<li>广义：进程是计算机中的一个程序关于某数据集合上的一次运行活动</li>
+<li>进程是系统进行<strong>资源分配和调度</strong>的基本单位，是操作系统结构的基础。在面向进程设计的计算机结构中，进程是程序的基本执行实体；在当代面向线程设计的计算机结构中，进程是线程的容器</li>
+</ol>
+<p><strong>进程实体</strong></p>
+<p>进程实体由程序段、数据段和 PCB(进程控制块)三部分构成，PCB 是进程存在的唯一标志，所谓创建进程就是创建进程实体中的 PCB，而销毁进程就是撤销进程中的 PCB</p>
+<p><strong>进程的组成</strong></p>
+<ol>
+<li>PCB：操作系统通过 PCB 来管理进程，因此 PCB 中应该包含操作系统对其进行管理所需的各种信息。比如，进程的描述信息(进程标识符PID/用户标识符UID)、进程控制和管理的信息(进程当前状态/进程优先级)、资源分配清单(程序段指针/数据段指针)、处理机的相关信息(各种寄存器的值)</li>
+<li>程序段：存放要执行的代码</li>
+<li>数据段：存放程序运行过程中处理的各种数据，比如，程序运行时使用、产生的运算数据、全局变量、局部变量、宏定义的常量</li>
+</ol>
+</li>
+<li>
+<p>PCB 进程控制块</p>
+<p><strong>PCB 是什么？</strong></p>
+<p>进程实体由程序段、数据段和 PCB(进程控制块)三部分构成，PCB 是进程存在的唯一标志，所谓创建进程就是创建进程实体中的 PCB，而销毁进程就是撤销进程中的 PCB</p>
+<p><strong>PCB 保存了哪些信息？</strong></p>
+<p>操作系统通过 PCB 来管理进程，因此 PCB 中应该包含操作系统对其进行管理所需的各种信息。比如，进程的描述信息(进程标识符PID/用户标识符UID)、进程控制和管理的信息(进程当前状态/进程优先级)、资源分配清单(程序段指针/数据段指针)、处理机的相关信息(各种寄存器的值)</p>
+</li>
+<li>
+<p>进程五种状态以及转换 <em>Process</em></p>
+<p><strong>创建 new</strong>：进程正在被创建，操作系统为其分配资源、初始化 PCB 等</p>
+<p><strong>就绪 ready</strong>：进程已获得除了处理机以外的所有需要的资源，等待分配处理机，一旦获得处理机，就可以立即进入运行态开始运行。“万事具备，只欠 CPU”</p>
+<p><strong>运行 running</strong>：占用 CPU，并正在 CPU 上运行，注意处于此状态的进程数小于等于 CPU 数</p>
+<p><strong>阻塞 waiting</strong>： 进程等待某种条件，在条件满足之前无法执行。比如等待操作系统分配打印机、等待读磁盘操作的而结果。CPU 是计算机中最昂贵的而不见，为了提高 CPU 的利用率，需要先将进程需要的其他资源分配到位，才能得到 CPU 的服务</p>
+<p><strong>终止 terminated</strong>：进程正在从系统中撤销，操作系统会回收进程所拥有的资源，撤销 PCB</p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/06E9AFDF-0136-4B92-9139-D07CCB95A2FC.jpeg" alt="06E9AFDF-0136-4B92-9139-D07CCB95A2FC.jpeg"></p>
+</li>
+<li>
+<p>进程间的通信方式 ⭐</p>
+<p><strong>为什么进程之间需要通信？</strong></p>
+<p>进程是分配系统资源的基本单位，因此各个进程拥有的内存地址空间互相独立，一个进程不能直接访问另一个进程的地址空间，但是进程之间的信息交换又是必须实现的：</p>
+<ol>
+<li>数据传输：一个进程需要将它的数据发送给另一个进程</li>
+<li>资源共享：多个进程之间共享同样的资源</li>
+<li>通知事件：一个进程需要向另一个或一组进程发送消息，通知它们发生了某种事件</li>
+<li>进程控制：有些进程希望完全控制另一个进程的执行(如Debug进程)，该控制进程希望能够拦截另一个进程的所有操作，并能够及时知道它的状态改变</li>
+</ol>
+<p><strong>进程通信的方式？</strong></p>
+<ol>
+<li>
+<p><strong>共享内存</strong></p>
+<p>多个进程可以访问同一块内存空间，不同进程可以及时看到对方对共享内存中数据的更新。这种方式需要依靠某种同步操作，如互斥锁和信号量</p>
+</li>
+<li>
+<p><strong>管道通信</strong></p>
+<p>管道是一种最基本的进程间通信机制**。**管道由 pipe 函数来创建：调用pipe 函数，会在内核中开辟出一块缓冲区用来进行进程间通信，这块缓冲区称为管道，它有一个读端和一个写端。管道被分为匿名管道和有名管道</p>
+<ul>
+<li>
+<p>匿名管道通过 pipe 函数创建，这个函数接收一个长度为2的 Int 数组，并返回1或0表示成功或者失败</p>
+<pre tabindex="0"><code>int pipe(int fd[2])
+</code></pre><p>这个函数打开两个文件描述符，一个读端文件，一个写端文件，分别存入 fd[0] 和 fd[1] 中，然后可以作为参数调用 write 和 read 函数进行写入或读取，注意 fd[0] 只能读取文件，而 fd[1] 只能用于写入文件</p>
+<p>**匿名管道只能在具有亲缘关系的进程间通信：**一个进程派生一个子进程，那么子进程将会复制父进程的内存空间信息，这里是复制而不是共享，这意味着父子进程仍然是独立的，但是在这一时刻，它们所有的信息又是相等的。因此子进程也知道该全局管道，并且也拥有两个文件描述符与管道挂钩。但是其他进程不知道这个管道，因为进程是独立的，其他进程看不到某一个进程进行了什么操作</p>
+<p>匿名**管道的消息只能单向传递：**匿名管道内部采用环形队列实现，只能由写端到读端，由于设计技术问题，管道被设计为半双工的，一方要写入则必须关闭读描述符，一方要读出则必须关闭写入描述符</p>
+</li>
+<li>
+<p>有名管道：在匿名管道的介绍中，我们说其他进程不知道管道和文件描述符的存在，所以匿名管道只适用于具有亲缘关系的进程，而命名管道则很好的解决了这个问题：现在管道有一个唯一的名称了，任何进程都可以访问这个管道</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>消息队列</strong></p>
+<p>是Linux的一种通信机制，这种通信机制传递的数据会被拆分为一个一个独立的数据块，也叫做消息体，消息体中可以定义类型与数据</p>
+<pre tabindex="0"><code>struct msgbuf {
+	long mtype;         /* 消息的类型 */
+	char mtext[1];      /* 消息正文 */
+};
+</code></pre></li>
+<li>
+<p><strong>信号量</strong></p>
+<p>首先信号量并不用来传送资源，而是用来保护共享资源，使得共享资源最多允许一个进程修改资源。信号量 s 是具有非负整数值的全局变量，s 的表示的含义为同时允许最大访问资源的进程数量，信号量由两种特殊的原子操作来实现，这两种原子操作称为 P 和 V</p>
+<p>P(s)：如果 s 的值大于零，就给它减 1，然后立即返回，进程继续执行。如果它的值为零，就挂起该进程的执行，等待 s 重新变为非零值</p>
+<p>V(s)：V 操作将 s 的值加 1，如果有任何进程在等在 s 值变为非 0，那么 V 操作会重启这些等待进程中的其中一个(随机地)，然后由该进程执行 P 操作将 s 重新置为 0，而其他等待进程将会继续等待</p>
+</li>
+<li>
+<p><strong>信号</strong></p>
+<p>一个进程可以发送信号给另一个进程，一个信号就是一条消息，可以用于通知一个进程组发送了某种类型的事件，该进程组中的进程可以采取处理程序处理事件</p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/Untitled%201.png" alt="Untitled"></p>
+</li>
+</ol>
+</li>
+<li>
+<p>进程调度程序分类</p>
+<p><strong>为什么要进行进程调度？</strong></p>
+<p>在多道程序系统中，进程的数量往往是多于处理机的个数。从就绪队列里面按照一定的规则来选择一个进程，并将 CPU 分配给它的过程就是进程调度，以实现进程的并发执行，目的都是为了提高 CPU 的使用率</p>
+<p><strong>进程调度程序的分类？</strong></p>
+<p>作业调度：长期调度程序，从作业池（外存）中选择进程加入到内存以便执行，是频率最低的一种调度</p>
+<p>CPU调度：短期调度程序，从就绪队列中选择进程并为其分配 CPU</p>
+<p>内存调度：中期调度，将进程从内存移出，降低多道程序的程度，之后可被重新调入内存</p>
+</li>
+<li>
+<p>进程切换的过程和代价</p>
+<p>**进程切换：**指一个进程让出cpu，由另一个进程占用cpu的过程</p>
+<p><strong>进程切换的过程包括：</strong></p>
+<ol>
+<li>对原来进程的各种数据进行保存</li>
+<li>对新的进程各种数据的恢复，比如程序计数器、程序状态字、各种数据寄存器等等</li>
+</ol>
+<p><strong>代价</strong>：进程切换是有代价的，因此如果过于频繁的进行进程调度、切换，必然会使得整个系统的效率降低，使系统很多部分的时间都花在的进程的切换上，而真正用于执行进程的时间减少</p>
+</li>
+<li>
+<p>进程调度算法策略 ⭐</p>
+<p><strong>为什么要进行进程调度？</strong></p>
+<p>在多道程序系统中，进程的数量往往是多于处理机的个数。从就绪队列里面按照一定的规则来选择一个进程，并将 CPU 分配给它的过程就是进程调度，以实现进程的并发执行，目的都是为了提高 CPU 的使用率</p>
+<p><strong>调度算法有哪些？</strong></p>
+<p>NOTE 非抢占式：只有当前运行的进程主动放弃CPU时，才需要调度</p>
+<table>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Rule</th>
+          <th>抢占</th>
+          <th>饥饿</th>
+          <th>优点</th>
+          <th>缺点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>先来先服务 FCFS</td>
+          <td>按照进程到达的先后顺序进行服务</td>
+          <td>非抢占</td>
+          <td>不会</td>
+          <td>公平、简单</td>
+          <td>带权周转时间很长，对长作业有利，短作业不利</td>
+      </tr>
+      <tr>
+          <td>短作业优先 SJF</td>
+          <td>最短进程优先得到服务</td>
+          <td>非抢占</td>
+          <td>会</td>
+          <td>最短的平均等待时间和平均周转时间</td>
+          <td>对短作业有利，长作业不利</td>
+      </tr>
+      <tr>
+          <td>高响应比优先算法 HRRN</td>
+          <td>在每次调度是先计算各个进程的响应比(等待时间+服务时间)/服务时间，选择响应比最高的进程服务</td>
+          <td>非抢占</td>
+          <td>不会</td>
+          <td>上述两种算法的权衡折中，综合考虑等待时间和运行时间</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>时间片轮转算法RR</td>
+          <td>按照到达的顺序，轮流让各个进程执行一个时间片，若没执行完就剥夺CPU，把进程重新放到队尾</td>
+          <td>抢占</td>
+          <td>不会</td>
+          <td>公平、响应快，让各个进程都得到及时的响应，适用于分时操作系统</td>
+          <td>高频率的进程切换，会产生一定的开销，不区分任务的紧急程度</td>
+      </tr>
+      <tr>
+          <td>优先级调度算法</td>
+          <td>优先级越高越先分配到CPU</td>
+          <td>抢占/非抢占的都有</td>
+          <td>会</td>
+          <td>区分紧急程度、重要程度，可以灵活的调整进程的偏好程度</td>
+          <td>如果有源源不断的高优先级进程，则会导致饥饿</td>
+      </tr>
+      <tr>
+          <td>多级反馈队列调度算法</td>
+          <td>1. 设置多级就绪队列，各级队列优先级从高到底，时间片从小到达</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2. 新进程到达时先进入第一级队列，按照FCFS原则等待分配时间片，时间片结束之后若还没有执行完，则放入下一级的队列队尾</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>3. 如果已经在最下级的队列，则重新放入该队的队尾</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>4. 只有第K级队列为空时，才会为K+1级队头的进程分配时间片</td>
+          <td>抢占</td>
+          <td>会</td>
+          <td>综合了各个算法的优点。公平、响应快、时间少、考虑优先级等等</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>调度算法的评价指标</p>
+<ul>
+<li><strong>CPU 利用率</strong> = 忙碌的时间/总时间</li>
+<li><strong>系统吞吐率</strong>(单位时间完成作业数量) = 总共完成了多少作业/总共花了多少时间</li>
+<li><strong>平均周转时间</strong> = 各作业周转时间(从作业被提交给系统开始，到作业完成为止的这段时间)之和/作业数</li>
+<li><strong>等待时间</strong> = 作业处于等待 CPU 状态时间之和，等待时间越长，用户满意度越低</li>
+<li><strong>响应时间</strong> = 从用户提交请求到首次产生响应所用的时间</li>
+</ul>
+</li>
+<li>
+<p>辨析：进程与线程 <em>Process&amp;Thread</em></p>
+<ol>
+<li>
+<p>进程是资源分配的单位，具有一定独立功能的程序关于某个数据集合上的一次运行活动</p>
+</li>
+<li>
+<p>线程是处理器调度的单位，是进程的一个子任务，比进程更小的能独立运行的基本单位</p>
+</li>
+<li>
+<p>进程实现操作系统的并发，线程实现进程内部的并发</p>
+</li>
+<li>
+<p>进程执行过程中拥有独立的内存单元，多个线程共享进程的内存</p>
+</li>
+<li>
+<p>同一进程中的多个线程共享：代码段、数据段、扩展断（堆内存）</p>
+<p>每个线程有自己的数据：程序计数器、寄存器（栈内存）</p>
+</li>
+</ol>
+</li>
+<li>
+<p>辨析：进程与程序 <em>Process&amp;Program</em></p>
+<p>程序是一个静态概念，它是指在计算机的文件系统里以文件形式存储的一段可运行代码</p>
+<p>进程是一个动态概念，它通常是指具有一定独立功能的程序关于某个数据集合上的一次运行活动。即进程是程序的运行逻辑实际运作起来的载体</p>
+</li>
+</ul>
+<h1 id="3-线程">3. 线程</h1>
+<ul>
+<li>
+<p>线程的概念</p>
+<p><strong>定义和概念？</strong></p>
+<p>线程是处理机调度的基本单位，也是程序执行流的最小单位。每个线程有一个线程 ID 和线程控制块 TCB</p>
+<p><strong>为什么引入线程？</strong></p>
+<ol>
+<li>有的进程需要同时做很多事，而传统的进程只能串行地执行一系列程序，因此引入了线程，不仅是进程之间可以并发，进程内的各个线程之间也可以并发，从而进一步提升了系统的并发度。比如使用QQ这个进程的时候，可以分出视频、文字聊天、传文件三个线程</li>
+<li>引入线程后，进程是资源分配的基本单位，线程是处理机调度的基本单位</li>
+<li>引入线程后，并发所带来的系统开销减小。传统的进程间并发，需要切换进程的运行环境，系统开销很大。线程间并发，如果是统一进程内的线程切换，则不需要切换进程环境，系统开销小</li>
+</ol>
+</li>
+<li>
+<p><em>Java</em>中线程的五种状态 <em>Thread</em></p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/Untitled%202.png" alt="Untitled"></p>
+<p><strong>新建状态</strong>（New）：当线程对象对创建后，即进入了新建状态</p>
+<pre tabindex="0"><code>Thread t = new MyThread()
+</code></pre><p><strong>就绪状态</strong>（Runnable）：当调用线程对象的start()方法，线程即进入就绪状态。处于就绪状态的线程，说明此线程已经做好了准备，随时等待CPU调度执行</p>
+<pre tabindex="0"><code>t.start()
+</code></pre><p><strong>运行状态</strong>（Running）：当 CPU 开始调度处于就绪状态的线程时，此时线程才得以真正执行，即进入到运行状态。注：就绪状态是进入到运行状态的唯一入口</p>
+<p><strong>阻塞状态</strong>（Blocked）：处于运行状态中的线程由于某种原因，暂时放弃对CPU的使用权，停止执行，此时进入阻塞状态，直到其进入到就绪状态，才 有机会再次被CPU调用以进入到运行状态。根据阻塞产生的原因不同，阻塞状态又可以分为三种：</p>
+<ul>
+<li>等待阻塞：运行状态中的线程执行 wait() 方法，使本线程进入到等待阻塞状态</li>
+<li>同步阻塞：线程在获取 synchronized 同步锁失败(因为锁被其它线程所占用)，它会进入同步阻塞状态</li>
+<li>其他阻塞：通过调用线程的 sleep() 或 join() 或发出了I/O请求时，线程会进入到阻塞状态。当sleep()状态超时、join()等待线程终止或者超时、或者I/O处理完毕时，线程重新转入就绪状态</li>
+</ul>
+<p><strong>死亡状态</strong>（Dead）：线程调用stop()方法、destory()方法或run()方法，或者线程执行完了或者因异常退出，该线程结束生命周期</p>
+</li>
+<li>
+<p>线程通信的方法</p>
+<p>① 同步：多个线程通过synchronized关键字这种方式来实现线程间的通信。</p>
+<p>② while轮询的方式</p>
+<p>③ wait/notify机制</p>
+<p>④ 管道通信就是使用java.io.PipedInputStream和java .io.PipedOutputStream进行通信</p>
+</li>
+<li>
+<p>线程实现同步的方式</p>
+<p>并发的线程在一些关键点上需要互相等待与互通信息，这种相互制约的等待与互通信息称为进程同步</p>
+<p>互斥量 Synchronized/Lock：采用互斥对象机制，只有拥有互斥对象的线程才有访问公共资源的权限。因为互斥对象只有一个，所以可以保证公共资源不会被多个线程同时访问</p>
+<p>信号量 Semphare：它允许同一时刻多个线程访问同一资源，但是需要控制同一时刻访问此资源的最大线程数量</p>
+<p>事件(信号)，Wait/Notify：通过通知操作的方式来保持多线程同步，还可以方便的实现多线程优先级的比较操作</p>
+</li>
+<li>
+<p>什么是线程安全</p>
+<p>在多个线程访问的情况下会产生隐患，当多个线程访问某个方法时，不管你通过怎样的调用方式，或者说这些线程如何交替的执行，我们在 main 程序中不需要去做任何的同步，这个类的结果行为都是我们设想的正确行为，那么我们就可以说这个类<strong>是线程安全的</strong>。我们要确保在多个线程访问的时候，我们的程序还能按照我们预期的行为去执行</p>
+</li>
+<li>
+<p>线程池</p>
+</li>
+<li>
+<p>僵尸线程是什么</p>
+</li>
+<li>
+<p>并发Concurrency &amp; 并行Parallelism</p>
+<p><strong>并发 Concurrency</strong>：在操作系统中，是指一个时间段中，同时有几个程序都处于已启动运行到运行完毕之间，且这几个程序都是在同一个处理机上运行。像操作系统的时间片分时调度</p>
+<p><strong>并行 Parallel</strong>：当系统有一个以上CPU时，当一个CPU执行一个进程时，另一个CPU可以执行另一个进程，两个进程互不抢占CPU资源，可以同时进行，这种方式我们称之为并行。系统要有多个CPU才会出现并行。在有多个CPU的情况下，才会出现真正意义上的同时进行</p>
+<p><strong>总的来说：</strong></p>
+<ul>
+<li>
+<p>并发是指在一段时间内宏观上多个程序同时运行，多个任务在同一时间段内同时发生了，这多个任务之间是互相抢占资源的</p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/Untitled%203.png" alt="Untitled"></p>
+</li>
+<li>
+<p>并行指的是同一个时刻，多个任务确实真的在同时运行，多个任务在同一时间点上同时发生了，这多个任务之间是不互相抢占资源的</p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/Untitled%204.png" alt="Untitled"></p>
+</li>
+</ul>
+<p><strong>举例1：</strong></p>
+<p><img src="Operating%20System%20b64007cc4c3a40a8a2875ae922312902/Untitled%205.png" alt="Untitled"></p>
+<p><strong>举例2：</strong></p>
+<p>我们两个人在吃午饭。你在吃饭的整个过程中，吃了米饭、吃了蔬菜、吃了牛肉。吃米饭、吃蔬菜、吃牛肉这三件事其实就是并发执行的。对于你来说，整个过程中看似是同时完成的的。但其实你是在吃不同的东西之间来回切换的</p>
+<p>还是我们两个人吃午饭。在吃饭过程中，你吃了米饭、蔬菜、牛肉。我也吃了米饭、蔬菜和牛肉。我们两个人之间的吃饭就是并行执行的的。两个人之间可以在同一时间点一起吃牛肉，或者一个吃牛肉，一个吃蔬菜。之间是互不影响的</p>
+</li>
+</ul>
+<h1 id="4-同步和互斥">4. 同步和互斥</h1>
+<ul>
+<li>
+<p>进程同步和互斥</p>
+<p>互斥：指某一个资源同时只允许一个访问者访问，具有唯一性和排它性，访问是无序的
+同步：是指在互斥的基础上，通过其它机制实现访问者对资源的有序访问，具有协作性。大多数情况下，同步已经实现了互斥，特别是所有写入资源的情况必定是互斥的</p>
+</li>
+<li>
+<p>信号量机制</p>
+</li>
+<li>
+<p>生产者消费问题</p>
+</li>
+<li>
+<p>哲学家就餐问题</p>
+</li>
+<li>
+<p>管程</p>
+</li>
+</ul>
+<h1 id="5-死锁">5. 死锁</h1>
+<ul>
+<li>
+<p>死锁的概念</p>
+<p>在多个并发进程中，如果每个进程持有某种资源而又等待其它进程释放它们现在保持着的资源，在未改变这种状态之前都不能向前推进，称这一组进程产生了死锁。通俗的讲，就是两个或多个进程无限期的阻塞、相互等待的一种状态</p>
+</li>
+<li>
+<p>死锁产生的四个必要条件</p>
+<p>互斥：至少有一个资源必须属于非共享模式，即一次只能被一个进程使用</p>
+<p>占有并等待：一个进程必须占有至少一个资源，并等待另一个资源，而该资源为其他进程所占有</p>
+<p>非抢占：进程不能被抢占，资源只能被进程在完成任务后自愿释放</p>
+<p>循环等待：若干进程之间形成一种头尾相接的环形等待关系</p>
+</li>
+<li>
+<p>如何避免死锁</p>
+<ul>
+<li>
+<p>打破互斥条件：在系统里取消互斥。若资源不被一个进程独占使用，那么死锁是肯定不会发生的。但一般来说在所列的四个条件中，“互斥”条件是无法破坏的。因此，在死锁预防里主要是破坏其他几个必要条件，而不去涉及破坏“互斥”条件</p>
+</li>
+<li>
+<p>打破占用并等待条件：</p>
+<p>(1）采用资源预先分配策略，进程运行前申请全部资源，满足则运行，不然就等待</p>
+<p>(2）每个进程提出新的资源申请前，必须先释放它先前所占有的资源</p>
+</li>
+<li>
+<p>打破非抢占性条件：当进程占有某些资源后又进一步申请其他资源而无法满足，则该进程必须释放它原来占有的资源</p>
+</li>
+<li>
+<p>打破环路等待条件：实现资源有序分配策略，将系统的所有资源统一编号，所有进程只能采用按序号递增的形式申请资源</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="6-内存管理">6. 内存管理</h1>
+<ul>
+<li>
+<p>堆和栈的区别</p>
+<p>堆与栈表示两种内存管理方式，也表示两种常用的数据结构</p>
+<p><strong>内存管理方式</strong></p>
+<p>堆与栈实际上是操作系统对进程占用的内存空间的两种管理方式，主要有如下区别：</p>
+<ol>
+<li>管理方式不同。栈由操作系统自动分配释放，用于存放函数的参数值、局部变量等，无需我们手动控制，栈中存储的数据的生命周期随着函数的执行完成而结束。堆的申请和释放工作由程序员控制，容易产生内存泄漏，堆中存储的数据若未释放，则其生命周期等同于程序的生命周期</li>
+<li>空间大小不同。每个进程拥有的栈大小要远远小于堆大小。理论上，进程可申请的堆大小为虚拟内存大小</li>
+<li>分配方式不同：堆都是动态分配的，没有静态分配的堆。栈有 2 种分配方式：静态分配和动态分配。静态分配是由操作系统完成的，比如局部变量的分配。动态分配由 alloc() 函数分配，但是栈的动态分配和堆是不同的，它的动态分配是由操作系统进行释放，无需我们手工实现</li>
+<li>生长方向不同。堆的生长方向向上，内存地址由低到高，栈的生长方向向下，内存地址由高到低</li>
+<li>分配效率不同。栈由操作系统自动分配，会在硬件层级对栈提供支持，分配专门的寄存器存放栈的地址，压栈出栈都有专门的指令执行，这就决定了栈的效率比较高。堆则是由库函数或运算符来完成申请与管理，实现机制较为复杂，频繁的内存申请容易产生内存碎片。显然，堆的效率比栈要低得多</li>
+<li>存放内容不同。栈存放的内容，函数返回地址、相关参数、局部变量和寄存器内容等。堆，一般情况堆顶使用一个字节的空间来存放堆的大小，而堆中具体存放内容是由程序员来填充的。</li>
+</ol>
+<p>总结，堆和栈相比，由于大量malloc()/free()或new/delete的使用，容易造成大量的内存碎片，并且可能引发用户态和核心态的切换，效率较低。栈相比于堆，在程序中应用较为广泛，最常见的是函数的调用过程由栈来实现，实参和局部变量都采用栈的方式存放。虽然栈有众多的好处，但是由于和堆相比不是那么灵活，有时候分配大量的内存空间，主要还是用堆</p>
+<p><strong>数据结构中</strong></p>
+<p>堆与栈是两个常见的数据结构</p>
+<ol>
+<li>
+<p>栈是一种线性表，其限制是指只仅允许在表的一端进行插入和删除操作，这一端被称为栈顶。把新元素放到栈顶元素的上面，使之成为新的栈顶元素称作进栈。把栈顶元素删除，使其相邻的元素成为新的栈顶元素称作出栈。具有先进后出的特性（First In Last Out）</p>
+<p>栈是一种线性结构，所以可以使用数组或链表（单向链表、双向链表或循环链表）作为底层数据结构。使用数组实现的栈叫做顺序栈，使用链表实现的栈叫做链式栈，二者的区别是顺序栈中的元素地址连续，链式栈中的元素地址不连续</p>
+</li>
+<li>
+<p>堆是一种常用的树形结构，是一种特殊的完全二叉树，在一个堆中，根节点是最大或最小节点。如果根节点最小，称为小顶堆，如果根节点最大，称之为大顶堆。堆的左右孩子没有大小的顺序</p>
+<p>堆的存储一般都用数组来存储堆，i 节点的父节点下标就为 (i–1)/2。它的左右子节点下标分别为 2 ∗ i + 1 和 2 ∗ i + 2</p>
+</li>
+</ol>
+</li>
+<li>
+<p>操作系统存储结构：内存和外存</p>
+<p>cpu只能从内存中加载指令，执行程序必须位于内存</p>
+<p>内存（RAM\ROM\EEPROM）和外存（磁盘磁带\固态硬盘）</p>
+</li>
+<li>
+<p>虚拟内存</p>
+<ol>
+<li>解释：基于局部性原理，在程序装入时，将很快会使用到的部分装入内存，暂时不用的放在外存。在程序执行的过程中，操作系统负责把不在内存的信息从外存调入，将暂时用不到的信息从内存调出。在用户看来似乎有一个比实际内存要大得多的内存，这就是虚拟内存</li>
+<li>本质：实际的物理内存大小没有变，只是通过置换策略在逻辑上进行了扩充</li>
+<li>实现虚拟内存的技术：请求分页存储管理、请求分段存储管理、请求段页式存储管理</li>
+</ol>
+</li>
+<li>
+<p>分页和分段</p>
+<ol>
+<li>段式存储是一种符合用户视角的内存分配管理方案。将地址空间按照程序自身的逻辑关系划分为若干段（segment），如代码段，数据段，堆栈段，每个进程有一个二维地址空间，相互独立，互不干扰</li>
+<li>段式管理的优点是：没有内碎片（因为段大小可变，改变段大小来消除内碎片）。但段换入换出时，会产生外碎片（比如4k的段换5k的段，会产生1k的外碎片）</li>
+<li>页式存储管理中，将程序的逻辑地址划分为固定大小的页（page），而物理内存划分为同样大小的帧，程序加载时，可以将任意一页放入内存中任意一个帧，这些帧不必连续，从而实现了离散分离。一维地址空间</li>
+<li>页式存储管理的优点是：没有外碎片（因为页的大小固定），但会产生内碎片（一个页可能填充不满）</li>
+</ol>
+</li>
+<li>
+<p>局部性原理</p>
+<p>时间局部性：最近被访问的页在不久的将来还会被访问</p>
+<p>空间局部性：内存中被访问的页周围的页也很可能被访问</p>
+</li>
+<li>
+<p>页面置换算法 ⭐</p>
+<p>情景：在程序执行的过程中，当访问的信息不再内存时，由操作系统负责将所需信息从外存调入内存。若内存空间不够，由页面置换算法决定将内存中暂时用不到的信息换出外存。</p>
+<p>最优置换算法OPT：保证置换出去的是不再被使用的页，或者是在最长时间内不再被访问的页面</p>
+<p>先进先出算法FIFO：每次淘汰的是最早进入内存的页面，用于作业调度</p>
+<p>最近最少使用算法LRU：每次淘汰最近最久未使用的页面</p>
+<p>最少使用次数算法LFU：根据使用次数来判断</p>
+</li>
+<li>
+<p>抖动/颠簸</p>
+<p>本质上是指频繁的页调度行为，刚刚换出的页面马上又要换入内存，刚刚换入的页面马上又要换出内存，这种频繁的页面调度行为成为抖动。因此，会不断产生缺页中断，导致整个系统的效率急剧下降</p>
+<p>导致抖动的原因：进程频繁访问的页面数目高于可用的物理块数，页面替换策略失误，运行的程序太多</p>
+</li>
+</ul>
+<h1 id="7-文件系统">7. 文件系统</h1>
+<ul>
+<li>文件的逻辑结构</li>
+<li>文件的物理结构</li>
+<li>文件目录</li>
+<li>分配方法</li>
+</ul>
+<h1 id="8-海量存储">8. 海量存储</h1>
+<ul>
+<li>磁盘调度算法</li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="0001-01-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 0001-01-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/computer-network/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/express/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents"></nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://your.site" target="_blank">
+      <i class="icon icon-copyright"></i> 2025 Caiyi Zhang
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with Hugo and Duracu <i class="icon icon-love icon-colored"></i> &nbsp;</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: '',
+          indexName: '',
+          apiKey: '',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-07-06')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

@@ -85,3 +85,9 @@ menu:
       identifier: docs
       pre: "<i class='icon icon-book'></i>"
       weight: 2
+
+    - url: /Life
+      name: Life
+      identifier: life
+      pre: "<i class='icon icon-dark-mode'></i>"
+      weight: 2
