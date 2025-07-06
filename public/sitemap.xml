@@ -2,29 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/page-01/</loc>
     <lastmod>2025-07-06T03:25:43+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/page-01/</loc>
+    <loc>/docs/AboutMe/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/computer-network/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/express/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/fast-api/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/life/first/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/java-basic/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/operating-system/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+  </url><url>
+    <loc>/docs/page-02/</loc>
     <lastmod>2025-07-06T03:25:43+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/AboutMe/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/computer-network/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/express/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/fast-api/</loc>
-  </url><url>
-    <loc>//localhost:1313/life/first/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/java-basic/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/operating-system/</loc>
-  </url><url>
-    <loc>//localhost:1313/docs/page-02/</loc>
-    <lastmod>2025-07-06T03:25:43+08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/python-basic/</loc>
+    <loc>/docs/python-basic/</loc>
+    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
   </url>
 </urlset>
