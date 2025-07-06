@@ -3,6 +3,7 @@ theme: docura
 enableGitInfo: true
 
 defaultContentLanguage: en
+disableKinds: ["taxonomy", "section"]
 
 languages:
   en:
@@ -32,12 +33,12 @@ params:
     url: https://your.site
 
   themeColors:
-    light: '#ffffff'
+    light: '#000000'
     dark: '#121212'
 
   years:
     start: ''
-    present: 2023
+    present: 2025
 
   social:
     github: ''
@@ -47,10 +48,6 @@ params:
 
   ads:
     googleAdSense: ''
-
-  donate:
-    buyMeACoffee: ''
-    githubSponsor: ''
 
   algolia:
     en:
