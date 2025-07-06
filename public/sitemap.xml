@@ -2,109 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/docs/AboutMe/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/docs/AboutMe/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/andriod-development/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/andriod-development/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/android-camera-2/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/android-camera-2/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/c-plus-plus/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/c-plus-plus/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/compilers-principles/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/compilers-principles/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/computer-network/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/docs/computer-network/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/css3/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/css3/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/database-principal/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/database-principal/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/express/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/docs/express/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/fast-api/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/docs/fast-api/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/ffmpeg/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/ffmpeg/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/functional-programing/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/functional-programing/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/github-usage/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/github-usage/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/html5/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/html5/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/java-advance/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/java-advance/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/java-basic/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/docs/java-basic/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/java-data-structure/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/java-data-structure/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/java-input-output/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/java-input-output/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/java-native-interface/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/java-native-interface/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/javascript/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/javascript/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/linux-operation/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/linux-operation/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/mern-e-commerce/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/mern-e-commerce/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/object-oriented-design/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    <loc>/docs/object-oriented-design/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/operating-system/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
+    <loc>/docs/operating-system/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/page-01/</loc>
+    <loc>/docs/page-01/</loc>
     <lastmod>2025-07-06T03:25:43+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/python-basic/</loc>
+    <loc>/docs/python-basic/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/docs/react-js/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/docs/react-native/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/docs/software-testing/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/docs/video-compression/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/docs/video-knowledge/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/docs/vue-js/</loc>
+    <lastmod>2025-07-06T23:11:37+08:00</lastmod>
+  </url><url>
+    <loc>/life/first/</loc>
     <lastmod>2025-07-06T18:11:07+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/react-js/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/react-native/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/software-testing/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/video-compression/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/video-knowledge/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/vue-js/</loc>
-    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/life/first/</loc>
-    <lastmod>2025-07-06T18:11:07+08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/page-02/</loc>
+    <loc>/docs/page-02/</loc>
     <lastmod>2025-07-06T03:25:43+08:00</lastmod>
   </url>
 </urlset>
