@@ -16,6 +16,13 @@
       <description>&lt;p&gt;你好，我是caiyi&lt;/p&gt;</description>
     </item>
     <item>
+      <title>AboutMe</title>
+      <link>/life/AboutMe/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/life/AboutMe/</guid>
+      <description>&lt;p&gt;123&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Andriod Development</title>
       <link>/docs/andriod-development/</link>
       <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
@@ -233,11 +240,39 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_45659769/article/details/119564784&#34;&gt;vue面试题整理(2022-持续更新中&amp;hellip;)_老古懂的博客-CSDN博客_vue面试题&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/260150638&#34;&gt;2020秋招前端面经知识点汇总(二) Vue部分 - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_44182284/article/details/111191455?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-111191455-blog-119564784.pc_relevant_multi_platform_whitelistv1_exp2&amp;amp;spm=1001.2101.3001.4242.1&amp;amp;utm_relevant_index=3&#34;&gt;(173条消息) 2021年Vue最常见的面试题以及答案（面试必过）_前端探险家的博客-CSDN博客_vue面试题&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;&#xA;&lt;h2 id=&#34;basic&#34;&gt;Basic&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;介绍 Vue&lt;/p&gt;&#xA;&lt;p&gt;是一套用于构建用户界面的渐进式JavaScript框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合&lt;/p&gt;&#xA;&lt;p&gt;解释渐进式：vue 允许你将一个网页分割成可复用的组件，每个组件都包含属于自己的 HTML、CSS、JAVASCRIPT 以用来渲染网页中相应的地方。对于 VUE 的使用可大可小，它都会有相应的方式来整合到你的项目中。所以说它是一个渐进式的框架。VUE 是响应式的（reactive）这是VUE 最独特的特性，也就是说当我们的数据变更时，VUE 会帮你更新所有网页中用到它的地方&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vue 2.0 和 Vue3.0 的区别&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.yisu.com/zixun/729240.html#:~:text=%E5%8C%BA%E5%88%AB%EF%BC%9A1%E3%80%81vue2%E7%9A%84%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%88%A9%E7%94%A8%E4%BA%86ES5%E7%9A%84API%20Object.definePropert%20%28%29%EF%BC%8C%E8%80%8Cvue3%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BA%86es6%E7%9A%84API,Proxy%EF%BC%9B2%E3%80%81Vue3%E6%94%AF%E6%8C%81%E7%A2%8E%E7%89%87%EF%BC%8C%E8%80%8Cvue2%E4%B8%8D%E6%94%AF%E6%8C%81%EF%BC%9B3%E3%80%81%20Vue2%E4%BD%BF%E7%94%A8%E9%80%89%E9%A1%B9%E7%B1%BB%E5%9E%8BAPI%EF%BC%8C%E8%80%8CVue3%E4%BD%BF%E7%94%A8%E5%90%88%E6%88%90%E5%9E%8BAPI%EF%BC%9B4%E3%80%81%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%8D%AE%EF%BC%8Cvue2%E6%8A%8A%E6%95%B0%E6%8D%AE%E6%94%BE%E5%85%A5data%E5%B1%9E%E6%80%A7%E4%B8%AD%EF%BC%8C%E8%80%8CVue3%E4%BD%BF%E7%94%A8setup%20%28%29%E6%96%B9%E6%B3%95%EF%BC%9B5%E3%80%81vue3%E6%9C%89Teleport%E7%BB%84%E4%BB%B6%EF%BC%8Cvue2%E6%B2%A1%E6%9C%89%E3%80%82&#34;&gt;vue2和vue3的区别有哪些 - web开发 - 亿速云 (yisu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;区别：1、vue2的双向数据绑定利用了ES5的API Object.definePropert()，而vue3中使用了es6的API Proxy；2、Vue3支持碎片，而vue2不支持；3、 Vue2使用选项类型API，而Vue3使用合成型API；4、建立数据，vue2把数据放入data属性中，而Vue3使用setup()方法；5、vue3有Teleport组件，vue2没有。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vuex 使用情景&lt;/p&gt;&#xA;&lt;p&gt;vuex 是一个专为 vue.js 应用程序开发的状态管理模式&lt;/p&gt;&#xA;&lt;p&gt;可以理解为把需要&lt;strong&gt;多个组件共享的变量&lt;/strong&gt;全部存储在一个对象里面，把这个对象放在顶层的 vue 实例当中，让其他组件可以使用，可以想象成是一个单例对象&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;使用情景：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;大型开发，多个界面间的共享问题&lt;/li&gt;&#xA;&lt;li&gt;比如用户的登录状态、拿到和保存 token、用户名称、头像、地理位置信息等等&lt;/li&gt;&#xA;&lt;li&gt;比如商品的收藏、购物车中的物品（在很多页面都有添加购物车的功能）&lt;/li&gt;&#xA;&lt;li&gt;这些状态信息，我们都可以放在统一的地方，对它进行保存和管理，而且它们还是响应式的&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;简单使用：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;创建一个 store 文件夹，首先在 index.js 里定义四个东西： state, getters, mutations, actions&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;介绍 Vuex&lt;/p&gt;&#xA;&lt;p&gt;Vuex 是一个专为 Vue.js 应用程序开发的&lt;strong&gt;状态管理模式&lt;/strong&gt;。它采用&lt;strong&gt;集中式存储&lt;/strong&gt;，管理应用的所有组件的状态，Vuex 可以帮助我们管理共享状态，并附带了更多的概念和框架。这需要对短期和长期效益进行权衡。如果您不打算开发大型单页应用，使用 Vuex 可能是繁琐冗余的。确实是如此——如果您的应用够简单，您最好不要使用 Vuex&lt;/p&gt;</description>
     </item>
     <item>
-      <title>First</title>
-      <link>/life/first/</link>
+      <title>America Seattle</title>
+      <link>/life/america/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/life/first/</guid>
-      <description>&lt;p&gt;12334&lt;/p&gt;</description>
+      <guid>/life/america/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>America Seattle</title>
+      <link>/life/beijing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/life/beijing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>America Seattle</title>
+      <link>/life/changsha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/life/changsha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>America Seattle</title>
+      <link>/life/changsha2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/life/changsha2024/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>America Seattle</title>
+      <link>/life/fuzhou/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/life/fuzhou/</guid>
+      <description></description>
     </item>
     <item>
       <title>Page 02</title>

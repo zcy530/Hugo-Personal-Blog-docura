@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default `en-US` }}">
+<link rel="stylesheet" href="{{ "css/gallery.css" | absURL }}">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body>
+    {{ partial "site-header" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "site-footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>

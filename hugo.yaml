@@ -86,8 +86,8 @@ menu:
       pre: "<i class='icon icon-book'></i>"
       weight: 2
 
-    - url: /Life
+    - url: /life
       name: Life
       identifier: life
       pre: "<i class='icon icon-dark-mode'></i>"
-      weight: 2
+      weight: 3
