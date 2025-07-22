@@ -4,32 +4,24 @@ slug: Java-Basic
 lastmod: 2025-07-01T00:00:00+00:00
 ---
 
-
-# Java 初级
-
 面向对象的三大基本特性：封装、继承、多态
 
-# **第二章 java环境搭建**
+## 1. Java Compile
 
-编写：利用记事本/IDE完成代码文件 (.java) 的编写
+<img src="/img/JavaBasic/1.png" width="700" style="border-radius: 5px; margin-top: 5px; margin-bottom: 0px;">
 
-编译：利用JDK中 javac.exe 将代码文件 (.java) 编译为字节码文件 (.class)
+**编写**：在 VSCode 中编写好代码文件 hello.java  
+**编译**：利用 JDK 中 javac.exe 执行 javac hello.java 命令，将代码文件 (hello.java) 编译为字节码文件 (hello.class)  
+**加载**：利用 JDK 中 java.exe 执行 java hello 命令启动 JVM，JVM 使用类加载器，将字节码文件加载到内存中， JVM 初始化运行时环境，包括堆、栈、方法区等，准备执行 Java 程序  
+**JIT生成机器码**：JVM 的解释器和即时编译器 (JIT Compiler) 来执行字节码。解释器逐行解释字节码，而 JIT 编译器则将热点代码编译成机器码以提高执行效率。JVM 内置的垃圾回收器（Garbage Collector）会自动管理内存，回收不再使用的对象  
+**执行**：机器码在物理 CPU 上执行  
 
-运行：java.exe读入并解释字节码文件 (.class)，最终在JVM上运行
 
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210705142035099.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210705142035099.png)
+<img src="/img/JavaBasic/2.png" width="500" style="border-radius: 5px; margin-top: 20px; margin-bottom: 0px;">
 
-Eclipse和java(JDK, JRE, JVM) 之间的关系
+## 2. Java Class
 
-eclipse相当于帮我们管理很多java和class文件，给我们提供一个友好的界面，让我们更容易的写.java文件，.java要依靠JDK里面的 javac.exe来编译，编译完成后会产生一个.class文件，.class文件要继续调用JRE里面的java.exe来运行，JRE运行的时候里面会自动生成一个JVM(java virtual  machine)
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210705145705235.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210705145705235.png)
-
-java程序三种错误：语法错误，运行错误，逻辑错误
-
-# **第三章 Java类基础知识**
-
-## **3.1 java类结构**
+### 2.1 java类结构
 
 类是java最基础的逻辑单位
 
