@@ -6,7 +6,7 @@ lastmod: 2025-07-01T00:00:00+00:00
 
 面向对象的三大基本特性：封装、继承、多态
 
-## 1. Java Compile
+## 1. Java 编译和运行
 
 <img src="/img/JavaBasic/1.png" width="700" style="border-radius: 5px; margin-top: 5px; margin-bottom: 0px;">
 
@@ -17,357 +17,585 @@ lastmod: 2025-07-01T00:00:00+00:00
 **执行**：机器码在物理 CPU 上执行  
 
 
-<img src="/img/JavaBasic/2.png" width="500" style="border-radius: 5px; margin-top: 20px; margin-bottom: 0px;">
+<img src="/img/JavaBasic/2.png" width="600" style="border-radius: 5px; margin-top: 20px; margin-bottom: 0px;">
 
-## 2. Java Class
+## 2. Java 基础知识
 
-### 2.1 java类结构
+### 2.1 基本数据类型
+八种基本数据类型：
 
-类是java最基础的逻辑单位
+| 数据类型      | 大小（位）  | 默认值        | 表示范围或精度            | 示例值                 |
+| --------- | ------ | ---------- | ------------------ | ------------------- |
+| byte    | 8      | 0          | -128 ~ 127         | `byte b = 10;`      |
+| short   | 16     | 0          | -32,768 ~ 32,767   | `short s = 100;`    |
+| int     | 32     | 0          | -2³¹ ~ 2³¹-1       | `int i = 1000;`     |
+| long    | 64     | 0L         | -2⁶³ ~ 2⁶³-1       | `long l = 10000L;`  |
+| float   | 32     | 0.0f       | 约 6-7 位小数精度        | `float f = 3.14f;`  |
+| double  | 64     | 0.0d       | 约 15 位小数精度         | `double d = 2.718;` |
+| char    | 16     | '\u0000' | 单个 16 位 Unicode 字符 | `char c = 'A';`     |
+| boolean | 1（逻辑位） | false      | true/false   | `boolean b = true;` |
 
-java中所有的内容都是需要放在类的范围内，不允许游离在类以外
+### 2.2 数据转换
 
-一个java文件里可以有多个class，但是只能有一个public class
-
-一个class最多只能有一个main函数，是程序的入口，也可以没有main函数，没有main函数的类不能主动执行，但可以被动调用执行，main函数的形参和前缀修饰符都不能省略，public static void main(String[] args) 是固定写法
-
-main函数不算成员函数，无法被其他方法和类调用
-
-```java
-System.out.print()
-System.out println() //换行输出
-
-import java.util.Scanner;
-Scanner input=new Scanner(System.in);
-
-int score=input.nextInt(); //输入整数
-String name = in.nextLine();//读取一行字符串，中间可以有空格
-String firstName = in.next();//读取一个字符串，中间没有空格
-double d = in.nextDouble();//读取一个double类型的数据
-```
-
-## **3.2 基本数据类型和运算符**
-
-**Java标识符(identifiers)规定：**
-
-以字母、下划线、美圆符开始的一个字符序列
-
-除开始的第一个字符外，后面可跟字母、下划线、美圆符和数字
-
-标识符区分大小写
-
-没有长度限制
-
-不能与保留字(reserved word)或关键字(keyword)相同
-
-**数据转换**：
-
-低精度的数据类型在运算过程中可以自动转换为高精度的数据，而高精度的数据需要经过强制转换才能够变成低精度的数据
-
-(1)整型,实型,字符型数据可以混合运算。运算结果的精度由表达式中精度最高的变量决定
+- 隐式转换：低精度的数据类型转换为高精度的数据，会自动转换，无需显式声明
+- 强制转换：高精度的数据类型转换为低精度的数据，需要显式转换，否则编译错误
 
 ```java
-double d=15.3; int i=30;
-d=d+i //结果是一个double型的变量
-i=d+i // error，结果是double型的不能够赋值int型的变量
+int i = 100;
+long l = i;      // int 自动转换为 long
+float f = l;     // long 自动转换为 float
+
+double d = 3.14;
+int i = (int) d; // d 被强制转换为 int，结果是 3（小数被截断）
 ```
 
-(2)byte和short型的数据参加运算时会自动变为int类型
+### 2.3 运算符
+```java
++ - * / % && || ! != > >= < <=
+```
 
-(3) 在byte或者short的取值范围内时可以直接赋值给一个byte或者short类型的变量。反之，必须要通过强制类型转换来赋值
+### 2.4 选择结构
+
+选择结构根据条件的真假决定执行哪部分代码
+
+| 结构           | 语法形式                                                         | 说明                |
+| ------------ | ------------------------------------------------------------ | ----------------- |
+| `if`         | `if (condition) { statements; }`                             | 条件为真时执行语句块        |
+| `if else`    | `if (condition) { statements1; } else { statements2; }`      | 条件为真执行语句1，否则执行语句2 |
+| `else if` | `if (cond1) {...} else if (cond2) {...} else {...}`          | 多条件判断             |
+| `switch`     | `switch (variable) { case value1: ... break; default: ... }` | 多分支选择，适用于枚举值或整数判断 |
+
+举例：
+```java
+int score = 85;
+if (score >= 90) {
+    System.out.println("优秀");
+} else if (score >= 60) {
+    System.out.println("及格");
+} else {
+    System.out.println("不及格");
+}
+```
+
+### 2.5 循环结构
+
+循环结构用于重复执行一段代码，直到满足某个条件
+
+| 结构         | 语法形式                                            | 说明                 |
+| ---------- | ----------------------------------------------- | ------------------ |
+| `for`      | `for (init; condition; update) { statements; }` | 已知循环次数             |
+| `while`    | `while (condition) { statements; }`             | 先判断条件再执行           |
+| `do-while` | `do { statements; } while (condition);`         | 先执行一次，再判断是否继续      |
+| `break`    | `break;`                                        | 跳出当前循环             |
+| `continue` | `continue;`                                     | 跳过当前循环中的剩余语句，进入下一轮 |
+
+举例：
+```java
+for (int i = 1; i <= 5; i++) {
+    System.out.println("第 " + i + " 次循环");
+}
+```
+
+### 2.6 自定义方法
+
+修饰词 + 返回值 + 函数名 (形参) { 函数体 }  
+
+### 2.7 函数重载 Overload
+
+Overload 函数重载：在同一个类中，函数名可以相同，但是其参数的个数、类型、顺序有所不同，不能通过返回值来区别重载函数，不能有两个名字相同，参数类型也相同，却返回不同类型值的方法。
 
 ```java
-int i=10;
-byte b=(byte)i; //用变量i来给变量b赋值时，需要强制转换。
-long d=10；
-int j = d；//error
-int j = (int)d；
+public class OverloadExample {
+    // 重载方法1：两个 int 参数
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    // 重载方法2：三个 int 参数
+    public static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // 重载方法3：两个 double 参数
+    public static double add(double a, double b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(add(2, 3));          // 调用 int,int 版本 → 输出 5
+        System.out.println(add(2, 3, 4));       // 调用 int,int,int 版本 → 输出 9
+        System.out.println(add(2.5, 3.7));      // 调用 double,double 版本 → 输出 6.2
+    }
+}
 ```
 
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062344762.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062344762.png)
+## 3. Java 面向对象
 
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062614493.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062614493.png)
-
-boolean 只有true和false两个值
-
-int, long 定义时末尾要加L
-
-double 8个字节, float 4个字节 定义时末尾必须要加f
-
-char是一个单一的16位unicode字符，\u4e00-\u9fa5两万多汉字
-
-运算符：+ - * / % && || ! != > >= < <=
-
-## **3.3 选择和循环结构**
-
-if...else  if...else if...else
-
-switch
-
-while  do...while
-
-for
-
-break：中断循环并退出
-
-continue：结束本次循环，进入下一次循环，本次循环余下代码不做
-
-调试设断点，然后右键debug as java application
-
-step into下一句，step over 执行system.out.print时
-
-## **3.4 自定义函数**
-
-修饰词 + 返回值 + 函数名 （形参）{函数体}
-
-overload 函数重载：函数名可以相同，但是其参数的个数、类型、顺序有所不同，不能通过返回值来区别重载函数，不能有两个名字相同，参数类型也相同，却返回不同类型值的方法。
-
-# **第四章 面向对象**
-
-## **4.1 面向对象思想**
-
-对象 = 属性 + 方法
-
+对象 = 属性 + 方法  
 变量定义的变迁：基本类型 -> 结构体 -> 类
 
-## **4.2 java类和对象**
+### 3.1 类结构
+
+类是java最基础的逻辑单位，用来定义对象的属性和行为，使用规则如下：  
+- 一个类包括属性，方法，构造函数和析构函数
+- Java 中所有的内容都是需要放在 class 的范围内，不允许游离在 class 以外
+- 一个 java 文件里可以有多个 class，但是只能有一个 public class
+- 一个 class 最多只能有一个 main 函数，是程序的入口，也可以没有 main 函数，没有 main 函数的类不能主动执行，但可以被动调用执行。其中 main函数不算成员函数，无法被其他方法和类调用
 
 ```java
-class A{}
-A obj1 = new A()
-A obj2 = new A()
-//obj1, obj2指针指向不同的内存
-obj1 = obj2
-//赋值以后obj1, obj2指针指向相同的内存
+public class Person {
+    // 属性
+    int age;
+    String name;
+    // 构造函数
+    public Person(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+    // 方法
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name + ".");
+    }
+}
 ```
 
-对象赋值时 reference，就是指针变换，基本类型的赋值是直接值拷贝
+### 3.2 对象
 
+类（Class）是对象的模板或蓝图，而对象（Object）是类的实例  
+类定义了对象的属性和行为，对象则是用类创建出来的实际实体
+
+```java
+
+// 创建对象
+public class Main {
+    public static void main(String[] args) {
+        Person p1 = new Person(25, "Alice");  // 创建对象
+        p1.sayHello();             // 调用方法
+    }
+}
+```
 对象初始化：
 
-函数内的局部变量，编译器不会给默认值，需要初始化才能使用
-
-类的成员变量，编译器会给默认值，可以直接使用
-
-对象与引用：
-
-引用只有被初始化之后（指向对象空间时），才能够被调用
-
-```
-Book b1,b2,b3; //引用 reference
-b1 = new Book(); //ok
-b2 = b1;//ok
-b3 = new Student()//error, b3需要指向book类型的对象空间
+```java
+Person p = new Person(); // 创建对象，调用无参构造函数
+Person p = new Person("Alice", 20); // 使用构造方法初始化对象
 ```
 
-引用的赋值运算的结果是：两个引用指向同一个对象空间。一个对象空间拥有的引用数目不受限制
+### 3.3 引用类型
 
-## **4.3 构造函数**
+基本类型存储的是值本身，而引用类型存放的是对象的地址，Java 的对象就是引用类型  
+当你把一个对象赋值给另一个变量时，两个变量会引用同一个对象，改变其中一个变量引用的对象内容
 
-构造函数名称和类名一样，且没有返回值
+```java
+Person a = new Person("Tom", 18);
+Person b = a;  // b 引用了 a 指向的对象
 
-java有构造函数，没有析构函数，JVM会自动回收所分配的变量的内存
-
-每个变量都是有生命周期的，都只能存活在离它最近的大括号里面
-
-每个子类的构造函数第一句话，都默认调用父类的无参构造函数super()，除非子类的构造函数第一句话就是super()
-
-可以有多个构造函数
-
-## **4.4 信息隐藏和this**
-
-类的成员属性是私有的，private
-
-类的方法是共有的，public
-
-信息隐藏：通过类的方法来间接访问类的属性，而不是直接访问类的属性
-
-可以通过IDE自动产生get和set方法
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160126677.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160126677.png)
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160202868.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160202868.png)
-
-this负责指向本类中的成员变量
-
-this负责指向本类中的成员方法
-
-this可以代替本类中的构造函数
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160552484.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160552484.png)
-
-静态方法体中不能使用this关键字
-
-静态方法体中不能使用this关键字访问静态属性
-
-非静态方法中可以用this关键字访问静态属性
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715064001389.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715064001389.png)
-
-# **第五章 继承、接口、抽象类**
-
-## **5.1 继承**
-
-class Son extends Father
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160940497.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160940497.png)
-
-子类继承父类，父类的父类，所有的属性和方法，但不能直接访问private成员
-
-子类可以通过调用父类的方法来访问父类的私有的成员属性
-
-单根继承原则：每个类都只能继承一个类
-
-如果构造函数的第一句话不是super，编译器会自动增加一句super()，如果构造函数第一句是程序员自己写的super语句，编译器就不会自动增加了
-
-## **5.2 抽象类和接口**
-
-一个完整的类：所有的方法都实现了，类可以没有方法，但是有方法就一定要实现，这才是一个完整的类
-
-一个完整的类才能被实例化，被new出来
-
-如果一个类暂时还有方法没有实现，被定义为**抽象类abstract**
+b.name = "Jerry";
+System.out.println(a.name);  // 输出 Jerry，a 和 b 引用同一个对象
 
 ```
-public abstract class{
-    int area;
-    public abstract void calArea();
+判断引用类型是否相等：
+
+| 判断方式           | 含义                                          | 示例代码          |
+| -------------- | -------------------------------------------------- | ------------- |
+| `==`        | 比较两个对象的引用地址是否相同，即是否指向同一个对象                | `a == b`      |
+| `.equals()`  | 比较两个对象的内容是否相等。如果类没有重写 `equals` 方法，则行为等同于 `==`。 | `a.equals(b)` |
+
+举一个例子：
+
+```java
+class Person {
+    String name;
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Person) {
+            Person other = (Person) obj;
+            return this.name.equals(other.name);
+        }
+        return false;
+    }
+}
+
+Person p1 = new Person("Tom");
+Person p2 = new Person("Tom");
+
+System.out.println(p1 == p2);        // false，因为是两个不同的对象
+System.out.println(p1.equals(p2));   // true，重写了 equals，比较内容
+```
+
+### 3.4 构造函数
+
+构造函数（Constructor）是一种特殊的类方法，用于创建对象并进行初始化操作
+
+- 构造函数名称必须和类名一样，且没有返回值
+- Java 一个类可以有多个不同参数的构造函数
+- Java 有构造函数，没有析构函数，JVM 会自动回收所分配的变量的内存
+- 每个子类的构造函数第一句话，都默认调用父类的无参构造函数 super()，除非子类的构造函数第一句话就是 super()
+
+```java
+class Person {
+    String name;
+    int age;
+    // 构造函数1：无参
+    Person() {
+        name = "unknown";
+        age = 0;
+    }
+    // 构造函数2：有参
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }
 ```
 
-特点：
+### 3.5 访问修饰符
 
-一个类继承于抽象类，就不能继承于其他的抽象类
+在 Java 中，类的属性可以使用不同的访问修饰符（如 private、public、protected）来控制访问权限  
+这些修饰符用于实现封装（encapsulation），保护数据不被非法访问
 
-子类继承抽象类，如果不能完全实现父类的所有abstract方法，那么子类也必须被规定为抽象类
+| 修饰符         | 同类中 | 同包中 | 子类中 | 跨包访问 |
+| ----------- | --- | --- | --- | ---- |
+| `private`   | √   | ×   | ×   | ×    |
+| 默认（无）       | √   | √   | ×   | ×    |
+| `protected` | √   | √   | √   | ×    |
+| `public`    | √   | √   | √   | √    |
 
-如果一个类中所有方法都没实现，那么这个类就算是**接口interface**
+### 3.6 this 关键字
+
+在 Java 中，this 是一个关键字，代表当前对象的引用。在类的内部使用，用来区分成员变量和传进来的参数等
+
+**1. 区分成员变量和局部变量**  
+
+当方法或构造函数的参数与成员变量重名时，使用 this 来明确表示成员变量
+```java
+public Person(String name) {
+        this.name = name; // this.name 是成员变量，name 是构造函数参数
+    }
+```
+**2. 在对象内部调用其他方法**  
+
+调用当前对象的 sayHello 方法，或者构造函数之间相互调用，也可以省略 this
+```java
+public void greet() {
+    this.sayHello(); 
+}
+
+public void sayHello() {
+    System.out.println("Hello!");
+}
+```
+**3. 返回当前对象** 
+
+常用于链式调用
+```java
+public class Counter {
+    private int count = 0;
+
+    public Counter increment() {
+        this.count++;
+        return this; // 返回当前对象
+    }
+
+    public void print() {
+        System.out.println("Count: " + count);
+    }
+}
+
+// 使用示例
+Counter c = new Counter();
+c.increment().increment().print(); // Count: 2
+```
+
+注意：静态方法体中不能使用this关键字。非静态方法中可以用 this 关键字访问静态属性，静态方法体中不能使用 this 关键字访问静态属性，比如说 public static void main(String args[]) {}
+
+## 4. Java 类的继承和接口
+
+### 4.1 继承 extends 
+
+Java 中类的继承是面向对象编程的核心特性之一  
+它允许一个类（子类）继承另一个类（父类）的属性和方法，从而实现代码的复用、扩展和多态
+
+**1. 继承的特点**
+
+- 单根继承原则：一个类只能继承一个父类
+- 支持多层继承：可以继承多层结构，如 class A → B → C
+- 子类继承父类，父类的父类，所有的属性和方法，但不能直接访问private成员，但可以通过调用父类的方法来访问父类的私有的成员属性
+
+**2. 基本语法**
+```java
+class Animal {
+    public void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+class Dog extends Animal {
+    public void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+Dog dog = new Dog();
+dog.eat();  // 继承自 Animal
+dog.bark(); // 自己定义的方法
 
 ```
-public interface Animal{
-    public void eat();
-    public void move();
+
+**3. 使用 super 访问父类**
+- super() 调用父类的构造函数，必须在子类构造函数的第一行
+- super.方法名() 调用父类的方法。如果构造函数的第一句话不是super，编译器会自动增加一句super()，如果构造函数第一句是程序员自己写的super语句，编译器就不会自动增加了
+
+```java
+class Dog extends Animal {
+    public Dog() {
+        super("Dog"); // 调用父类构造函数
+    }
+
+    @Override
+    public void sleep() {
+        super.sleep(); // 调用父类方法
+        System.out.println("Dog sleeps");
+    }
+}
+```
+### 4.2 重写 override
+
+重写是指子类对父类继承的方法进行重新实现，它允许我们根据子类的需求，改变从父类继承来的方法行为
+
+规则：
+| 规则                                   | 说明                                        |
+| ------------------------------------ | ----------------------------------------- |
+| 方法名相同                                | 子类方法必须与父类被重写的方法名称相同                       |
+| 参数列表相同                               | 参数类型、顺序、个数都要一致                            |
+| 返回值类型相同                       | Java 5 起支持协变返回类型（covariant return type）   |
+| 访问权限不能更严格                            | 可以更宽松（如从 protected 变成 public），不能变得更严格 |
+| 不能重写 static、final 或 private 方法 | 这些方法不能被子类修改                               |
+| 可以添加或保留 @Override 注解               | 编译器会检查是否真的在重写父类方法，避免错误                    |
+
+举例：
+
+```java
+class Animal {
+    public void makeSound() {
+        System.out.println("Some sound");
+    }
+}
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
 }
 ```
 
-一个类只能继承extends一个类，但是可以实现implements多个接口
+### 4.3 抽象类 abstract
 
-一个接口可以继承多个接口，关键字用extends
+**完整的类:** 所有定义的方法都实现了，只有完整的类才能被实例化，被 new 出来
 
-类实现接口，就必须实现所有未实现的方法，否则是抽象类
+**抽象类 (abstract class)**: 暂时还有方法没有实现，被定义为抽象类，类和抽象方法都需要用 abstract 关键字来修饰
 
+**抽象类特点**: 抽象类不能实例化对象，除此之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。子类继承抽象类，如果不能完全实现父类的所有 abstract 方法，那么子类也必须被规定为抽象类
+
+```java
+public abstract class Shape {
+    int area;
+
+    // 抽象方法：子类必须实现
+    public abstract void calArea();
+    public abstract void draw();
+    public abstract String getName();
+
+    // 非抽象方法：子类可以继承或重写
+    public void printArea() {
+        System.out.println("Area: " + area);
+    }
+    public void setArea(int area) {
+        this.area = area;
+    }
+}
 ```
-public abstract LandAnimal implements Animal{
-    public abstract void eat();
-    public void move(){
-        System.out.print("move");
-    }
+### 4.4 接口类 interface
+
+**接口类 (interface class)**: 一个类中所有抽象方法都没实现，那这个类就是接口类，用 interface 关键字来修饰  
+**接口类的特点**: 
+- 接口没有构造函数，类和方法必须是 public
+- 不能有普通成员变量，但可以有 public static final 常量
+- 一个类只能继承 extends 一个类，但是可以实现 implements 多个接口，class C implements A, B
+- 一个接口可以继承多个接口，关键字用 extends，interface B extends A1, A2
+- 类实现接口，就必须实现所有未实现的方法，否则是抽象类
+
+定义接口：
+```java
+public interface Animal {
+    void eat();       
+    void sleep();     
+    void move();      
+    void makeSound(); 
+    void reproduce(); 
+}
+```
+实现接口：
+```java
+public class Dog implements Animal {
+    @Override
+    public void eat() {
+        System.out.println("Dog eats bones");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog sleeps");
+    }
 }
 ```
 
-抽象类有构造函数，接口没有构造函数
+### 4.5. 父子类型转换
 
-抽象类可以有private/protected，接口必须是public
+子类和父类之间的转型（类型转换）是面向对象编程的重要机制，通常分为向上转型（Upcasting）和向下转型（Downcasting）  
 
-## **3. 转型、多态、契约**
+1. **向上转型**：子类对象转换为父类类型，自动进行，不需要强制类型转换符
 
-子类可以转换为父类，而父类不可以转换为子类
+```java
+// 正确情况 1
+Animal obj1 = new Dog(); // 向上转型，自动进行
 
-子类继承父类所有的财产，子类可以变成父类(从大变小，即向上转型)
-
-从父类直接变成子类(从小变大，即向下转型)，则不允许
-
-```
-Human obj1 = new Man(); //OK
-Man obj2 = new Human(); //illegal
-```
-
-父类转为子类有一种情况例外，就是这个父类本身就是从子类转化过来的
-
-```
-Human obj1 = new Man();
-Man obj2 = (Man) obj1;
+// 正确情况 2 
+Dog dog = new Dog();
+Animal animal = dog; 
+animal.speak();   // 正确：可调用父类的方法
+animal.bark();    // 错误：编译器无法识别子类特有的方法
 ```
 
-overwrite/override：子类继承父类的所有方法，但子类可以重新定义一个名字、 参数和父类一样的方法，子类优先级高于父类
+2. **向下转型**：父类引用转换为子类类型，强制进行，必须加上类型转换符。如果父类引用不是实际指向的那个子类，会抛出 ClassCastException
+```java
+// 正确情况
+Animal animal = new Dog(); // 实际是 Dog 对象
+Dog dog = (Dog) animal;    // 向下转型，强制转换
+dog.bark();                // 现在可以调用子类特有的方法
 
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714190911133.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714190911133.png)
+// 错误情况 1 
+Animal animal = new Animal(); 
+Dog dog = (Dog) animal; // 编译通过，运行时抛出 ClassCastException
 
-三个obj指向同一块内存，调用的eat()都是子类的
-
-**多态**：子类转型为父类后，调用的普通方法，依旧是子类本身方法
-
-多态的作用：
-
-以统一的接口来操纵某一类中不同的对象的动态行为
-
-对象之间的解耦
-
-**契约**：规定规范了对象应该包含的行为方法
-
-类不会直接使用另外一个类，而是采用接口的形式，外部可以“空投”这个接口下的任意子类对象
-
-# **第六章 static、final、常量设计**
-
-## **1. static**
-
-**静态变量**：
-
-类共有成员，可以依赖于类存在，不依赖于对象实例存在，即可以在main中用 类.变量名访问
-
-在内存里只有一个，所有的对象实例这个变量，都存储在同一个内存空间里
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714192750482.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714192750482.png)
-
-**静态方法**：
-
-静态方法也无需通过对象来引用，而通过类名可以直 接引用
-
-在静态方法中，只能使用静态变量，不能使用非静态变量
-
-静态方法禁止引用非静态方法，非静态方法可以直接引用静态方法
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193142370.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193142370.png)
-
-静态代码块：
-
-只在类第一次被加载时调用。
-
-换句话说，在程序运行期间，这段代码只运行一次
-
-执行顺序：static块 > 匿名块 > 构造函数
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193340090.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193340090.png)
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193419792.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193419792.png)
-
-![https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193453351.png](https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193453351.png)
-
-使用static关键字记录创建了多少个对象：
+// 错误情况 2
+Dog obj2 = new Animal(); //illegal
 
 ```
-class Emp {
-    static int count = 0;
-    String name;
-    public Emp(String name) {
-        this.name = name;
-        count++;
-    }
-    public Emp() {
-        count++;
-    }
+### 4.6 多态
+面向对象编程的核心特性：封装、继承、多态   
+多态是对于同一个行为，不同的子类对象具有不同的表现形式。同一个接口，使用不同的实例而执行不同操作
+- 提高代码复用性和可维护性，简化代码结构
+- 运行时动态绑定，动态决策调用哪个方法
+- 配合接口编程，降低耦合度
+
+```java
+class Shape {
+    void draw() {}
 }
-public class ConstructStatic {
-    public static void main(String[] args) {
-        Emp e1 = new Emp();
-        Emp e2 = new Emp();
-        Emp e3 = new Emp("zhangshan");
-        System.out.println("创建了" + Emp.count + "个对象");
-    }
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Circle.draw()");
+    }
+}
+class Square extends Shape {
+    void draw() {
+        System.out.println("Square.draw()");
+    }
+}
+class Triangle extends Shape {
+    void draw() {
+        System.out.println("Triangle.draw()");
+    }
 }
 ```
 
-## **2. 单例模式**
+## 5. Java 常量管理
+
+### 5.1 静态变量 static 
+
+在 Java 中，static 是一个关键字，用来修饰类的变量、方法、内部类，表示这些成员属于类本身，而不是某个具体对象
+
+**1. 静态变量**
+- 静态变量属于类本身，所有对象共享一份内存
+- 常用来记录类的全局状态，比如实例计数器、全局配置等
+- 不需要创建对象就能访问：Person.count
+
+```java
+class Person {
+    static int count = 0; // 静态变量
+    public Person() {
+        count++; // 每创建一个对象，count++
+    }
+}
+```
+
+**2. 静态方法**
+
+- 静态方法也不依赖于对象，可以通过类名直接调用 MathUtils.add(1, 2)
+- 在静态方法中，只能使用静态变量，不能使用非静态变量，因为非静态成员属于对象
+- 在静态方法中，不能使用非静态方法，非静态方法可以直接引用静态方法
+
+```java
+public class StaticMethodTest {
+    int a = 1;           // 非静态变量（属于对象）
+    static int b = 2;    // 静态变量（属于类）
+    public static void hello() {
+        System.out.println(b);         // 正确，static 方法能访问 static 变量
+        // System.out.println(a);      // 错误，static 方法不能访问非 static 变量
+        // hi();                       // 错误，static 方法不能调用非 static 方法
+    }
+    public void hi() {
+        hello();                    // 正确，可以调用 static 方法
+        System.out.println(a);      // 正确，可以访问非 static 变量
+        System.out.println(b);      // 正确，可以访问 static 变量
+    }
+    public static void main(String[] a) {
+        StaticMethodTest.hello();  // 正确，静态方法通过类名调用
+        // StaticMethodTest.hi();  // 错误，不能通过类名调用非静态方法
+    }
+}
+```
+
+**3. 静态代码块**
+
+- 静态代码块在类加载时执行一次，可以用于初始化静态变量
+- 无论创建多少个对象，静态代码块只执行一次
+- 执行顺序：static块 > 匿名块 > 构造函数
+```java
+class StaticBlock {
+    // 静态代码块
+    static {
+        System.out.println("static block");
+    }
+    // 匿名代码块
+    {
+        System.out.println("anonymous block");
+    }
+    // 构造函数
+    public StaticBlock() {
+        System.out.println("constructor function");
+    }
+}
+// 最终输出
+static block
+anonymous block
+constructor function
+```
+
+**4. 静态内部类**
+- 静态内部类不依赖外部类的实例
+- 可以直接通过 Outer.Inner 创建对象：new Outer.Inner()
+```java
+class Outer {
+    static class Inner {
+        void sayHi() {
+            System.out.println("Hi from static inner class");
+        }
+    }
+}
+```
+
+### 5.2 单例模式 Singleton
 
 限定某一个类在整个程序运行过程中，只能保留一个实例对象在内存空间
 

@@ -367,205 +367,666 @@
         
         
         <p>面向对象的三大基本特性：封装、继承、多态</p>
-<h2 id="1-java-compile">1. Java Compile</h2>
+<h2 id="1-java-编译和运行">1. Java 编译和运行</h2>
 <img src="/img/JavaBasic/1.png" width="700" style="border-radius: 5px; margin-top: 5px; margin-bottom: 0px;">
-<p><strong>编写</strong>：在 VSCode 中编写好代码文件 hello.java。
+<p><strong>编写</strong>：在 VSCode 中编写好代码文件 hello.java<br>
 <strong>编译</strong>：利用 JDK 中 javac.exe 执行 javac hello.java 命令，将代码文件 (hello.java) 编译为字节码文件 (hello.class)<br>
 <strong>加载</strong>：利用 JDK 中 java.exe 执行 java hello 命令启动 JVM，JVM 使用类加载器，将字节码文件加载到内存中， JVM 初始化运行时环境，包括堆、栈、方法区等，准备执行 Java 程序<br>
 <strong>JIT生成机器码</strong>：JVM 的解释器和即时编译器 (JIT Compiler) 来执行字节码。解释器逐行解释字节码，而 JIT 编译器则将热点代码编译成机器码以提高执行效率。JVM 内置的垃圾回收器（Garbage Collector）会自动管理内存，回收不再使用的对象<br>
 <strong>执行</strong>：机器码在物理 CPU 上执行</p>
-<img src="/img/JavaBasic/2.png" width="500" style="border-radius: 5px; margin-top: 20px; margin-bottom: 0px;">
-<h2 id="2-java-class">2. Java Class</h2>
-<h3 id="21-java类结构">2.1 java类结构</h3>
-<p>类是java最基础的逻辑单位</p>
-<p>java中所有的内容都是需要放在类的范围内，不允许游离在类以外</p>
-<p>一个java文件里可以有多个class，但是只能有一个public class</p>
-<p>一个class最多只能有一个main函数，是程序的入口，也可以没有main函数，没有main函数的类不能主动执行，但可以被动调用执行，main函数的形参和前缀修饰符都不能省略，public static void main(String[] args) 是固定写法</p>
-<p>main函数不算成员函数，无法被其他方法和类调用</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="w"> </span><span class="nf">println</span><span class="p">()</span><span class="w"> </span><span class="c1">//换行输出</span><span class="w">
+<img src="/img/JavaBasic/2.png" width="600" style="border-radius: 5px; margin-top: 20px; margin-bottom: 0px;">
+<h2 id="2-java-基础知识">2. Java 基础知识</h2>
+<h3 id="21-基本数据类型">2.1 基本数据类型</h3>
+<p>八种基本数据类型：</p>
+<table>
+  <thead>
+      <tr>
+          <th>数据类型</th>
+          <th>大小（位）</th>
+          <th>默认值</th>
+          <th>表示范围或精度</th>
+          <th>示例值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>byte</td>
+          <td>8</td>
+          <td>0</td>
+          <td>-128 ~ 127</td>
+          <td><code>byte b = 10;</code></td>
+      </tr>
+      <tr>
+          <td>short</td>
+          <td>16</td>
+          <td>0</td>
+          <td>-32,768 ~ 32,767</td>
+          <td><code>short s = 100;</code></td>
+      </tr>
+      <tr>
+          <td>int</td>
+          <td>32</td>
+          <td>0</td>
+          <td>-2³¹ ~ 2³¹-1</td>
+          <td><code>int i = 1000;</code></td>
+      </tr>
+      <tr>
+          <td>long</td>
+          <td>64</td>
+          <td>0L</td>
+          <td>-2⁶³ ~ 2⁶³-1</td>
+          <td><code>long l = 10000L;</code></td>
+      </tr>
+      <tr>
+          <td>float</td>
+          <td>32</td>
+          <td>0.0f</td>
+          <td>约 6-7 位小数精度</td>
+          <td><code>float f = 3.14f;</code></td>
+      </tr>
+      <tr>
+          <td>double</td>
+          <td>64</td>
+          <td>0.0d</td>
+          <td>约 15 位小数精度</td>
+          <td><code>double d = 2.718;</code></td>
+      </tr>
+      <tr>
+          <td>char</td>
+          <td>16</td>
+          <td>&lsquo;\u0000&rsquo;</td>
+          <td>单个 16 位 Unicode 字符</td>
+          <td><code>char c = 'A';</code></td>
+      </tr>
+      <tr>
+          <td>boolean</td>
+          <td>1（逻辑位）</td>
+          <td>false</td>
+          <td>true/false</td>
+          <td><code>boolean b = true;</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="22-数据转换">2.2 数据转换</h3>
+<ul>
+<li>隐式转换：低精度的数据类型转换为高精度的数据，会自动转换，无需显式声明</li>
+<li>强制转换：高精度的数据类型转换为低精度的数据，需要显式转换，否则编译错误</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">100</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">long</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w">      </span><span class="c1">// int 自动转换为 long</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">l</span><span class="p">;</span><span class="w">     </span><span class="c1">// long 自动转换为 float</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Scanner</span><span class="w"> </span><span class="n">input</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">3</span><span class="p">.</span><span class="na">14</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"> </span><span class="c1">// d 被强制转换为 int，结果是 3（小数被截断）</span><span class="w">
+</span></span></span></code></pre></div><h3 id="23-运算符">2.3 运算符</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">+</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="o">&lt;=</span><span class="w">
+</span></span></span></code></pre></div><h3 id="24-选择结构">2.4 选择结构</h3>
+<p>选择结构根据条件的真假决定执行哪部分代码</p>
+<table>
+  <thead>
+      <tr>
+          <th>结构</th>
+          <th>语法形式</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>if</code></td>
+          <td><code>if (condition) { statements; }</code></td>
+          <td>条件为真时执行语句块</td>
+      </tr>
+      <tr>
+          <td><code>if else</code></td>
+          <td><code>if (condition) { statements1; } else { statements2; }</code></td>
+          <td>条件为真执行语句1，否则执行语句2</td>
+      </tr>
+      <tr>
+          <td><code>else if</code></td>
+          <td><code>if (cond1) {...} else if (cond2) {...} else {...}</code></td>
+          <td>多条件判断</td>
+      </tr>
+      <tr>
+          <td><code>switch</code></td>
+          <td><code>switch (variable) { case value1: ... break; default: ... }</code></td>
+          <td>多分支选择，适用于枚举值或整数判断</td>
+      </tr>
+  </tbody>
+</table>
+<p>举例：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">85</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">90</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;优秀&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">60</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;及格&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;不及格&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="25-循环结构">2.5 循环结构</h3>
+<p>循环结构用于重复执行一段代码，直到满足某个条件</p>
+<table>
+  <thead>
+      <tr>
+          <th>结构</th>
+          <th>语法形式</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>for</code></td>
+          <td><code>for (init; condition; update) { statements; }</code></td>
+          <td>已知循环次数</td>
+      </tr>
+      <tr>
+          <td><code>while</code></td>
+          <td><code>while (condition) { statements; }</code></td>
+          <td>先判断条件再执行</td>
+      </tr>
+      <tr>
+          <td><code>do-while</code></td>
+          <td><code>do { statements; } while (condition);</code></td>
+          <td>先执行一次，再判断是否继续</td>
+      </tr>
+      <tr>
+          <td><code>break</code></td>
+          <td><code>break;</code></td>
+          <td>跳出当前循环</td>
+      </tr>
+      <tr>
+          <td><code>continue</code></td>
+          <td><code>continue;</code></td>
+          <td>跳过当前循环中的剩余语句，进入下一轮</td>
+      </tr>
+  </tbody>
+</table>
+<p>举例：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;第 &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; 次循环&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="26-自定义方法">2.6 自定义方法</h3>
+<p>修饰词 + 返回值 + 函数名 (形参) { 函数体 }</p>
+<h3 id="27-函数重载-overload">2.7 函数重载 Overload</h3>
+<p>Overload 函数重载：在同一个类中，函数名可以相同，但是其参数的个数、类型、顺序有所不同，不能通过返回值来区别重载函数，不能有两个名字相同，参数类型也相同，却返回不同类型值的方法。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">OverloadExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 重载方法1：两个 int 参数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="o">=</span><span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span><span class="w"> </span><span class="c1">//输入整数</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="c1">//读取一行字符串，中间可以有空格</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">String</span><span class="w"> </span><span class="n">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="p">.</span><span class="na">next</span><span class="p">();</span><span class="c1">//读取一个字符串，中间没有空格</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">in</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span><span class="c1">//读取一个double类型的数据</span><span class="w">
-</span></span></span></code></pre></div><h2 id="32-基本数据类型和运算符"><strong>3.2 基本数据类型和运算符</strong></h2>
-<p><strong>Java标识符(identifiers)规定：</strong></p>
-<p>以字母、下划线、美圆符开始的一个字符序列</p>
-<p>除开始的第一个字符外，后面可跟字母、下划线、美圆符和数字</p>
-<p>标识符区分大小写</p>
-<p>没有长度限制</p>
-<p>不能与保留字(reserved word)或关键字(keyword)相同</p>
-<p><strong>数据转换</strong>：</p>
-<p>低精度的数据类型在运算过程中可以自动转换为高精度的数据，而高精度的数据需要经过强制转换才能够变成低精度的数据</p>
-<p>(1)整型,实型,字符型数据可以混合运算。运算结果的精度由表达式中精度最高的变量决定</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="o">=</span><span class="n">15</span><span class="p">.</span><span class="na">3</span><span class="p">;</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">30</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">d</span><span class="o">=</span><span class="n">d</span><span class="o">+</span><span class="n">i</span><span class="w"> </span><span class="c1">//结果是一个double型的变量</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">i</span><span class="o">=</span><span class="n">d</span><span class="o">+</span><span class="n">i</span><span class="w"> </span><span class="c1">// error，结果是double型的不能够赋值int型的变量</span><span class="w">
-</span></span></span></code></pre></div><p>(2)byte和short型的数据参加运算时会自动变为int类型</p>
-<p>(3) 在byte或者short的取值范围内时可以直接赋值给一个byte或者short类型的变量。反之，必须要通过强制类型转换来赋值</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">10</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">byte</span><span class="w"> </span><span class="n">b</span><span class="o">=</span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="c1">//用变量i来给变量b赋值时，需要强制转换。</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">long</span><span class="w"> </span><span class="n">d</span><span class="o">=</span><span class="n">10</span><span class="err">；</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="err">；</span><span class="c1">//error</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">d</span><span class="err">；</span><span class="w">
-</span></span></span></code></pre></div><p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062344762.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062344762.png"></p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062614493.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715062614493.png"></p>
-<p>boolean 只有true和false两个值</p>
-<p>int, long 定义时末尾要加L</p>
-<p>double 8个字节, float 4个字节 定义时末尾必须要加f</p>
-<p>char是一个单一的16位unicode字符，\u4e00-\u9fa5两万多汉字</p>
-<p>运算符：+ - * / % &amp;&amp; || ! != &gt; &gt;= &lt; &lt;=</p>
-<h2 id="33-选择和循环结构"><strong>3.3 选择和循环结构</strong></h2>
-<p>if&hellip;else  if&hellip;else if&hellip;else</p>
-<p>switch</p>
-<p>while  do&hellip;while</p>
-<p>for</p>
-<p>break：中断循环并退出</p>
-<p>continue：结束本次循环，进入下一次循环，本次循环余下代码不做</p>
-<p>调试设断点，然后右键debug as java application</p>
-<p>step into下一句，step over 执行system.out.print时</p>
-<h2 id="34-自定义函数"><strong>3.4 自定义函数</strong></h2>
-<p>修饰词 + 返回值 + 函数名 （形参）{函数体}</p>
-<p>overload 函数重载：函数名可以相同，但是其参数的个数、类型、顺序有所不同，不能通过返回值来区别重载函数，不能有两个名字相同，参数类型也相同，却返回不同类型值的方法。</p>
-<h1 id="第四章-面向对象"><strong>第四章 面向对象</strong></h1>
-<h2 id="41-面向对象思想"><strong>4.1 面向对象思想</strong></h2>
-<p>对象 = 属性 + 方法</p>
-<p>变量定义的变迁：基本类型 -&gt; 结构体 -&gt; 类</p>
-<h2 id="42-java类和对象"><strong>4.2 java类和对象</strong></h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">A</span><span class="p">{}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">A</span><span class="w"> </span><span class="n">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">A</span><span class="p">()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">A</span><span class="w"> </span><span class="n">obj2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">A</span><span class="p">()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//obj1, obj2指针指向不同的内存</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">obj2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//赋值以后obj1, obj2指针指向相同的内存</span><span class="w">
-</span></span></span></code></pre></div><p>对象赋值时 reference，就是指针变换，基本类型的赋值是直接值拷贝</p>
-<p>对象初始化：</p>
-<p>函数内的局部变量，编译器不会给默认值，需要初始化才能使用</p>
-<p>类的成员变量，编译器会给默认值，可以直接使用</p>
-<p>对象与引用：</p>
-<p>引用只有被初始化之后（指向对象空间时），才能够被调用</p>
-<pre tabindex="0"><code>Book b1,b2,b3; //引用 reference
-b1 = new Book(); //ok
-b2 = b1;//ok
-b3 = new Student()//error, b3需要指向book类型的对象空间
-</code></pre><p>引用的赋值运算的结果是：两个引用指向同一个对象空间。一个对象空间拥有的引用数目不受限制</p>
-<h2 id="43-构造函数"><strong>4.3 构造函数</strong></h2>
-<p>构造函数名称和类名一样，且没有返回值</p>
-<p>java有构造函数，没有析构函数，JVM会自动回收所分配的变量的内存</p>
-<p>每个变量都是有生命周期的，都只能存活在离它最近的大括号里面</p>
-<p>每个子类的构造函数第一句话，都默认调用父类的无参构造函数super()，除非子类的构造函数第一句话就是super()</p>
-<p>可以有多个构造函数</p>
-<h2 id="44-信息隐藏和this"><strong>4.4 信息隐藏和this</strong></h2>
-<p>类的成员属性是私有的，private</p>
-<p>类的方法是共有的，public</p>
-<p>信息隐藏：通过类的方法来间接访问类的属性，而不是直接访问类的属性</p>
-<p>可以通过IDE自动产生get和set方法</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160126677.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160126677.png"></p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160202868.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160202868.png"></p>
-<p>this负责指向本类中的成员变量</p>
-<p>this负责指向本类中的成员方法</p>
-<p>this可以代替本类中的构造函数</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160552484.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160552484.png"></p>
-<p>静态方法体中不能使用this关键字</p>
-<p>静态方法体中不能使用this关键字访问静态属性</p>
-<p>非静态方法中可以用this关键字访问静态属性</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715064001389.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210715064001389.png"></p>
-<h1 id="第五章-继承接口抽象类"><strong>第五章 继承、接口、抽象类</strong></h1>
-<h2 id="51-继承"><strong>5.1 继承</strong></h2>
-<p>class Son extends Father</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160940497.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210708160940497.png"></p>
-<p>子类继承父类，父类的父类，所有的属性和方法，但不能直接访问private成员</p>
-<p>子类可以通过调用父类的方法来访问父类的私有的成员属性</p>
-<p>单根继承原则：每个类都只能继承一个类</p>
-<p>如果构造函数的第一句话不是super，编译器会自动增加一句super()，如果构造函数第一句是程序员自己写的super语句，编译器就不会自动增加了</p>
-<h2 id="52-抽象类和接口"><strong>5.2 抽象类和接口</strong></h2>
-<p>一个完整的类：所有的方法都实现了，类可以没有方法，但是有方法就一定要实现，这才是一个完整的类</p>
-<p>一个完整的类才能被实例化，被new出来</p>
-<p>如果一个类暂时还有方法没有实现，被定义为<strong>抽象类abstract</strong></p>
-<pre tabindex="0"><code>public abstract class{
-    int area;
-    public abstract void calArea();
-}
-</code></pre><p>特点：</p>
-<p>一个类继承于抽象类，就不能继承于其他的抽象类</p>
-<p>子类继承抽象类，如果不能完全实现父类的所有abstract方法，那么子类也必须被规定为抽象类</p>
-<p>如果一个类中所有方法都没实现，那么这个类就算是<strong>接口interface</strong></p>
-<pre tabindex="0"><code>public interface Animal{
-    public void eat();
-    public void move();
-}
-</code></pre><p>一个类只能继承extends一个类，但是可以实现implements多个接口</p>
-<p>一个接口可以继承多个接口，关键字用extends</p>
-<p>类实现接口，就必须实现所有未实现的方法，否则是抽象类</p>
-<pre tabindex="0"><code>public abstract LandAnimal implements Animal{
-    public abstract void eat();
-    public void move(){
-        System.out.print(&#34;move&#34;);
-    }
-}
-</code></pre><p>抽象类有构造函数，接口没有构造函数</p>
-<p>抽象类可以有private/protected，接口必须是public</p>
-<h2 id="3-转型多态契约"><strong>3. 转型、多态、契约</strong></h2>
-<p>子类可以转换为父类，而父类不可以转换为子类</p>
-<p>子类继承父类所有的财产，子类可以变成父类(从大变小，即向上转型)</p>
-<p>从父类直接变成子类(从小变大，即向下转型)，则不允许</p>
-<pre tabindex="0"><code>Human obj1 = new Man(); //OK
-Man obj2 = new Human(); //illegal
-</code></pre><p>父类转为子类有一种情况例外，就是这个父类本身就是从子类转化过来的</p>
-<pre tabindex="0"><code>Human obj1 = new Man();
-Man obj2 = (Man) obj1;
-</code></pre><p>overwrite/override：子类继承父类的所有方法，但子类可以重新定义一个名字、 参数和父类一样的方法，子类优先级高于父类</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714190911133.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714190911133.png"></p>
-<p>三个obj指向同一块内存，调用的eat()都是子类的</p>
-<p><strong>多态</strong>：子类转型为父类后，调用的普通方法，依旧是子类本身方法</p>
-<p>多态的作用：</p>
-<p>以统一的接口来操纵某一类中不同的对象的动态行为</p>
-<p>对象之间的解耦</p>
-<p><strong>契约</strong>：规定规范了对象应该包含的行为方法</p>
-<p>类不会直接使用另外一个类，而是采用接口的形式，外部可以“空投”这个接口下的任意子类对象</p>
-<h1 id="第六章-staticfinal常量设计"><strong>第六章 static、final、常量设计</strong></h1>
-<h2 id="1-static"><strong>1. static</strong></h2>
-<p><strong>静态变量</strong>：</p>
-<p>类共有成员，可以依赖于类存在，不依赖于对象实例存在，即可以在main中用 类.变量名访问</p>
-<p>在内存里只有一个，所有的对象实例这个变量，都存储在同一个内存空间里</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714192750482.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714192750482.png"></p>
-<p><strong>静态方法</strong>：</p>
-<p>静态方法也无需通过对象来引用，而通过类名可以直 接引用</p>
-<p>在静态方法中，只能使用静态变量，不能使用非静态变量</p>
-<p>静态方法禁止引用非静态方法，非静态方法可以直接引用静态方法</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193142370.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193142370.png"></p>
-<p>静态代码块：</p>
-<p>只在类第一次被加载时调用。</p>
-<p>换句话说，在程序运行期间，这段代码只运行一次</p>
-<p>执行顺序：static块 &gt; 匿名块 &gt; 构造函数</p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193340090.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193340090.png"></p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193419792.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193419792.png"></p>
-<p><img src="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193453351.png" alt="https://caiyiimg.oss-cn-shanghai.aliyuncs.com/typora/image-20210714193453351.png"></p>
-<p>使用static关键字记录创建了多少个对象：</p>
-<pre tabindex="0"><code>class Emp {
-    static int count = 0;
-    String name;
-    public Emp(String name) {
-        this.name = name;
-        count++;
-    }
-    public Emp() {
-        count++;
-    }
-}
-public class ConstructStatic {
-    public static void main(String[] args) {
-        Emp e1 = new Emp();
-        Emp e2 = new Emp();
-        Emp e3 = new Emp(&#34;zhangshan&#34;);
-        System.out.println(&#34;创建了&#34; + Emp.count + &#34;个对象&#34;);
-    }
-}
-</code></pre><h2 id="2-单例模式"><strong>2. 单例模式</strong></h2>
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 重载方法2：三个 int 参数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">c</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 重载方法3：两个 double 参数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">));</span><span class="w">          </span><span class="c1">// 调用 int,int 版本 → 输出 5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">,</span><span class="w"> </span><span class="n">4</span><span class="p">));</span><span class="w">       </span><span class="c1">// 调用 int,int,int 版本 → 输出 9</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="n">2</span><span class="p">.</span><span class="na">5</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">.</span><span class="na">7</span><span class="p">));</span><span class="w">      </span><span class="c1">// 调用 double,double 版本 → 输出 6.2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="3-java-面向对象">3. Java 面向对象</h2>
+<p>对象 = 属性 + 方法<br>
+变量定义的变迁：基本类型 -&gt; 结构体 -&gt; 类</p>
+<h3 id="31-类结构">3.1 类结构</h3>
+<p>类是java最基础的逻辑单位，用来定义对象的属性和行为，使用规则如下：</p>
+<ul>
+<li>一个类包括属性，方法，构造函数和析构函数</li>
+<li>Java 中所有的内容都是需要放在 class 的范围内，不允许游离在 class 以外</li>
+<li>一个 java 文件里可以有多个 class，但是只能有一个 public class</li>
+<li>一个 class 最多只能有一个 main 函数，是程序的入口，也可以没有 main 函数，没有 main 函数的类不能主动执行，但可以被动调用执行。其中 main函数不算成员函数，无法被其他方法和类调用</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 属性</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 构造函数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Hello, my name is &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;.&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="32-对象">3.2 对象</h3>
+<p>类（Class）是对象的模板或蓝图，而对象（Object）是类的实例<br>
+类定义了对象的属性和行为，对象则是用类创建出来的实际实体</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 创建对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="n">25</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Alice&#34;</span><span class="p">);</span><span class="w">  </span><span class="c1">// 创建对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">p1</span><span class="p">.</span><span class="na">sayHello</span><span class="p">();</span><span class="w">             </span><span class="c1">// 调用方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>对象初始化：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span><span class="w"> </span><span class="c1">// 创建对象，调用无参构造函数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&#34;Alice&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">20</span><span class="p">);</span><span class="w"> </span><span class="c1">// 使用构造方法初始化对象</span><span class="w">
+</span></span></span></code></pre></div><h3 id="33-引用类型">3.3 引用类型</h3>
+<p>基本类型存储的是值本身，而引用类型存放的是对象的地址，Java 的对象就是引用类型<br>
+当你把一个对象赋值给另一个变量时，两个变量会引用同一个对象，改变其中一个变量引用的对象内容</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&#34;Tom&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">18</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w">  </span><span class="c1">// b 引用了 a 指向的对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">b</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Jerry&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="na">name</span><span class="p">);</span><span class="w">  </span><span class="c1">// 输出 Jerry，a 和 b 引用同一个对象</span><span class="w">
+</span></span></span></code></pre></div><p>判断引用类型是否相等：</p>
+<table>
+  <thead>
+      <tr>
+          <th>判断方式</th>
+          <th>含义</th>
+          <th>示例代码</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>==</code></td>
+          <td>比较两个对象的引用地址是否相同，即是否指向同一个对象</td>
+          <td><code>a == b</code></td>
+      </tr>
+      <tr>
+          <td><code>.equals()</code></td>
+          <td>比较两个对象的内容是否相等。如果类没有重写 <code>equals</code> 方法，则行为等同于 <code>==</code>。</td>
+          <td><code>a.equals(b)</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>举一个例子：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">equals</span><span class="p">(</span><span class="n">Object</span><span class="w"> </span><span class="n">obj</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">obj</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">Person</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Person</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Person</span><span class="p">)</span><span class="w"> </span><span class="n">obj</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="na">name</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&#34;Tom&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">p2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&#34;Tom&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">p2</span><span class="p">);</span><span class="w">        </span><span class="c1">// false，因为是两个不同的对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">p2</span><span class="p">));</span><span class="w">   </span><span class="c1">// true，重写了 equals，比较内容</span><span class="w">
+</span></span></span></code></pre></div><h3 id="34-构造函数">3.4 构造函数</h3>
+<p>构造函数（Constructor）是一种特殊的类方法，用于创建对象并进行初始化操作</p>
+<ul>
+<li>构造函数名称必须和类名一样，且没有返回值</li>
+<li>Java 一个类可以有多个不同参数的构造函数</li>
+<li>Java 有构造函数，没有析构函数，JVM 会自动回收所分配的变量的内存</li>
+<li>每个子类的构造函数第一句话，都默认调用父类的无参构造函数 super()，除非子类的构造函数第一句话就是 super()</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 构造函数1：无参</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">Person</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;unknown&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 构造函数2：有参</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">Person</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="35-访问修饰符">3.5 访问修饰符</h3>
+<p>在 Java 中，类的属性可以使用不同的访问修饰符（如 private、public、protected）来控制访问权限<br>
+这些修饰符用于实现封装（encapsulation），保护数据不被非法访问</p>
+<table>
+  <thead>
+      <tr>
+          <th>修饰符</th>
+          <th>同类中</th>
+          <th>同包中</th>
+          <th>子类中</th>
+          <th>跨包访问</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>private</code></td>
+          <td>√</td>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+      </tr>
+      <tr>
+          <td>默认（无）</td>
+          <td>√</td>
+          <td>√</td>
+          <td>×</td>
+          <td>×</td>
+      </tr>
+      <tr>
+          <td><code>protected</code></td>
+          <td>√</td>
+          <td>√</td>
+          <td>√</td>
+          <td>×</td>
+      </tr>
+      <tr>
+          <td><code>public</code></td>
+          <td>√</td>
+          <td>√</td>
+          <td>√</td>
+          <td>√</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="36-this-关键字">3.6 this 关键字</h3>
+<p>在 Java 中，this 是一个关键字，代表当前对象的引用。在类的内部使用，用来区分成员变量和传进来的参数等</p>
+<p><strong>1. 区分成员变量和局部变量</strong></p>
+<p>当方法或构造函数的参数与成员变量重名时，使用 this 来明确表示成员变量</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span><span class="c1">// this.name 是成员变量，name 是构造函数参数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>2. 在对象内部调用其他方法</strong></p>
+<p>调用当前对象的 sayHello 方法，或者构造函数之间相互调用，也可以省略 this</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">greet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">sayHello</span><span class="p">();</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Hello!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>3. 返回当前对象</strong></p>
+<p>常用于链式调用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Counter</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Counter</span><span class="w"> </span><span class="nf">increment</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">count</span><span class="o">++</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span><span class="w"> </span><span class="c1">// 返回当前对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Count: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">count</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 使用示例</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Counter</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Counter</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">c</span><span class="p">.</span><span class="na">increment</span><span class="p">().</span><span class="na">increment</span><span class="p">().</span><span class="na">print</span><span class="p">();</span><span class="w"> </span><span class="c1">// Count: 2</span><span class="w">
+</span></span></span></code></pre></div><p>注意：静态方法体中不能使用this关键字。非静态方法中可以用 this 关键字访问静态属性，静态方法体中不能使用 this 关键字访问静态属性，比如说 public static void main(String args[]) {}</p>
+<h2 id="4-java-类的继承和接口">4. Java 类的继承和接口</h2>
+<h3 id="41-继承-extends">4.1 继承 extends</h3>
+<p>Java 中类的继承是面向对象编程的核心特性之一<br>
+它允许一个类（子类）继承另一个类（父类）的属性和方法，从而实现代码的复用、扩展和多态</p>
+<p><strong>1. 继承的特点</strong></p>
+<ul>
+<li>单根继承原则：一个类只能继承一个父类</li>
+<li>支持多层继承：可以继承多层结构，如 class A → B → C</li>
+<li>子类继承父类，父类的父类，所有的属性和方法，但不能直接访问private成员，但可以通过调用父类的方法来访问父类的私有的成员属性</li>
+</ul>
+<p><strong>2. 基本语法</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">eat</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Animal is eating&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">Dog</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">bark</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Dog is barking&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Dog</span><span class="w"> </span><span class="n">dog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dog</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">dog</span><span class="p">.</span><span class="na">eat</span><span class="p">();</span><span class="w">  </span><span class="c1">// 继承自 Animal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">dog</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span><span class="w"> </span><span class="c1">// 自己定义的方法</span><span class="w">
+</span></span></span></code></pre></div><p><strong>3. 使用 super 访问父类</strong></p>
+<ul>
+<li>super() 调用父类的构造函数，必须在子类构造函数的第一行</li>
+<li>super.方法名() 调用父类的方法。如果构造函数的第一句话不是super，编译器会自动增加一句super()，如果构造函数第一句是程序员自己写的super语句，编译器就不会自动增加了</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Dog</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Dog</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">super</span><span class="p">(</span><span class="s">&#34;Dog&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// 调用父类构造函数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sleep</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">sleep</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用父类方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Dog sleeps&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="42-重写-override">4.2 重写 override</h3>
+<p>重写是指子类对父类继承的方法进行重新实现，它允许我们根据子类的需求，改变从父类继承来的方法行为</p>
+<p>规则：</p>
+<table>
+  <thead>
+      <tr>
+          <th>规则</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>方法名相同</td>
+          <td>子类方法必须与父类被重写的方法名称相同</td>
+      </tr>
+      <tr>
+          <td>参数列表相同</td>
+          <td>参数类型、顺序、个数都要一致</td>
+      </tr>
+      <tr>
+          <td>返回值类型相同</td>
+          <td>Java 5 起支持协变返回类型（covariant return type）</td>
+      </tr>
+      <tr>
+          <td>访问权限不能更严格</td>
+          <td>可以更宽松（如从 protected 变成 public），不能变得更严格</td>
+      </tr>
+      <tr>
+          <td>不能重写 static、final 或 private 方法</td>
+          <td>这些方法不能被子类修改</td>
+      </tr>
+      <tr>
+          <td>可以添加或保留 @Override 注解</td>
+          <td>编译器会检查是否真的在重写父类方法，避免错误</td>
+      </tr>
+  </tbody>
+</table>
+<p>举例：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeSound</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Some sound&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">Dog</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeSound</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Woof&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="43-抽象类-abstract">4.3 抽象类 abstract</h3>
+<p><strong>完整的类:</strong> 所有定义的方法都实现了，只有完整的类才能被实例化，被 new 出来</p>
+<p><strong>抽象类 (abstract class)</strong>: 暂时还有方法没有实现，被定义为抽象类，类和抽象方法都需要用 abstract 关键字来修饰</p>
+<p><strong>抽象类特点</strong>: 抽象类不能实例化对象，除此之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。子类继承抽象类，如果不能完全实现父类的所有 abstract 方法，那么子类也必须被规定为抽象类</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 抽象方法：子类必须实现</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">calArea</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getName</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 非抽象方法：子类可以继承或重写</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">printArea</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Area: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">area</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">area</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="44-接口类-interface">4.4 接口类 interface</h3>
+<p><strong>接口类 (interface class)</strong>: 一个类中所有抽象方法都没实现，那这个类就是接口类，用 interface 关键字来修饰<br>
+<strong>接口类的特点</strong>:</p>
+<ul>
+<li>接口没有构造函数，类和方法必须是 public</li>
+<li>不能有普通成员变量，但可以有 public static final 常量</li>
+<li>一个类只能继承 extends 一个类，但是可以实现 implements 多个接口，class C implements A, B</li>
+<li>一个接口可以继承多个接口，关键字用 extends，interface B extends A1, A2</li>
+<li>类实现接口，就必须实现所有未实现的方法，否则是抽象类</li>
+</ul>
+<p>定义接口：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">eat</span><span class="p">();</span><span class="w">       
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">sleep</span><span class="p">();</span><span class="w">     
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">move</span><span class="p">();</span><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeSound</span><span class="p">();</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">reproduce</span><span class="p">();</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>实现接口：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Dog</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Animal</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">eat</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Dog eats bones&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sleep</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Dog sleeps&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="45-父子类型转换">4.5. 父子类型转换</h3>
+<p>子类和父类之间的转型（类型转换）是面向对象编程的重要机制，通常分为向上转型（Upcasting）和向下转型（Downcasting）</p>
+<ol>
+<li><strong>向上转型</strong>：子类对象转换为父类类型，自动进行，不需要强制类型转换符</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 正确情况 1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Animal</span><span class="w"> </span><span class="n">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dog</span><span class="p">();</span><span class="w"> </span><span class="c1">// 向上转型，自动进行</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 正确情况 2 </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Dog</span><span class="w"> </span><span class="n">dog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dog</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Animal</span><span class="w"> </span><span class="n">animal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dog</span><span class="p">;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">animal</span><span class="p">.</span><span class="na">speak</span><span class="p">();</span><span class="w">   </span><span class="c1">// 正确：可调用父类的方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">animal</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span><span class="w">    </span><span class="c1">// 错误：编译器无法识别子类特有的方法</span><span class="w">
+</span></span></span></code></pre></div><ol start="2">
+<li><strong>向下转型</strong>：父类引用转换为子类类型，强制进行，必须加上类型转换符。如果父类引用不是实际指向的那个子类，会抛出 ClassCastException</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 正确情况</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Animal</span><span class="w"> </span><span class="n">animal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dog</span><span class="p">();</span><span class="w"> </span><span class="c1">// 实际是 Dog 对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Dog</span><span class="w"> </span><span class="n">dog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Dog</span><span class="p">)</span><span class="w"> </span><span class="n">animal</span><span class="p">;</span><span class="w">    </span><span class="c1">// 向下转型，强制转换</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">dog</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span><span class="w">                </span><span class="c1">// 现在可以调用子类特有的方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 错误情况 1 </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Animal</span><span class="w"> </span><span class="n">animal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Animal</span><span class="p">();</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Dog</span><span class="w"> </span><span class="n">dog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Dog</span><span class="p">)</span><span class="w"> </span><span class="n">animal</span><span class="p">;</span><span class="w"> </span><span class="c1">// 编译通过，运行时抛出 ClassCastException</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 错误情况 2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Dog</span><span class="w"> </span><span class="n">obj2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Animal</span><span class="p">();</span><span class="w"> </span><span class="c1">//illegal</span><span class="w">
+</span></span></span></code></pre></div><h3 id="46-多态">4.6 多态</h3>
+<p>面向对象编程的核心特性：封装、继承、多态<br>
+多态是对于同一个行为，不同的子类对象具有不同的表现形式。同一个接口，使用不同的实例而执行不同操作</p>
+<ul>
+<li>提高代码复用性和可维护性，简化代码结构</li>
+<li>运行时动态绑定，动态决策调用哪个方法</li>
+<li>配合接口编程，降低耦合度</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">Circle</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Circle.draw()&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">Square</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Square.draw()&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">Triangle</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Triangle.draw()&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="5-java-常量管理">5. Java 常量管理</h2>
+<h3 id="51-静态变量-static">5.1 静态变量 static</h3>
+<p>在 Java 中，static 是一个关键字，用来修饰类的变量、方法、内部类，表示这些成员属于类本身，而不是某个具体对象</p>
+<p><strong>1. 静态变量</strong></p>
+<ul>
+<li>静态变量属于类本身，所有对象共享一份内存</li>
+<li>常用来记录类的全局状态，比如实例计数器、全局配置等</li>
+<li>不需要创建对象就能访问：Person.count</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// 静态变量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// 每创建一个对象，count++</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>2. 静态方法</strong></p>
+<ul>
+<li>静态方法也不依赖于对象，可以通过类名直接调用 MathUtils.add(1, 2)</li>
+<li>在静态方法中，只能使用静态变量，不能使用非静态变量，因为非静态成员属于对象</li>
+<li>在静态方法中，不能使用非静态方法，非静态方法可以直接引用静态方法</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">StaticMethodTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w">           </span><span class="c1">// 非静态变量（属于对象）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">2</span><span class="p">;</span><span class="w">    </span><span class="c1">// 静态变量（属于类）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">hello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">b</span><span class="p">);</span><span class="w">         </span><span class="c1">// 正确，static 方法能访问 static 变量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// System.out.println(a);      // 错误，static 方法不能访问非 static 变量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// hi();                       // 错误，static 方法不能调用非 static 方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">hi</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">hello</span><span class="p">();</span><span class="w">                    </span><span class="c1">// 正确，可以调用 static 方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">);</span><span class="w">      </span><span class="c1">// 正确，可以访问非 static 变量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">b</span><span class="p">);</span><span class="w">      </span><span class="c1">// 正确，可以访问 static 变量</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">StaticMethodTest</span><span class="p">.</span><span class="na">hello</span><span class="p">();</span><span class="w">  </span><span class="c1">// 正确，静态方法通过类名调用</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// StaticMethodTest.hi();  // 错误，不能通过类名调用非静态方法</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>3. 静态代码块</strong></p>
+<ul>
+<li>静态代码块在类加载时执行一次，可以用于初始化静态变量</li>
+<li>无论创建多少个对象，静态代码块只执行一次</li>
+<li>执行顺序：static块 &gt; 匿名块 &gt; 构造函数</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">StaticBlock</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 静态代码块</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;static block&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 匿名代码块</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;anonymous block&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 构造函数</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">StaticBlock</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;constructor function&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 最终输出</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">static</span><span class="w"> </span><span class="n">block</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">anonymous</span><span class="w"> </span><span class="n">block</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">constructor</span><span class="w"> </span><span class="n">function</span><span class="w">
+</span></span></span></code></pre></div><p><strong>4. 静态内部类</strong></p>
+<ul>
+<li>静态内部类不依赖外部类的实例</li>
+<li>可以直接通过 Outer.Inner 创建对象：new Outer.Inner()</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Outer</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Inner</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">sayHi</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Hi from static inner class&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="52-单例模式-singleton">5.2 单例模式 Singleton</h3>
 <p>限定某一个类在整个程序运行过程中，只能保留一个实例对象在内存空间</p>
 <p>采用 static 来共享对象实例</p>
 <p>采用 private 构造函数，防止外界 new 操作</p>
@@ -1231,33 +1692,44 @@ after changeint[]:100
     <strong><i class="icon icon-toc"></i> On this page</strong>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-java-compile">1. Java Compile</a></li>
-    <li><a href="#2-java-class">2. Java Class</a>
+    <li><a href="#1-java-编译和运行">1. Java 编译和运行</a></li>
+    <li><a href="#2-java-基础知识">2. Java 基础知识</a>
       <ul>
-        <li><a href="#21-java类结构">2.1 java类结构</a></li>
+        <li><a href="#21-基本数据类型">2.1 基本数据类型</a></li>
+        <li><a href="#22-数据转换">2.2 数据转换</a></li>
+        <li><a href="#23-运算符">2.3 运算符</a></li>
+        <li><a href="#24-选择结构">2.4 选择结构</a></li>
+        <li><a href="#25-循环结构">2.5 循环结构</a></li>
+        <li><a href="#26-自定义方法">2.6 自定义方法</a></li>
+        <li><a href="#27-函数重载-overload">2.7 函数重载 Overload</a></li>
       </ul>
     </li>
-    <li><a href="#32-基本数据类型和运算符"><strong>3.2 基本数据类型和运算符</strong></a></li>
-    <li><a href="#33-选择和循环结构"><strong>3.3 选择和循环结构</strong></a></li>
-    <li><a href="#34-自定义函数"><strong>3.4 自定义函数</strong></a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#41-面向对象思想"><strong>4.1 面向对象思想</strong></a></li>
-    <li><a href="#42-java类和对象"><strong>4.2 java类和对象</strong></a></li>
-    <li><a href="#43-构造函数"><strong>4.3 构造函数</strong></a></li>
-    <li><a href="#44-信息隐藏和this"><strong>4.4 信息隐藏和this</strong></a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#51-继承"><strong>5.1 继承</strong></a></li>
-    <li><a href="#52-抽象类和接口"><strong>5.2 抽象类和接口</strong></a></li>
-    <li><a href="#3-转型多态契约"><strong>3. 转型、多态、契约</strong></a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#1-static"><strong>1. static</strong></a></li>
-    <li><a href="#2-单例模式"><strong>2. 单例模式</strong></a></li>
+    <li><a href="#3-java-面向对象">3. Java 面向对象</a>
+      <ul>
+        <li><a href="#31-类结构">3.1 类结构</a></li>
+        <li><a href="#32-对象">3.2 对象</a></li>
+        <li><a href="#33-引用类型">3.3 引用类型</a></li>
+        <li><a href="#34-构造函数">3.4 构造函数</a></li>
+        <li><a href="#35-访问修饰符">3.5 访问修饰符</a></li>
+        <li><a href="#36-this-关键字">3.6 this 关键字</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-java-类的继承和接口">4. Java 类的继承和接口</a>
+      <ul>
+        <li><a href="#41-继承-extends">4.1 继承 extends</a></li>
+        <li><a href="#42-重写-override">4.2 重写 override</a></li>
+        <li><a href="#43-抽象类-abstract">4.3 抽象类 abstract</a></li>
+        <li><a href="#44-接口类-interface">4.4 接口类 interface</a></li>
+        <li><a href="#45-父子类型转换">4.5. 父子类型转换</a></li>
+        <li><a href="#46-多态">4.6 多态</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-java-常量管理">5. Java 常量管理</a>
+      <ul>
+        <li><a href="#51-静态变量-static">5.1 静态变量 static</a></li>
+        <li><a href="#52-单例模式-singleton">5.2 单例模式 Singleton</a></li>
+      </ul>
+    </li>
     <li><a href="#3-final"><strong>3. final</strong></a></li>
     <li><a href="#4-常量设计和常量池"><strong>4. 常量设计和常量池</strong></a></li>
     <li><a href="#5-不可变类型"><strong>5. 不可变类型</strong></a></li>
@@ -1354,7 +1826,7 @@ after changeint[]:100
 
 <script type="application/javascript">
     if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js?2025-07-23')
+        navigator.serviceWorker.register('/sw.js?2025-07-27')
             .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
     }
 </script>
